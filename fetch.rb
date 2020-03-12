@@ -5,7 +5,9 @@ require 'fileutils'
 
 REPO_PATH = '../merchant-documentation-gateway'
 
-ASSETS = %w[index index.adoc shortcuts.adoc docinfo.html docinfo-footer.html samples tables resources]
+ASSETS = %w[index index.adoc shortcuts.adoc docinfo.html docinfo-footer.html samples tables resources].map do |asset|
+  File.join(REPO_PATH, asset)
+end
 MAPPING = {
   'auto-generated' => 'auto-generated',
   'images/icons' => 'icons',
@@ -14,11 +16,11 @@ MAPPING = {
 
 
 puts "Moving #{REPO_PATH}/#{ASSETS} -> content/"
-# FileUtils.cp_r(ASSETS, 'content/')
+FileUtils.cp_r(ASSETS, 'content/')
 
 MAPPING.each do |from, to|
   puts "Moving #{REPO_PATH}/#{from} -> content/#{to}"
-  # FileUtils.cp_r(
-  #   File.join(REPO_PATH, from), File.join('content', to)
-  # )
+  FileUtils.cp_r(
+    File.join(REPO_PATH, from), File.join('content', to)
+  )
 end
