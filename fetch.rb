@@ -5,7 +5,7 @@ require 'fileutils'
 
 REPO_PATH = '../merchant-documentation-gateway'
 
-ASSETS = %w[index index.adoc shortcuts.adoc docinfo.html docinfo-footer.html samples tables resources].map do |asset|
+ASSETS = %w[index index.adoc shortcuts.adoc docinfo.html docinfo-footer.html samples tables resources css js].map do |asset|
   File.join(REPO_PATH, asset)
 end
 MAPPING = {
