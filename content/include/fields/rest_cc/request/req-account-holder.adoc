@@ -1,0 +1,77 @@
+//[%autowidth]
+//[cols="m,,,,a"]
+//|===
+//| Field | M/O | Datatype | Size | Description
+//
+|date&#8209;of&#8209;birth 
+|O 
+|Date 
+|  
+|Consumer's birth date. +
+Format: ``{date-pattern}``.
+
+|email 
+|M/O 
+|String 
+|64 
+|Consumer’s email address as given in the merchant’s shop. +
+Mandatory for 3D Secure 2 transactions.
+
+|first-name 
+|M/O 
+|String 
+|32 
+|First name of the consumer. +
+Mandatory for 3D Secure 2 transactions.
+
+|last-name 
+|M/O 
+|String 
+|50 
+|Last name of the consumer. +
+Mandatory for 3D Secure 2 transactions.
+
+|gender 
+|O 
+|String 
+|1 
+|Consumer's gender. +
+Accepted values: ``m`` or ``f``.
+
+|merchant-crm-id 
+|O 
+|String 
+|64 
+|Consumer identifier in the merchant’s shop. Requests that contain payment information from the same consumer in the same shop must contain the same string.
+
+|mobile-phone
+|O 
+|String
+|18
+|Mobile phone number provided by the consumer. 
+
+|phone 
+|O 
+|String 
+|32 
+|Phone number provided by the consumer.  
+
+|work-phone
+|O 
+|String
+|18
+|Work phone number provided by the consumer. 
+
+|social-security-number 
+|O 
+|String 
+|14 
+|Consumer's social security number.
+
+|tax-number 
+|O 
+|String 
+|14 
+|Consumer's tax number.
+
+//|===

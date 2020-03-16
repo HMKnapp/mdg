@@ -1,0 +1,88 @@
+// [%autowidth]
+// [cols="m,,,,a"]
+// |===
+| Field | <<APIRef_FieldDefs_Cardinality, M/O>> | Datatype | Size | Description
+
+|first-name 
+|M/O 
+|String 
+|32 
+|The first name given in the consumer's shipping information. +
+Mandatory for credit card.
+
+|last-name 
+|M/0 
+|String 
+|32 
+|The last name given in the consumer's shipping information. +
+Mandatory for credit card.
+
+|phone 
+|O 
+|String 
+|32 
+|Phone number given in the consumer's shipping information.
+
+ifndef::env-nova[]
+|email 
+|O 
+|String 
+|64 
+|Email address given in the consumer's shipping information. 
+
+|tracking-number 
+|O 
+|String 
+|64 
+|The shipping tracking number.
+
+|tracking-url 
+|O 
+|String 
+|2000 
+|URL for tracking the shipping.
+
+|shipping-company 
+|O 
+|String 
+|64 
+|Company that delivers the order to the recipient.
+
+|return-tracking-number 
+|O 
+|String 
+|64 
+|The delivery tracking number of the return.
+
+|return-tracking-url 
+|O 
+|String 
+|2000 
+|URL for tracking the delivery of the return.
+
+|return-shipping-company 
+|O 
+|String 
+|36 
+|Company that handles the return delivery.
+endif::[]
+
+|shipping-method 
+|O 
+|Enumeration 
+| 
+| The shipping method chosen by the consumer. +
+ Use the shipping indicator value that applies most accurately to the shipping method. If the consumer checks out two or more items, use the shipping indicator value for physical goods. If all goods are digital goods, use the shipping indicator value that matches the most expensive item. +
+ Accepted values: +
+
+* ``home_delivery``: Ship to consumer's billing address. +
+* ``verified_address_delivery``: Ship to another address known to and verified by the merchant. +
+* ``other_address_delivery``: Ship to an address that differs from the consumer's billing address. +
+* ``store_pick_up``: "Ship to Store" / Pick-up at local store (store address in shipping address fields). +
+* ``digital_goods``: Digital goods (includes online services, electronic gift cards, and redemption codes). +
+* ``digital_tickets``: Travel and event tickets, not shipped. +
+* ``other_verified``: Other (e.g. gaming, digital services, e-media subscriptions)
+
+//-
+
+// |===
