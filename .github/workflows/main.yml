@@ -1,0 +1,92 @@
+name: docs.wirecard.com
+
+on: [push, pull_request]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      TOOLCHAIN_PATH: 'toolchain'
+      SKIP_RAKE_TEST: '1'
+      SKIP_HTMLCHECK: '1'
+    steps:
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
+
+    - name: Check env
+      run: |
+        echo "PWD: $(pwd)"
+        echo "TOOLCHAIN_PATH: $TOOLCHAIN_PATH"
+
+    - name: Checkout
+      uses: actions/checkout@v1
+      with:
+        submodules: true
+
+    - name: Setup Ruby 2.6
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.6.x'
+
+    - name: Setup
+      run: bash toolchain/setup/setup.sh
+
+    - name: Test
+      run: |
+        rake docs:test
+
+    - name: Pre-processing
+      if: always()
+      run: |
+        rake docs:pre
+
+    - name: Build
+      run: |
+        rake docs:build
+
+    - name: Post-processing
+      if: always()
+      run: |
+        rake docs:post
+        cp -r /tmp/build/html public/
+
+    - name: Prepend branch name
+      if: steps.extract_branch.outputs.branch != 'master'
+      run: |
+        mkdir -p public/${{ steps.extract_branch.outputs.branch }}
+        mv public/{*.html,css/,js/,fonts/,images/,icons/,lunr*.json} public/${{ steps.extract_branch.outputs.branch }}
+
+#    - name: Deploy
+#      uses: wirecard/s3-deploy@master
+
+      # - name: Deploy (Github Pages)
+      #   uses: crazy-max/ghaction-github-pages@v1.2.5
+      #   with:
+      #     target_branch: gh-pages
+      #     keep_history: true
+      #     build_dir: public
+      # env:
+      #   GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+
+    - name: Upload logs
+      if: always()
+      uses: actions/upload-artifact@v1
+      with:
+        name: logs
+        path: /tmp/logs
+    
+    - name: Notify
+      if: always()
+      run: |
+        rake docs:notify
+      env:
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+
+    - name: Upload build
+      uses: actions/upload-artifact@v1
+      with:
+        name: build
+        path: public
+
