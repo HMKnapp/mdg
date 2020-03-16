@@ -61,12 +61,12 @@ jobs:
 #    - name: Deploy
 #      uses: wirecard/s3-deploy@master
 
-      - name: Deploy (Github Pages)
-        uses: crazy-max/ghaction-github-pages@v1.2.5
-        with:
-          target_branch: gh-pages
-          keep_history: true
-          build_dir: public
+    - name: Deploy (Github Pages)
+      uses: crazy-max/ghaction-github-pages@v1.2.5
+      with:
+        target_branch: gh-pages
+        keep_history: true
+        build_dir: public
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
 
@@ -83,10 +83,4 @@ jobs:
         rake docs:notify
       env:
         SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-
-    - name: Upload build
-      uses: actions/upload-artifact@v1
-      with:
-        name: build
-        path: public
 
