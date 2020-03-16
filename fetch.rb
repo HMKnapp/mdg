@@ -20,6 +20,7 @@ MDG_ASSETS = %w[index index.adoc shortcuts.adoc include samples tables resources
 end
 MDG_MAPPING = {
   'auto-generated' => 'auto-generated',
+  'images/logo/wirecard_logo.png' => 'images/logo.png',
   'images/icons' => 'icons',
   'images' => 'images',
 }
