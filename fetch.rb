@@ -3,24 +3,52 @@
 #
 require 'fileutils'
 
-REPO_PATH = '../merchant-documentation-gateway'
+WORKSPACE = File.expand_path('~/Work/github')
+MDG_PATH = File.join(WORKSPACE, 'merchant-documentation-gateway')
+POC_PATH = File.join(WORKSPACE, 'proof-of-concept')
 
-ASSETS = %w[index index.adoc shortcuts.adoc docinfo.html docinfo-footer.html samples tables resources css js].map do |asset|
-  File.join(REPO_PATH, asset)
+Dir.mkdir('content') unless Dir.exist?('content')
+
+##################################
+# MERCHANT DOCUMENTATION GATEWAY #
+##################################
+puts '======================================'
+puts '=== MERCHANT DOCUMENTATION GATEWAY ==='
+puts '======================================'
+MDG_ASSETS = %w[index index.adoc shortcuts.adoc include samples tables resources].map do |asset|
+  File.join(MDG_PATH, asset)
 end
-MAPPING = {
+MDG_MAPPING = {
   'auto-generated' => 'auto-generated',
   'images/icons' => 'icons',
   'images' => 'images',
 }
 
+puts "Moving #{MDG_ASSETS} -> content/"
+FileUtils.cp_r(MDG_ASSETS, 'content/')
 
-puts "Moving #{REPO_PATH}/#{ASSETS} -> content/"
-FileUtils.cp_r(ASSETS, 'content/')
-
-MAPPING.each do |from, to|
-  puts "Moving #{REPO_PATH}/#{from} -> content/#{to}"
+MDG_MAPPING.each do |from, to|
+  puts "Moving #{from} -> content/#{to}"
   FileUtils.cp_r(
-    File.join(REPO_PATH, from), File.join('content', to)
+    File.join(MDG_PATH, from), File.join('content', to)
   )
 end
+
+####################
+# PROOF OF CONCEPT #
+####################
+puts '========================'
+puts '=== PROOF OF CONCEPT ==='
+puts '========================'
+
+DOCINFO = %w[docinfo.html docinfo-footer.html docinfo-search.html]
+POC_CONTENT_ASSETS = (%w[css js fonts].concat(DOCINFO)).map do |asset|
+  File.join(POC_PATH, 'content', asset)
+end
+POC_ASSETS = %w[Rakefile].map do |asset|
+  File.join(POC_PATH, asset)
+end
+
+puts "Moving content/#{POC_CONTENT_ASSETS} -> content/"
+FileUtils.cp_r(POC_CONTENT_ASSETS, 'content/')
+FileUtils.cp_r(POC_ASSETS, './')
