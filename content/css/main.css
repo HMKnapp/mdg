@@ -1192,19 +1192,35 @@ p { margin-bottom: 1.25rem; }
   #footer-text { color: rgba(0, 0, 0, 0.6); font-size: 0.9em; } }
 @media amzn-kf8 { /* line 136, ../sass/components/_print.scss */
   #header, #content, #footnotes, #footer { padding: 0; } }
-/* line 70, ../sass/main.scss */
+/* hide global headline which appears on all pages */
+/* line 64, ../sass/main.scss */
+div#header > h1 { display: none; }
+
+/* increase size of h2, h3, h4, h5, relative to now missing h1 */
+@media only screen and (min-width: 768px) { /* line 69, ../sass/main.scss */
+  h2 { font-size: 2.75em; }
+  /* line 70, ../sass/main.scss */
+  h3, #toctitle, .sidebarblock > .content > .title { font-size: 2.3125em; }
+  /* line 71, ../sass/main.scss */
+  h4, #toctitle, .sidebarblock > .content > .title { font-size: 1.6875em; }
+  /* line 72, ../sass/main.scss */
+  h5 { font-size: 1.4375em; } }
+/* line 79, ../sass/main.scss */
 h1 > a.link:hover, h2 > a.link:hover, h3 > a.link:hover, #toctitle > a.link:hover, .sidebarblock > .content > .title > a.link:hover, h4 > a.link:hover, h5 > a.link:hover, h6 > a.link:hover { color: #ff7373; }
 
-/* line 78, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 a:hover { color: #ff7373; }
 
-/* line 84, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 ul, ol, dl { font-size: 1em; line-height: 1.6; margin-bottom: 1.25em; list-style-position: outside; font-family: inherit; }
 
-/* line 94, ../sass/main.scss */
-#footer { background-color: #d0d3d4; }
-/* line 96, ../sass/main.scss */
-#footer #footer-text { color: #002846; }
+/* line 103, ../sass/main.scss */
+body#Home > #footer { display: block; }
+
+/* line 104, ../sass/main.scss */
+#footer { display: none; /* hide by default, show only on home page */ background-color: rgba(0, 0, 0, 0.05); }
+/* line 107, ../sass/main.scss */
+#footer #footer-text { color: #a2aaad; text-align: right; }
 
 /* line 4, ../sass/elements/_default.scss */
 div#header { display: none; }
@@ -1331,7 +1347,7 @@ table.r-details > caption ~ thead, table.r-details > caption ~ tbody { display: 
 table.r-details > caption.title.hide-show-enabled { font-style: normal; font-weight: bold; font-size: larger; color: white; background-color: #2983fb; border: 0; margin: 0; padding: .25em 0 .2em .5em; cursor: pointer; }
 
 /* line 3, ../sass/elements/_global-toc.scss */
-#toc.toc2 { background: linear-gradient(90deg, #002846 0%, #2983fb 100%); /* overwrite asciidoctor default margins,paddings */ padding: 0; /* indent manually to allow <a> width of 100% */ /* have a span the whole width of the TOC to avoid doing this with JS trickery */ /* do not display a real checkbox in front of the label*/ /* hide children of unchecked toc items */ /* show children of checked toc items */ }
+#toc.toc2 { background: linear-gradient(90deg, #002846 0%, #2983fb 100%); /* overwrite asciidoctor default margins,paddings */ padding: 0; /* indent manually to allow <a> width of 100% */ /* have a span the whole width of the TOC to avoid doing this with JS trickery */ /* do not display anything below level 5 in main toc */ /* do not display a real checkbox in front of the label*/ /* hide children of unchecked toc items */ /* show children of checked toc items */ }
 /* line 5, ../sass/elements/_global-toc.scss */
 #toc.toc2 > ul { background-position-x: right; }
 /* line 12, ../sass/elements/_global-toc.scss */
@@ -1362,12 +1378,14 @@ table.r-details > caption.title.hide-show-enabled { font-style: normal; font-wei
 #toc.toc2 li[data-level="3"] > input[type="checkbox"]:checked + label > a { border-left: 0.1em solid #000; background-color: rgba(255, 255, 255, 0.04); }
 /* line 85, ../sass/elements/_global-toc.scss */
 #toc.toc2 li[data-level="4"] > input[type="checkbox"]:checked + label > a { border-left: 0.1em solid #000; background-color: rgba(255, 255, 255, 0.03); }
-/* line 92, ../sass/elements/_global-toc.scss */
+/* line 91, ../sass/elements/_global-toc.scss */
+#toc.toc2 li[data-level="5"] { display: none; }
+/* line 96, ../sass/elements/_global-toc.scss */
 #toc.toc2 input[type="checkbox"] { display: none; }
-/* line 97, ../sass/elements/_global-toc.scss */
+/* line 101, ../sass/elements/_global-toc.scss */
 #toc.toc2 input[type="checkbox"] + label ~ ul { max-height: 0; overflow: hidden; }
-/* line 103, ../sass/elements/_global-toc.scss */
-#toc.toc2 input[type="checkbox"]:checked + label ~ ul { max-height: 100vh; transition: max-height 2s ease-out; }
+/* line 107, ../sass/elements/_global-toc.scss */
+#toc.toc2 input[type="checkbox"]:checked + label ~ ul { max-height: 500vh; transition: max-height 1s cubic-bezier(1, 0, 0.91, 0.78); }
 
 /* line 1, ../sass/elements/_highlight-hash.scss */
 h2:target, h3:target, #toctitle:target, .sidebarblock > .content > .title:target, h4:target, h5:target, h6:target { animation-name: headline-target-animation; animation-duration: 0.8s; animation-delay: 0.5s; }
