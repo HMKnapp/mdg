@@ -1206,18 +1206,21 @@ ul, ol, dl { font-size: 1em; line-height: 1.6; margin-bottom: 1.25em; list-style
 /* line 96, ../sass/main.scss */
 #footer #footer-text { color: #002846; }
 
-/* line 3, ../sass/elements/_default.scss */
+/* line 4, ../sass/elements/_default.scss */
+div#header { display: none; }
+
+/* line 9, ../sass/elements/_default.scss */
 input[type="text"], input[type="search"] { display: block; border-radius: 5px; border: 1px solid #425563; padding: 5px; font-size: 1em; box-sizing: border-box; }
-/* line 10, ../sass/elements/_default.scss */
+/* line 16, ../sass/elements/_default.scss */
 input[type="text"]::placeholder, input[type="search"]::placeholder { color: #a2aaad; }
-/* line 13, ../sass/elements/_default.scss */
+/* line 19, ../sass/elements/_default.scss */
 input[type="text"]:focus, input[type="search"]:focus { outline: none; }
 
-/* line 18, ../sass/elements/_default.scss */
+/* line 25, ../sass/elements/_default.scss */
 button { border-radius: 5px; background-color: white; }
-/* line 22, ../sass/elements/_default.scss */
+/* line 29, ../sass/elements/_default.scss */
 button.primary { color: #2983fb; border: 1px solid #2983fb; }
-/* line 26, ../sass/elements/_default.scss */
+/* line 33, ../sass/elements/_default.scss */
 button.secondary, button.close { color: #ff7373; border: 1px solid #ff7373; }
 
 /* @media only screen and (min-width: 1620px) { body#Home > div#content { max-width: 100%; padding-left: 310px; }
@@ -1372,78 +1375,79 @@ h2:target, h3:target, #toctitle:target, .sidebarblock > .content > .title:target
 @keyframes headline-target-animation { /* line 8, ../sass/elements/_highlight-hash.scss */
   50% { opacity: 0.2; } }
 
-/* SEARCH FIELD */
+/* disable scrolling for body */
 /* line 7, ../sass/elements/_search.scss */
+body.no-scroll { overflow: hidden; }
+
+/* SEARCH FIELD */
+/* line 12, ../sass/elements/_search.scss */
 input#search { display: block; width: 85%; border-radius: 5px; border: 1px solid #425563; padding: 0.5em; font-size: 1em; box-sizing: unset; margin: auto; background-color: rgba(0, 0, 0, 0.1); color: #fff; margin-bottom: 1em; }
-/* line 8, ../sass/elements/_search.scss */
+/* line 13, ../sass/elements/_search.scss */
 input#search:hover { cursor: pointer; }
 
 /* CLOSE BUTTON */
-/* line 25, ../sass/elements/_search.scss */
-button.close { position: fixed; top: 15px; right: 15px; opacity: 1; font-size: 1em; background-color: transparent; height: 25px; width: 25px; }
-/* line 35, ../sass/elements/_search.scss */
+/* line 30, ../sass/elements/_search.scss */
+button.close { display: none; position: fixed; top: 15px; right: 15px; opacity: 1; font-size: 1.2em; font-weight: bold; background-color: transparent; height: 2em; width: 2em; }
+/* line 42, ../sass/elements/_search.scss */
 button.close:hover { background-color: #ff7373; color: white; cursor: pointer; }
 
 /* SEARCH RESULTS */
-/* line 43, ../sass/elements/_search.scss */
+/* line 50, ../sass/elements/_search.scss */
 ul#search-results { display: none; }
-/* line 45, ../sass/elements/_search.scss */
+/* line 52, ../sass/elements/_search.scss */
 ul#search-results li { display: none; }
 
 /* INSTRUCTIONS */
-/* line 49, ../sass/elements/_search.scss */
-#instructions { display: none; }
-/* line 51, ../sass/elements/_search.scss */
-#instructions > div { display: none; }
-
 /* line 56, ../sass/elements/_search.scss */
-span.nav-key { border: 1px solid #425563; border-radius: 3px; padding: 3px 5px; background-color: #ebebeb; color: #425563; font-weight: bold; }
+#instructions { display: none; position: fixed; bottom: 50px; border: 2px solid #425563; border-radius: 15px; box-sizing: border-box; background-color: white; margin-left: 10em; }
+@media only screen and (min-width: 768px) { /* line 56, ../sass/elements/_search.scss */
+  #instructions { left: 15em; width: calc(75% - 15em); } }
+@media only screen and (min-width: 1280px) { /* line 56, ../sass/elements/_search.scss */
+  #instructions { left: 20em; width: calc(75% - 20em); } }
+/* line 74, ../sass/elements/_search.scss */
+#instructions > div { display: none; padding: 10px; }
 
-/* line 64, ../sass/elements/_search.scss */
+/* line 80, ../sass/elements/_search.scss */
+span.nav-key { border: 1px solid #425563; border-radius: 3px; padding: 3px 5px; background-color: #ebebeb; color: #425563; font-weight: bold; min-width: 2em; }
+
+/* line 89, ../sass/elements/_search.scss */
 span.nav-text { color: #425563; font-size: 1.2rem; line-height: 1.2rem; }
 
 /* OVERLAY */
-/* line 71, ../sass/elements/_search.scss */
+/* line 96, ../sass/elements/_search.scss */
 #search-overlay { /* END &.open */ }
-/* line 72, ../sass/elements/_search.scss */
-#search-overlay.open { /* SEARCH WRAPPER */ /* END SEARCH WRAPPER */ }
-/* line 74, ../sass/elements/_search.scss */
-#search-overlay.open #search-wrapper { /* SEARCH RESULTS WRAPPER */ /* END SEARCH RESULTS WRAPPER */ /* INSTRUCTIONS */ /* END INSTRUCTIONS */ }
-/* line 76, ../sass/elements/_search.scss */
-#search-overlay.open #search-wrapper #search-results-wrapper { position: fixed; padding-left: 10em; top: 0; padding-top: 1em; background-color: white; /* SEARCH RESULTS */ /* END SEARCH RESULTS */ }
-@media only screen and (min-width: 768px) { /* line 76, ../sass/elements/_search.scss */
-  #search-overlay.open #search-wrapper #search-results-wrapper { left: 15em; width: calc(100% - 15em); } }
-@media only screen and (min-width: 1280px) { /* line 76, ../sass/elements/_search.scss */
-  #search-overlay.open #search-wrapper #search-results-wrapper { left: 20em; width: calc(100% - 20em); } }
-/* line 91, ../sass/elements/_search.scss */
-#search-overlay.open #search-wrapper #search-results-wrapper ul#search-results { display: block; list-style: none; height: 100vh; max-width: 62.5em; width: 75%; }
-/* line 92, ../sass/elements/_search.scss */
-#search-overlay.open #search-wrapper #search-results-wrapper ul#search-results::before { content: 'Search Results'; font-size: 3em; margin-bottom: 0.5em; display: block; border-bottom: 3px solid #002846; }
+/* line 97, ../sass/elements/_search.scss */
+#search-overlay.open { /* CLOSE BUTTON */ /* SEARCH WRAPPER */ /* END SEARCH WRAPPER */ }
+/* line 99, ../sass/elements/_search.scss */
+#search-overlay.open button.close { display: initial; z-index: 100; }
 /* line 104, ../sass/elements/_search.scss */
+#search-overlay.open #search-wrapper { /* SEARCH RESULTS WRAPPER */ /* END SEARCH RESULTS WRAPPER */ /* FIXME does not look good, therefore disabled */ /* INSTRUCTIONS */ }
+/* line 106, ../sass/elements/_search.scss */
+#search-overlay.open #search-wrapper #search-results-wrapper { position: fixed; top: 0; padding-left: 10em; padding-top: 1em; background-color: white; overflow: scroll; height: 100vh; /* SEARCH RESULTS */ /* END SEARCH RESULTS */ }
+@media only screen and (min-width: 768px) { /* line 106, ../sass/elements/_search.scss */
+  #search-overlay.open #search-wrapper #search-results-wrapper { left: 15em; width: calc(100% - 15em); } }
+@media only screen and (min-width: 1280px) { /* line 106, ../sass/elements/_search.scss */
+  #search-overlay.open #search-wrapper #search-results-wrapper { left: 20em; width: calc(100% - 20em); } }
+/* line 124, ../sass/elements/_search.scss */
+#search-overlay.open #search-wrapper #search-results-wrapper ul#search-results { display: block; list-style: none; max-width: 62.5em; width: 75%; margin-bottom: 150px; }
+/* line 125, ../sass/elements/_search.scss */
+#search-overlay.open #search-wrapper #search-results-wrapper ul#search-results::before { content: 'Search Results'; font-size: 3em; margin-bottom: 0.5em; display: block; border-bottom: 3px solid #002846; }
+/* line 137, ../sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li { display: block; margin-bottom: 10px; }
-/* line 107, ../sass/elements/_search.scss */
+/* line 140, ../sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div { width: inherit; border-radius: 15px; position: relative; border: 1px solid #425563; }
-/* line 113, ../sass/elements/_search.scss */
+/* line 146, ../sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div * { margin: 0px; text-decoration: none; }
-/* line 118, ../sass/elements/_search.scss */
-#search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a h3, #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a #toctitle, #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a .sidebarblock > .content > .title, #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a p { margin-left: 40px; margin-top: 10px; color: #002846 !important; }
-/* line 123, ../sass/elements/_search.scss */
+/* line 151, ../sass/elements/_search.scss */
+#search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a h3, #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a #toctitle, #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a .sidebarblock > .content > .title, #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a p { margin-left: 40px; margin-right: 40px; margin-top: 10px; color: #002846 !important; }
+/* line 157, ../sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a span.label { position: absolute; top: -1px; right: -1px; border-top-right-radius: 15px; border-bottom-left-radius: 15px; color: white; background-color: #425563; padding: 4px 10px; font-weight: bold; }
-/* line 134, ../sass/elements/_search.scss */
+/* line 168, ../sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a:hover { text-decoration: none; color: #002846; }
-/* line 141, ../sass/elements/_search.scss */
+/* line 175, ../sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li.selected > div { border: 1px solid #2983fb; background-color: rgba(41, 131, 251, 0.2); }
-/* line 144, ../sass/elements/_search.scss */
+/* line 178, ../sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li.selected > div a > span.label { background-color: #2983fb; }
-/* line 152, ../sass/elements/_search.scss */
-#search-overlay.open #search-wrapper #instructions { position: fixed; bottom: 100px; display: block; border: 2px solid #425563; border-radius: 15px; box-sizing: border-box; }
-@media only screen and (min-width: 768px) { /* line 152, ../sass/elements/_search.scss */
-  #search-overlay.open #search-wrapper #instructions { left: calc(15em + 50px); } }
-@media only screen and (min-width: 1280px) { /* line 152, ../sass/elements/_search.scss */
-  #search-overlay.open #search-wrapper #instructions { left: calc(20em + 50px); } }
-/* line 165, ../sass/elements/_search.scss */
-
-#search-overlay.open #search-wrapper #instructions > div { display: inline-block; padding: 10px; }
 
 /* line 1, ../sass/elements/_source-highlighting.scss */
 pre.CodeRay.highlight { border: solid 2px #d0d3d4; border-radius: 5px; }

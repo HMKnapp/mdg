@@ -2234,7 +2234,7 @@
   <input id="toc_cb_giropay_Main" type="checkbox"><label for="toc_cb_giropay_Main"><a href="giropay_Main.html">giropay</a></label>
 <ul>
 <li id="toc_li_giropay" data-level="3">
-  <input id="toc_cb_giropay" type="checkbox"><label for="toc_cb_giropay"><a href="giropay_Main.html#giropay">REST API &amp; Wirecard Payment Page v1/v2</a></label>
+  <input id="toc_cb_giropay" type="checkbox"><label for="toc_cb_giropay"><a href="giropay_Main.html#giropay">REST API &amp; Wirecard Payment Page v1</a></label>
 <ul>
 <li id="toc_li_giropay_GeneralInformation_PaymentMode" data-level="4">
   <input id="toc_cb_giropay_GeneralInformation_PaymentMode" type="checkbox" disabled><label for="toc_cb_giropay_GeneralInformation_PaymentMode"><a href="giropay_Main.html#giropay_GeneralInformation_PaymentMode">Countries and Currencies</a></label>
@@ -2287,6 +2287,23 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+</li>
+<li id="toc_li_PPv2_giropay" data-level="3">
+  <input id="toc_cb_PPv2_giropay" type="checkbox"><label for="toc_cb_PPv2_giropay"><a href="giropay_Main.html#PPv2_giropay">Wirecard Payment Page v2</a></label>
+<ul>
+<li id="toc_li_PPv2_giropay_general" data-level="4">
+  <input id="toc_cb_PPv2_giropay_general" type="checkbox" disabled><label for="toc_cb_PPv2_giropay_general"><a href="giropay_Main.html#PPv2_giropay_general">General Information</a></label>
+</li>
+<li id="toc_li_PPv2_giropay_Transactions" data-level="4">
+  <input id="toc_cb_PPv2_giropay_Transactions" type="checkbox" disabled><label for="toc_cb_PPv2_giropay_Transactions"><a href="giropay_Main.html#PPv2_giropay_Transactions">Transaction Type debit</a></label>
+</li>
+<li id="toc_li_PPv2_giropay_TestCredentials" data-level="4">
+  <input id="toc_cb_PPv2_giropay_TestCredentials" type="checkbox" disabled><label for="toc_cb_PPv2_giropay_TestCredentials"><a href="giropay_Main.html#PPv2_giropay_TestCredentials">Test Credentials</a></label>
+</li>
+<li id="toc_li_PPv2_giropay_PostProcessing" data-level="4">
+  <input id="toc_cb_PPv2_giropay_PostProcessing" type="checkbox" disabled><label for="toc_cb_PPv2_giropay_PostProcessing"><a href="giropay_Main.html#PPv2_giropay_PostProcessing">Post-Processing Operations</a></label>
 </li>
 </ul>
 </li>
@@ -8436,8 +8453,11 @@ Check the REST API <a href="GuaranteedDirectDebit_Main.html#GuaranteedDirectDebi
 }</code></pre>
 </div>
 </div>
-<table id="PPv2_GuaranteedDirectDebit_JSONNVPReference" class="tableblock frame-all grid-all stretch">
-<caption class="title">Optional Fields in a Guaranteed Direct Debit by Wirecard Request</caption>
+<div id="PPv2_GuaranteedDirectDebit_JSONNVPReference" class="paragraph">
+<div class="title">Optional Fields in a Guaranteed Direct Debit by Wirecard Request</div>
+<p>tag::giropay-ppv2[]</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -8469,12 +8489,16 @@ Check the REST API <a href="GuaranteedDirectDebit_Main.html#GuaranteedDirectDebi
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>country</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ country</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })
+end::giropay-ppv2[]</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>creditor_id</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>creditor-id</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment ({ })</code></p></td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock"><code>payment ({ })</code></p>
+<p class="tableblock"><code>tag::giropay-ppv2[]</code></p>
+</td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>descriptor</code></p></td>
@@ -8499,7 +8523,8 @@ Check the REST API <a href="GuaranteedDirectDebit_Main.html#GuaranteedDirectDebi
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>last_name</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>last-name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })
+end::giropay-ppv2[]</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>mandate_mandate_id</code></p></td>
@@ -8509,7 +8534,10 @@ Check the REST API <a href="GuaranteedDirectDebit_Main.html#GuaranteedDirectDebi
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>mandate_signed_date</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>signed-date</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>mandate ({ })</code></p></td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock"><code>mandate ({ })</code></p>
+<p class="tableblock"><code>tag::giropay-ppv2[]</code></p>
+</td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>merchant_account_id</code></p></td>
@@ -8643,6 +8671,9 @@ Check the REST API <a href="GuaranteedDirectDebit_Main.html#GuaranteedDirectDebi
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>end::giropay-ppv2[]</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Response-Only Fields for Guaranteed Direct Debit by Wirecard</caption>
 <colgroup>
@@ -8719,7 +8750,7 @@ Check the REST API <a href="GuaranteedDirectDebit_Main.html#GuaranteedDirectDebi
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 11:45:41 UTC
+Last updated 2020-03-17 15:32:40 UTC
 </div>
 </div>
 <script src="js/toc.js"></script>

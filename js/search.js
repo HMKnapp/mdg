@@ -8,12 +8,14 @@ function openOverlay(event) {
     $('#search-overlay').addClass('open');
     $('input#search').focus();
     $('div#content').addClass('blur');
+    $('body').addClass('no-scroll');
     overlayOpen = true;
 }
 
 function closeOverlay(event) {
     $('#search-overlay').removeClass('open');
     $('div#content').removeClass('blur');
+    $('body').removeClass('no-scroll');
     overlayOpen = false;
 }
 

@@ -2234,7 +2234,7 @@
   <input id="toc_cb_giropay_Main" type="checkbox" checked><label for="toc_cb_giropay_Main"><a href="giropay_Main.html">giropay</a></label>
 <ul>
 <li id="toc_li_giropay" data-level="3">
-  <input id="toc_cb_giropay" type="checkbox"><label for="toc_cb_giropay"><a href="giropay_Main.html#giropay">REST API &amp; Wirecard Payment Page v1/v2</a></label>
+  <input id="toc_cb_giropay" type="checkbox"><label for="toc_cb_giropay"><a href="giropay_Main.html#giropay">REST API &amp; Wirecard Payment Page v1</a></label>
 <ul>
 <li id="toc_li_giropay_GeneralInformation_PaymentMode" data-level="4">
   <input id="toc_cb_giropay_GeneralInformation_PaymentMode" type="checkbox" disabled><label for="toc_cb_giropay_GeneralInformation_PaymentMode"><a href="giropay_Main.html#giropay_GeneralInformation_PaymentMode">Countries and Currencies</a></label>
@@ -2287,6 +2287,23 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+</li>
+<li id="toc_li_PPv2_giropay" data-level="3">
+  <input id="toc_cb_PPv2_giropay" type="checkbox"><label for="toc_cb_PPv2_giropay"><a href="giropay_Main.html#PPv2_giropay">Wirecard Payment Page v2</a></label>
+<ul>
+<li id="toc_li_PPv2_giropay_general" data-level="4">
+  <input id="toc_cb_PPv2_giropay_general" type="checkbox" disabled><label for="toc_cb_PPv2_giropay_general"><a href="giropay_Main.html#PPv2_giropay_general">General Information</a></label>
+</li>
+<li id="toc_li_PPv2_giropay_Transactions" data-level="4">
+  <input id="toc_cb_PPv2_giropay_Transactions" type="checkbox" disabled><label for="toc_cb_PPv2_giropay_Transactions"><a href="giropay_Main.html#PPv2_giropay_Transactions">Transaction Type debit</a></label>
+</li>
+<li id="toc_li_PPv2_giropay_TestCredentials" data-level="4">
+  <input id="toc_cb_PPv2_giropay_TestCredentials" type="checkbox" disabled><label for="toc_cb_PPv2_giropay_TestCredentials"><a href="giropay_Main.html#PPv2_giropay_TestCredentials">Test Credentials</a></label>
+</li>
+<li id="toc_li_PPv2_giropay_PostProcessing" data-level="4">
+  <input id="toc_cb_PPv2_giropay_PostProcessing" type="checkbox" disabled><label for="toc_cb_PPv2_giropay_PostProcessing"><a href="giropay_Main.html#PPv2_giropay_PostProcessing">Post-Processing Operations</a></label>
 </li>
 </ul>
 </li>
@@ -5881,7 +5898,7 @@
 </h3>
 <div class="sect3">
 <h4 id="giropay">
-<a class="anchor" href="#giropay"></a><a class="link" href="#giropay">REST API &amp; Wirecard Payment Page v1/v2</a>
+<a class="anchor" href="#giropay"></a><a class="link" href="#giropay">REST API &amp; Wirecard Payment Page v1</a>
 </h4>
 <div class="paragraph">
 <p><em>giropay</em> is a type of <a href="PaymentMethods.html#PaymentMethods_PaymentMode_OnlineBankTransfer">Online Bank Transfer</a>.</p>
@@ -6541,6 +6558,946 @@ order_number=15957&amp;transaction_type=debitget-url&amp;locale=en&amp;completio
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="PPv2_giropay">
+<a class="anchor" href="#PPv2_giropay"></a><a class="link" href="#PPv2_giropay">Wirecard Payment Page v2</a>
+</h4>
+<div class="paragraph">
+<p><em>giropay</em> is a type of <a href="PaymentMethods.html#PaymentMethods_PaymentMode_OnlineBankTransfer">Online Bank Transfer</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Countries and Currencies</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Countries</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Germany</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Currencies</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EUR</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect4">
+<h5 id="PPv2_giropay_general">
+<a class="anchor" href="#PPv2_giropay_general"></a><a class="link" href="#PPv2_giropay_general">General Information</a>
+</h5>
+<div class="paragraph">
+<p>Here you find all the information for integrating <em>giropay</em> into your Hosted and Embedded Payment Page.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Want to know more about Wirecard Payment Page v2 (WPP v2)?</div>
+Visit one of our integration guides
+(<a href="IntegrationGuides_WPP_v2.html#PaymentPageSolutions_PPv2_HPP_Integration">Hosted Payment Page</a>,
+<a href="IntegrationGuides_WPP_v2.html#PaymentPageSolutions_PPv2_EPP_Integration">Embedded Payment Page</a>) for a quick explanation and
+a step-by-step guide.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>All <a href="PaymentPageSolutions.html#PPv2">WPP v2</a> integrations share a
+<a href="PaymentPageSolutions.html#PPSolutions_PPv2_Workflow">common process flow</a> for creating payments.</p>
+</div>
+<div class="paragraph">
+<p>Below, we provide a sample request for the transaction type <em>debit</em>, including field lists with short descriptions.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The samples provided below are designed for the testing environment and do not use real information. Please contact <a href="ContactUs.html">Merchant Support</a> for production credentials.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For more details on the <code>redirect-url</code>, see the
+<a href="PaymentPageSolutions.html#PPSolutions_PPv2_ConfigureRedirects">Configuring Redirects and IPNs for WPP v2</a>
+section.</p>
+</div>
+<div class="paragraph">
+<p>For response verification examples, see
+the <a href="PaymentPageSolutions.html#PPSolutions_PPv2_PPv2Security">WPP v2 Security</a> section.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="PPv2_giropay_Transactions">
+<a class="anchor" href="#PPv2_giropay_Transactions"></a><a class="link" href="#PPv2_giropay_Transactions">Transaction Type <em>debit</em></a>
+</h5>
+<div class="paragraph">
+<p>With <em>giropay</em> you can use the transaction type <em>debit</em>.</p>
+</div>
+<div class="paragraph">
+<p>A <em>debit</em> charges the specified amount from the account holder’s bank account and marks it for immediate transfer.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="PPv2_giropay_TestCredentials">
+<a class="anchor" href="#PPv2_giropay_TestCredentials"></a><a class="link" href="#PPv2_giropay_TestCredentials">Test Credentials</a>
+</h5>
+<table class="tableblock frame-all grid-all fit-content">
+<caption class="title">Test Credentials for Transaction Type <em>debit</em>
+</caption>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">URL (Endpoint)</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://wpp-test.wirecard.com/api/payment/register</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Merchant Account ID (MAID)</p></th>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>9b4b0e5f-1bc8-422e-be42-d0bad2eadabc</p>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Username</p></th>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>16390-testing</p>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Password</p></th>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>3!3013=D3fD8X7</p>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Secret Key (used for response verification)</p></th>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>0c8c6f3a-1534-4fa1-99d9-d1c644d43709</p>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all fit-content">
+<caption class="title">Test Credentials for the giropay Environment</caption>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">IBAN</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DE12500105170648489890</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">BIC</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GENODETT488</p></td>
+</tr>
+</tbody>
+</table>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>For a successful transaction:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create a payment session (initial request).</p>
+</li>
+<li>
+<p>Redirect the consumer to the payment page (initial response URL).</p>
+</li>
+<li>
+<p>Highly recommended: Parse and process the payment response.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>We provide JSON examples for each step of this process. You can find them below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Request Headers</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Authorization</p></th>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>Use the username and password as given in your Wirecard contract to base64-encode the authorization.</p>
+</div>
+<div class="paragraph">
+<p>For example, the authorization header for <code>user:password</code> is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>Authorization: Basic dXNlcjpwYXNzd29yZA==</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Content-Type</p></th>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>For <em>JSON</em> requests the content type header is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>Content-Type: application/json;charset=UTF-8</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+<div id="PPv2_giropay_debit_Create" class="paragraph">
+<div class="title">1. Create a Payment Session (Initial Request)</div>
+<p>Use the following sample to initiate a payment session.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="json">{
+        <span style="color:#606"><span style="color:#404">"</span><span>payment</span><span style="color:#404">"</span></span>: {
+                <span style="color:#606"><span style="color:#404">"</span><span>merchant-account-id</span><span style="color:#404">"</span></span>: {
+                        <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">9b4b0e5f-1bc8-422e-be42-d0bad2eadabc</span><span style="color:#710">"</span></span>
+                },
+                <span style="color:#606"><span style="color:#404">"</span><span>request-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">{{$guid}}</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>transaction-type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">debit</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>requested-amount</span><span style="color:#404">"</span></span>: {
+                        <span style="color:#606"><span style="color:#404">"</span><span>currency</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
+                        <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">1.00</span><span style="color:#710">"</span></span>
+
+                },
+                <span style="color:#606"><span style="color:#404">"</span><span>payment-methods</span><span style="color:#404">"</span></span>: {
+                        <span style="color:#606"><span style="color:#404">"</span><span>payment-method</span><span style="color:#404">"</span></span>: [{
+                                <span style="color:#606"><span style="color:#404">"</span><span>name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay</span><span style="color:#710">"</span></span>
+                        }
+                ]},
+                <span style="color:#606"><span style="color:#404">"</span><span>bank-account</span><span style="color:#404">"</span></span>: {
+                        <span style="color:#606"><span style="color:#404">"</span><span>bic</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">GENODETT488</span><span style="color:#710">"</span></span>
+                },
+                <span style="color:#606"><span style="color:#404">"</span><span>success-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/success</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>fail-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/error</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>cancel-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/cancel</span><span style="color:#710">"</span></span>
+        }
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3">Field (JSON)</th>
+<th class="tableblock halign-left valign-top">Data Type</th>
+<th class="tableblock halign-left valign-top">Cardinality</th>
+<th class="tableblock halign-left valign-top">Size</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>merchant-account-id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A unique identifier assigned to every merchant account by <em>Wirecard</em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><code>request-id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A unique identifier assigned to every request by the merchant. It is used when searching for or referencing it later. <code>{{$guid}}</code> serves as a placeholder for a random <code>request-id</code>.<br>
+Allowed characters: <code>[a-z0-9-_ ]</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><code>transaction-type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>The requested transaction type. The available type for <em>giropay</em> is <code>debit</code>.</p>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock"><code>requested-amount</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decimal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The full amount that is requested/contested in a transaction. 2 decimal places allowed.<br>
+Use <code>.</code> (decimal point) as the separator.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>currency</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The currency of the requested/contested transaction amount. For <em>giropay</em> payments, the currency must be set to <code>EUR</code>.
+Format: 3-character abbreviation according to ISO 4217.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment-methods</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment-method</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the payment method used. Set this field to <code>giropay</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock"><code>bank-account</code></p></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>iban</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">34</p></td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">The international bank account number (IBAN) required in a bank transfer. It is an international standard for identifying bank accounts across national borders. The current standard is ISO 13616:2007, which indicates SWIFT as the formal registrar.<br>
+Allowed characters: <code>[a-zA-Z]{2}[0-9]{2}[a-zA-Z0-9]{4}[0-9]{7}([a-zA-Z0-9]?){0,16}</code>.<br></p>
+<p class="tableblock">If you include this field and the IBAN value, the value can be displayed on the <em>giropay</em> redirect page. This varies from one consumer bank to another.</p>
+</td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>bic</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top">
+<p class="tableblock">The bank identifier code (BIC) in a bank transfer.<br>
+Allowed characters: <code>([a-zA-Z]{4}[a-zA-Z]{2}[a-zA-Z0-9]{2}([a-zA-Z0-9]{3})</code>.<br></p>
+<p class="tableblock">If you include this field, the redirect to <em>giropay</em> is initiated. If not, the WPP v2 displays a field for entering the BIC.</p>
+</td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><code>success-redirect-url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL to which the consumer is redirected after a successful payment, e.g. <code>https://demoshop-test.wirecard.com/demoshop/#/success</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><code>cancel-redirect-url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL to which the consumer is redirected after having canceled a payment, e.g. <code>https://demoshop-test.wirecard.com/demoshop/#/cancel</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><code>fail-redirect-url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL to which the consumer is redirected after an unsuccessful payment, e.g. <code>https://demoshop-test.wirecard.com/demoshop/#/error</code>.</p></td>
+</tr>
+</tbody>
+</table>
+<div id="PPv2_giropay_debit_RedirectURL" class="listingblock">
+<div class="title">2. Redirect the Consumer to the Payment Page (Sample Response URL)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="json">{
+<span style="color:#606"><span style="color:#404">"</span><span>payment-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://wpp-test.wirecard.com/processing?wPaymentToken=juZgmpkCN8v4tG3qKjmHGwcUKOyW9-eHE-Xm_6gzT5o</span><span style="color:#710">"</span></span>
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field (JSON)</th>
+<th class="tableblock halign-left valign-top">Data Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment-redirect-url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL which redirects to the payment form. Sent as a response to the initial request.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>At this point, you need to redirect your consumer to
+<code>payment-redirect-url</code> (or render it in an <em>iframe</em> depending on your
+<a href="PaymentPageSolutions.html#PPv2">integration method</a>).</p>
+</div>
+<div class="paragraph">
+<p>Consumers are redirected to the payment form. There they enter their
+data and submit the form to confirm the payment.<br>
+<em>Possible transaction results</em>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Successful (<code>transaction-state: success</code>)</p>
+</li>
+<li>
+<p>Failed (<code>transaction-state: failed</code>)</p>
+</li>
+<li>
+<p>Canceled (<code>transaction-state: failed</code>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The transaction result is the value of <code>transaction-state</code> in the
+payment response. More details (including the status code) can also be
+found in the <code>statuses</code> object of the payment response. Canceled
+payments are returned as <code>failed</code>, but the
+<code>status description</code> indicates it was canceled.</p>
+</div>
+<div class="paragraph">
+<p>In any case (unless the consumer cancels the transaction on a 3<sup>rd</sup> party provider page), a base64-encoded response containing payment information is sent to the configured redirection URL. See
+<a href="PaymentPageSolutions.html#PPSolutions_PPv2_ConfigureRedirects">Configuring Redirects and IPNs for WPP v2</a>
+for more details on redirection targets after payment and transaction status
+notifications.</p>
+</div>
+<div class="paragraph">
+<p>You can find a decoded payment response example below.</p>
+</div>
+<div id="PPv2_giropay_debit_ProcessPaymentResponse" class="listingblock">
+<div class="title">3. Parse and Process the Payment Response (Decoded Payment Response)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="json">{
+    <span style="color:#606"><span style="color:#404">"</span><span>payment</span><span style="color:#404">"</span></span> : {
+      <span style="color:#606"><span style="color:#404">"</span><span>parent-transaction-id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">eb434519-7794-4d6e-94b8-b65af5a88175</span><span style="color:#710">"</span></span>,
+      <span style="color:#606"><span style="color:#404">"</span><span>transaction-id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2a0f8a4a-d4a1-4c83-b3bb-d4042b3aefc0</span><span style="color:#710">"</span></span>,
+      <span style="color:#606"><span style="color:#404">"</span><span>request-id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">14013748-518c-41ac-acc8-fb99195ddcb0</span><span style="color:#710">"</span></span>,
+      <span style="color:#606"><span style="color:#404">"</span><span>transaction-state</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">success</span><span style="color:#710">"</span></span>,
+      <span style="color:#606"><span style="color:#404">"</span><span>completion-time-stamp</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2020-01-08T12:39:39</span><span style="color:#710">"</span></span>,
+      <span style="color:#606"><span style="color:#404">"</span><span>requested-amount</span><span style="color:#404">"</span></span> : {
+        <span style="color:#606"><span style="color:#404">"</span><span>currency</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
+        <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span> : <span style="color:#60E">1.000000</span>
+      },
+      <span style="color:#606"><span style="color:#404">"</span><span>bank-account</span><span style="color:#404">"</span></span> : {
+        <span style="color:#606"><span style="color:#404">"</span><span>bic</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">GENODETT488</span><span style="color:#710">"</span></span>
+      },
+      <span style="color:#606"><span style="color:#404">"</span><span>transaction-type</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">debit</span><span style="color:#710">"</span></span>,
+      <span style="color:#606"><span style="color:#404">"</span><span>success-redirect-url</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/success</span><span style="color:#710">"</span></span>,
+      <span style="color:#606"><span style="color:#404">"</span><span>cancel-redirect-url</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/cancel</span><span style="color:#710">"</span></span>,
+      <span style="color:#606"><span style="color:#404">"</span><span>fail-redirect-url</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/error</span><span style="color:#710">"</span></span>,
+      <span style="color:#606"><span style="color:#404">"</span><span>merchant-account-id</span><span style="color:#404">"</span></span> : {
+        <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">9b4b0e5f-1bc8-422e-be42-d0bad2eadabc</span><span style="color:#710">"</span></span>
+      },
+      <span style="color:#606"><span style="color:#404">"</span><span>statuses</span><span style="color:#404">"</span></span> : {
+        <span style="color:#606"><span style="color:#404">"</span><span>status</span><span style="color:#404">"</span></span> : [ {
+          <span style="color:#606"><span style="color:#404">"</span><span>description</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Successful confirmation received from the bank.</span><span style="color:#710">"</span></span>,
+          <span style="color:#606"><span style="color:#404">"</span><span>severity</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span>,
+          <span style="color:#606"><span style="color:#404">"</span><span>code</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.1126</span><span style="color:#710">"</span></span>
+        } ]
+      },
+      <span style="color:#606"><span style="color:#404">"</span><span>payment-methods</span><span style="color:#404">"</span></span> : {
+        <span style="color:#606"><span style="color:#404">"</span><span>payment-method</span><span style="color:#404">"</span></span> : [ {
+          <span style="color:#606"><span style="color:#404">"</span><span>name</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay</span><span style="color:#710">"</span></span>
+        } ]
+      },
+      <span style="color:#606"><span style="color:#404">"</span><span>api-id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">wpp</span><span style="color:#710">"</span></span>
+    }
+  }</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2">Field</th>
+<th class="tableblock halign-left valign-top">Data Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>transaction-id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A unique identifier assigned to every transaction. This information is returned in the response only.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>transaction-state</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>The current transaction state.<br>
+Possible values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>in-progress</code></p>
+</li>
+<li>
+<p><code>success</code></p>
+</li>
+<li>
+<p><code>failed</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Typically, a transaction starts with <code>in-progress</code> and ends with either <code>success</code> or <code>failed</code>. This information is returned in the response only.</p>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>completion-time-stamp</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Timestamp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The UTC/ISO time-stamp documents the time and date when the transaction was executed.<br>
+Format: <code>YYYY-MM-DDThh:mm:ss</code> (ISO).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><code>status</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The description of the transaction status message.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>severity</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>The definition of the status message.<br>
+Possible values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>information</code></p>
+</li>
+<li>
+<p><code>warning</code></p>
+</li>
+<li>
+<p><code>error</code></p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>code</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The code of the status message.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>parent-transaction-id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier referencing the <code>transaction-id</code> of a previous transaction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>api-id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier of the currently used API.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code>provider-transaction-reference-id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique identifier of a transaction reference, assigned by the provider.<br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="PPv2_giropay_PostProcessing">
+<a class="anchor" href="#PPv2_giropay_PostProcessing"></a><a class="link" href="#PPv2_giropay_PostProcessing">Post-Processing Operations</a>
+</h5>
+<div class="paragraph">
+<p>WPP v2 is best used for one-off payments (e.g. regular, independent <em>debit</em> transactions) or the initial transaction in a chain of them (e.g. a first <em>authorization</em> in a chain of recurring transactions). However, when it comes to referencing a transaction for any kind of post-processing operation - such as a <em>refund</em> of one of your <em>debit</em> transactions - use our <a href="RestApi.html">REST API</a> directly.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Check the REST API <a href="giropay_Main.html#giropay">giropay specification</a> for details on giropay-specific post-processing operations.
+</td>
+</tr>
+</table>
+</div>
+<div id="PPv2_giropay_JSONFields" class="paragraph">
+<p>Here you can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>see the structure of an extended JSON request (XML-JSON mapping reference)</p>
+</li>
+<li>
+<p>find the NVP equivalents for JSON fields (for migrating merchants)</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">JSON Structure of a giropay Request</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="json">{
+    <span style="color:#606"><span style="color:#404">"</span><span>payment</span><span style="color:#404">"</span></span>: {
+        <span style="color:#606"><span style="color:#404">"</span><span>merchant-account-id</span><span style="color:#404">"</span></span>: {
+            <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        },
+        <span style="color:#606"><span style="color:#404">"</span><span>request-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+        <span style="color:#606"><span style="color:#404">"</span><span>transaction-type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+        <span style="color:#606"><span style="color:#404">"</span><span>requested-amount</span><span style="color:#404">"</span></span>: {
+            <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Numeric</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>currency</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        },
+        <span style="color:#606"><span style="color:#404">"</span><span>parent-transaction-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+        <span style="color:#606"><span style="color:#404">"</span><span>account-holder</span><span style="color:#404">"</span></span>: {
+            <span style="color:#606"><span style="color:#404">"</span><span>first-name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>last-name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>email</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>phone</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>address</span><span style="color:#404">"</span></span>: {
+                <span style="color:#606"><span style="color:#404">"</span><span>city</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>country</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>postal-code</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>state</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>street1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>street2</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>street3</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+            }
+        },
+        <span style="color:#606"><span style="color:#404">"</span><span>shipping</span><span style="color:#404">"</span></span>: {
+            <span style="color:#606"><span style="color:#404">"</span><span>first-name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>last-name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>phone</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>address</span><span style="color:#404">"</span></span>: {
+                <span style="color:#606"><span style="color:#404">"</span><span>city</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>country</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>postal-code</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>state</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>street1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>street2</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+                <span style="color:#606"><span style="color:#404">"</span><span>street3</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+            }
+        },
+        <span style="color:#606"><span style="color:#404">"</span><span>payment-methods</span><span style="color:#404">"</span></span>: {
+            <span style="color:#606"><span style="color:#404">"</span><span>payment-method</span><span style="color:#404">"</span></span>: [
+                {
+                    <span style="color:#606"><span style="color:#404">"</span><span>name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+                }
+            ]
+        },
+        <span style="color:#606"><span style="color:#404">"</span><span>bank-account</span><span style="color:#404">"</span></span>: {
+            <span style="color:#606"><span style="color:#404">"</span><span>iban</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        },
+        <span style="color:#606"><span style="color:#404">"</span><span>mandate</span><span style="color:#404">"</span></span>: {
+            <span style="color:#606"><span style="color:#404">"</span><span>mandate-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>signed-date</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        },
+        <span style="color:#606"><span style="color:#404">"</span><span>creditor-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+        <span style="color:#606"><span style="color:#404">"</span><span>periodic</span><span style="color:#404">"</span></span>: {
+            <span style="color:#606"><span style="color:#404">"</span><span>periodic-type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+            <span style="color:#606"><span style="color:#404">"</span><span>sequence-type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        },
+        <span style="color:#606"><span style="color:#404">"</span><span>descriptor</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+        <span style="color:#606"><span style="color:#404">"</span><span>order-number</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+        <span style="color:#606"><span style="color:#404">"</span><span>success-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+        <span style="color:#606"><span style="color:#404">"</span><span>fail-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
+        <span style="color:#606"><span style="color:#404">"</span><span>cancel-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+<table id="PPv2_giropay_JSONNVPReference" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field (NVP)</th>
+<th class="tableblock halign-left valign-top">Field (JSON)</th>
+<th class="tableblock halign-left valign-top">JSON Parent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bank_account_iban</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>iban</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bank-account ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cancel_redirect_url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cancel-redirect-url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>city</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ city</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>country</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ country</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>descriptor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>descriptor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>email</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>email</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fail_redirect_url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fail-redirect-url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>first_name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>first-name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>last_name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>last-name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>merchant_account_id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>merchant-account-id ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order_number</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>order-number</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment_method</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment-method ([ ])/name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment-methods ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>periodic_type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>periodic-type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>periodic ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>phone</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>phone</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>postal_code</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ postal-code</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>request_id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>request-id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>requested_amount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>requested-amount ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>requested_amount_currency</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>currency</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>requested-amount ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sequence_type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sequence-type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>periodic ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_city</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ city</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_country</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ country</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_first_name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>first-name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_last_name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>last-name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_phone</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>phone</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_postal_code</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ postal-code</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_state</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ state</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_street1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ street1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_street2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ street2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping_street3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ street3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shipping ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>state</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ state</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>street1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ street1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>street2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ street2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>street3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>address ({ })/ street3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-holder ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>success_redirect_url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>success-redirect-url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment ({ })</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>transaction_type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>transaction-type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>payment ({ })</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 <div class="paragraph nav-footer">
 <p>← <a href="FPX_Main.html">FPX</a> |  <a href="GooglePay_Main.html">Google Pay™</a> →</p>
@@ -6548,7 +7505,7 @@ order_number=15957&amp;transaction_type=debitget-url&amp;locale=en&amp;completio
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 11:45:41 UTC
+Last updated 2020-03-17 15:32:40 UTC
 </div>
 </div>
 <script src="js/toc.js"></script>
