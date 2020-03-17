@@ -1,6 +1,5 @@
 # frozen_string_literal: true
-#
-#
+
 require 'fileutils'
 
 WORKSPACE = File.expand_path('~/Work/github')
