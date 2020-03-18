@@ -52,3 +52,5 @@ end
 puts "Moving content/#{POC_CONTENT_ASSETS} -> content/"
 FileUtils.cp_r(POC_CONTENT_ASSETS, 'content/')
 FileUtils.cp_r(POC_ASSETS, './')
+
+FileUtils.rm(%w[ie print screen].map { |css| File.join('content', 'css', "#{css}.css") })
