@@ -6405,106 +6405,106 @@ failure page.</p>
 <div class="listingblock">
 <div class="title">debit Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10.11<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;address&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;country&gt;</span>SK<span style="color:#070;font-weight:bold">&lt;/country&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;/address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+   <span class="tag">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span class="tag">&lt;/merchant-account-id&gt;</span>
+   <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+   <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+   <span class="tag">&lt;payment-methods&gt;</span>
+      <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+   <span class="tag">&lt;/payment-methods&gt;</span>
+   <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10.11<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+      <span class="tag">&lt;address&gt;</span>
+        <span class="tag">&lt;country&gt;</span>SK<span class="tag">&lt;/country&gt;</span>
+      <span class="tag">&lt;/address&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">debit Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>ee3870bb-fa19-11e4-a14a-0050b65c678c<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>${response}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2015-05-14T11:17:07.000+02:00<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10.11<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://ib.test.trustpay.eu/mapi/pay.aspx?AID=2107796749</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">AMT=10.11</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">CUR=EUR</span><span style="color:#800;font-weight:bold">&amp;amp;</span> <span style="color:#D20">REF=ee3870bb-fa19-11e4-a14a- 0050b65c678c</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">URL=http%3A%2F%2F127.0.0.1%3A8080%2Fengine%2Fnotification%2Ftrustpay% 2F%2Fredirect%2F</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">NURL=http%3A%2F%2F127.0.0.1%3A8080%2Fengine%2Fnotification%2Ftrust pay%2F</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">SIG=20A074A8DBBDD06D03D0693C8E281E03CDDD10123A33202B279AEAE228106F7 D</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>ee3870bb-fa19-11e4-a14a-0050b65c678c<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>${response}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2015-05-14T11:17:07.000+02:00<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10.11<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://ib.test.trustpay.eu/mapi/pay.aspx?AID=2107796749</span><span class="entity">&amp;amp;</span><span class="content">AMT=10.11</span><span class="entity">&amp;amp;</span><span class="content">CUR=EUR</span><span class="entity">&amp;amp;</span> <span class="content">REF=ee3870bb-fa19-11e4-a14a- 0050b65c678c</span><span class="entity">&amp;amp;</span><span class="content">URL=http%3A%2F%2F127.0.0.1%3A8080%2Fengine%2Fnotification%2Ftrustpay% 2F%2Fredirect%2F</span><span class="entity">&amp;amp;</span><span class="content">NURL=http%3A%2F%2F127.0.0.1%3A8080%2Fengine%2Fnotification%2Ftrust pay%2F</span><span class="entity">&amp;amp;</span><span class="content">SIG=20A074A8DBBDD06D03D0693C8E281E03CDDD10123A33202B279AEAE228106F7 D</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Success Notification</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>ee3870bb-fa19-11e4-a14a-0050b65c678c<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>${response}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2015-05-14T11:17:07.000+02:00<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Resource successfully created</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10.11<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>6e2e230b-9117-403c-93a2-f1c67906406f<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span class="tag">&lt;/merchant-account-id&gt;</span>
+  <span class="tag">&lt;transaction-id&gt;</span>ee3870bb-fa19-11e4-a14a-0050b65c678c<span class="tag">&lt;/transaction-id&gt;</span>
+  <span class="tag">&lt;request-id&gt;</span>${response}<span class="tag">&lt;/request-id&gt;</span>
+  <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+  <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+  <span class="tag">&lt;completion-time-stamp&gt;</span>2015-05-14T11:17:07.000+02:00<span class="tag">&lt;/completion-time-stamp&gt;</span>
+  <span class="tag">&lt;statuses&gt;</span>
+    <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">Resource successfully created</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+  <span class="tag">&lt;/statuses&gt;</span>
+  <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10.11<span class="tag">&lt;/requested-amount&gt;</span>
+  <span class="tag">&lt;parent-transaction-id&gt;</span>6e2e230b-9117-403c-93a2-f1c67906406f<span class="tag">&lt;/parent-transaction-id&gt;</span>
+  <span class="tag">&lt;payment-methods&gt;</span>
+    <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+  <span class="tag">&lt;/payment-methods&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">debit Request (Failure)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>elastic-payment-page<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>11.11<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span><span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay-gw-key</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">TestPay</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span><span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+   <span class="tag">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span class="tag">&lt;/merchant-account-id&gt;</span>
+   <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+   <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+   <span class="tag">&lt;api-id&gt;</span>elastic-payment-page<span class="tag">&lt;/api-id&gt;</span>
+   <span class="tag">&lt;payment-methods&gt;</span>
+      <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+   <span class="tag">&lt;/payment-methods&gt;</span>
+   <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>11.11<span class="tag">&lt;/requested-amount&gt;</span>
+<span class="tag">&lt;custom-fields&gt;</span><span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay-gw-key</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">TestPay</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span><span class="tag">&lt;/custom-fields&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">debit Response (Failure)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>52853032-18b5-11e5-9b53-ecf4bb5fe7cb<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>${response}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>failed<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2015-06-22T10:09:01.000+02:00<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">500.1050</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Provider had a system error.  Please try again later.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">error</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>11.11<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay-gw-key</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">TestPay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>elastic-payment-page<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>52853032-18b5-11e5-9b53-ecf4bb5fe7cb<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>${response}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>failed<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2015-06-22T10:09:01.000+02:00<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">500.1050</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">Provider had a system error.  Please try again later.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">error</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>11.11<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay-gw-key</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">TestPay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>elastic-payment-page<span class="tag">&lt;/api-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6515,90 +6515,90 @@ failure page.</p>
 <div class="listingblock">
 <div class="title">debit Request "TestPaySK" (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>elastic-payment-page<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay-gw-key</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">TestPaySK</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;success-redirect-url&gt;</span>http://127.0.0.1<span style="color:#070;font-weight:bold">&lt;/success-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;fail-redirect-url&gt;</span>http://127.0.0.1<span style="color:#070;font-weight:bold">&lt;/fail-redirect-url&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>elastic-payment-page<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay-gw-key</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">TestPaySK</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;success-redirect-url&gt;</span>http://127.0.0.1<span class="tag">&lt;/success-redirect-url&gt;</span>
+    <span class="tag">&lt;fail-redirect-url&gt;</span>http://127.0.0.1<span class="tag">&lt;/fail-redirect-url&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">debit Response "TestPaySK" (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>338889f4-35d6-11e5-b074-005056a96a54<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>${same as in request}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2015-07-29T09:43:02.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay-gw-key</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">TestPaySK</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://ib.test.trustpay.eu/mapi/RedirectToBank.aspx?PID=4399601190</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">URL=https%3A%2F%2Fapi-test.wirecard.com%2Fengine%2Fnotification%2Ftrustpay%2Fredirect%2F</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">NURL=https%3A%2F%2Fapi-test.wirecard.com%2Fengine%2Fnotification%2Ftrustpay</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>elastic-payment-page<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;fail-redirect-url&gt;</span>http://127.0.0.1<span style="color:#070;font-weight:bold">&lt;/fail-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;success-redirect-url&gt;</span>http://127.0.0.1<span style="color:#070;font-weight:bold">&lt;/success-redirect-url&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>338889f4-35d6-11e5-b074-005056a96a54<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>${same as in request}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2015-07-29T09:43:02.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay-gw-key</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">TestPaySK</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://ib.test.trustpay.eu/mapi/RedirectToBank.aspx?PID=4399601190</span><span class="entity">&amp;amp;</span><span class="content">URL=https%3A%2F%2Fapi-test.wirecard.com%2Fengine%2Fnotification%2Ftrustpay%2Fredirect%2F</span><span class="entity">&amp;amp;</span><span class="content">NURL=https%3A%2F%2Fapi-test.wirecard.com%2Fengine%2Fnotification%2Ftrustpay</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>elastic-payment-page<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;fail-redirect-url&gt;</span>http://127.0.0.1<span class="tag">&lt;/fail-redirect-url&gt;</span>
+    <span class="tag">&lt;success-redirect-url&gt;</span>http://127.0.0.1<span class="tag">&lt;/success-redirect-url&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">debit Notification "TestPaySK" (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span>  <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elasticpayments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>18aa5cce-02bf-11e5-820d-0050b65c678c<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>${same as in request}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2015-05-25T11:19:08.000+02:00<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay-gw-key</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">TestPaySK</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">trustpay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>elasticpayment-page<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;Signature</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignedInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;CanonicalizationMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;SignatureMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#rsa-sha1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;Reference</span> <span style="color:#b48">URI</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;Transforms&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;Transform</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;/Transforms&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;DigestMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#sha1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;DigestValue&gt;</span>Kfa5oTQpkAwP1xHzOopLzNDl+f8=<span style="color:#070;font-weight:bold">&lt;/DigestValue&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/Reference&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/SignedInfo&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignatureValue&gt;</span>aS9Bz6344fgDCrLGLmoA5hh1yOrT8QmaVZImeSw9YoGzte7j7IHldj5O7FHa6yw3NXHsBlPqM/j6yoAX/zpb1sbNvQ9kfiZe0uQs9QIDM4V9hcUMuoAz0gZEnlCCLGoTZeIGhOky1WijOegP+ZXA5Z0O  k8IslHSNciBRQyj4OLoCAeSoWHkOYM39Ck7hvYW96p9J6RuvpiOHQJJ/fNYPMApu3WBLKNlnlnFHvD++7WOdlqlDOJHzhwEa7/hQLhL1ZuZntC9FUmedoaAs/m9oanHOFiEc7sKuZHeud9jr59dR243h1RWtO969c2GlYXCsDGdty+AK8alV8cPK8lnzyg==<span style="color:#070;font-weight:bold">&lt;/SignatureValue&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;KeyInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;X509Data&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509SubjectName&gt;</span>CN=Manoj Sahu,OU=Operations,O=Wirecard Elastic Payments,L=Toronto,ST=ON,C=CA<span style="color:#070;font-weight:bold">&lt;/X509SubjectName&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509Certificate&gt;</span>MIIDcDCCAligAwIBAgIETgQWGTANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJDQTELMAkGA1UECBMCT04xEDAOBgNVBAcTB1Rvcm9udG8xIjAgBgNVBAoTGVdpcmVjYXJkIEVsYXN0aWMgUGF5bWV
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span>  <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elasticpayments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>fe6c560b-5f28-4e0a-9bde-cee067f97ed6<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>18aa5cce-02bf-11e5-820d-0050b65c678c<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>${same as in request}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2015-05-25T11:19:08.000+02:00<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay-gw-key</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">TestPaySK</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trustpay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>elasticpayment-page<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;Signature</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;SignedInfo&gt;</span>
+            <span class="tag">&lt;CanonicalizationMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;SignatureMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#rsa-sha1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;Reference</span> <span class="attribute-name">URI</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+                <span class="tag">&lt;Transforms&gt;</span>
+                    <span class="tag">&lt;Transform</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;/Transforms&gt;</span>
+                <span class="tag">&lt;DigestMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#sha1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;DigestValue&gt;</span>Kfa5oTQpkAwP1xHzOopLzNDl+f8=<span class="tag">&lt;/DigestValue&gt;</span>
+            <span class="tag">&lt;/Reference&gt;</span>
+        <span class="tag">&lt;/SignedInfo&gt;</span>
+        <span class="tag">&lt;SignatureValue&gt;</span>aS9Bz6344fgDCrLGLmoA5hh1yOrT8QmaVZImeSw9YoGzte7j7IHldj5O7FHa6yw3NXHsBlPqM/j6yoAX/zpb1sbNvQ9kfiZe0uQs9QIDM4V9hcUMuoAz0gZEnlCCLGoTZeIGhOky1WijOegP+ZXA5Z0O  k8IslHSNciBRQyj4OLoCAeSoWHkOYM39Ck7hvYW96p9J6RuvpiOHQJJ/fNYPMApu3WBLKNlnlnFHvD++7WOdlqlDOJHzhwEa7/hQLhL1ZuZntC9FUmedoaAs/m9oanHOFiEc7sKuZHeud9jr59dR243h1RWtO969c2GlYXCsDGdty+AK8alV8cPK8lnzyg==<span class="tag">&lt;/SignatureValue&gt;</span>
+        <span class="tag">&lt;KeyInfo&gt;</span>
+            <span class="tag">&lt;X509Data&gt;</span>
+                <span class="tag">&lt;X509SubjectName&gt;</span>CN=Manoj Sahu,OU=Operations,O=Wirecard Elastic Payments,L=Toronto,ST=ON,C=CA<span class="tag">&lt;/X509SubjectName&gt;</span>
+                <span class="tag">&lt;X509Certificate&gt;</span>MIIDcDCCAligAwIBAgIETgQWGTANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJDQTELMAkGA1UECBMCT04xEDAOBgNVBAcTB1Rvcm9udG8xIjAgBgNVBAoTGVdpcmVjYXJkIEVsYXN0aWMgUGF5bWV
                 udHMxEzARBgNVBAsTCk9wZXJhdGlvbnMxEzARBgNVBAMTCk1hbm9qIFNhaHUwHhcNMTEwNjI0MDQ0NDA5WhcNMTQwMzIwMDQ0NDA5WjB6MQswCQYDVQQGEwJDQTELMAkGA1UECBMCT04xEDAOBg
                 NVBAcTB1Rvcm9udG8xIjAgBgNVBAoTGVdpcmVjYXJkIEVsYXN0aWMgUGF5bWVudHMxEzARBgNVBAsTCk9w
 ZXJhdGlvbnMxEzARBgNVBAMTCk1hbm9qIFNhaHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
@@ -6611,11 +6611,11 @@ ADgkuN/e2IFy7JXdbjNJbKBd3HLvFvK87dv8qQ+HK4qfCxYXh6aYhbKHJSA6C2pbOD3HBXoyovZr
 mk/KqOyUL+unVcR+APjxX4KP25sdkplgmeQ47CWxtKAHZUTtWwAVI/WhsX89SSucBfIS5TJ54e7m
 02qvGoK8UA/IRbIQ6DZ9hEKV5VQKiMx3ubwwHGXfOWz2fKmeZBuTeY+HiTEH8KCHpfw2j8G+dDgU
 jlp9LvjVNmJzfNBBk1Si0d/rhXmMzVSKj08tp1sPRK0/sJtJZBzQajpnsZ9NFfoJNdG13AzYwDP3
-x/QspK0jYn1KZw1qz524VWoQoueR8Xj30A2jntA=<span style="color:#070;font-weight:bold">&lt;/X509Certificate&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/X509Data&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/KeyInfo&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/Signature</span> <span style="color:#F00;background-color:#FAA">&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+x/QspK0jYn1KZw1qz524VWoQoueR8Xj30A2jntA=<span class="tag">&lt;/X509Certificate&gt;</span>
+            <span class="tag">&lt;/X509Data&gt;</span>
+        <span class="tag">&lt;/KeyInfo&gt;</span>
+    <span class="tag">&lt;/Signature</span> <span class="error">&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6628,9 +6628,10 @@ x/QspK0jYn1KZw1qz524VWoQoueR8Xj30A2jntA=<span style="color:#070;font-weight:bold
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

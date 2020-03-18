@@ -6182,50 +6182,50 @@ remain unmatched.</p>
 <div class="listingblock">
 <div class="title">XML deposit Notification</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>7d10ba14-5527-45de-85f5-2aaede73c225<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>8486a305-59fe-488d-bf63-8255ad5d3d68<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>88541df6-a5af-4c2a-ae71-44c0b17ae494-deposit<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>deposit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2018-03-26T12:41:03.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">bank:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10.01<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>a88b4b46-f288-432a-b800-829976a11577<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;descriptor&gt;</span>SONI MR-01<span style="color:#070;font-weight:bold">&lt;/descriptor&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">wiretransfer</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;provider-transaction-reference-id&gt;</span>E98FABD066<span style="color:#070;font-weight:bold">&lt;/provider-transaction-reference-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;Signature</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignedInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;CanonicalizationMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;SignatureMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;Reference</span> <span style="color:#b48">URI</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;Transforms&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;Transform</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;/Transforms&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;DigestMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2001/04/xmlenc#sha256</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;DigestValue&gt;</span>DMS2y5xxPoDnm/QXEFX/jQZXWsS/O7Ydtw1Gbe5U9jE=<span style="color:#070;font-weight:bold">&lt;/DigestValue&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/Reference&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/SignedInfo&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignatureValue&gt;</span>pS2QkXfqI4buhzyzp2fYbTC3SBeSNe0/LDVRw6GlF1FNkh9rq0V740/12k4S5iYtaxBPXishkZVFw0sVCnaTrNhOqBjaUG6UAL0+tmaxQwgLhJojwZCM9jnovT1ShwGXkYU7wWJxX20Ue2MnoputiTkMV5sDNYY/TElP5kwoe+2oVxLZbGpgbmyvSnJwpzpb32a8wrTxRRgBnHy3Vvo2FcyojliV1H+EI+WDBL6RycEQPHT48d0E7tu0oIUTz0y3jNV4H5oaxQ0KLKMOBkGGDJ4N5zWc39oqjQh/fzvtcvVyreVuQR27s+w6NltPRUYHxhheRi+WnZtS5FXKc+TcDyw7ya7dBfMxhUBAdXPBkd2TqH7ty8bgVmUGEC39Eazb1XG+3jpBmHIbUMTP2C0HFeNFmlb6Y7zYoQIcc+dXQzWJRIXz1QTr20Q7tjkataeTKzupo55JLyw8BCrFJi4kL8SgrInODj9utjJvPgIbA/vt1KDwVvkWoHh9ejIuQhddxePqmywufsWt1YNw/pkQ8g056l2Lc2QhRWdbT3MWesPVLUtl1UJaxmCmOdIUCHPwj9Xw5uO0zeJICdnxBPtBKCEX6hOUqptw9AZvtSlUEfmhJJE1O722uYy+6MoAzVthLOukeANaegesjpEYE8pnImicgRLmsRDalO0V8E6jL9g=<span style="color:#070;font-weight:bold">&lt;/SignatureValue&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;KeyInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;X509Data&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509SubjectName&gt;</span>L=Ascheim,CN=engine.wirecard.sys,OU=Operations,O=Wirecard Technologies GmbH,C=DE<span style="color:#070;font-weight:bold">&lt;/X509SubjectName&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509Certificate&gt;</span>MIIF0DCCBLigAwIBAgICK8EwDQYJKoZIhvcNAQELBQAwWzELMAkGA1UEBhMCREUxETAPBgNVBAoTCFdpcmVjYXJkMTkwNwYDVQQDFDB3aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIwHhcNMTYwNTIwMDc1MDI0WhcNMTgwNTIwMDc1MDI0WjB3MQswCQYDVQQGEwJERTEjMCEGA1UEChMaV2lyZWNhcmQgVGVjaG5vbG9naWVzIEdtYkgxEzARBgNVBAsTCk9wZXJhdGlvbnMxHDAaBgNVBAMTE2VuZ2luZS53aXJlY2FyZC5zeXMxEDAOBgNVBAcTB0FzY2hlaW0wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDyqm9WQZish8wxW5WOB0m/kunHIcOC5DC8aEk55S4uf9hRi16+Fkg1y626GC//0eXVle+leUhF/e9e4wfqt/2wVNwkjhy2ww5uT2ZqojzvGyCAjnyDIr4C6+6Ezz9FZ1h2lNsbNRuKSoahTdycGAqduj5xjpiuNAnmh1EAZEYWSmR/QvY+PTV6+ltZAl5WlVCmTHuBUqvMUEOfMew5B7iA1BDUZ508l76cfTKHOu15kqA5ajxaAC/DeawCPSCdsdOTsWSVbKvn5FM8VK29Ah699XWi85sG5uniklhyDKuaHPplrL7+9eA1XaFSsaOc+obDRe2lus8YmIUMvaSsDfglZOGq8VLrDIXo2i4WC2AiNFtLNC/bndxrrYRd2+Rb5VviNblcQu1pfWTDd2SWKtyegg558UAAAgM2kJ4EUujCKp2t9EOELJZ2yHABTIySkuCkeLJfpqL6bGQJEZlzgtEE6hS1ywPjPMNg2F1BKGNH79KK8GvehWYDX4VfKoTROVHqc5ODxWGBoZ+mxHWiwLZ96KBniMBnoTuXTi5op7/0sW8F8ykd9kE6yH2d8YQMTQ6PAY4DG6KpsC0J2zE4P+iGfDeMnoud9Zws24ogf/mTag13URkYpYKpAglwuSHcciZgfGXSrmne+MspKbO24Ny0wZP3suY9ssNfyLooSlMfXwIDAQABo4IBgDCCAXwwEQYDVR0OBAoECEDpj0A8MIh/MBMGA1UdIwQMMAqACENsHhbUPQUOMAsGA1UdDwQEAwIE8DCCAUMGA1UdHwSCATowggE2MIIBMqCCAS6gggEqhoHVbGRhcDovL3dpcmVjYXJkLmxhbi9DTj13aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIsQ049Q0RQLENOPVB1YmxpYyBLZXkgU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixkYz13aXJlY2FyZCxkYz1sYW4/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPUNSTERpc3RyaWJ1dGlvblBvaW50hlBodHRwOi8vY3JsLndpcmVjYXJkLmxhbi9DUkxfd2lyZWNhcmQtRFEtTVVDLWludGVybmFsLXdlYnNlcnZpY2UtaXNzdWluZ0NBXzAyLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAmCbqd802pphK0hwKDcQ4mctQk1tXXS38+016QDOh/uJTzmG5WqFZfoXZ8GYwMl5zjE6g+ciuVv3q393gLLZdZrUHEOKS1xj8xWjUQd4uNDJPXY1RamPBDptahn6/AIR89UFDaN37L3fI7EfLqTHpbD92ZGVssmt/0cjd9ekNGN66dEJB0YGBZTVEALhwYF1KtcxiLo2b1KnbmKLgnldF6RwP6p93fpO29mQxw4ePU2/+GyWmYW053ObAYqMVNelLc2Fj4W82El2Gbw/rFBiNM9qBpYS8YkMwsmTr0m49AsI2H401KBwfR4Ci1zUXfZjWchIZjjEVeIR7gMTOl+/Cog==<span style="color:#070;font-weight:bold">&lt;/X509Certificate&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/X509Data&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/KeyInfo&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/Signature&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>7d10ba14-5527-45de-85f5-2aaede73c225<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>8486a305-59fe-488d-bf63-8255ad5d3d68<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>88541df6-a5af-4c2a-ae71-44c0b17ae494-deposit<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>deposit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2018-03-26T12:41:03.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">bank:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>a88b4b46-f288-432a-b800-829976a11577<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>SONI MR-01<span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">wiretransfer</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;provider-transaction-reference-id&gt;</span>E98FABD066<span class="tag">&lt;/provider-transaction-reference-id&gt;</span>
+    <span class="tag">&lt;Signature</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;SignedInfo&gt;</span>
+            <span class="tag">&lt;CanonicalizationMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;SignatureMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;Reference</span> <span class="attribute-name">URI</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+                <span class="tag">&lt;Transforms&gt;</span>
+                    <span class="tag">&lt;Transform</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;/Transforms&gt;</span>
+                <span class="tag">&lt;DigestMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/04/xmlenc#sha256</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;DigestValue&gt;</span>DMS2y5xxPoDnm/QXEFX/jQZXWsS/O7Ydtw1Gbe5U9jE=<span class="tag">&lt;/DigestValue&gt;</span>
+            <span class="tag">&lt;/Reference&gt;</span>
+        <span class="tag">&lt;/SignedInfo&gt;</span>
+        <span class="tag">&lt;SignatureValue&gt;</span>pS2QkXfqI4buhzyzp2fYbTC3SBeSNe0/LDVRw6GlF1FNkh9rq0V740/12k4S5iYtaxBPXishkZVFw0sVCnaTrNhOqBjaUG6UAL0+tmaxQwgLhJojwZCM9jnovT1ShwGXkYU7wWJxX20Ue2MnoputiTkMV5sDNYY/TElP5kwoe+2oVxLZbGpgbmyvSnJwpzpb32a8wrTxRRgBnHy3Vvo2FcyojliV1H+EI+WDBL6RycEQPHT48d0E7tu0oIUTz0y3jNV4H5oaxQ0KLKMOBkGGDJ4N5zWc39oqjQh/fzvtcvVyreVuQR27s+w6NltPRUYHxhheRi+WnZtS5FXKc+TcDyw7ya7dBfMxhUBAdXPBkd2TqH7ty8bgVmUGEC39Eazb1XG+3jpBmHIbUMTP2C0HFeNFmlb6Y7zYoQIcc+dXQzWJRIXz1QTr20Q7tjkataeTKzupo55JLyw8BCrFJi4kL8SgrInODj9utjJvPgIbA/vt1KDwVvkWoHh9ejIuQhddxePqmywufsWt1YNw/pkQ8g056l2Lc2QhRWdbT3MWesPVLUtl1UJaxmCmOdIUCHPwj9Xw5uO0zeJICdnxBPtBKCEX6hOUqptw9AZvtSlUEfmhJJE1O722uYy+6MoAzVthLOukeANaegesjpEYE8pnImicgRLmsRDalO0V8E6jL9g=<span class="tag">&lt;/SignatureValue&gt;</span>
+        <span class="tag">&lt;KeyInfo&gt;</span>
+            <span class="tag">&lt;X509Data&gt;</span>
+                <span class="tag">&lt;X509SubjectName&gt;</span>L=Ascheim,CN=engine.wirecard.sys,OU=Operations,O=Wirecard Technologies GmbH,C=DE<span class="tag">&lt;/X509SubjectName&gt;</span>
+                <span class="tag">&lt;X509Certificate&gt;</span>MIIF0DCCBLigAwIBAgICK8EwDQYJKoZIhvcNAQELBQAwWzELMAkGA1UEBhMCREUxETAPBgNVBAoTCFdpcmVjYXJkMTkwNwYDVQQDFDB3aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIwHhcNMTYwNTIwMDc1MDI0WhcNMTgwNTIwMDc1MDI0WjB3MQswCQYDVQQGEwJERTEjMCEGA1UEChMaV2lyZWNhcmQgVGVjaG5vbG9naWVzIEdtYkgxEzARBgNVBAsTCk9wZXJhdGlvbnMxHDAaBgNVBAMTE2VuZ2luZS53aXJlY2FyZC5zeXMxEDAOBgNVBAcTB0FzY2hlaW0wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDyqm9WQZish8wxW5WOB0m/kunHIcOC5DC8aEk55S4uf9hRi16+Fkg1y626GC//0eXVle+leUhF/e9e4wfqt/2wVNwkjhy2ww5uT2ZqojzvGyCAjnyDIr4C6+6Ezz9FZ1h2lNsbNRuKSoahTdycGAqduj5xjpiuNAnmh1EAZEYWSmR/QvY+PTV6+ltZAl5WlVCmTHuBUqvMUEOfMew5B7iA1BDUZ508l76cfTKHOu15kqA5ajxaAC/DeawCPSCdsdOTsWSVbKvn5FM8VK29Ah699XWi85sG5uniklhyDKuaHPplrL7+9eA1XaFSsaOc+obDRe2lus8YmIUMvaSsDfglZOGq8VLrDIXo2i4WC2AiNFtLNC/bndxrrYRd2+Rb5VviNblcQu1pfWTDd2SWKtyegg558UAAAgM2kJ4EUujCKp2t9EOELJZ2yHABTIySkuCkeLJfpqL6bGQJEZlzgtEE6hS1ywPjPMNg2F1BKGNH79KK8GvehWYDX4VfKoTROVHqc5ODxWGBoZ+mxHWiwLZ96KBniMBnoTuXTi5op7/0sW8F8ykd9kE6yH2d8YQMTQ6PAY4DG6KpsC0J2zE4P+iGfDeMnoud9Zws24ogf/mTag13URkYpYKpAglwuSHcciZgfGXSrmne+MspKbO24Ny0wZP3suY9ssNfyLooSlMfXwIDAQABo4IBgDCCAXwwEQYDVR0OBAoECEDpj0A8MIh/MBMGA1UdIwQMMAqACENsHhbUPQUOMAsGA1UdDwQEAwIE8DCCAUMGA1UdHwSCATowggE2MIIBMqCCAS6gggEqhoHVbGRhcDovL3dpcmVjYXJkLmxhbi9DTj13aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIsQ049Q0RQLENOPVB1YmxpYyBLZXkgU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixkYz13aXJlY2FyZCxkYz1sYW4/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPUNSTERpc3RyaWJ1dGlvblBvaW50hlBodHRwOi8vY3JsLndpcmVjYXJkLmxhbi9DUkxfd2lyZWNhcmQtRFEtTVVDLWludGVybmFsLXdlYnNlcnZpY2UtaXNzdWluZ0NBXzAyLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAmCbqd802pphK0hwKDcQ4mctQk1tXXS38+016QDOh/uJTzmG5WqFZfoXZ8GYwMl5zjE6g+ciuVv3q393gLLZdZrUHEOKS1xj8xWjUQd4uNDJPXY1RamPBDptahn6/AIR89UFDaN37L3fI7EfLqTHpbD92ZGVssmt/0cjd9ekNGN66dEJB0YGBZTVEALhwYF1KtcxiLo2b1KnbmKLgnldF6RwP6p93fpO29mQxw4ePU2/+GyWmYW053ObAYqMVNelLc2Fj4W82El2Gbw/rFBiNM9qBpYS8YkMwsmTr0m49AsI2H401KBwfR4Ci1zUXfZjWchIZjjEVeIR7gMTOl+/Cog==<span class="tag">&lt;/X509Certificate&gt;</span>
+            <span class="tag">&lt;/X509Data&gt;</span>
+        <span class="tag">&lt;/KeyInfo&gt;</span>
+    <span class="tag">&lt;/Signature&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6327,61 +6327,61 @@ to the merchant.</p>
 <div class="listingblock">
 <div class="title">XML debit-return Notification</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>cd237c02-72fb-4fc4-a5ab-c965ba95b5a9<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>d7f4038d-3e37-403c-842f-9bfda761149c<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>e446b34c-c5f5-43c4-9b2b-a1415096c334-debit-return<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit-return<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2018-07-17T10:56:00.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0001</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">bank:Reason for the return was not specified by the debtor bank</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10.01<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>3fa23529-a93d-4701-8e60-b01e699f3709<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;descriptor&gt;</span>Sanho XS 234-T<span style="color:#070;font-weight:bold">&lt;/descriptor&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">sepadirectdebit</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;mandate&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;mandate-id&gt;</span>12345678<span style="color:#070;font-weight:bold">&lt;/mandate-id&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;signed-date&gt;</span>2018-07-17<span style="color:#070;font-weight:bold">&lt;/signed-date&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/mandate&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;creditor-id&gt;</span>DE98ZZZ09999999999<span style="color:#070;font-weight:bold">&lt;/creditor-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;due-date&gt;</span>2018-07-20T00:00:00.000Z<span style="color:#070;font-weight:bold">&lt;/due-date&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;consumer&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>Jack<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Smith<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/consumer&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;provider-transaction-reference-id&gt;</span>13DFDA6E77<span style="color:#070;font-weight:bold">&lt;/provider-transaction-reference-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;instrument-country&gt;</span>DE<span style="color:#070;font-weight:bold">&lt;/instrument-country&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;Signature</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;SignedInfo&gt;</span>
-          <span style="color:#070;font-weight:bold">&lt;CanonicalizationMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-          <span style="color:#070;font-weight:bold">&lt;SignatureMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-          <span style="color:#070;font-weight:bold">&lt;Reference</span> <span style="color:#b48">URI</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-             <span style="color:#070;font-weight:bold">&lt;Transforms&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;Transform</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-             <span style="color:#070;font-weight:bold">&lt;/Transforms&gt;</span>
-             <span style="color:#070;font-weight:bold">&lt;DigestMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2001/04/xmlenc#sha256</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-             <span style="color:#070;font-weight:bold">&lt;DigestValue&gt;</span>BiZCe3KfQqbKFo0cAw+4b17WylkhDMMp8ahMGaDzbPQ=<span style="color:#070;font-weight:bold">&lt;/DigestValue&gt;</span>
-          <span style="color:#070;font-weight:bold">&lt;/Reference&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;/SignedInfo&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;SignatureValue&gt;</span>k+QO8NDFgh5RQTMZCVjOhRJ82I6Tft8z2b2UF5a0M5f4iYycd93tG8qYXJZmdpiEXnpVZg2yVmZWAJD23N3/+aONjA1EAzv4egMNb4zDSfSjQ9px2udU0YKJmUfHueFMvdXCykVtk+osYvIgm+xYg6HSLQEiBstM3OS3Hwo1UkZf2Vn/8a/QbKVpxC2cNNQd95L0HuveDbGB+FNfBqf855gkxJIfLpmTfyDB9HD9SSwquGbRf0XeTpX0wthYQepEfWSNIWpaCgoVOSFMaLjMMsnjUwn3Gga7ZJKn4VLDlwi9KROZmm/86XyXYyoP8qEIGnJxAV0zj6fM35bmCcS/1ipWJG9bpngB1K95JF1zs/GSQ4nKVnPsQZs5ifoGiqSoJ+kq8C4KHv2VOng4TFEFcGxyfLfEUHuSNpshezEVtOVfVo3jNkVLLl9I8tLXF7+HiNHGzPXgY330iwzikIJZxpozem0KkLRCM0dn2lsFzSWkT9qS7kNuDsSUb0YRWDPdWVldBrtG8wRdgx/SeSeE8L+vk4MtmEPSE46X9IHhn4OEBu7pKE3RvuEThrRgtKNvLG1CX9+ke7wXuyRrT93OOunVoCRi7XJdUUIS0Aov9a1Xaf/jEa24AGoOTkj96RhnuAjhwy7P+qD7OBk+4MNQfLRwQE/n3U3SJ2aufE+ds30=<span style="color:#070;font-weight:bold">&lt;/SignatureValue&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;KeyInfo&gt;</span>
-          <span style="color:#070;font-weight:bold">&lt;X509Data&gt;</span>
-             <span style="color:#070;font-weight:bold">&lt;X509SubjectName&gt;</span>L=Ascheim,CN=engine.wirecard.sys,OU=Operations,O=Wirecard Technologies GmbH,C=DE<span style="color:#070;font-weight:bold">&lt;/X509SubjectName&gt;</span>
-             <span style="color:#070;font-weight:bold">&lt;X509Certificate&gt;</span>MIIF0DCCBLigAwIBAgICK8EwDQYJKoZIhvcNAQELBQAwWzELMAkGA1UEBhMCREUxETAPBgNVBAoTCFdpcmVjYXJkMTkwNwYDVQQDFDB3aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIwHhcNMTYwNTIwMDc1MDI0WhcNMTgwNTIwMDc1MDI0WjB3MQswCQYDVQQGEwJERTEjMCEGA1UEChMaV2lyZWNhcmQgVGVjaG5vbG9naWVzIEdtYkgxEzARBgNVBAsTCk9wZXJhdGlvbnMxHDAaBgNVBAMTE2VuZ2luZS53aXJlY2FyZC5zeXMxEDAOBgNVBAcTB0FzY2hlaW0wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDyqm9WQZish8wxW5WOB0m/kunHIcOC5DC8aEk55S4uf9hRi16+Fkg1y626GC//0eXVle+leUhF/e9e4wfqt/2wVNwkjhy2ww5uT2ZqojzvGyCAjnyDIr4C6+6Ezz9FZ1h2lNsbNRuKSoahTdycGAqduj5xjpiuNAnmh1EAZEYWSmR/QvY+PTV6+ltZAl5WlVCmTHuBUqvMUEOfMew5B7iA1BDUZ508l76cfTKHOu15kqA5ajxaAC/DeawCPSCdsdOTsWSVbKvn5FM8VK29Ah699XWi85sG5uniklhyDKuaHPplrL7+9eA1XaFSsaOc+obDRe2lus8YmIUMvaSsDfglZOGq8VLrDIXo2i4WC2AiNFtLNC/bndxrrYRd2+Rb5VviNblcQu1pfWTDd2SWKtyegg558UAAAgM2kJ4EUujCKp2t9EOELJZ2yHABTIySkuCkeLJfpqL6bGQJEZlzgtEE6hS1ywPjPMNg2F1BKGNH79KK8GvehWYDX4VfKoTROVHqc5ODxWGBoZ+mxHWiwLZ96KBniMBnoTuXTi5op7/0sW8F8ykd9kE6yH2d8YQMTQ6PAY4DG6KpsC0J2zE4P+iGfDeMnoud9Zws24ogf/mTag13URkYpYKpAglwuSHcciZgfGXSrmne+MspKbO24Ny0wZP3suY9ssNfyLooSlMfXwIDAQABo4IBgDCCAXwwEQYDVR0OBAoECEDpj0A8MIh/MBMGA1UdIwQMMAqACENsHhbUPQUOMAsGA1UdDwQEAwIE8DCCAUMGA1UdHwSCATowggE2MIIBMqCCAS6gggEqhoHVbGRhcDovL3dpcmVjYXJkLmxhbi9DTj13aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIsQ049Q0RQLENOPVB1YmxpYyBLZXkgU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixkYz13aXJlY2FyZCxkYz1sYW4/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPUNSTERpc3RyaWJ1dGlvblBvaW50hlBodHRwOi8vY3JsLndpcmVjYXJkLmxhbi9DUkxfd2lyZWNhcmQtRFEtTVVDLWludGVybmFsLXdlYnNlcnZpY2UtaXNzdWluZ0NBXzAyLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAmCbqd802pphK0hwKDcQ4mctQk1tXXS38+016QDOh/uJTzmG5WqFZfoXZ8GYwMl5zjE6g+ciuVv3q393gLLZdZrUHEOKS1xj8xWjUQd4uNDJPXY1RamPBDptahn6/AIR89UFDaN37L3fI7EfLqTHpbD92ZGVssmt/0cjd9ekNGN66dEJB0YGBZTVEALhwYF1KtcxiLo2b1KnbmKLgnldF6RwP6p93fpO29mQxw4ePU2/+GyWmYW053ObAYqMVNelLc2Fj4W82El2Gbw/rFBiNM9qBpYS8YkMwsmTr0m49AsI2H401KBwfR4Ci1zUXfZjWchIZjjEVeIR7gMTOl+/Cog==<span style="color:#070;font-weight:bold">&lt;/X509Certificate&gt;</span>
-          <span style="color:#070;font-weight:bold">&lt;/X509Data&gt;</span>
-       <span style="color:#070;font-weight:bold">&lt;/KeyInfo&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/Signature&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>cd237c02-72fb-4fc4-a5ab-c965ba95b5a9<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>d7f4038d-3e37-403c-842f-9bfda761149c<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>e446b34c-c5f5-43c4-9b2b-a1415096c334-debit-return<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit-return<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2018-07-17T10:56:00.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+       <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0001</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">bank:Reason for the return was not specified by the debtor bank</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>3fa23529-a93d-4701-8e60-b01e699f3709<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+       <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+       <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>Sanho XS 234-T<span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+       <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">sepadirectdebit</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;mandate&gt;</span>
+       <span class="tag">&lt;mandate-id&gt;</span>12345678<span class="tag">&lt;/mandate-id&gt;</span>
+       <span class="tag">&lt;signed-date&gt;</span>2018-07-17<span class="tag">&lt;/signed-date&gt;</span>
+    <span class="tag">&lt;/mandate&gt;</span>
+    <span class="tag">&lt;creditor-id&gt;</span>DE98ZZZ09999999999<span class="tag">&lt;/creditor-id&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;due-date&gt;</span>2018-07-20T00:00:00.000Z<span class="tag">&lt;/due-date&gt;</span>
+    <span class="tag">&lt;consumer&gt;</span>
+       <span class="tag">&lt;first-name&gt;</span>Jack<span class="tag">&lt;/first-name&gt;</span>
+       <span class="tag">&lt;last-name&gt;</span>Smith<span class="tag">&lt;/last-name&gt;</span>
+    <span class="tag">&lt;/consumer&gt;</span>
+    <span class="tag">&lt;provider-transaction-reference-id&gt;</span>13DFDA6E77<span class="tag">&lt;/provider-transaction-reference-id&gt;</span>
+    <span class="tag">&lt;instrument-country&gt;</span>DE<span class="tag">&lt;/instrument-country&gt;</span>
+    <span class="tag">&lt;Signature</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+       <span class="tag">&lt;SignedInfo&gt;</span>
+          <span class="tag">&lt;CanonicalizationMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+          <span class="tag">&lt;SignatureMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+          <span class="tag">&lt;Reference</span> <span class="attribute-name">URI</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+             <span class="tag">&lt;Transforms&gt;</span>
+                <span class="tag">&lt;Transform</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+             <span class="tag">&lt;/Transforms&gt;</span>
+             <span class="tag">&lt;DigestMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/04/xmlenc#sha256</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+             <span class="tag">&lt;DigestValue&gt;</span>BiZCe3KfQqbKFo0cAw+4b17WylkhDMMp8ahMGaDzbPQ=<span class="tag">&lt;/DigestValue&gt;</span>
+          <span class="tag">&lt;/Reference&gt;</span>
+       <span class="tag">&lt;/SignedInfo&gt;</span>
+       <span class="tag">&lt;SignatureValue&gt;</span>k+QO8NDFgh5RQTMZCVjOhRJ82I6Tft8z2b2UF5a0M5f4iYycd93tG8qYXJZmdpiEXnpVZg2yVmZWAJD23N3/+aONjA1EAzv4egMNb4zDSfSjQ9px2udU0YKJmUfHueFMvdXCykVtk+osYvIgm+xYg6HSLQEiBstM3OS3Hwo1UkZf2Vn/8a/QbKVpxC2cNNQd95L0HuveDbGB+FNfBqf855gkxJIfLpmTfyDB9HD9SSwquGbRf0XeTpX0wthYQepEfWSNIWpaCgoVOSFMaLjMMsnjUwn3Gga7ZJKn4VLDlwi9KROZmm/86XyXYyoP8qEIGnJxAV0zj6fM35bmCcS/1ipWJG9bpngB1K95JF1zs/GSQ4nKVnPsQZs5ifoGiqSoJ+kq8C4KHv2VOng4TFEFcGxyfLfEUHuSNpshezEVtOVfVo3jNkVLLl9I8tLXF7+HiNHGzPXgY330iwzikIJZxpozem0KkLRCM0dn2lsFzSWkT9qS7kNuDsSUb0YRWDPdWVldBrtG8wRdgx/SeSeE8L+vk4MtmEPSE46X9IHhn4OEBu7pKE3RvuEThrRgtKNvLG1CX9+ke7wXuyRrT93OOunVoCRi7XJdUUIS0Aov9a1Xaf/jEa24AGoOTkj96RhnuAjhwy7P+qD7OBk+4MNQfLRwQE/n3U3SJ2aufE+ds30=<span class="tag">&lt;/SignatureValue&gt;</span>
+       <span class="tag">&lt;KeyInfo&gt;</span>
+          <span class="tag">&lt;X509Data&gt;</span>
+             <span class="tag">&lt;X509SubjectName&gt;</span>L=Ascheim,CN=engine.wirecard.sys,OU=Operations,O=Wirecard Technologies GmbH,C=DE<span class="tag">&lt;/X509SubjectName&gt;</span>
+             <span class="tag">&lt;X509Certificate&gt;</span>MIIF0DCCBLigAwIBAgICK8EwDQYJKoZIhvcNAQELBQAwWzELMAkGA1UEBhMCREUxETAPBgNVBAoTCFdpcmVjYXJkMTkwNwYDVQQDFDB3aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIwHhcNMTYwNTIwMDc1MDI0WhcNMTgwNTIwMDc1MDI0WjB3MQswCQYDVQQGEwJERTEjMCEGA1UEChMaV2lyZWNhcmQgVGVjaG5vbG9naWVzIEdtYkgxEzARBgNVBAsTCk9wZXJhdGlvbnMxHDAaBgNVBAMTE2VuZ2luZS53aXJlY2FyZC5zeXMxEDAOBgNVBAcTB0FzY2hlaW0wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDyqm9WQZish8wxW5WOB0m/kunHIcOC5DC8aEk55S4uf9hRi16+Fkg1y626GC//0eXVle+leUhF/e9e4wfqt/2wVNwkjhy2ww5uT2ZqojzvGyCAjnyDIr4C6+6Ezz9FZ1h2lNsbNRuKSoahTdycGAqduj5xjpiuNAnmh1EAZEYWSmR/QvY+PTV6+ltZAl5WlVCmTHuBUqvMUEOfMew5B7iA1BDUZ508l76cfTKHOu15kqA5ajxaAC/DeawCPSCdsdOTsWSVbKvn5FM8VK29Ah699XWi85sG5uniklhyDKuaHPplrL7+9eA1XaFSsaOc+obDRe2lus8YmIUMvaSsDfglZOGq8VLrDIXo2i4WC2AiNFtLNC/bndxrrYRd2+Rb5VviNblcQu1pfWTDd2SWKtyegg558UAAAgM2kJ4EUujCKp2t9EOELJZ2yHABTIySkuCkeLJfpqL6bGQJEZlzgtEE6hS1ywPjPMNg2F1BKGNH79KK8GvehWYDX4VfKoTROVHqc5ODxWGBoZ+mxHWiwLZ96KBniMBnoTuXTi5op7/0sW8F8ykd9kE6yH2d8YQMTQ6PAY4DG6KpsC0J2zE4P+iGfDeMnoud9Zws24ogf/mTag13URkYpYKpAglwuSHcciZgfGXSrmne+MspKbO24Ny0wZP3suY9ssNfyLooSlMfXwIDAQABo4IBgDCCAXwwEQYDVR0OBAoECEDpj0A8MIh/MBMGA1UdIwQMMAqACENsHhbUPQUOMAsGA1UdDwQEAwIE8DCCAUMGA1UdHwSCATowggE2MIIBMqCCAS6gggEqhoHVbGRhcDovL3dpcmVjYXJkLmxhbi9DTj13aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIsQ049Q0RQLENOPVB1YmxpYyBLZXkgU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixkYz13aXJlY2FyZCxkYz1sYW4/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPUNSTERpc3RyaWJ1dGlvblBvaW50hlBodHRwOi8vY3JsLndpcmVjYXJkLmxhbi9DUkxfd2lyZWNhcmQtRFEtTVVDLWludGVybmFsLXdlYnNlcnZpY2UtaXNzdWluZ0NBXzAyLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAmCbqd802pphK0hwKDcQ4mctQk1tXXS38+016QDOh/uJTzmG5WqFZfoXZ8GYwMl5zjE6g+ciuVv3q393gLLZdZrUHEOKS1xj8xWjUQd4uNDJPXY1RamPBDptahn6/AIR89UFDaN37L3fI7EfLqTHpbD92ZGVssmt/0cjd9ekNGN66dEJB0YGBZTVEALhwYF1KtcxiLo2b1KnbmKLgnldF6RwP6p93fpO29mQxw4ePU2/+GyWmYW053ObAYqMVNelLc2Fj4W82El2Gbw/rFBiNM9qBpYS8YkMwsmTr0m49AsI2H401KBwfR4Ci1zUXfZjWchIZjjEVeIR7gMTOl+/Cog==<span class="tag">&lt;/X509Certificate&gt;</span>
+          <span class="tag">&lt;/X509Data&gt;</span>
+       <span class="tag">&lt;/KeyInfo&gt;</span>
+    <span class="tag">&lt;/Signature&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6641,9 +6641,10 @@ returned due to technical problems.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

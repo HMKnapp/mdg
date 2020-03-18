@@ -6076,67 +6076,67 @@ the same as the <a href="RestApi_Fields.html">REST API Fields</a>.</p>
 <div class="listingblock">
 <div class="title">XML get-url Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>8ab4479d-0455-44d6-b2ce-55c5fe360de6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>get-url<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">ZAR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10.01<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>tech.pdi-gw@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;phone&gt;</span>+1(1)4161234567<span style="color:#070;font-weight:bold">&lt;/phone&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;address&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street1&gt;</span>353 Red Spring<span style="color:#070;font-weight:bold">&lt;/street1&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street2&gt;</span>942 Dusty Crescent<span style="color:#070;font-weight:bold">&lt;/street2&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;city&gt;</span>Brantford<span style="color:#070;font-weight:bold">&lt;/city&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;state&gt;</span>ON<span style="color:#070;font-weight:bold">&lt;/state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;country&gt;</span>CA<span style="color:#070;font-weight:bold">&lt;/country&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;postal-code&gt;</span>M4P1E8<span style="color:#070;font-weight:bold">&lt;/postal-code&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">mobicred</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>8ab4479d-0455-44d6-b2ce-55c5fe360de6<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">ZAR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>tech.pdi-gw@wirecard.com<span class="tag">&lt;/email&gt;</span>
+        <span class="tag">&lt;phone&gt;</span>+1(1)4161234567<span class="tag">&lt;/phone&gt;</span>
+        <span class="tag">&lt;address&gt;</span>
+            <span class="tag">&lt;street1&gt;</span>353 Red Spring<span class="tag">&lt;/street1&gt;</span>
+            <span class="tag">&lt;street2&gt;</span>942 Dusty Crescent<span class="tag">&lt;/street2&gt;</span>
+            <span class="tag">&lt;city&gt;</span>Brantford<span class="tag">&lt;/city&gt;</span>
+            <span class="tag">&lt;state&gt;</span>ON<span class="tag">&lt;/state&gt;</span>
+            <span class="tag">&lt;country&gt;</span>CA<span class="tag">&lt;/country&gt;</span>
+            <span class="tag">&lt;postal-code&gt;</span>M4P1E8<span class="tag">&lt;/postal-code&gt;</span>
+        <span class="tag">&lt;/address&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">mobicred</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML get-url Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>8ab4479d-0455-44d6-b2ce-55c5fe360de6<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>77a706aa-619c-4bd2-b300-0aac009431dd<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>3e536f81-5a24-4fa5-9e61-15e8cb59ece8<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>get-url<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-05T14:28:37.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">ZAR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10.01<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>tech.pdi-gw@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;phone&gt;</span>+1(1)4161234567<span style="color:#070;font-weight:bold">&lt;/phone&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;address&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street1&gt;</span>353 Red Spring<span style="color:#070;font-weight:bold">&lt;/street1&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street2&gt;</span>942 Dusty Crescent<span style="color:#070;font-weight:bold">&lt;/street2&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;city&gt;</span>Brantford<span style="color:#070;font-weight:bold">&lt;/city&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;state&gt;</span>ON<span style="color:#070;font-weight:bold">&lt;/state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;country&gt;</span>CA<span style="color:#070;font-weight:bold">&lt;/country&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;postal-code&gt;</span>M4P1E8<span style="color:#070;font-weight:bold">&lt;/postal-code&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://virtual.mygateglobal.com/PaymentPage.cfm?MerchantReference=3e536f81-5a24-4fa5-9e61-15e8cb59ece8</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">Mode=0</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">Amount=10.01</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">Display_Price=10.01</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">OrderRef=</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">OrderDescription=</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">MerchantID=BAAB2819-7286-49D3-8AD3-1212B3B40C2A</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">DisplayCurrencyCode=ZAR</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">RedirectSuccessfulURL=https%3A%2F%2Fdev.thesolution.com%2Fengine%2Fnotification%2Fmygate-virtual%2Fredirect%2F77a706aa-619c-4bd2-b300-0aac009431dd</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">VARIABLE=77a706aa-619c-4bd2-b300-0aac009431dd</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">Currency=ZAR</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">ApplicationID=76B2B901-98A8-45FF-9F1E-17A829A73F6C</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">RedirectFailedURL=https%3A%2F%2Fdev.thesolution.com%2Fengine%2Fnotification%2Fmygate-virtual%2Fredirect%2F77a706aa-619c-4bd2-b300-0aac009431dd</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">IPAddress=127.0.0.1</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">mobicred</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>8ab4479d-0455-44d6-b2ce-55c5fe360de6<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>77a706aa-619c-4bd2-b300-0aac009431dd<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>3e536f81-5a24-4fa5-9e61-15e8cb59ece8<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-05T14:28:37.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">ZAR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>tech.pdi-gw@wirecard.com<span class="tag">&lt;/email&gt;</span>
+        <span class="tag">&lt;phone&gt;</span>+1(1)4161234567<span class="tag">&lt;/phone&gt;</span>
+        <span class="tag">&lt;address&gt;</span>
+            <span class="tag">&lt;street1&gt;</span>353 Red Spring<span class="tag">&lt;/street1&gt;</span>
+            <span class="tag">&lt;street2&gt;</span>942 Dusty Crescent<span class="tag">&lt;/street2&gt;</span>
+            <span class="tag">&lt;city&gt;</span>Brantford<span class="tag">&lt;/city&gt;</span>
+            <span class="tag">&lt;state&gt;</span>ON<span class="tag">&lt;/state&gt;</span>
+            <span class="tag">&lt;country&gt;</span>CA<span class="tag">&lt;/country&gt;</span>
+            <span class="tag">&lt;postal-code&gt;</span>M4P1E8<span class="tag">&lt;/postal-code&gt;</span>
+        <span class="tag">&lt;/address&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://virtual.mygateglobal.com/PaymentPage.cfm?MerchantReference=3e536f81-5a24-4fa5-9e61-15e8cb59ece8</span><span class="entity">&amp;amp;</span><span class="content">Mode=0</span><span class="entity">&amp;amp;</span><span class="content">Amount=10.01</span><span class="entity">&amp;amp;</span><span class="content">Display_Price=10.01</span><span class="entity">&amp;amp;</span><span class="content">OrderRef=</span><span class="entity">&amp;amp;</span><span class="content">OrderDescription=</span><span class="entity">&amp;amp;</span><span class="content">MerchantID=BAAB2819-7286-49D3-8AD3-1212B3B40C2A</span><span class="entity">&amp;amp;</span><span class="content">DisplayCurrencyCode=ZAR</span><span class="entity">&amp;amp;</span><span class="content">RedirectSuccessfulURL=https%3A%2F%2Fdev.thesolution.com%2Fengine%2Fnotification%2Fmygate-virtual%2Fredirect%2F77a706aa-619c-4bd2-b300-0aac009431dd</span><span class="entity">&amp;amp;</span><span class="content">VARIABLE=77a706aa-619c-4bd2-b300-0aac009431dd</span><span class="entity">&amp;amp;</span><span class="content">Currency=ZAR</span><span class="entity">&amp;amp;</span><span class="content">ApplicationID=76B2B901-98A8-45FF-9F1E-17A829A73F6C</span><span class="entity">&amp;amp;</span><span class="content">RedirectFailedURL=https%3A%2F%2Fdev.thesolution.com%2Fengine%2Fnotification%2Fmygate-virtual%2Fredirect%2F77a706aa-619c-4bd2-b300-0aac009431dd</span><span class="entity">&amp;amp;</span><span class="content">IPAddress=127.0.0.1</span><span class="entity">&amp;amp;</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">mobicred</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -6212,9 +6212,10 @@ This request opens the <em>Hosted Payment Page.</em>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

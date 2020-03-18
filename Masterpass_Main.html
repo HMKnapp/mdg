@@ -6638,55 +6638,55 @@ from the <a href="RestApi_Fields.html">REST API Fields</a>.</p>
 <div class="title">
 <em>request-checkout</em> Pairing and Checkout Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>93f7ade9-6fc5-e748-7781-4891f3624dfd<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>request-checkout<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-         <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api.merchant-origin</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://localhost/shop/masterpass/pairingredirect/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-type&gt;</span>pairing-and-checkout<span style="color:#070;font-weight:bold">&lt;/request-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;customer-id&gt;</span>unique-testid-003<span style="color:#070;font-weight:bold">&lt;/customer-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+ <span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>93f7ade9-6fc5-e748-7781-4891f3624dfd<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>request-checkout<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+         <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">elastic-api.merchant-origin</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://localhost/shop/masterpass/pairingredirect/</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/redirect-url&gt;</span>
+    <span class="tag">&lt;request-type&gt;</span>pairing-and-checkout<span class="tag">&lt;/request-type&gt;</span>
+    <span class="tag">&lt;customer-id&gt;</span>unique-testid-003<span class="tag">&lt;/customer-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">
 <em>request-checkout</em> Pairing and Checkout Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>f21b063d-ac12-4580-ad7d-549a783ee5ef<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>93f7ade9-6fc5-e748-7781-4891f3624dfd<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>request-checkout<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2016-11-04T00:24:31.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api.merchant-origin</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://localhost/shop/masterpass/pairingredirect/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://sandbox-engine.thesolution.com/engine/notification/masterpass/lightBoxPaymentPageoauth_token=e9b30de7ee4e6a7ff5a66bd1d12f16962ec371fa</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">acceptable_cards=visa,master</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">checkout_identifier=a4a6w4waeskkkhudnya4w1hveovoyzec5i</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">version=v6</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">callback=https%3A%2F%2Fsandbox-engine.thesolution.com%2Fengine%2Fnotification%2Fmasterpass%3Fpayment.transaction-id=f21b063d-ac12-4580-ad7d-549a783ee5ef%26payment.transaction-type=request-checkout%26payment.request-type=pairing-and-checkout%26payment.customer-id=unique-testid-003</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">lightboxurl=https%3A%2F%2Fsandbox.masterpass.com%2Flightbox%2FSwitch%2Fintegration%2FMasterPass.client.js</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">suppress_shipping_address=true</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">merchantOrigin=http%3A%2F%2Flocalhost%2Fshop%2Fmasterpass%2Fpairingredirect%2F</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;wallet&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;merchant-id&gt;</span>a4a6w4waeskkkhudnya4w1hveovoyzec5i<span style="color:#070;font-weight:bold">&lt;/merchant-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;request-token&gt;</span>699f3012198d2dc958d688a4d21a0c909ae0698f<span style="color:#070;font-weight:bold">&lt;/request-token&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;pair-token&gt;</span>c334d6e3a4fe3e078606206b1331172d11a70b09<span style="color:#070;font-weight:bold">&lt;/pair-token&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/wallet&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-type&gt;</span>pairing-and-checkout<span style="color:#070;font-weight:bold">&lt;/request-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;customer-id&gt;</span>unique-testid-003<span style="color:#070;font-weight:bold">&lt;/customer-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>f21b063d-ac12-4580-ad7d-549a783ee5ef<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>93f7ade9-6fc5-e748-7781-4891f3624dfd<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>request-checkout<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2016-11-04T00:24:31.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">elastic-api.merchant-origin</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://localhost/shop/masterpass/pairingredirect/</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://sandbox-engine.thesolution.com/engine/notification/masterpass/lightBoxPaymentPageoauth_token=e9b30de7ee4e6a7ff5a66bd1d12f16962ec371fa</span><span class="entity">&amp;amp;</span><span class="content">acceptable_cards=visa,master</span><span class="entity">&amp;amp;</span><span class="content">checkout_identifier=a4a6w4waeskkkhudnya4w1hveovoyzec5i</span><span class="entity">&amp;amp;</span><span class="content">version=v6</span><span class="entity">&amp;amp;</span><span class="content">callback=https%3A%2F%2Fsandbox-engine.thesolution.com%2Fengine%2Fnotification%2Fmasterpass%3Fpayment.transaction-id=f21b063d-ac12-4580-ad7d-549a783ee5ef%26payment.transaction-type=request-checkout%26payment.request-type=pairing-and-checkout%26payment.customer-id=unique-testid-003</span><span class="entity">&amp;amp;</span><span class="content">lightboxurl=https%3A%2F%2Fsandbox.masterpass.com%2Flightbox%2FSwitch%2Fintegration%2FMasterPass.client.js</span><span class="entity">&amp;amp;</span><span class="content">suppress_shipping_address=true</span><span class="entity">&amp;amp;</span><span class="content">merchantOrigin=http%3A%2F%2Flocalhost%2Fshop%2Fmasterpass%2Fpairingredirect%2F</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/redirect-url&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;merchant-id&gt;</span>a4a6w4waeskkkhudnya4w1hveovoyzec5i<span class="tag">&lt;/merchant-id&gt;</span>
+        <span class="tag">&lt;request-token&gt;</span>699f3012198d2dc958d688a4d21a0c909ae0698f<span class="tag">&lt;/request-token&gt;</span>
+        <span class="tag">&lt;pair-token&gt;</span>c334d6e3a4fe3e078606206b1331172d11a70b09<span class="tag">&lt;/pair-token&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+    <span class="tag">&lt;request-type&gt;</span>pairing-and-checkout<span class="tag">&lt;/request-type&gt;</span>
+    <span class="tag">&lt;customer-id&gt;</span>unique-testid-003<span class="tag">&lt;/customer-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -6705,109 +6705,109 @@ from the <a href="RestApi_Fields.html">REST API Fields</a>.</p>
 <div class="title">
 <em>request-checkout</em> Pairing only Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>ee597653-6dcd-3e45-f058-1dfbbeece7a8<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>request-checkout<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api.merchant-origin</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://localhost/shop/masterpass/pairingredirect/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-type&gt;</span>pairing<span style="color:#070;font-weight:bold">&lt;/request-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;customer-id&gt;</span>unique-testid-005<span style="color:#070;font-weight:bold">&lt;/customer-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ee597653-6dcd-3e45-f058-1dfbbeece7a8<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>request-checkout<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">elastic-api.merchant-origin</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://localhost/shop/masterpass/pairingredirect/</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/redirect-url&gt;</span>
+    <span class="tag">&lt;request-type&gt;</span>pairing<span class="tag">&lt;/request-type&gt;</span>
+    <span class="tag">&lt;customer-id&gt;</span>unique-testid-005<span class="tag">&lt;/customer-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">
 <em>request-checkout</em> Pairing only Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>1d0ca01d-f81d-4228-a287-27f3fbd048ee<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>ee597653-6dcd-3e45-f058-1dfbbeece7a8<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>request-checkout<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2016-11-01T07:23:16.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api.merchant-origin</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://localhost/shop/masterpass/pairingredirect/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://sandbox-engine.thesolution.com/engine/notification/masterpass/lightBoxPaymentPageoauth_token=e9b30de7ee4e6a7ff5a66bd1d12f16962ec371fa</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">acceptable_cards=visa,master</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">checkout_identifier=a4a6w4waeskkkhudnya4w1hveovoyzec5i</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">version=v6</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">callback=https%3A%2F%2Fsandbox-engine.thesolution.com%2Fengine%2Fnotification%2Fmasterpass%3Fpayment.transaction-id=1d0ca01d-f81d-4228-a287-27f3fbd048ee%26payment.transaction-type=request-checkout%26payment.request-type=pairing%26payment.customer-id=unique-testid-005</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">lightboxurl=https%3A%2F%2Fsandbox.masterpass.com%2Flightbox%2FSwitch%2Fintegration%2FMasterPass.client.js</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">suppress_shipping_address=true</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">merchantOrigin=http%3A%2F%2Flocalhost%2Fshop%2Fmasterpass%2Fpairingredirect%2F</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;wallet&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;merchant-id&gt;</span>a4a6w4waeskkkhudnya4w1hveovoyzec5i<span style="color:#070;font-weight:bold">&lt;/merchant-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;pair-token&gt;</span>7575d7fecaa79454a9615b1e78e1090db8f2e38c<span style="color:#070;font-weight:bold">&lt;/pair-token&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/wallet&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-type&gt;</span>pairing<span style="color:#070;font-weight:bold">&lt;/request-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;customer-id&gt;</span>unique-testid-005<span style="color:#070;font-weight:bold">&lt;/customer-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>1d0ca01d-f81d-4228-a287-27f3fbd048ee<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ee597653-6dcd-3e45-f058-1dfbbeece7a8<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>request-checkout<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2016-11-01T07:23:16.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">elastic-api.merchant-origin</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://localhost/shop/masterpass/pairingredirect/</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://sandbox-engine.thesolution.com/engine/notification/masterpass/lightBoxPaymentPageoauth_token=e9b30de7ee4e6a7ff5a66bd1d12f16962ec371fa</span><span class="entity">&amp;amp;</span><span class="content">acceptable_cards=visa,master</span><span class="entity">&amp;amp;</span><span class="content">checkout_identifier=a4a6w4waeskkkhudnya4w1hveovoyzec5i</span><span class="entity">&amp;amp;</span><span class="content">version=v6</span><span class="entity">&amp;amp;</span><span class="content">callback=https%3A%2F%2Fsandbox-engine.thesolution.com%2Fengine%2Fnotification%2Fmasterpass%3Fpayment.transaction-id=1d0ca01d-f81d-4228-a287-27f3fbd048ee%26payment.transaction-type=request-checkout%26payment.request-type=pairing%26payment.customer-id=unique-testid-005</span><span class="entity">&amp;amp;</span><span class="content">lightboxurl=https%3A%2F%2Fsandbox.masterpass.com%2Flightbox%2FSwitch%2Fintegration%2FMasterPass.client.js</span><span class="entity">&amp;amp;</span><span class="content">suppress_shipping_address=true</span><span class="entity">&amp;amp;</span><span class="content">merchantOrigin=http%3A%2F%2Flocalhost%2Fshop%2Fmasterpass%2Fpairingredirect%2F</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/redirect-url&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;merchant-id&gt;</span>a4a6w4waeskkkhudnya4w1hveovoyzec5i<span class="tag">&lt;/merchant-id&gt;</span>
+        <span class="tag">&lt;pair-token&gt;</span>7575d7fecaa79454a9615b1e78e1090db8f2e38c<span class="tag">&lt;/pair-token&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+    <span class="tag">&lt;request-type&gt;</span>pairing<span class="tag">&lt;/request-type&gt;</span>
+    <span class="tag">&lt;customer-id&gt;</span>unique-testid-005<span class="tag">&lt;/customer-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">
 <em>request-checkout</em> Pairing only Notification (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>1d0ca01d-f81d-4228-a287-27f3fbd048ee<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>ee597653-6dcd-3e45-f058-1dfbbeece7a8-request-checkout<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>request-checkout<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2016-11-01T07:24:48.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-items</span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;notifications&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;notification</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://requestb.in/1blbj011</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/notifications&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api.merchant-origin</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://localhost/shop/masterpass/pairingredirect/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://localhost/shop/rest/masterpass/requestcheckoutresponse/?</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;processing-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/processing-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;cancel-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/cancel-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;fail-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/fail-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;success-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/success-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>null<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;Signature</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignedInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;CanonicalizationMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;SignatureMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#rsa-sha1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;Reference</span> <span style="color:#b48">URI</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;Transforms&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;Transform</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/Transforms&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;DigestMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#sha1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;DigestValue&gt;</span>mCNvwYofUBmYuLGw1aezv3R7J64=<span style="color:#070;font-weight:bold">&lt;/DigestValue&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/Reference&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/SignedInfo&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignatureValue&gt;</span>cgPmcPbGt1rLPmkR9+Q0LNJdN62ucxP7YwPRuMfW2NyFYYL+BpxhDqEDoaAxfRkx/zKCDt7a5V+X 0hygOo0tQ5Bb1+ZIjq9uBcJbj4046GSgUhg60cuDYbTkCTKAH6pHmRXcviP4b9l1pYTUh7EQmYuC 5ncL5QG4JusAOhaCXI44nrzn2dNuh9eODAb7LDwHPHOhhg8IEWvMdqxHqmu2TvrVz7yjrb4Raf9Q CcFYxd94yqBBDMbmUqudHKVZc/02+0vjzffjyohPmI1QaTM/e4la/Pfm4zpjxIHWFiu0SV8Oe8PZ tnUxCdNT/Sq4SR1E8dvkhgyUeC5si4ace1cTiQ== <span style="color:#070;font-weight:bold">&lt;/SignatureValue&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;KeyInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;X509Data&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509SubjectName&gt;</span>CN=Sample Cert,OU=R<span style="color:#800;font-weight:bold">&amp;amp;</span>D,O=Company Ltd,L=Toronto,ST=ON,C=CA<span style="color:#070;font-weight:bold">&lt;/X509SubjectName&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509Certificate&gt;</span>MIIDcDCCAligAwIBAgIETgQWGTANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJDQTELMAkGA1UE CBMCT04xEDAOBgNVBAcTB1Rvcm9udG8xIjAgBgNVBAoTGVdpcmVjYXJkIEVsYXN0aWMgUGF5bWVu dHMxEzARBgNVBAsTCk9wZXJhdGlvbnMxEzARBgNVBAMTCk1hbm9qIFNhaHUwHhcNMTEwNjI0MDQ0 NDA5WhcNMTQwMzIwMDQ0NDA5WjB6MQswCQYDVQQGEwJDQTELMAkGA1UECBMCT04xEDAOBgNVBAcT B1Rvcm9udG8xIjAgBgNVBAoTGVdpcmVjYXJkIEVsYXN0aWMgUGF5bWVudHMxEzARBgNVBAsTCk9w ZXJhdGlvbnMxEzARBgNVBAMTCk1hbm9qIFNhaHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQCc8rTt4N5fNeVzlsRgOXKDE2YUSfJx7xXBozFZ3Vh3XQyy3IpIuEfZz7004k4HeonfTxCN etBvJ9rgNc0Cxrk/euMj3pOUrE9WYN2eAXC0r5pUIAZhIAnSxUSaIF3JKBxf7gDAik5d8RT5HaJV 4n5cXJQ/uhAEYU3EGN/74UrD2UsOYD3VBXTJS5VgSi/c3IyLwhDbYIyU6j4fMKyHIlAMGzW7VgKD 2pqu6BRysqUVdEEAvW2OmyVqGVyPkm87EiHSMMSar3CvYYxYqBN2KBUjabkvnRWbIzyQuyUyDeUb QmhVQKL0WlMb5ev65m2VjGyDTGL5jfB14rSXRMGzeJ+LAgMBAAEwDQYJKoZIhvcNAQEFBQADggEB ADgkuN/e2IFy7JXdbjNJbKBd3HLvFvK87dv8qQ+HK4qfCxYXh6aYhbKHJSA6C2pbOD3HBXoyovZr mk/KqOyUL+unVcR+APjxX4KP25sdkplgmeQ47CWxtKAHZUTtWwAVI/WhsX89SSucBfIS5TJ54e7m 02qvGoK8UA/IRbIQ6DZ9hEKV5VQKiMx3ubwwHGXfOWz2fKmeZBuTeY+HiTEH8KCHpfw2j8G+dDgU jlp9LvjVNmJzfNBBk1Si0d/rhXmMzVSKj08tp1sPRK0/sJtJZBzQajpnsZ9NFfoJNdG13AzYwDP3 x/QspK0jYn1KZw1qz524VWoQoueR8Xj30A2jntA= <span style="color:#070;font-weight:bold">&lt;/X509Certificate&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/X509Data&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/KeyInfo&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/Signature&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>1d0ca01d-f81d-4228-a287-27f3fbd048ee<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ee597653-6dcd-3e45-f058-1dfbbeece7a8-request-checkout<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>request-checkout<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2016-11-01T07:24:48.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;order-items</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://requestb.in/1blbj011</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">elastic-api.merchant-origin</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://localhost/shop/masterpass/pairingredirect/</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://localhost/shop/rest/masterpass/requestcheckoutresponse/?</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;processing-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/processing-redirect-url&gt;</span>
+    <span class="tag">&lt;cancel-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/cancel-redirect-url&gt;</span>
+    <span class="tag">&lt;fail-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/fail-redirect-url&gt;</span>
+    <span class="tag">&lt;success-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/success-redirect-url&gt;</span>
+    <span class="tag">&lt;locale&gt;</span>null<span class="tag">&lt;/locale&gt;</span>
+    <span class="tag">&lt;Signature</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;SignedInfo&gt;</span>
+            <span class="tag">&lt;CanonicalizationMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;SignatureMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#rsa-sha1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;Reference</span> <span class="attribute-name">URI</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;Transforms&gt;</span>
+                <span class="tag">&lt;Transform</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/Transforms&gt;</span>
+            <span class="tag">&lt;DigestMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#sha1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;DigestValue&gt;</span>mCNvwYofUBmYuLGw1aezv3R7J64=<span class="tag">&lt;/DigestValue&gt;</span>
+            <span class="tag">&lt;/Reference&gt;</span>
+        <span class="tag">&lt;/SignedInfo&gt;</span>
+        <span class="tag">&lt;SignatureValue&gt;</span>cgPmcPbGt1rLPmkR9+Q0LNJdN62ucxP7YwPRuMfW2NyFYYL+BpxhDqEDoaAxfRkx/zKCDt7a5V+X 0hygOo0tQ5Bb1+ZIjq9uBcJbj4046GSgUhg60cuDYbTkCTKAH6pHmRXcviP4b9l1pYTUh7EQmYuC 5ncL5QG4JusAOhaCXI44nrzn2dNuh9eODAb7LDwHPHOhhg8IEWvMdqxHqmu2TvrVz7yjrb4Raf9Q CcFYxd94yqBBDMbmUqudHKVZc/02+0vjzffjyohPmI1QaTM/e4la/Pfm4zpjxIHWFiu0SV8Oe8PZ tnUxCdNT/Sq4SR1E8dvkhgyUeC5si4ace1cTiQ== <span class="tag">&lt;/SignatureValue&gt;</span>
+        <span class="tag">&lt;KeyInfo&gt;</span>
+            <span class="tag">&lt;X509Data&gt;</span>
+                <span class="tag">&lt;X509SubjectName&gt;</span>CN=Sample Cert,OU=R<span class="entity">&amp;amp;</span>D,O=Company Ltd,L=Toronto,ST=ON,C=CA<span class="tag">&lt;/X509SubjectName&gt;</span>
+                <span class="tag">&lt;X509Certificate&gt;</span>MIIDcDCCAligAwIBAgIETgQWGTANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJDQTELMAkGA1UE CBMCT04xEDAOBgNVBAcTB1Rvcm9udG8xIjAgBgNVBAoTGVdpcmVjYXJkIEVsYXN0aWMgUGF5bWVu dHMxEzARBgNVBAsTCk9wZXJhdGlvbnMxEzARBgNVBAMTCk1hbm9qIFNhaHUwHhcNMTEwNjI0MDQ0 NDA5WhcNMTQwMzIwMDQ0NDA5WjB6MQswCQYDVQQGEwJDQTELMAkGA1UECBMCT04xEDAOBgNVBAcT B1Rvcm9udG8xIjAgBgNVBAoTGVdpcmVjYXJkIEVsYXN0aWMgUGF5bWVudHMxEzARBgNVBAsTCk9w ZXJhdGlvbnMxEzARBgNVBAMTCk1hbm9qIFNhaHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQCc8rTt4N5fNeVzlsRgOXKDE2YUSfJx7xXBozFZ3Vh3XQyy3IpIuEfZz7004k4HeonfTxCN etBvJ9rgNc0Cxrk/euMj3pOUrE9WYN2eAXC0r5pUIAZhIAnSxUSaIF3JKBxf7gDAik5d8RT5HaJV 4n5cXJQ/uhAEYU3EGN/74UrD2UsOYD3VBXTJS5VgSi/c3IyLwhDbYIyU6j4fMKyHIlAMGzW7VgKD 2pqu6BRysqUVdEEAvW2OmyVqGVyPkm87EiHSMMSar3CvYYxYqBN2KBUjabkvnRWbIzyQuyUyDeUb QmhVQKL0WlMb5ev65m2VjGyDTGL5jfB14rSXRMGzeJ+LAgMBAAEwDQYJKoZIhvcNAQEFBQADggEB ADgkuN/e2IFy7JXdbjNJbKBd3HLvFvK87dv8qQ+HK4qfCxYXh6aYhbKHJSA6C2pbOD3HBXoyovZr mk/KqOyUL+unVcR+APjxX4KP25sdkplgmeQ47CWxtKAHZUTtWwAVI/WhsX89SSucBfIS5TJ54e7m 02qvGoK8UA/IRbIQ6DZ9hEKV5VQKiMx3ubwwHGXfOWz2fKmeZBuTeY+HiTEH8KCHpfw2j8G+dDgU jlp9LvjVNmJzfNBBk1Si0d/rhXmMzVSKj08tp1sPRK0/sJtJZBzQajpnsZ9NFfoJNdG13AzYwDP3 x/QspK0jYn1KZw1qz524VWoQoueR8Xj30A2jntA= <span class="tag">&lt;/X509Certificate&gt;</span>
+            <span class="tag">&lt;/X509Data&gt;</span>
+        <span class="tag">&lt;/KeyInfo&gt;</span>
+    <span class="tag">&lt;/Signature&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6817,7 +6817,7 @@ merchant’s origin_url page</p>
 <div class="listingblock">
 <div class="title">Javascript Lightbox initialization</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="javascript">MasterPass.client.connect({ <span style="color:#606"><span style="color:#404">"</span><span>pairingRequestToken</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">7575d7fecaa79454a9615b1e78e1090db8f2e38c</span><span style="color:#710">"</span></span>, <span style="color:#606"><span style="color:#404">"</span><span>callbackUrl</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://sandbox-engine.thesolution.com/engine/notification/masterpass?payment.transaction-id=1d0ca01d-f81d-4228-a287-27f3fbd048ee&amp;payment.transaction-type=request-checkout&amp;payment.request-type=pairing&amp;payment.customer-id=unique-testid-005</span><span style="color:#710">"</span></span>, <span style="color:#606"><span style="color:#404">"</span><span>merchantCheckoutId</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">a4a6w4waeskkkhudnya4w1hveovoyzec5i</span><span style="color:#710">"</span></span>, <span style="color:#606"><span style="color:#404">"</span><span>requestedDataTypes</span><span style="color:#404">"</span></span>:[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">ADDRESS</span><span style="color:#710">"</span></span>,<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">PROFILE</span><span style="color:#710">"</span></span>,<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">CARD</span><span style="color:#710">"</span></span>], <span style="color:#606"><span style="color:#404">"</span><span>requestPairing</span><span style="color:#404">"</span></span>:<span style="color:#069">true</span>, <span style="color:#606"><span style="color:#404">"</span><span>requestExpressCheckout</span><span style="color:#404">"</span></span>:<span style="color:#069">true</span> });</code></pre>
+<pre class="CodeRay highlight"><code data-lang="javascript">MasterPass.client.connect({ <span class="key"><span class="delimiter">"</span><span class="content">pairingRequestToken</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">7575d7fecaa79454a9615b1e78e1090db8f2e38c</span><span class="delimiter">"</span></span>, <span class="key"><span class="delimiter">"</span><span class="content">callbackUrl</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">https://sandbox-engine.thesolution.com/engine/notification/masterpass?payment.transaction-id=1d0ca01d-f81d-4228-a287-27f3fbd048ee&amp;payment.transaction-type=request-checkout&amp;payment.request-type=pairing&amp;payment.customer-id=unique-testid-005</span><span class="delimiter">"</span></span>, <span class="key"><span class="delimiter">"</span><span class="content">merchantCheckoutId</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">a4a6w4waeskkkhudnya4w1hveovoyzec5i</span><span class="delimiter">"</span></span>, <span class="key"><span class="delimiter">"</span><span class="content">requestedDataTypes</span><span class="delimiter">"</span></span>:[<span class="string"><span class="delimiter">"</span><span class="content">ADDRESS</span><span class="delimiter">"</span></span>,<span class="string"><span class="delimiter">"</span><span class="content">PROFILE</span><span class="delimiter">"</span></span>,<span class="string"><span class="delimiter">"</span><span class="content">CARD</span><span class="delimiter">"</span></span>], <span class="key"><span class="delimiter">"</span><span class="content">requestPairing</span><span class="delimiter">"</span></span>:<span class="predefined-constant">true</span>, <span class="key"><span class="delimiter">"</span><span class="content">requestExpressCheckout</span><span class="delimiter">"</span></span>:<span class="predefined-constant">true</span> });</code></pre>
 </div>
 </div>
 </div>
@@ -6829,115 +6829,115 @@ merchant’s origin_url page</p>
 <div class="title">
 <em>precheckout</em> Express Checkout Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>7ce6f720-97ed-a1e4-f843-801fe475024f<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>precheckout<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;customer-id&gt;</span>unique-testid-005<span style="color:#070;font-weight:bold">&lt;/customer-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>7ce6f720-97ed-a1e4-f843-801fe475024f<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>precheckout<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;customer-id&gt;</span>unique-testid-005<span class="tag">&lt;/customer-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">
 <em>precheckout</em> Express Checkout Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>37b24b99-8c47-47b2-89a6-4187897531b3<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>7ce6f720-97ed-a1e4-f843-801fe475024f<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>precheckout<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2016-11-01T07:33:42.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;wallet&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;merchant-id&gt;</span>a4a6w4waeskkkhudnya4w1hveovoyzec5i<span style="color:#070;font-weight:bold">&lt;/merchant-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span style="color:#070;font-weight:bold">&lt;/provider-ref&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;wallet-data&gt;</span>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvb mU9InllcyI/PjxQcmVjaGVja291dERhdGE+PENhcmRzPjxDYXJkPjxCcmFuZElkPm1hc3Rlcjw vQnJhbmRJZD48QnJhbmROYW1lPk1hc3RlckNhcmQ8L0JyYW5kTmFtZT48QmlsbGluZ0FkZHJlc 3M+PENpdHk+c2luZ2Fwb3JlPC9DaXR5PjxDb3VudHJ5PlNHPC9Db3VudHJ5PjxDb3VudHJ5U3V iZGl2aXNpb24+c2luZ2Fwb3JlPC9Db3VudHJ5U3ViZGl2aXNpb24+PExpbmUxPnRlc3QxPC9Ma W5lMT48UG9zdGFsQ29kZT4xMjM0NTY8L1Bvc3RhbENvZGU+PC9CaWxsaW5nQWRkcmVzcz48Q2F yZEhvbGRlck5hbWU+S2ltIExpPC9DYXJkSG9sZGVyTmFtZT48RXhwaXJ5TW9udGg+MTwvRXhwa XJ5TW9udGg+PEV4cGlyeVllYXI+MjAyMDwvRXhwaXJ5WWVhcj48Q2FyZElkPmIxM2RkZTY5LTA wOTYtNDc4ZS1hYjMxLTRjYzYyOWVlYmI2YTwvQ2FyZElkPjxMYXN0Rm91cj4wMDE0PC9MYXN0R m91cj48U2VsZWN0ZWRBc0RlZmF1bHQ+dHJ1ZTwvU2VsZWN0ZWRBc0RlZmF1bHQ+PC9DYXJkPjw vQ2FyZHM+PENvbnRhY3Q+PEZpcnN0TmFtZT5LaW08L0ZpcnN0TmFtZT48TGFzdE5hbWU+TGk8L 0xhc3ROYW1lPjxDb3VudHJ5PlNHPC9Db3VudHJ5PjxFbWFpbEFkZHJlc3M+a2ltQGVtYWlsLmN vbTwvRW1haWxBZGRyZXNzPjxQaG9uZU51bWJlcj4xMjM0NTY3NjwvUGhvbmVOdW1iZXI+PC9Db 250YWN0PjxTaGlwcGluZ0FkZHJlc3Nlcz48U2hpcHBpbmdBZGRyZXNzPjxDaXR5PnNpbmdhcG9 yZTwvQ2l0eT48Q291bnRyeT5TRzwvQ291bnRyeT48Q291bnRyeVN1YmRpdmlzaW9uPnNpbmdhc G9yZTwvQ291bnRyeVN1YmRpdmlzaW9uPjxMaW5lMT50ZXN0MTwvTGluZTE+PFBvc3RhbENvZGU +MTIzNDU2PC9Qb3N0YWxDb2RlPjxSZWNpcGllbnROYW1lPktpbSBMaTwvUmVjaXBpZW50TmFtZ T48UmVjaXBpZW50UGhvbmVOdW1iZXI+MTIzNDU2NzY8L1JlY2lwaWVudFBob25lTnVtYmVyPjx BZGRyZXNzSWQ+ZjE5ZTRiZTEtODZhOS00ZDU1LTk0NjQtNTU0NGU1Mzk2MWQxPC9BZGRyZXNzS WQ+PFNlbGVjdGVkQXNEZWZhdWx0PnRydWU8L1NlbGVjdGVkQXNEZWZhdWx0PjwvU2hpcHBpbmd BZGRyZXNzPjwvU2hpcHBpbmdBZGRyZXNzZXM+PFdhbGxldE5hbWU+bWFzdGVycGFzczwvV2Fsb GV0TmFtZT48UHJlY2hlY2tvdXRUcmFuc2FjdGlvbklkPmE0NjZ3NDItN3RoOThnLWl1b2VuNTd qLTEtaXV6Nmg3MzItNnhvYzwvUHJlY2hlY2tvdXRUcmFuc2FjdGlvbklkPjxDb25zdW1lcldhb GxldElkPmRhMDZmYjA1YzMxNGIzYmNhMjgyODJhMTI3MzhkNDhmPC9Db25zdW1lcldhbGxldEl kPjwvUHJlY2hlY2tvdXREYXRhPg==<span style="color:#070;font-weight:bold">&lt;/wallet-data&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/wallet&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;customer-id&gt;</span>unique-testid-005<span style="color:#070;font-weight:bold">&lt;/customer-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>37b24b99-8c47-47b2-89a6-4187897531b3<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>7ce6f720-97ed-a1e4-f843-801fe475024f<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>precheckout<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2016-11-01T07:33:42.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;merchant-id&gt;</span>a4a6w4waeskkkhudnya4w1hveovoyzec5i<span class="tag">&lt;/merchant-id&gt;</span>
+        <span class="tag">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span class="tag">&lt;/provider-ref&gt;</span>
+        <span class="tag">&lt;wallet-data&gt;</span>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvb mU9InllcyI/PjxQcmVjaGVja291dERhdGE+PENhcmRzPjxDYXJkPjxCcmFuZElkPm1hc3Rlcjw vQnJhbmRJZD48QnJhbmROYW1lPk1hc3RlckNhcmQ8L0JyYW5kTmFtZT48QmlsbGluZ0FkZHJlc 3M+PENpdHk+c2luZ2Fwb3JlPC9DaXR5PjxDb3VudHJ5PlNHPC9Db3VudHJ5PjxDb3VudHJ5U3V iZGl2aXNpb24+c2luZ2Fwb3JlPC9Db3VudHJ5U3ViZGl2aXNpb24+PExpbmUxPnRlc3QxPC9Ma W5lMT48UG9zdGFsQ29kZT4xMjM0NTY8L1Bvc3RhbENvZGU+PC9CaWxsaW5nQWRkcmVzcz48Q2F yZEhvbGRlck5hbWU+S2ltIExpPC9DYXJkSG9sZGVyTmFtZT48RXhwaXJ5TW9udGg+MTwvRXhwa XJ5TW9udGg+PEV4cGlyeVllYXI+MjAyMDwvRXhwaXJ5WWVhcj48Q2FyZElkPmIxM2RkZTY5LTA wOTYtNDc4ZS1hYjMxLTRjYzYyOWVlYmI2YTwvQ2FyZElkPjxMYXN0Rm91cj4wMDE0PC9MYXN0R m91cj48U2VsZWN0ZWRBc0RlZmF1bHQ+dHJ1ZTwvU2VsZWN0ZWRBc0RlZmF1bHQ+PC9DYXJkPjw vQ2FyZHM+PENvbnRhY3Q+PEZpcnN0TmFtZT5LaW08L0ZpcnN0TmFtZT48TGFzdE5hbWU+TGk8L 0xhc3ROYW1lPjxDb3VudHJ5PlNHPC9Db3VudHJ5PjxFbWFpbEFkZHJlc3M+a2ltQGVtYWlsLmN vbTwvRW1haWxBZGRyZXNzPjxQaG9uZU51bWJlcj4xMjM0NTY3NjwvUGhvbmVOdW1iZXI+PC9Db 250YWN0PjxTaGlwcGluZ0FkZHJlc3Nlcz48U2hpcHBpbmdBZGRyZXNzPjxDaXR5PnNpbmdhcG9 yZTwvQ2l0eT48Q291bnRyeT5TRzwvQ291bnRyeT48Q291bnRyeVN1YmRpdmlzaW9uPnNpbmdhc G9yZTwvQ291bnRyeVN1YmRpdmlzaW9uPjxMaW5lMT50ZXN0MTwvTGluZTE+PFBvc3RhbENvZGU +MTIzNDU2PC9Qb3N0YWxDb2RlPjxSZWNpcGllbnROYW1lPktpbSBMaTwvUmVjaXBpZW50TmFtZ T48UmVjaXBpZW50UGhvbmVOdW1iZXI+MTIzNDU2NzY8L1JlY2lwaWVudFBob25lTnVtYmVyPjx BZGRyZXNzSWQ+ZjE5ZTRiZTEtODZhOS00ZDU1LTk0NjQtNTU0NGU1Mzk2MWQxPC9BZGRyZXNzS WQ+PFNlbGVjdGVkQXNEZWZhdWx0PnRydWU8L1NlbGVjdGVkQXNEZWZhdWx0PjwvU2hpcHBpbmd BZGRyZXNzPjwvU2hpcHBpbmdBZGRyZXNzZXM+PFdhbGxldE5hbWU+bWFzdGVycGFzczwvV2Fsb GV0TmFtZT48UHJlY2hlY2tvdXRUcmFuc2FjdGlvbklkPmE0NjZ3NDItN3RoOThnLWl1b2VuNTd qLTEtaXV6Nmg3MzItNnhvYzwvUHJlY2hlY2tvdXRUcmFuc2FjdGlvbklkPjxDb25zdW1lcldhb GxldElkPmRhMDZmYjA1YzMxNGIzYmNhMjgyODJhMTI3MzhkNDhmPC9Db25zdW1lcldhbGxldEl kPjwvUHJlY2hlY2tvdXREYXRhPg==<span class="tag">&lt;/wallet-data&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+    <span class="tag">&lt;customer-id&gt;</span>unique-testid-005<span class="tag">&lt;/customer-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">
 <em>request-checkout</em> Express Checkout Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>65c731dc-de21-8457-7b0d-f1dd6569fb06<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>request-checkout<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>37b24b99-8c47-47b2-89a6-4187897531b3<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;wallet&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;card-id&gt;</span>b13dde69-0096-478e-ab31-4cc629eebb6a<span style="color:#070;font-weight:bold">&lt;/card-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;address-id&gt;</span>f19e4be1-86a9-4d55-9464-5544e53961d1<span style="color:#070;font-weight:bold">&lt;/address-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span style="color:#070;font-weight:bold">&lt;/provider-ref&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/wallet&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-type&gt;</span>express-checkout<span style="color:#070;font-weight:bold">&lt;/request-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;customer-id&gt;</span>unique-testid-005<span style="color:#070;font-weight:bold">&lt;/customer-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>65c731dc-de21-8457-7b0d-f1dd6569fb06<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>request-checkout<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>37b24b99-8c47-47b2-89a6-4187897531b3<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/redirect-url&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;card-id&gt;</span>b13dde69-0096-478e-ab31-4cc629eebb6a<span class="tag">&lt;/card-id&gt;</span>
+        <span class="tag">&lt;address-id&gt;</span>f19e4be1-86a9-4d55-9464-5544e53961d1<span class="tag">&lt;/address-id&gt;</span>
+        <span class="tag">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span class="tag">&lt;/provider-ref&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+    <span class="tag">&lt;request-type&gt;</span>express-checkout<span class="tag">&lt;/request-type&gt;</span>
+    <span class="tag">&lt;customer-id&gt;</span>unique-testid-005<span class="tag">&lt;/customer-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">
 <em>request-checkout</em> Express Checkout Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>05e44225-424a-441a-a425-3cfc71ca0b82<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>65c731dc-de21-8457-7b0d-f1dd6569fb06<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>request-checkout<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2016-11-01T07:35:16.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>37b24b99-8c47-47b2-89a6-4187897531b3<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;card&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;expiration-month&gt;</span>1<span style="color:#070;font-weight:bold">&lt;/expiration-month&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;expiration-year&gt;</span>2020<span style="color:#070;font-weight:bold">&lt;/expiration-year&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;card-type&gt;</span>mastercard<span style="color:#070;font-weight:bold">&lt;/card-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/card&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;card-token&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;token-id&gt;</span>5266048063690014<span style="color:#070;font-weight:bold">&lt;/token-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;masked-account-number&gt;</span>520474******0014<span style="color:#070;font-weight:bold">&lt;/masked-account-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/card-token&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api.merchant-origin</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://localhost/shop/masterpass/precheckout/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;wallet&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;card-id&gt;</span>b13dde69-0096-478e-ab31-4cc629eebb6a<span style="color:#070;font-weight:bold">&lt;/card-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;address-id&gt;</span>f19e4be1-86a9-4d55-9464-5544e53961d1<span style="color:#070;font-weight:bold">&lt;/address-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span style="color:#070;font-weight:bold">&lt;/provider-ref&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-transaction-id&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span style="color:#070;font-weight:bold">&lt;/provider-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/wallet&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-type&gt;</span>express-checkout<span style="color:#070;font-weight:bold">&lt;/request-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;customer-id&gt;</span>unique-testid-005<span style="color:#070;font-weight:bold">&lt;/customer-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>05e44225-424a-441a-a425-3cfc71ca0b82<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>65c731dc-de21-8457-7b0d-f1dd6569fb06<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>request-checkout<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2016-11-01T07:35:16.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>37b24b99-8c47-47b2-89a6-4187897531b3<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;card&gt;</span>
+        <span class="tag">&lt;expiration-month&gt;</span>1<span class="tag">&lt;/expiration-month&gt;</span>
+        <span class="tag">&lt;expiration-year&gt;</span>2020<span class="tag">&lt;/expiration-year&gt;</span>
+        <span class="tag">&lt;card-type&gt;</span>mastercard<span class="tag">&lt;/card-type&gt;</span>
+    <span class="tag">&lt;/card&gt;</span>
+    <span class="tag">&lt;card-token&gt;</span>
+        <span class="tag">&lt;token-id&gt;</span>5266048063690014<span class="tag">&lt;/token-id&gt;</span>
+        <span class="tag">&lt;masked-account-number&gt;</span>520474******0014<span class="tag">&lt;/masked-account-number&gt;</span>
+    <span class="tag">&lt;/card-token&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">elastic-api.merchant-origin</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://localhost/shop/masterpass/precheckout/</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/redirect-url&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;card-id&gt;</span>b13dde69-0096-478e-ab31-4cc629eebb6a<span class="tag">&lt;/card-id&gt;</span>
+        <span class="tag">&lt;address-id&gt;</span>f19e4be1-86a9-4d55-9464-5544e53961d1<span class="tag">&lt;/address-id&gt;</span>
+        <span class="tag">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span class="tag">&lt;/provider-ref&gt;</span>
+        <span class="tag">&lt;provider-transaction-id&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span class="tag">&lt;/provider-transaction-id&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+    <span class="tag">&lt;request-type&gt;</span>express-checkout<span class="tag">&lt;/request-type&gt;</span>
+    <span class="tag">&lt;customer-id&gt;</span>unique-testid-005<span class="tag">&lt;/customer-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6949,79 +6949,79 @@ merchant’s origin_url page</p>
 <div class="title">
 <em>debit</em> Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>c57a8da8-085d-5058-b43f-412ce5132f3e<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>05e44225-424a-441a-a425-3cfc71ca0b82<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;card-token&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;token-id&gt;</span>5266048063690014<span style="color:#070;font-weight:bold">&lt;/token-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/card-token&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;wallet&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span style="color:#070;font-weight:bold">&lt;/provider-ref&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-transaction-id&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span style="color:#070;font-weight:bold">&lt;/provider-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/wallet&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>c57a8da8-085d-5058-b43f-412ce5132f3e<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>05e44225-424a-441a-a425-3cfc71ca0b82<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;card-token&gt;</span>
+        <span class="tag">&lt;token-id&gt;</span>5266048063690014<span class="tag">&lt;/token-id&gt;</span>
+    <span class="tag">&lt;/card-token&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span class="tag">&lt;/provider-ref&gt;</span>
+        <span class="tag">&lt;provider-transaction-id&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span class="tag">&lt;/provider-transaction-id&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">
 <em>debit</em> Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>dfcd8bee-1323-4960-b05a-388b64799be2<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>c57a8da8-085d-5058-b43f-412ce5132f3e<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2016-11-01T07:42:57.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>4.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>05e44225-424a-441a-a425-3cfc71ca0b82<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>kim@email.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;phone&gt;</span>12345676<span style="color:#070;font-weight:bold">&lt;/phone&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;address&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street1&gt;</span>test1<span style="color:#070;font-weight:bold">&lt;/street1&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;city&gt;</span>singapore<span style="color:#070;font-weight:bold">&lt;/city&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;country&gt;</span>SG<span style="color:#070;font-weight:bold">&lt;/country&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;postal-code&gt;</span>123456<span style="color:#070;font-weight:bold">&lt;/postal-code&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;card&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;expiration-month&gt;</span>1<span style="color:#070;font-weight:bold">&lt;/expiration-month&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;expiration-year&gt;</span>2020<span style="color:#070;font-weight:bold">&lt;/expiration-year&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;card-type&gt;</span>mastercard<span style="color:#070;font-weight:bold">&lt;/card-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/card&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;card-token&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;token-id&gt;</span>5266048063690014<span style="color:#070;font-weight:bold">&lt;/token-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;masked-account-number&gt;</span>520474******0014<span style="color:#070;font-weight:bold">&lt;/masked-account-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/card-token&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api.merchant-origin</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://localhost/shop/masterpass/precheckout/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">masterpass</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;processing-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/processing-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;cancel-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/cancel-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;fail-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/fail-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;success-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span style="color:#070;font-weight:bold">&lt;/success-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;wallet&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span style="color:#070;font-weight:bold">&lt;/provider-ref&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-transaction-id&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span style="color:#070;font-weight:bold">&lt;/provider-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/wallet&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;provider-transaction-reference-id&gt;</span>27164948457843568161<span style="color:#070;font-weight:bold">&lt;/provider-transaction-reference-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>ff1cc720-e73d-408d-acd4-9cbb491c1b3c<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>dfcd8bee-1323-4960-b05a-388b64799be2<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>c57a8da8-085d-5058-b43f-412ce5132f3e<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2016-11-01T07:42:57.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>05e44225-424a-441a-a425-3cfc71ca0b82<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;email&gt;</span>kim@email.com<span class="tag">&lt;/email&gt;</span>
+        <span class="tag">&lt;phone&gt;</span>12345676<span class="tag">&lt;/phone&gt;</span>
+        <span class="tag">&lt;address&gt;</span>
+            <span class="tag">&lt;street1&gt;</span>test1<span class="tag">&lt;/street1&gt;</span>
+            <span class="tag">&lt;city&gt;</span>singapore<span class="tag">&lt;/city&gt;</span>
+            <span class="tag">&lt;country&gt;</span>SG<span class="tag">&lt;/country&gt;</span>
+            <span class="tag">&lt;postal-code&gt;</span>123456<span class="tag">&lt;/postal-code&gt;</span>
+        <span class="tag">&lt;/address&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;card&gt;</span>
+        <span class="tag">&lt;expiration-month&gt;</span>1<span class="tag">&lt;/expiration-month&gt;</span>
+        <span class="tag">&lt;expiration-year&gt;</span>2020<span class="tag">&lt;/expiration-year&gt;</span>
+        <span class="tag">&lt;card-type&gt;</span>mastercard<span class="tag">&lt;/card-type&gt;</span>
+    <span class="tag">&lt;/card&gt;</span>
+    <span class="tag">&lt;card-token&gt;</span>
+        <span class="tag">&lt;token-id&gt;</span>5266048063690014<span class="tag">&lt;/token-id&gt;</span>
+        <span class="tag">&lt;masked-account-number&gt;</span>520474******0014<span class="tag">&lt;/masked-account-number&gt;</span>
+    <span class="tag">&lt;/card-token&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">elastic-api.merchant-origin</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://localhost/shop/masterpass/precheckout/</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">masterpass</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;processing-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/processing-redirect-url&gt;</span>
+    <span class="tag">&lt;cancel-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/cancel-redirect-url&gt;</span>
+    <span class="tag">&lt;fail-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/fail-redirect-url&gt;</span>
+    <span class="tag">&lt;success-redirect-url&gt;</span>http://localhost/shop/rest/masterpass/requestcheckoutresponse/?<span class="tag">&lt;/success-redirect-url&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;provider-ref&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span class="tag">&lt;/provider-ref&gt;</span>
+        <span class="tag">&lt;provider-transaction-id&gt;</span>a466w42-7th98g-iuoen57j-1-iuz6h732-6xoc<span class="tag">&lt;/provider-transaction-id&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+    <span class="tag">&lt;provider-transaction-reference-id&gt;</span>27164948457843568161<span class="tag">&lt;/provider-transaction-reference-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -7034,9 +7034,10 @@ merchant’s origin_url page</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

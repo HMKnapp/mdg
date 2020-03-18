@@ -6103,161 +6103,161 @@ the <a href="RestApi_Fields.html">REST API Fields</a>.</p>
 <div class="listingblock">
 <div class="title">XML debit Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">alipay</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>0e0e26c6-e414-4e17-8e52-e78cb07f0875<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">CNY</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>0.1<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>181106090126081<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;cancel-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/cancel<span style="color:#070;font-weight:bold">&lt;/cancel-redirect-url&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;success-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/success<span style="color:#070;font-weight:bold">&lt;/success-redirect-url&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;fail-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/error<span style="color:#070;font-weight:bold">&lt;/fail-redirect-url&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;notifications&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;notification</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">add.your.url.here</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/notifications&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+<span class="tag">&lt;payment-methods&gt;</span>
+  <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;/payment-methods&gt;</span>
+<span class="tag">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span class="tag">&lt;/merchant-account-id&gt;</span>
+<span class="tag">&lt;request-id&gt;</span>0e0e26c6-e414-4e17-8e52-e78cb07f0875<span class="tag">&lt;/request-id&gt;</span>
+<span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+<span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">CNY</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>0.1<span class="tag">&lt;/requested-amount&gt;</span>
+<span class="tag">&lt;order-number&gt;</span>181106090126081<span class="tag">&lt;/order-number&gt;</span>
+<span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+<span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+<span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+<span class="tag">&lt;account-holder&gt;</span>
+  <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+  <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+  <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+<span class="tag">&lt;/account-holder&gt;</span>
+<span class="tag">&lt;cancel-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/cancel<span class="tag">&lt;/cancel-redirect-url&gt;</span>
+<span class="tag">&lt;success-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/success<span class="tag">&lt;/success-redirect-url&gt;</span>
+<span class="tag">&lt;fail-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/error<span class="tag">&lt;/fail-redirect-url&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">add.your.url.here</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML debit Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>12ba0604-106e-454f-a4ca-d4f801dc56fa<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>0e0e26c6-e414-4e17-8e52-e78cb07f0875<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2018-11-06T08:01:26.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">CNY</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>0.1<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>181106090126081<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;notifications&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;notification</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">add.your.url.here</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/notifications&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://mapi.alipay.com:443/gateway.do?sign_type=MD5</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">partner=2088801766902304</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">supplier=Testing-Alipay-Domestic-EE</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">_input_charset=utf-8</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">service=create_direct_pay_by_user</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">notify_url=https%3A%2F%2Fapi-test.wirecard.com%2Fengine%2Fnotification%2Falipay%2F</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">return_url=https%3A%2F%2Fapi-test.wirecard.com%2Fengine%2Fnotification%2Falipay%2Fredirect%2F12ba0604-106e-454f-a4ca-d4f801dc56fa%2F</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">out_trade_no=12ba0604-106e-454f-a4ca-d4f801dc56fa</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">payment_type=1</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">subject=181106090126081</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">total_fee=0.1</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">buyer_email=john.doe%40wirecard.com</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">seller_email=shuzhi_zsz%40126.com</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">sign=56c20cd07e86b26df628548d9c8768ee</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">alipay</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;cancel-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/cancel<span style="color:#070;font-weight:bold">&lt;/cancel-redirect-url&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;fail-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/error<span style="color:#070;font-weight:bold">&lt;/fail-redirect-url&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;success-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/success<span style="color:#070;font-weight:bold">&lt;/success-redirect-url&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+ <span class="tag">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span class="tag">&lt;/merchant-account-id&gt;</span>
+ <span class="tag">&lt;transaction-id&gt;</span>12ba0604-106e-454f-a4ca-d4f801dc56fa<span class="tag">&lt;/transaction-id&gt;</span>
+ <span class="tag">&lt;request-id&gt;</span>0e0e26c6-e414-4e17-8e52-e78cb07f0875<span class="tag">&lt;/request-id&gt;</span>
+ <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+ <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+ <span class="tag">&lt;completion-time-stamp&gt;</span>2018-11-06T08:01:26.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+ <span class="tag">&lt;statuses&gt;</span>
+  <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+ <span class="tag">&lt;/statuses&gt;</span>
+ <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">CNY</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>0.1<span class="tag">&lt;/requested-amount&gt;</span>
+ <span class="tag">&lt;account-holder&gt;</span>
+  <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+  <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+  <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+ <span class="tag">&lt;/account-holder&gt;</span>
+ <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+ <span class="tag">&lt;order-number&gt;</span>181106090126081<span class="tag">&lt;/order-number&gt;</span>
+ <span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+ <span class="tag">&lt;notifications&gt;</span>
+  <span class="tag">&lt;notification</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">add.your.url.here</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+ <span class="tag">&lt;/notifications&gt;</span>
+ <span class="tag">&lt;payment-methods&gt;</span>
+  <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://mapi.alipay.com:443/gateway.do?sign_type=MD5</span><span class="entity">&amp;amp;</span><span class="content">partner=2088801766902304</span><span class="entity">&amp;amp;</span><span class="content">supplier=Testing-Alipay-Domestic-EE</span><span class="entity">&amp;amp;</span><span class="content">_input_charset=utf-8</span><span class="entity">&amp;amp;</span><span class="content">service=create_direct_pay_by_user</span><span class="entity">&amp;amp;</span><span class="content">notify_url=https%3A%2F%2Fapi-test.wirecard.com%2Fengine%2Fnotification%2Falipay%2F</span><span class="entity">&amp;amp;</span><span class="content">return_url=https%3A%2F%2Fapi-test.wirecard.com%2Fengine%2Fnotification%2Falipay%2Fredirect%2F12ba0604-106e-454f-a4ca-d4f801dc56fa%2F</span><span class="entity">&amp;amp;</span><span class="content">out_trade_no=12ba0604-106e-454f-a4ca-d4f801dc56fa</span><span class="entity">&amp;amp;</span><span class="content">payment_type=1</span><span class="entity">&amp;amp;</span><span class="content">subject=181106090126081</span><span class="entity">&amp;amp;</span><span class="content">total_fee=0.1</span><span class="entity">&amp;amp;</span><span class="content">buyer_email=john.doe%40wirecard.com</span><span class="entity">&amp;amp;</span><span class="content">seller_email=shuzhi_zsz%40126.com</span><span class="entity">&amp;amp;</span><span class="content">sign=56c20cd07e86b26df628548d9c8768ee</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+ <span class="tag">&lt;/payment-methods&gt;</span>
+ <span class="tag">&lt;cancel-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/cancel<span class="tag">&lt;/cancel-redirect-url&gt;</span>
+ <span class="tag">&lt;fail-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/error<span class="tag">&lt;/fail-redirect-url&gt;</span>
+ <span class="tag">&lt;success-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/success<span class="tag">&lt;/success-redirect-url&gt;</span>
+ <span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML debit Notification (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>169f2c5d-1104-4e18-9f66-34c1392f029f<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>0e0e26c6-e414-4e17-8e52-e78cb07f0875<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2018-11-06T08:02:52.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">alipay:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">CNY</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>0.100000<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>12ba0604-106e-454f-a4ca-d4f801dc56fa<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>181106090126081<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;notifications&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;notification</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">add.your.url.here</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/notifications&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">alipay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;cancel-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/cancel<span style="color:#070;font-weight:bold">&lt;/cancel-redirect-url&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;fail-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/error<span style="color:#070;font-weight:bold">&lt;/fail-redirect-url&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;success-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/success<span style="color:#070;font-weight:bold">&lt;/success-redirect-url&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;iso&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;pos-transaction-time&gt;</span>080252<span style="color:#070;font-weight:bold">&lt;/pos-transaction-time&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;pos-transaction-date&gt;</span>1106<span style="color:#070;font-weight:bold">&lt;/pos-transaction-date&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/iso&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;Signature</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;SignedInfo&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;CanonicalizationMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;SignatureMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;Reference</span> <span style="color:#b48">URI</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;Transforms&gt;</span>
-     <span style="color:#070;font-weight:bold">&lt;Transform</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/Transforms&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;DigestMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2001/04/xmlenc#sha256</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;DigestValue&gt;</span>QiPD+eeyhx0XRQMD7wMw+Umh0CmseHF4xJhap2YG/YA=<span style="color:#070;font-weight:bold">&lt;/DigestValue&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;/Reference&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/SignedInfo&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;SignatureValue&gt;</span>lafeRWvqTPv3eaCqb3JfqqEjkGPJwHxiGiGckjgTlMle3qrRDrjhXU+N4rBgOO4OYxhmFwh8YBgzGkS93s/347TksxB4xilgqqn84hp6UupkLAvggtDBZcYJ01Gl8VesUykRXIzLdIZYuiN1h+zZQ4bBqr2RIOWs8ekIKdzjNC7sO9M3TX8N/4edsvrF8l/aOFUmtY+ZDHlWwfVFesKFl7CzjJFX0vrpZxN4bFRV/zjAfXbNTF5kd0GrVR6kW6uezCTD0IT9D9hX5u1q9npc80YrNZfDdSdP2y7CM+mjwYS4CXQfdcKwPhKOtBmaMoT5ac1dlkHseA4siJzHK9tRguJVj1pBlgq/5tnT2Hpjtr/Y2QUSTQf7APdUp7RVOn6Qv7AsZyPe92iiE/p0o92KMlqAiZN2t4VPZ+G137g+K8ywNwHL/vhR+oSa9FPNQOyWzfLk0PS+H4kq8nd4XrUJCdFybmY4QC5VcivMDWqgXuAT3RbC/j+SSNM26kaGgdoZrfLb5ZFs8xLZ/IdhgspfLsDcPwb63CC8Hii7ZUI8NeN4J4D1fwQlm2vztIHHqoVgch1pyO8cIY1gJLpzlLvXtDkdd2pWWkWiOtOWsXO0fSIa2jHSTEPOk5fJwadxB0qoSJOZEibruIvIJfEvGjp6taJCfGhC7isILVN7fsM7yfs=<span style="color:#070;font-weight:bold">&lt;/SignatureValue&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;KeyInfo&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;X509Data&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;X509SubjectName&gt;</span>L=Ascheim,2.5.4.4=#130642617965726e,CN=api-test.wirecard.com,OU=Operations,O=Wirecard Technologies GmbH,C=DE<span style="color:#070;font-weight:bold">&lt;/X509SubjectName&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;X509Certificate&gt;</span>MIIF5DCCBMygAwIBAgICLHQwDQYJKoZIhvcNAQELBQAwWzELMAkGA1UEBhMCREUxETAPBgNVBAoTCFdpcmVjYXJkMTkwNwYDVQQDFDB3aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIwHhcNMTcwMTEyMTM1OTI2WhcNMTkwMTEyMTM1OTI2WjCBijELMAkGA1UEBhMCREUxIzAhBgNVBAoTGldpcmVjYXJkIFRlY2hub2xvZ2llcyBHbWJIMRMwEQYDVQQLEwpPcGVyYXRpb25zMR4wHAYDVQQDExVhcGktdGVzdC53aXJlY2FyZC5jb20xDzANBgNVBAQTBkJheWVybjEQMA4GA1UEBxMHQXNjaGVpbTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAKSkExBY8FjRcZdrxOuJF+HZY8+McQaOB8B0E/hTUhoclsF4OJNaMThje7R6w6OYWBMKpssGngHFaZv35rCo5XVUpJmjZa04ytxE72GKO/uP4yIR7ZBXZx42B22MFaJJZTgPRCCFd6jrz906BZ//CmEAmk5gKelfPxfWJgGyTX6xz7I9R/G57E1xNOuEihN0ma5Q2IhD71MPVseFIGazyfGbJD6rYYbeBbOQSGk//TL8sdRCn0BLcm4DH5oqcPxDKzkaBP4ohNkCWsxpLLSyV6Wx0ihT0S1OLVNkEeTvcrYgUk124VyGatwWNUuCBYyOGQSOGqrW8IHmrhjzzT0NQog0/m38lpdqw/eWmt39qhODqSfILUk2Dxv1+W0IRKJCKcJrcTbXEQCuHl+XWY+U2AhinIPNRA0KX2oOgC//inwyKWSGWHdQnaake646R1wHqtoEfCtEcfyaeR+IrMr1rCAA3RZ+MH1J5UlUCWcnxPT0kad6dUwe3Qjq3jK4gaFzYU2yVScX5LVZMlWy2NiGCIvngHQmhArESzxMVvz5METZujfax6hfmiLNRWu0Zqs09Mpxy5zk5m/WRi5izb0uBeCfcA6x9pmjMx8M4OGG5RO2HTXSwLYJTKI47VXNsLLOY+nMFmhj/dkLJ5d3zI7EczToPMRHmHG7EqEdAfbb+oUlAgMBAAGjggGAMIIBfDARBgNVHQ4ECgQIS6wVIA0mJ9IwEwYDVR0jBAwwCoAIQ2weFtQ9BQ4wCwYDVR0PBAQDAgTwMIIBQwYDVR0fBIIBOjCCATYwggEyoIIBLqCCASqGgdVsZGFwOi8vd2lyZWNhcmQubGFuL0NOPXdpcmVjYXJkLURRLU1VQy1pbnRlcm5hbC13ZWJzZXJ2aWNlLWlzc3VpbmdDQV8wMixDTj1DRFAsQ049UHVibGljIEtleSBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLGRjPXdpcmVjYXJkLGRjPWxhbj9jZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Q1JMRGlzdHJpYnV0aW9uUG9pbnSGUGh0dHA6Ly9jcmwud2lyZWNhcmQubGFuL0NSTF93aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAmlUoiEFPRsOjGPb7SYiuJLxqTXCvZQeuXiUydF6FQl/zIpR/zSltaZKK86L+1i7t1C89OyTTXBD9FN6EKmlHo/ulsMn9V2B4zK3lT/NUclST98BmCla4Jzm+roeOHTqlPz3gPRJiPsr3wdvM+FSAJ2MRdv3l77mTE3v3hjsVVMmShR3VwwpxCICl3mpMsSaJZLyJdOHwvnpXs1m9kESwPD3DQ3RAQ/OGa0pPxAkHaauog4DhPvr/nBQnWHd2Us5b/ep7LME9hZ8u3hu/Kc6Vk24c5p3WUOiyaTiw+Ym3QDXl1wBSl9DdM94KbmAAQ5D/FUqyQnSc4TpmYvJ+Iavag<span style="color:#070;font-weight:bold">&lt;/X509Certificate&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;/X509Data&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/KeyInfo&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/Signature&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+ <span class="tag">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span class="tag">&lt;/merchant-account-id&gt;</span>
+ <span class="tag">&lt;transaction-id&gt;</span>169f2c5d-1104-4e18-9f66-34c1392f029f<span class="tag">&lt;/transaction-id&gt;</span>
+ <span class="tag">&lt;request-id&gt;</span>0e0e26c6-e414-4e17-8e52-e78cb07f0875<span class="tag">&lt;/request-id&gt;</span>
+ <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+ <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+ <span class="tag">&lt;completion-time-stamp&gt;</span>2018-11-06T08:02:52.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+ <span class="tag">&lt;statuses&gt;</span>
+  <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+ <span class="tag">&lt;/statuses&gt;</span>
+ <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">CNY</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>0.100000<span class="tag">&lt;/requested-amount&gt;</span>
+ <span class="tag">&lt;parent-transaction-id&gt;</span>12ba0604-106e-454f-a4ca-d4f801dc56fa<span class="tag">&lt;/parent-transaction-id&gt;</span>
+ <span class="tag">&lt;account-holder&gt;</span>
+  <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+  <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+  <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+ <span class="tag">&lt;/account-holder&gt;</span>
+ <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+ <span class="tag">&lt;order-number&gt;</span>181106090126081<span class="tag">&lt;/order-number&gt;</span>
+ <span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+ <span class="tag">&lt;notifications&gt;</span>
+  <span class="tag">&lt;notification</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">add.your.url.here</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+ <span class="tag">&lt;/notifications&gt;</span>
+ <span class="tag">&lt;payment-methods&gt;</span>
+  <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+ <span class="tag">&lt;/payment-methods&gt;</span>
+ <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+ <span class="tag">&lt;cancel-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/cancel<span class="tag">&lt;/cancel-redirect-url&gt;</span>
+ <span class="tag">&lt;fail-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/error<span class="tag">&lt;/fail-redirect-url&gt;</span>
+ <span class="tag">&lt;success-redirect-url&gt;</span>https://demoshop-test.wirecard.com/demoshop/#/success<span class="tag">&lt;/success-redirect-url&gt;</span>
+ <span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+ <span class="tag">&lt;iso&gt;</span>
+  <span class="tag">&lt;pos-transaction-time&gt;</span>080252<span class="tag">&lt;/pos-transaction-time&gt;</span>
+  <span class="tag">&lt;pos-transaction-date&gt;</span>1106<span class="tag">&lt;/pos-transaction-date&gt;</span>
+ <span class="tag">&lt;/iso&gt;</span>
+ <span class="tag">&lt;Signature</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;SignedInfo&gt;</span>
+   <span class="tag">&lt;CanonicalizationMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+   <span class="tag">&lt;SignatureMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+   <span class="tag">&lt;Reference</span> <span class="attribute-name">URI</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;Transforms&gt;</span>
+     <span class="tag">&lt;Transform</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/Transforms&gt;</span>
+    <span class="tag">&lt;DigestMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/04/xmlenc#sha256</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;DigestValue&gt;</span>QiPD+eeyhx0XRQMD7wMw+Umh0CmseHF4xJhap2YG/YA=<span class="tag">&lt;/DigestValue&gt;</span>
+   <span class="tag">&lt;/Reference&gt;</span>
+  <span class="tag">&lt;/SignedInfo&gt;</span>
+  <span class="tag">&lt;SignatureValue&gt;</span>lafeRWvqTPv3eaCqb3JfqqEjkGPJwHxiGiGckjgTlMle3qrRDrjhXU+N4rBgOO4OYxhmFwh8YBgzGkS93s/347TksxB4xilgqqn84hp6UupkLAvggtDBZcYJ01Gl8VesUykRXIzLdIZYuiN1h+zZQ4bBqr2RIOWs8ekIKdzjNC7sO9M3TX8N/4edsvrF8l/aOFUmtY+ZDHlWwfVFesKFl7CzjJFX0vrpZxN4bFRV/zjAfXbNTF5kd0GrVR6kW6uezCTD0IT9D9hX5u1q9npc80YrNZfDdSdP2y7CM+mjwYS4CXQfdcKwPhKOtBmaMoT5ac1dlkHseA4siJzHK9tRguJVj1pBlgq/5tnT2Hpjtr/Y2QUSTQf7APdUp7RVOn6Qv7AsZyPe92iiE/p0o92KMlqAiZN2t4VPZ+G137g+K8ywNwHL/vhR+oSa9FPNQOyWzfLk0PS+H4kq8nd4XrUJCdFybmY4QC5VcivMDWqgXuAT3RbC/j+SSNM26kaGgdoZrfLb5ZFs8xLZ/IdhgspfLsDcPwb63CC8Hii7ZUI8NeN4J4D1fwQlm2vztIHHqoVgch1pyO8cIY1gJLpzlLvXtDkdd2pWWkWiOtOWsXO0fSIa2jHSTEPOk5fJwadxB0qoSJOZEibruIvIJfEvGjp6taJCfGhC7isILVN7fsM7yfs=<span class="tag">&lt;/SignatureValue&gt;</span>
+  <span class="tag">&lt;KeyInfo&gt;</span>
+   <span class="tag">&lt;X509Data&gt;</span>
+    <span class="tag">&lt;X509SubjectName&gt;</span>L=Ascheim,2.5.4.4=#130642617965726e,CN=api-test.wirecard.com,OU=Operations,O=Wirecard Technologies GmbH,C=DE<span class="tag">&lt;/X509SubjectName&gt;</span>
+    <span class="tag">&lt;X509Certificate&gt;</span>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<span class="tag">&lt;/X509Certificate&gt;</span>
+   <span class="tag">&lt;/X509Data&gt;</span>
+  <span class="tag">&lt;/KeyInfo&gt;</span>
+ <span class="tag">&lt;/Signature&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML debit Request (Failure)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">alipay</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>35564b1f-242b-4209-9d8d-371c7d178a76<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;payment-methods&gt;</span>
+    <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+  <span class="tag">&lt;/payment-methods&gt;</span>
+  <span class="tag">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span class="tag">&lt;/merchant-account-id&gt;</span>
+  <span class="tag">&lt;request-id&gt;</span>35564b1f-242b-4209-9d8d-371c7d178a76<span class="tag">&lt;/request-id&gt;</span>
+  <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML debit Response (Failure)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>35564b1f-242b-4209-9d8d-371c7d178a76<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>failed<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">400.1011</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The Requested Amount has not been provided. Please check your input and try again.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">error</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">alipay</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;merchant-account-id&gt;</span>3ed75e0a-d70a-421f-a047-c70ba54b9317<span class="tag">&lt;/merchant-account-id&gt;</span>
+  <span class="tag">&lt;request-id&gt;</span>35564b1f-242b-4209-9d8d-371c7d178a76<span class="tag">&lt;/request-id&gt;</span>
+  <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+  <span class="tag">&lt;transaction-state&gt;</span>failed<span class="tag">&lt;/transaction-state&gt;</span>
+  <span class="tag">&lt;statuses&gt;</span>
+    <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">400.1011</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The Requested Amount has not been provided. Please check your input and try again.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">error</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+  <span class="tag">&lt;/statuses&gt;</span>
+  <span class="tag">&lt;payment-methods&gt;</span>
+    <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+  <span class="tag">&lt;/payment-methods&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6366,9 +6366,10 @@ phone=1+555+555+5555&amp;transaction_type=debit&amp;locale=&amp;status_severity_
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

@@ -5913,59 +5913,59 @@ part in the payment response and notification.</p>
 <div class="listingblock">
 <div class="title">Response with AVS Data</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://127.0.0.1:8080/engine/rest/merchants/dfc2a910-036f-4363-af06-e482af0f4ef4/payments/ae58735e-0792-4fab-b584-5a3e8f2531aa</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id</span> <span style="color:#b48">ref</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://127.0.0.1:8080/engine/rest/config/merchants/dfc2a910-036f-4363-af06-e482af0f4ef4</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>dfc2a910-036f-4363-af06-e482af0f4ef4<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>ae58735e-0792-4fab-b584-5a3e8f2531aa<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>authorization<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-04-04T07:52:10.000+02:00<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">3d-acquirer:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">200.1083</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">3d-acquirer:Cardholder Successfully authenticated.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;avs-code&gt;</span>U<span style="color:#070;font-weight:bold">&lt;/avs-code&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;csc-code&gt;</span>P<span style="color:#070;font-weight:bold">&lt;/csc-code&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">USD</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>1.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>d45ef252-487a-4b34-b162-9a0d7df00b79<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;phone</span><span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;address&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street1&gt;</span>123 anystreet<span style="color:#070;font-weight:bold">&lt;/street1&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;city&gt;</span>Brantford<span style="color:#070;font-weight:bold">&lt;/city&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;state&gt;</span>ON<span style="color:#070;font-weight:bold">&lt;/state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;country&gt;</span>CA<span style="color:#070;font-weight:bold">&lt;/country&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;card-token&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;token-id&gt;</span>4781015870131003<span style="color:#070;font-weight:bold">&lt;/token-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;masked-account-number&gt;</span>401200******1003<span style="color:#070;font-weight:bold">&lt;/masked-account-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/card-token&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;descriptor&gt;</span>demo descriptor<span style="color:#070;font-weight:bold">&lt;/descriptor&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">provider.response.avs-provider-result-code</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">I</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">provider.response.status.type</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Y</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;authorization-code&gt;</span>792818<span style="color:#070;font-weight:bold">&lt;/authorization-code&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;three-d&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;cardholder-authentication-status&gt;</span>Y<span style="color:#070;font-weight:bold">&lt;/cardholder-authentication-status&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/three-d&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>elastic-api<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;avs&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;result-code&gt;</span>U<span style="color:#070;font-weight:bold">&lt;/result-code&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;result-message&gt;</span>AVS Unavailable.<span style="color:#070;font-weight:bold">&lt;/result-message&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-result-code&gt;</span>I<span style="color:#070;font-weight:bold">&lt;/provider-result-code&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;provider-result-message&gt;</span>Address information is unavailable, or the Issuer does not support AVS. Acquirer has representment rights.<span style="color:#070;font-weight:bold">&lt;/provider-result-message&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/avs&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://127.0.0.1:8080/engine/rest/merchants/dfc2a910-036f-4363-af06-e482af0f4ef4/payments/ae58735e-0792-4fab-b584-5a3e8f2531aa</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id</span> <span class="attribute-name">ref</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://127.0.0.1:8080/engine/rest/config/merchants/dfc2a910-036f-4363-af06-e482af0f4ef4</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>dfc2a910-036f-4363-af06-e482af0f4ef4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>ae58735e-0792-4fab-b584-5a3e8f2531aa<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>authorization<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2019-04-04T07:52:10.000+02:00<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">3d-acquirer:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">200.1083</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">3d-acquirer:Cardholder Successfully authenticated.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;avs-code&gt;</span>U<span class="tag">&lt;/avs-code&gt;</span>
+    <span class="tag">&lt;csc-code&gt;</span>P<span class="tag">&lt;/csc-code&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>d45ef252-487a-4b34-b162-9a0d7df00b79<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+        <span class="tag">&lt;phone</span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;address&gt;</span>
+            <span class="tag">&lt;street1&gt;</span>123 anystreet<span class="tag">&lt;/street1&gt;</span>
+            <span class="tag">&lt;city&gt;</span>Brantford<span class="tag">&lt;/city&gt;</span>
+            <span class="tag">&lt;state&gt;</span>ON<span class="tag">&lt;/state&gt;</span>
+            <span class="tag">&lt;country&gt;</span>CA<span class="tag">&lt;/country&gt;</span>
+        <span class="tag">&lt;/address&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;card-token&gt;</span>
+        <span class="tag">&lt;token-id&gt;</span>4781015870131003<span class="tag">&lt;/token-id&gt;</span>
+        <span class="tag">&lt;masked-account-number&gt;</span>401200******1003<span class="tag">&lt;/masked-account-number&gt;</span>
+    <span class="tag">&lt;/card-token&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>demo descriptor<span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">provider.response.avs-provider-result-code</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">I</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">provider.response.status.type</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Y</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;authorization-code&gt;</span>792818<span class="tag">&lt;/authorization-code&gt;</span>
+    <span class="tag">&lt;three-d&gt;</span>
+        <span class="tag">&lt;cardholder-authentication-status&gt;</span>Y<span class="tag">&lt;/cardholder-authentication-status&gt;</span>
+    <span class="tag">&lt;/three-d&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>elastic-api<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;avs&gt;</span>
+        <span class="tag">&lt;result-code&gt;</span>U<span class="tag">&lt;/result-code&gt;</span>
+        <span class="tag">&lt;result-message&gt;</span>AVS Unavailable.<span class="tag">&lt;/result-message&gt;</span>
+        <span class="tag">&lt;provider-result-code&gt;</span>I<span class="tag">&lt;/provider-result-code&gt;</span>
+        <span class="tag">&lt;provider-result-message&gt;</span>Address information is unavailable, or the Issuer does not support AVS. Acquirer has representment rights.<span class="tag">&lt;/provider-result-message&gt;</span>
+    <span class="tag">&lt;/avs&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6421,9 +6421,10 @@ preferred usage of the Wirecard Response Code.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

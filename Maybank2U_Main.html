@@ -5995,116 +5995,116 @@ the <a href="RestApi_Fields.html">ReST API Fields</a>.</p>
 <div class="listingblock">
 <div class="title">XML Debit Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">MYR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>1.01<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>37530<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">MYR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;order-number&gt;</span>37530<span class="tag">&lt;/order-number&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+    <span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML Debit Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>476c9d0e-0f84-11e5-87be-00163e5411b5<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>demo-0000000001<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-10T15:20:51.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">MYR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>1.01<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>37530<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://m2umobilesit.maybank.com.my:443/mbb/m2u/m7000/m2uMerchantLogin.do?sendString=Login$1KY$1$1.01$1$71499379314504$1$demo-00000000010$https://mas-sandbox-engine.thesolution.com/engine/rest/epp/maybank/payments/</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+   <span class="tag">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span class="tag">&lt;/merchant-account-id&gt;</span>
+   <span class="tag">&lt;transaction-id&gt;</span>476c9d0e-0f84-11e5-87be-00163e5411b5<span class="tag">&lt;/transaction-id&gt;</span>
+   <span class="tag">&lt;request-id&gt;</span>demo-0000000001<span class="tag">&lt;/request-id&gt;</span>
+   <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+   <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+   <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-10T15:20:51.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+   <span class="tag">&lt;statuses&gt;</span>
+      <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+   <span class="tag">&lt;/statuses&gt;</span>
+   <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">MYR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1.01<span class="tag">&lt;/requested-amount&gt;</span>
+   <span class="tag">&lt;account-holder&gt;</span>
+      <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+      <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+      <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+   <span class="tag">&lt;/account-holder&gt;</span>
+   <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+   <span class="tag">&lt;order-number&gt;</span>37530<span class="tag">&lt;/order-number&gt;</span>
+   <span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+   <span class="tag">&lt;payment-methods&gt;</span>
+      <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://m2umobilesit.maybank.com.my:443/mbb/m2u/m7000/m2uMerchantLogin.do?sendString=Login$1KY$1$1.01$1$71499379314504$1$demo-00000000010$https://mas-sandbox-engine.thesolution.com/engine/rest/epp/maybank/payments/</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+   <span class="tag">&lt;/payment-methods&gt;</span>
+   <span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML Debit Notification (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>bbab894e-1926-11e5-9267-00163e3537f6<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>7f1fc660-a8ac-45c2-8033-a03c7f48aff3<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>in-progress<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-22T17:35:59.000-04:00<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">MYR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10.000000<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>bb7320a2-1926-11e5-9267-00163e3537f6<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;phone&gt;</span>4164844000<span style="color:#070;font-weight:bold">&lt;/phone&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;address&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street1&gt;</span>150 Eglinton<span style="color:#070;font-weight:bold">&lt;/street1&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street2&gt;</span>Suite 999<span style="color:#070;font-weight:bold">&lt;/street2&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;city&gt;</span>Toronto<span style="color:#070;font-weight:bold">&lt;/city&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;state&gt;</span>ON<span style="color:#070;font-weight:bold">&lt;/state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;country&gt;</span>CA<span style="color:#070;font-weight:bold">&lt;/country&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;postal-code&gt;</span>M4P1E8<span style="color:#070;font-weight:bold">&lt;/postal-code&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;ip-address</span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>PO98U457Z<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Mission Impossible Box DVD Set<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;notifications&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;notification</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://requestb.in/1dwrbln1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/notifications&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;Signature</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignedInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;CanonicalizationMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;SignatureMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#rsa-sha1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;Reference</span> <span style="color:#b48">URI</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;Transforms&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;Transform</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;/Transforms&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;DigestMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#sha1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;DigestValue&gt;</span>tuellMpzUg+KYUNriRAr73ucs58=<span style="color:#070;font-weight:bold">&lt;/DigestValue&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/Reference&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/SignedInfo&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignatureValue&gt;</span>Cj6szp1KWGEaXxohtqTYb5/OOIkrH9MOWurPZHGOFIfI0RjavcY0clymSen12ZpUmi4D/LVDpCPI
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>bbab894e-1926-11e5-9267-00163e3537f6<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>7f1fc660-a8ac-45c2-8033-a03c7f48aff3<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>in-progress<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-22T17:35:59.000-04:00<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">MYR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10.000000<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>bb7320a2-1926-11e5-9267-00163e3537f6<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+        <span class="tag">&lt;phone&gt;</span>4164844000<span class="tag">&lt;/phone&gt;</span>
+        <span class="tag">&lt;address&gt;</span>
+            <span class="tag">&lt;street1&gt;</span>150 Eglinton<span class="tag">&lt;/street1&gt;</span>
+            <span class="tag">&lt;street2&gt;</span>Suite 999<span class="tag">&lt;/street2&gt;</span>
+            <span class="tag">&lt;city&gt;</span>Toronto<span class="tag">&lt;/city&gt;</span>
+            <span class="tag">&lt;state&gt;</span>ON<span class="tag">&lt;/state&gt;</span>
+            <span class="tag">&lt;country&gt;</span>CA<span class="tag">&lt;/country&gt;</span>
+            <span class="tag">&lt;postal-code&gt;</span>M4P1E8<span class="tag">&lt;/postal-code&gt;</span>
+        <span class="tag">&lt;/address&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;ip-address</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;order-number&gt;</span>PO98U457Z<span class="tag">&lt;/order-number&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>Mission Impossible Box DVD Set<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://requestb.in/1dwrbln1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;Signature</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;SignedInfo&gt;</span>
+            <span class="tag">&lt;CanonicalizationMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;SignatureMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#rsa-sha1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;Reference</span> <span class="attribute-name">URI</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+                <span class="tag">&lt;Transforms&gt;</span>
+                    <span class="tag">&lt;Transform</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;/Transforms&gt;</span>
+                <span class="tag">&lt;DigestMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#sha1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;DigestValue&gt;</span>tuellMpzUg+KYUNriRAr73ucs58=<span class="tag">&lt;/DigestValue&gt;</span>
+            <span class="tag">&lt;/Reference&gt;</span>
+        <span class="tag">&lt;/SignedInfo&gt;</span>
+        <span class="tag">&lt;SignatureValue&gt;</span>Cj6szp1KWGEaXxohtqTYb5/OOIkrH9MOWurPZHGOFIfI0RjavcY0clymSen12ZpUmi4D/LVDpCPI
 l91zpSWBkBMw1D6nwc65H2XtiO1ezUB4ehpBjlI75mwSeydL44nWlW/3iSODqg8iumnyAjh9peI2
 iEJe3bAmwItcXq1zw06NfkPBrHEulRKnKv6WZ3vtVbqB3KjLsZGCs7bpr3x9UcGduqqAwQwRBsKl
 hVS81C/xVVh4yKGeLtLCDYzH63qdds3+WXFelQ3t9ZGOQwsi5gNPJa1HbYJ3u/qzBwUX2DUjKXd8
-eXW7IbiE7tJtTFzgdD2dgbslz7Zo1NmWJuo9DA==<span style="color:#070;font-weight:bold">&lt;/SignatureValue&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;KeyInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;X509Data&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509SubjectName&gt;</span>CN=Manoj Sahu,OU=Operations,O=Wirecard Elastic Payments,L=Toronto,ST=ON,C=CA<span style="color:#070;font-weight:bold">&lt;/X509SubjectName&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509Certificate&gt;</span>MIIDcDCCAligAwIBAgIETgQWGTANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJDQTELMAkGA1UE
+eXW7IbiE7tJtTFzgdD2dgbslz7Zo1NmWJuo9DA==<span class="tag">&lt;/SignatureValue&gt;</span>
+        <span class="tag">&lt;KeyInfo&gt;</span>
+            <span class="tag">&lt;X509Data&gt;</span>
+                <span class="tag">&lt;X509SubjectName&gt;</span>CN=Manoj Sahu,OU=Operations,O=Wirecard Elastic Payments,L=Toronto,ST=ON,C=CA<span class="tag">&lt;/X509SubjectName&gt;</span>
+                <span class="tag">&lt;X509Certificate&gt;</span>MIIDcDCCAligAwIBAgIETgQWGTANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJDQTELMAkGA1UE
 CBMCT04xEDAOBgNVBAcTB1Rvcm9udG8xIjAgBgNVBAoTGVdpcmVjYXJkIEVsYXN0aWMgUGF5bWVu
 dHMxEzARBgNVBAsTCk9wZXJhdGlvbnMxEzARBgNVBAMTCk1hbm9qIFNhaHUwHhcNMTEwNjI0MDQ0
 NDA5WhcNMTQwMzIwMDQ0NDA5WjB6MQswCQYDVQQGEwJDQTELMAkGA1UECBMCT04xEDAOBgNVBAcT
@@ -6119,105 +6119,105 @@ ADgkuN/e2IFy7JXdbjNJbKBd3HLvFvK87dv8qQ+HK4qfCxYXh6aYhbKHJSA6C2pbOD3HBXoyovZr
 mk/KqOyUL+unVcR+APjxX4KP25sdkplgmeQ47CWxtKAHZUTtWwAVI/WhsX89SSucBfIS5TJ54e7m
 02qvGoK8UA/IRbIQ6DZ9hEKV5VQKiMx3ubwwHGXfOWz2fKmeZBuTeY+HiTEH8KCHpfw2j8G+dDgU
 jlp9LvjVNmJzfNBBk1Si0d/rhXmMzVSKj08tp1sPRK0/sJtJZBzQajpnsZ9NFfoJNdG13AzYwDP3
-x/QspK0jYn1KZw1qz524VWoQoueR8Xj30A2jntA=<span style="color:#070;font-weight:bold">&lt;/X509Certificate&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/X509Data&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/KeyInfo&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/Signature&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+x/QspK0jYn1KZw1qz524VWoQoueR8Xj30A2jntA=<span class="tag">&lt;/X509Certificate&gt;</span>
+            <span class="tag">&lt;/X509Data&gt;</span>
+        <span class="tag">&lt;/KeyInfo&gt;</span>
+    <span class="tag">&lt;/Signature&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML Debit Request (Failure)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML Debit Response (Failure)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>demo-111111111111111111111<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>failed<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">400.1011</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The Requested Amount has not been provided.  Please check your input and try again.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">error</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>demo-111111111111111111111<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>failed<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">400.1011</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The Requested Amount has not been provided.  Please check your input and try again.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">error</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML Debit Notification (Failure)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>ac276887-b3f5-4d69-a397-ee07cf592f78<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>a31c5a90-5dd0-42f7-85be-506bffa8eaaa<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>failed<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-22T17:35:59.000-04:00<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">500.1087</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u%3AThe+connection+to+the+provider+was+never+made+and+timed+out.++Please+try+again+later.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">error</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">MYR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10.000000<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>bb7320a2-1926-11e5-9267-00163e3537f6<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;phone&gt;</span>4164844000<span style="color:#070;font-weight:bold">&lt;/phone&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;address&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street1&gt;</span>150 Eglinton<span style="color:#070;font-weight:bold">&lt;/street1&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;street2&gt;</span>Suite 999<span style="color:#070;font-weight:bold">&lt;/street2&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;city&gt;</span>Toronto<span style="color:#070;font-weight:bold">&lt;/city&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;state&gt;</span>ON<span style="color:#070;font-weight:bold">&lt;/state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;country&gt;</span>CA<span style="color:#070;font-weight:bold">&lt;/country&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;postal-code&gt;</span>M4P1E8<span style="color:#070;font-weight:bold">&lt;/postal-code&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/address&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;ip-address</span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>PO98U457Z<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Mission Impossible Box DVD Set<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;notifications&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;notification</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://requestb.in/1dwrbln1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/notifications&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;Signature</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignedInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;CanonicalizationMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;SignatureMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#rsa-sha1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;Reference</span> <span style="color:#b48">URI</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;Transforms&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;Transform</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;/Transforms&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;DigestMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#sha1</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;DigestValue&gt;</span>tuellMpzUg+KYUNriRAr73ucs58=<span style="color:#070;font-weight:bold">&lt;/DigestValue&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/Reference&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/SignedInfo&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;SignatureValue&gt;</span>Cj6szp1KWGEaXxohtqTYb5/OOIkrH9MOWurPZHGOFIfI0RjavcY0clymSen12ZpUmi4D/LVDpCPI
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>3aae9de6-589f-4ac8-b90f-7bbb22c1bea2<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>ac276887-b3f5-4d69-a397-ee07cf592f78<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>a31c5a90-5dd0-42f7-85be-506bffa8eaaa<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>failed<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-22T17:35:59.000-04:00<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">500.1087</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u%3AThe+connection+to+the+provider+was+never+made+and+timed+out.++Please+try+again+later.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">error</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">MYR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10.000000<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>bb7320a2-1926-11e5-9267-00163e3537f6<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+        <span class="tag">&lt;phone&gt;</span>4164844000<span class="tag">&lt;/phone&gt;</span>
+        <span class="tag">&lt;address&gt;</span>
+            <span class="tag">&lt;street1&gt;</span>150 Eglinton<span class="tag">&lt;/street1&gt;</span>
+            <span class="tag">&lt;street2&gt;</span>Suite 999<span class="tag">&lt;/street2&gt;</span>
+            <span class="tag">&lt;city&gt;</span>Toronto<span class="tag">&lt;/city&gt;</span>
+            <span class="tag">&lt;state&gt;</span>ON<span class="tag">&lt;/state&gt;</span>
+            <span class="tag">&lt;country&gt;</span>CA<span class="tag">&lt;/country&gt;</span>
+            <span class="tag">&lt;postal-code&gt;</span>M4P1E8<span class="tag">&lt;/postal-code&gt;</span>
+        <span class="tag">&lt;/address&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;ip-address</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;order-number&gt;</span>PO98U457Z<span class="tag">&lt;/order-number&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>Mission Impossible Box DVD Set<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://requestb.in/1dwrbln1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;Signature</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;SignedInfo&gt;</span>
+            <span class="tag">&lt;CanonicalizationMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;SignatureMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#rsa-sha1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;Reference</span> <span class="attribute-name">URI</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+                <span class="tag">&lt;Transforms&gt;</span>
+                    <span class="tag">&lt;Transform</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;/Transforms&gt;</span>
+                <span class="tag">&lt;DigestMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#sha1</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;DigestValue&gt;</span>tuellMpzUg+KYUNriRAr73ucs58=<span class="tag">&lt;/DigestValue&gt;</span>
+            <span class="tag">&lt;/Reference&gt;</span>
+        <span class="tag">&lt;/SignedInfo&gt;</span>
+        <span class="tag">&lt;SignatureValue&gt;</span>Cj6szp1KWGEaXxohtqTYb5/OOIkrH9MOWurPZHGOFIfI0RjavcY0clymSen12ZpUmi4D/LVDpCPI
 l91zpSWBkBMw1D6nwc65H2XtiO1ezUB4ehpBjlI75mwSeydL44nWlW/3iSODqg8iumnyAjh9peI2
 iEJe3bAmwItcXq1zw06NfkPBrHEulRKnKv6WZ3vtVbqB3KjLsZGCs7bpr3x9UcGduqqAwQwRBsKl
 hVS81C/xVVh4yKGeLtLCDYzH63qdds3+WXFelQ3t9ZGOQwsi5gNPJa1HbYJ3u/qzBwUX2DUjKXd8
-eXW7IbiE7tJtTFzgdD2dgbslz7Zo1NmWJuo9DA==<span style="color:#070;font-weight:bold">&lt;/SignatureValue&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;KeyInfo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;X509Data&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509SubjectName&gt;</span>CN=Manoj Sahu,OU=Operations,O=Wirecard Elastic Payments,L=Toronto,ST=ON,C=CA<span style="color:#070;font-weight:bold">&lt;/X509SubjectName&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;X509Certificate&gt;</span>MIIDcDCCAligAwIBAgIETgQWGTANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJDQTELMAkGA1UE
+eXW7IbiE7tJtTFzgdD2dgbslz7Zo1NmWJuo9DA==<span class="tag">&lt;/SignatureValue&gt;</span>
+        <span class="tag">&lt;KeyInfo&gt;</span>
+            <span class="tag">&lt;X509Data&gt;</span>
+                <span class="tag">&lt;X509SubjectName&gt;</span>CN=Manoj Sahu,OU=Operations,O=Wirecard Elastic Payments,L=Toronto,ST=ON,C=CA<span class="tag">&lt;/X509SubjectName&gt;</span>
+                <span class="tag">&lt;X509Certificate&gt;</span>MIIDcDCCAligAwIBAgIETgQWGTANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJDQTELMAkGA1UE
 CBMCT04xEDAOBgNVBAcTB1Rvcm9udG8xIjAgBgNVBAoTGVdpcmVjYXJkIEVsYXN0aWMgUGF5bWVu
 dHMxEzARBgNVBAsTCk9wZXJhdGlvbnMxEzARBgNVBAMTCk1hbm9qIFNhaHUwHhcNMTEwNjI0MDQ0
 NDA5WhcNMTQwMzIwMDQ0NDA5WjB6MQswCQYDVQQGEwJDQTELMAkGA1UECBMCT04xEDAOBgNVBAcT
@@ -6232,11 +6232,11 @@ ADgkuN/e2IFy7JXdbjNJbKBd3HLvFvK87dv8qQ+HK4qfCxYXh6aYhbKHJSA6C2pbOD3HBXoyovZr
 mk/KqOyUL+unVcR+APjxX4KP25sdkplgmeQ47CWxtKAHZUTtWwAVI/WhsX89SSucBfIS5TJ54e7m
 02qvGoK8UA/IRbIQ6DZ9hEKV5VQKiMx3ubwwHGXfOWz2fKmeZBuTeY+HiTEH8KCHpfw2j8G+dDgU
 jlp9LvjVNmJzfNBBk1Si0d/rhXmMzVSKj08tp1sPRK0/sJtJZBzQajpnsZ9NFfoJNdG13AzYwDP3
-x/QspK0jYn1KZw1qz524VWoQoueR8Xj30A2jntA=<span style="color:#070;font-weight:bold">&lt;/X509Certificate&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/X509Data&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/KeyInfo&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/Signature&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+x/QspK0jYn1KZw1qz524VWoQoueR8Xj30A2jntA=<span class="tag">&lt;/X509Certificate&gt;</span>
+            <span class="tag">&lt;/X509Data&gt;</span>
+        <span class="tag">&lt;/KeyInfo&gt;</span>
+    <span class="tag">&lt;/Signature&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6278,22 +6278,22 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)</pre>
 <div class="listingblock">
 <div class="title">get-url Request Body</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>0492ac17-b459-420c-8e4d-445be229d276<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>get-url<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>d6513abf-7a64-4a31-b773-76f19be65780<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">MYR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>100<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>32168<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>something<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;merchant-account-id&gt;</span>0492ac17-b459-420c-8e4d-445be229d276<span class="tag">&lt;/merchant-account-id&gt;</span>
+  <span class="tag">&lt;payment-methods&gt;</span>
+    <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+  <span class="tag">&lt;/payment-methods&gt;</span>
+  <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+  <span class="tag">&lt;request-id&gt;</span>d6513abf-7a64-4a31-b773-76f19be65780<span class="tag">&lt;/request-id&gt;</span>
+  <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">MYR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/requested-amount&gt;</span>
+  <span class="tag">&lt;order-number&gt;</span>32168<span class="tag">&lt;/order-number&gt;</span>
+  <span class="tag">&lt;order-detail&gt;</span>something<span class="tag">&lt;/order-detail&gt;</span>
+  <span class="tag">&lt;account-holder&gt;</span>
+    <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+    <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+    <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+  <span class="tag">&lt;/account-holder&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -6315,31 +6315,31 @@ Date: Wed, 30 Jan 2019 09:19:36 GMT</pre>
 <div class="listingblock">
 <div class="title">get-url Response Body</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span>
-    <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span>
-    <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>0492ac17-b459-420c-8e4d-445be229d276<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>ea8579fd-1e70-4045-9b62-0f433c2b4c70<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>d6513abf-7a64-4a31-b773-76f19be65780<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>get-url<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2017-08-30T09:19:36.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">MYR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>100<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>32168<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>something<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://localhost:9301/maybank2u/payment/?sendString=Login$1KY$1$100.00$1$44895249721065$1$d6513abf-7a64-4a31-b773-76f19be65780$http://localhost:8080/engine/rest/epp/maybank/payments/</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span>
+    <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span>
+    <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>0492ac17-b459-420c-8e4d-445be229d276<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>ea8579fd-1e70-4045-9b62-0f433c2b4c70<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>d6513abf-7a64-4a31-b773-76f19be65780<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2017-08-30T09:19:36.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">MYR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;order-number&gt;</span>32168<span class="tag">&lt;/order-number&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>something<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://localhost:9301/maybank2u/payment/?sendString=Login$1KY$1$100.00$1$44895249721065$1$d6513abf-7a64-4a31-b773-76f19be65780$http://localhost:8080/engine/rest/epp/maybank/payments/</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -6370,36 +6370,36 @@ Authorization: Basic dGVhbWNpdHk6dGVhbWNpdHk=</pre>
 <div class="listingblock">
 <div class="title">WPG Request Body</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;soap:Envelope</span>
-    <span style="color:#b48">xmlns:soap</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://schemas.xmlsoap.org/soap/envelope/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;soap:Body&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;RequestPayeeInfo</span>
-            <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.openuri.org/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;userid&gt;</span>test-user<span style="color:#070;font-weight:bold">&lt;/userid&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;password&gt;</span>test-password<span style="color:#070;font-weight:bold">&lt;/password&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payeecode&gt;</span>1KY<span style="color:#070;font-weight:bold">&lt;/payeecode&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;billNo&gt;</span>d6513abf-7a64-4a31-b773-76f19be65780<span style="color:#070;font-weight:bold">&lt;/billNo&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;Amt&gt;</span>100<span style="color:#070;font-weight:bold">&lt;/Amt&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/RequestPayeeInfo&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/soap:Body&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/soap:Envelope&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;soap:Envelope</span>
+    <span class="attribute-name">xmlns:soap</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://schemas.xmlsoap.org/soap/envelope/</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;soap:Body&gt;</span>
+        <span class="tag">&lt;RequestPayeeInfo</span>
+            <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.openuri.org/</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;userid&gt;</span>test-user<span class="tag">&lt;/userid&gt;</span>
+            <span class="tag">&lt;password&gt;</span>test-password<span class="tag">&lt;/password&gt;</span>
+            <span class="tag">&lt;payeecode&gt;</span>1KY<span class="tag">&lt;/payeecode&gt;</span>
+            <span class="tag">&lt;billNo&gt;</span>d6513abf-7a64-4a31-b773-76f19be65780<span class="tag">&lt;/billNo&gt;</span>
+            <span class="tag">&lt;Amt&gt;</span>100<span class="tag">&lt;/Amt&gt;</span>
+        <span class="tag">&lt;/RequestPayeeInfo&gt;</span>
+    <span class="tag">&lt;/soap:Body&gt;</span>
+<span class="tag">&lt;/soap:Envelope&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Maybank2u Webservice Response to <em>WPG</em>
 </div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;SOAP-ENV:Envelope</span>
-    <span style="color:#b48">xmlns:SOAP-ENV</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://schemas.xmlsoap.org/soap/envelope/</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;SOAP-ENV:Header</span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;SOAP-ENV:Body&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;RequestPayeeInfoResponse</span>
-            <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.openuri.org/</span><span style="color:#710">"</span></span>
-            <span style="color:#b48">xmlns:xsi</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2001/XMLSchema-instance</span><span style="color:#710">"</span></span> <span style="color:#b48">xsi:noNamespaceSchemaLocation</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span> <span style="color:#b48">xsi:schemaLocation</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;RequestPayeeInfoResult&gt;</span>00<span style="color:#070;font-weight:bold">&lt;/RequestPayeeInfoResult&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/RequestPayeeInfoResponse&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/SOAP-ENV:Body&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/SOAP-ENV:Envelope&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;SOAP-ENV:Envelope</span>
+    <span class="attribute-name">xmlns:SOAP-ENV</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://schemas.xmlsoap.org/soap/envelope/</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;SOAP-ENV:Header</span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;SOAP-ENV:Body&gt;</span>
+        <span class="tag">&lt;RequestPayeeInfoResponse</span>
+            <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.openuri.org/</span><span class="delimiter">"</span></span>
+            <span class="attribute-name">xmlns:xsi</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/XMLSchema-instance</span><span class="delimiter">"</span></span> <span class="attribute-name">xsi:noNamespaceSchemaLocation</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span> <span class="attribute-name">xsi:schemaLocation</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;RequestPayeeInfoResult&gt;</span>00<span class="tag">&lt;/RequestPayeeInfoResult&gt;</span>
+        <span class="tag">&lt;/RequestPayeeInfoResponse&gt;</span>
+    <span class="tag">&lt;/SOAP-ENV:Body&gt;</span>
+<span class="tag">&lt;/SOAP-ENV:Envelope&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -6424,33 +6424,33 @@ Date: Wed, 30 Jan 2019 09:19:36 GMT</pre>
 <div class="listingblock">
 <div class="title">WPG Response to Merchant’s Server Body</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span>
-    <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span>
-    <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://127.0.0.1:8080/engine/rest/merchants/0492ac17-b459-420c-8e4d-445be229d276/payments/761be758-c50a-416b-b0d1-f65966308e9e</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id</span> <span style="color:#b48">ref</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://127.0.0.1:8080/engine/rest/config/merchants/0492ac17-b459-420c-8e4d-445be229d276</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>0492ac17-b459-420c-8e4d-445be229d276<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>761be758-c50a-416b-b0d1-f65966308e9e<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>d6513abf-7a64-4a31-b773-76f19be65780<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2017-08-30T09:19:36.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">MYR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>100.000000<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>ea8579fd-1e70-4045-9b62-0f433c2b4c70<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>32168<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>something<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">maybank2u</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span>
+    <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span>
+    <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://127.0.0.1:8080/engine/rest/merchants/0492ac17-b459-420c-8e4d-445be229d276/payments/761be758-c50a-416b-b0d1-f65966308e9e</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id</span> <span class="attribute-name">ref</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://127.0.0.1:8080/engine/rest/config/merchants/0492ac17-b459-420c-8e4d-445be229d276</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>0492ac17-b459-420c-8e4d-445be229d276<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>761be758-c50a-416b-b0d1-f65966308e9e<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>d6513abf-7a64-4a31-b773-76f19be65780<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2017-08-30T09:19:36.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">MYR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>100.000000<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>ea8579fd-1e70-4045-9b62-0f433c2b4c70<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;order-number&gt;</span>32168<span class="tag">&lt;/order-number&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>something<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">maybank2u</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -6466,9 +6466,10 @@ Date: Wed, 30 Jan 2019 09:19:36 GMT</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

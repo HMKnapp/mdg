@@ -6544,85 +6544,85 @@ specified, a partial refund is done. Any subsequent partial refund must have a s
 <div class="listingblock">
 <div class="title">Debit Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>8a940e2a-5d7e-468b-8b27-d16a50814a02<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">boleto</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">BRL</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>5.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-items&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;order-item&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;name&gt;</span>Series Box - Exterminate!<span style="color:#070;font-weight:bold">&lt;/name&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">BRL</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>5.00<span style="color:#070;font-weight:bold">&lt;/amount&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;quantity&gt;</span>1<span style="color:#070;font-weight:bold">&lt;/quantity&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/order-item&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/order-items&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>Jose<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Silva<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;date-of-birth&gt;</span>1988-12-30<span style="color:#070;font-weight:bold">&lt;/date-of-birth&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;social-security-number&gt;</span>05989318642<span style="color:#070;font-weight:bold">&lt;/social-security-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;shipping&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>Jose<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Silva<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>josesilva@email.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/shipping&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;expiration-date&gt;</span>2028-04-21<span style="color:#070;font-weight:bold">&lt;/expiration-date&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">instruction-lines.first</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Primeira linha se instruo</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">instruction-lines.second</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Segunda linha se instruo</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">instruction-lines.third</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Terceira linha se instruo</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">logo-uri</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://meusite.com.br/logo.jpg</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>8a940e2a-5d7e-468b-8b27-d16a50814a02<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">boleto</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">BRL</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>5.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>Series Box - Exterminate!<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">BRL</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>5.00<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>Jose<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Silva<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;date-of-birth&gt;</span>1988-12-30<span class="tag">&lt;/date-of-birth&gt;</span>
+        <span class="tag">&lt;social-security-number&gt;</span>05989318642<span class="tag">&lt;/social-security-number&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;shipping&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>Jose<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Silva<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>josesilva@email.com<span class="tag">&lt;/email&gt;</span>
+    <span class="tag">&lt;/shipping&gt;</span>
+    <span class="tag">&lt;expiration-date&gt;</span>2028-04-21<span class="tag">&lt;/expiration-date&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">instruction-lines.first</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Primeira linha se instruo</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">instruction-lines.second</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Segunda linha se instruo</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">instruction-lines.third</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Terceira linha se instruo</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">logo-uri</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://meusite.com.br/logo.jpg</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Debit Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>8a940e2a-5d7e-468b-8b27-d16a50814a02<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>809d088c-a970-4c96-bbfe-59f32976b5e4<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>670418ee-9fbc-4885-ad16-bb71f12f0793<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2018-11-22T10:34:15.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span> <span style="color:#b48">provider-transaction-id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">PAY-0HRR7IN7FMDF</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">BRL</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>5.00<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>Jose<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Silva<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;shipping&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>Jose<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Silva<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;email&gt;</span>josesilva@email.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/shipping&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-items&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;order-item&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;name&gt;</span>Series Box - Exterminate!<span style="color:#070;font-weight:bold">&lt;/name&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">BRL</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>5.00<span style="color:#070;font-weight:bold">&lt;/amount&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;quantity&gt;</span>1<span style="color:#070;font-weight:bold">&lt;/quantity&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/order-item&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/order-items&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;custom-fields&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">instruction-lines.first</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Primeira linha se instruo</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/custom-field&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">instruction-lines.second</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Segunda linha se instruo</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/custom-field&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">instruction-lines.third</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Terceira linha se instruo</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/custom-field&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;custom-field</span> <span style="color:#b48">field-name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">logo-uri</span><span style="color:#710">"</span></span> <span style="color:#b48">field-value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://meusite.com.br/logo.jpg</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/custom-field&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/custom-fields&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://checkout-sandbox.moip.com.br/boleto/PAY-0HRR7IN7FMDF</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">boleto</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;expiration-date&gt;</span>2028-04-21<span style="color:#070;font-weight:bold">&lt;/expiration-date&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>8a940e2a-5d7e-468b-8b27-d16a50814a02<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>809d088c-a970-4c96-bbfe-59f32976b5e4<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>670418ee-9fbc-4885-ad16-bb71f12f0793<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2018-11-22T10:34:15.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span> <span class="attribute-name">provider-transaction-id</span>=<span class="string"><span class="delimiter">"</span><span class="content">PAY-0HRR7IN7FMDF</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">BRL</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>5.00<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>Jose<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Silva<span class="tag">&lt;/last-name&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;shipping&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>Jose<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Silva<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;email&gt;</span>josesilva@email.com<span class="tag">&lt;/email&gt;</span>
+    <span class="tag">&lt;/shipping&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>Series Box - Exterminate!<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">BRL</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>5.00<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">instruction-lines.first</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Primeira linha se instruo</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/custom-field&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">instruction-lines.second</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Segunda linha se instruo</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/custom-field&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">instruction-lines.third</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Terceira linha se instruo</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/custom-field&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">logo-uri</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://meusite.com.br/logo.jpg</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/custom-field&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://checkout-sandbox.moip.com.br/boleto/PAY-0HRR7IN7FMDF</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">boleto</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;expiration-date&gt;</span>2028-04-21<span class="tag">&lt;/expiration-date&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6635,9 +6635,10 @@ specified, a partial refund is done. Any subsequent partial refund must have a s
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

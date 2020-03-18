@@ -6233,174 +6233,174 @@ must be provided, but not both.</p></td>
 <div class="listingblock">
 <div class="title">XML get-url Request (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>9b4b0e5f-1bc8-422e-be42-d0bad2eadabc<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>4da09987-c808-4c40-bfd5-85e0f624276b<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>get-url<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>1.0<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>180605125236138<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;bank-account&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;bic&gt;</span>GENODETT488<span style="color:#070;font-weight:bold">&lt;/bic&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/bank-account&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+ <span class="tag">&lt;payment-methods&gt;</span>
+  <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">giropay</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+ <span class="tag">&lt;/payment-methods&gt;</span>
+ <span class="tag">&lt;merchant-account-id&gt;</span>9b4b0e5f-1bc8-422e-be42-d0bad2eadabc<span class="tag">&lt;/merchant-account-id&gt;</span>
+ <span class="tag">&lt;request-id&gt;</span>4da09987-c808-4c40-bfd5-85e0f624276b<span class="tag">&lt;/request-id&gt;</span>
+ <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+ <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1.0<span class="tag">&lt;/requested-amount&gt;</span>
+ <span class="tag">&lt;order-number&gt;</span>180605125236138<span class="tag">&lt;/order-number&gt;</span>
+ <span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+ <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+ <span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+ <span class="tag">&lt;account-holder&gt;</span>
+  <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+  <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+  <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+ <span class="tag">&lt;/account-holder&gt;</span>
+ <span class="tag">&lt;bank-account&gt;</span>
+  <span class="tag">&lt;bic&gt;</span>GENODETT488<span class="tag">&lt;/bic&gt;</span>
+ <span class="tag">&lt;/bank-account&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML get-url Response (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>9b4b0e5f-1bc8-422e-be42-d0bad2eadabc<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>1e0db2b9-6c6d-4180-8845-d56558eb34e1<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>4da09987-c808-4c40-bfd5-85e0f624276b<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>get-url<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2018-06-05T10:52:36.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>1.0<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>180605125236138<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">url</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://giropaytest1.fiducia.de/ShopSystem/bank/BankEntry?RZKZ=XC</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">RZBK=8076</span><span style="color:#800;font-weight:bold">&amp;amp;</span><span style="color:#D20">redirectData=merchantId%3D8993370%26merchantTxId%3D1E0DB2B96C6D41808845D56558EB34E1%26txId%3DF000001ZRL%26shopEndFailureURL%3Dhttps%253A%252F%252Fapi-test.wirecard.com%253A443%252Fengine%252Fnotification%252Fgiropaygad%252Fredirect%252F1e0db2b9-6c6d-4180-8845-d56558eb34e1%252F%26operatorSignature%3DjiY5qRejuINgTZVIoYt7xXIfcq%252BEkyLRqRGhY3RIWtS1iuMzKasF%252FmSA2VFx7h7SRzT5QpMZ8y8oGgYeUIuQ43EPtMdtuRC2r6BQvwh26NmN1fv5e3hXXfcv2VzmJ3wgo%252Bc%252B18%252BUWE2%252B6WCKQINMRUpwn2YTPkJJCDltxpET5Qu7Iu9pUxXJedwZyTTB9vkKhwlp0AuZ5D7wvQ4ZnftGQeAf33LIwbd9MCoPpm3Dv6SVZna0wG20FUqYvThJnvnORsskmsCffuZfgp%252BjUpvuWedlVEWjh16EBWxHGuDP2gKpdg%252BSHnexmGHAOfjZgV%252BpNWGoNFaea6v1uG0c8bx9PA%253D%253D%26operatorId%3D002%26shopEndSuccessURL%3Dhttps%253A%252F%252Fapi-test.wirecard.com%253A443%252Fengine%252Fnotification%252Fgiropaygad%252Fredirect%252F1e0db2b9-6c6d-4180-8845-d56558eb34e1%252F</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;bank-account&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;bic&gt;</span>GENODETT488<span style="color:#070;font-weight:bold">&lt;/bic&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/bank-account&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+ <span class="tag">&lt;merchant-account-id&gt;</span>9b4b0e5f-1bc8-422e-be42-d0bad2eadabc<span class="tag">&lt;/merchant-account-id&gt;</span>
+ <span class="tag">&lt;transaction-id&gt;</span>1e0db2b9-6c6d-4180-8845-d56558eb34e1<span class="tag">&lt;/transaction-id&gt;</span>
+ <span class="tag">&lt;request-id&gt;</span>4da09987-c808-4c40-bfd5-85e0f624276b<span class="tag">&lt;/request-id&gt;</span>
+ <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+ <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+ <span class="tag">&lt;completion-time-stamp&gt;</span>2018-06-05T10:52:36.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+ <span class="tag">&lt;statuses&gt;</span>
+  <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+ <span class="tag">&lt;/statuses&gt;</span>
+ <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1.0<span class="tag">&lt;/requested-amount&gt;</span>
+ <span class="tag">&lt;account-holder&gt;</span>
+  <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+  <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+  <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+ <span class="tag">&lt;/account-holder&gt;</span>
+ <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+ <span class="tag">&lt;order-number&gt;</span>180605125236138<span class="tag">&lt;/order-number&gt;</span>
+ <span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+ <span class="tag">&lt;payment-methods&gt;</span>
+  <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://giropaytest1.fiducia.de/ShopSystem/bank/BankEntry?RZKZ=XC</span><span class="entity">&amp;amp;</span><span class="content">RZBK=8076</span><span class="entity">&amp;amp;</span><span class="content">redirectData=merchantId%3D8993370%26merchantTxId%3D1E0DB2B96C6D41808845D56558EB34E1%26txId%3DF000001ZRL%26shopEndFailureURL%3Dhttps%253A%252F%252Fapi-test.wirecard.com%253A443%252Fengine%252Fnotification%252Fgiropaygad%252Fredirect%252F1e0db2b9-6c6d-4180-8845-d56558eb34e1%252F%26operatorSignature%3DjiY5qRejuINgTZVIoYt7xXIfcq%252BEkyLRqRGhY3RIWtS1iuMzKasF%252FmSA2VFx7h7SRzT5QpMZ8y8oGgYeUIuQ43EPtMdtuRC2r6BQvwh26NmN1fv5e3hXXfcv2VzmJ3wgo%252Bc%252B18%252BUWE2%252B6WCKQINMRUpwn2YTPkJJCDltxpET5Qu7Iu9pUxXJedwZyTTB9vkKhwlp0AuZ5D7wvQ4ZnftGQeAf33LIwbd9MCoPpm3Dv6SVZna0wG20FUqYvThJnvnORsskmsCffuZfgp%252BjUpvuWedlVEWjh16EBWxHGuDP2gKpdg%252BSHnexmGHAOfjZgV%252BpNWGoNFaea6v1uG0c8bx9PA%253D%253D%26operatorId%3D002%26shopEndSuccessURL%3Dhttps%253A%252F%252Fapi-test.wirecard.com%253A443%252Fengine%252Fnotification%252Fgiropaygad%252Fredirect%252F1e0db2b9-6c6d-4180-8845-d56558eb34e1%252F</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">giropay</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+ <span class="tag">&lt;/payment-methods&gt;</span>
+ <span class="tag">&lt;bank-account&gt;</span>
+  <span class="tag">&lt;bic&gt;</span>GENODETT488<span class="tag">&lt;/bic&gt;</span>
+ <span class="tag">&lt;/bank-account&gt;</span>
+ <span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML debit Notification (Successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>46e10637-a14d-47d0-b8f2-bb8b9cf2aa52<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>0c60aaa2-9caf-4a0e-a814-313eb6730043<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>b7aa31ce-a8be-4622-a9e4-7e1052d60267<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>debit<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2018-06-05T09:51:03.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.1126</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay:Successful confirmation received from the bank.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>1.0<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>18ad619c-539a-4ee2-a5de-660f9d404a73<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>180605114854891<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;provider-transaction-reference-id&gt;</span>GIROPAY0028993370F000001ZQU<span style="color:#070;font-weight:bold">&lt;/provider-transaction-reference-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;Signature</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;SignedInfo&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;CanonicalizationMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;SignatureMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;Reference</span> <span style="color:#b48">URI</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;Transforms&gt;</span>
-     <span style="color:#070;font-weight:bold">&lt;Transform</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/Transforms&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;DigestMethod</span> <span style="color:#b48">Algorithm</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.w3.org/2001/04/xmlenc#sha256</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;DigestValue&gt;</span>H9zNz076h9Gya8KMSaAEnJ2qHklPhhWg+pAC9wCTqgk=<span style="color:#070;font-weight:bold">&lt;/DigestValue&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;/Reference&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/SignedInfo&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;SignatureValue&gt;</span>OeFEwh8K8n2lw0jl/MYoHA/ubNO1j/N1ouLK7bz/n0UD1wXSgkhsYBBQJWO7qjPs42b26E+yUn6EjnpePJUvzzvaKQCW1FgiQh8luQ/ITx8k2X/g1Yw+9tBxa5X41QNERSCzhEl1oZv8sBrxNqTE3Jwem9x22ptvET27siQ6NzL1+q+yxHyOPCvWZ54I4HoUyKl13eq3ArkkgbMMJG49V8VXQ3aYAcXqmnUFHufTPSukU1TPdsXQHQQxML/Ek8gclYhpLLjGYi1qoSXz5IQ7E95CuQl0la1LWddVDQ+WuokEEsfdWPtmlh3yUlC+6Q9Jjv584iGqvZPbcNXC083D5L6trOYgc7Z8Jl1N4ueB7IBg0TSXwvvq7Nt9rYycLyYW+zra/X5GWL3AgFnY5GLlZBqmRV5/mz5NPNvDDmSoznx6B8GCuMrg5g4/Gb8pWSIaATJJujcC5pXrCf28f8O3ahVtV2h5U29N4u+gj8oZRmW/R/GHzNGn6G3Fxa3amLwHQObYhlhnNUzcXwb0A5MzbSkXOECkzn7Y8QkHZcnx/Lk45fXmXmohKjNn7b7OKxrBChBhEKomdkSjzdncI3UNNxxiIU2SV6d3fSXjAQJ8yctuoaDFTah8PCKiGPxmxUhryyyXqoarx0SueuR1AW8oh2hbHQp8e8QDQWhck5/nV1A=<span style="color:#070;font-weight:bold">&lt;/SignatureValue&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;KeyInfo&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;X509Data&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;X509SubjectName&gt;</span>L=Ascheim,2.5.4.4=#130642617965726e,CN=api-test.wirecard.com,OU=Operations,O=Wirecard Technologies GmbH,C=DE<span style="color:#070;font-weight:bold">&lt;/X509SubjectName&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;X509Certificate&gt;</span>MIIF5DCCBMygAwIBAgICLHQwDQYJKoZIhvcNAQELBQAwWzELMAkGA1UEBhMCREUxETAPBgNVBAoTCFdpcmVjYXJkMTkwNwYDVQQDFDB3aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIwHhcNMTcwMTEyMTM1OTI2WhcNMTkwMTEyMTM1OTI2WjCBijELMAkGA1UEBhMCREUxIzAhBgNVBAoTGldpcmVjYXJkIFRlY2hub2xvZ2llcyBHbWJIMRMwEQYDVQQLEwpPcGVyYXRpb25zMR4wHAYDVQQDExVhcGktdGVzdC53aXJlY2FyZC5jb20xDzANBgNVBAQTBkJheWVybjEQMA4GA1UEBxMHQXNjaGVpbTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAKSkExBY8FjRcZdrxOuJF+HZY8+McQaOB8B0E/hTUhoclsF4OJNaMThje7R6w6OYWBMKpssGngHFaZv35rCo5XVUpJmjZa04ytxE72GKO/uP4yIR7ZBXZx42B22MFaJJZTgPRCCFd6jrz906BZ//CmEAmk5gKelfPxfWJgGyTX6xz7I9R/G57E1xNOuEihN0ma5Q2IhD71MPVseFIGazyfGbJD6rYYbeBbOQSGk//TL8sdRCn0BLcm4DH5oqcPxDKzkaBP4ohNkCWsxpLLSyV6Wx0ihT0S1OLVNkEeTvcrYgUk124VyGatwWNUuCBYyOGQSOGqrW8IHmrhjzzT0NQog0/m38lpdqw/eWmt39qhODqSfILUk2Dxv1+W0IRKJCKcJrcTbXEQCuHl+XWY+U2AhinIPNRA0KX2oOgC//inwyKWSGWHdQnaake646R1wHqtoEfCtEcfyaeR+IrMr1rCAA3RZ+MH1J5UlUCWcnxPT0kad6dUwe3Qjq3jK4gaFzYU2yVScX5LVZMlWy2NiGCIvngHQmhArESzxMVvz5METZujfax6hfmiLNRWu0Zqs09Mpxy5zk5m/WRi5izb0uBeCfcA6x9pmjMx8M4OGG5RO2HTXSwLYJTKI47VXNsLLOY+nMFmhj/dkLJ5d3zI7EczToPMRHmHG7EqEdAfbb+oUlAgMBAAGjggGAMIIBfDARBgNVHQ4ECgQIS6wVIA0mJ9IwEwYDVR0jBAwwCoAIQ2weFtQ9BQ4wCwYDVR0PBAQDAgTwMIIBQwYDVR0fBIIBOjCCATYwggEyoIIBLqCCASqGgdVsZGFwOi8vd2lyZWNhcmQubGFuL0NOPXdpcmVjYXJkLURRLU1VQy1pbnRlcm5hbC13ZWJzZXJ2aWNlLWlzc3VpbmdDQV8wMixDTj1DRFAsQ049UHVibGljIEtleSBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLGRjPXdpcmVjYXJkLGRjPWxhbj9jZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Q1JMRGlzdHJpYnV0aW9uUG9pbnSGUGh0dHA6Ly9jcmwud2lyZWNhcmQubGFuL0NSTF93aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAmlUoiEFPRsOjGPb7SYiuJLxqTXCvZQeuXiUydF6FQl/zIpR/zSltaZKK86L+1i7t1C89OyTTXBD9FN6EKmlHo/ulsMn9V2B4zK3lT/NUclST98BmCla4Jzm+roeOHTqlPz3gPRJiPsr3wdvM+FSAJ2MRdv3l77mTE3v3hjsVVMmShR3VwwpxCICl3mpMsSaJZLyJdOHwvnpXs1m9kESwPD3DQ3RAQ/OGa0pPxAkHaauog4DhPvr/nBQnWHd2Us5b/ep7LME9hZ8u3hu/Kc6Vk24c5p3WUOiyaTiw+Ym3QDXl1wBSl9DdM94KbmAAQ5D/FUqyQnSc4TpmYvJ+Iavag<span style="color:#070;font-weight:bold">&lt;/X509Certificate&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;/X509Data&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/KeyInfo&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/Signature&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+ <span class="tag">&lt;merchant-account-id&gt;</span>46e10637-a14d-47d0-b8f2-bb8b9cf2aa52<span class="tag">&lt;/merchant-account-id&gt;</span>
+ <span class="tag">&lt;transaction-id&gt;</span>0c60aaa2-9caf-4a0e-a814-313eb6730043<span class="tag">&lt;/transaction-id&gt;</span>
+ <span class="tag">&lt;request-id&gt;</span>b7aa31ce-a8be-4622-a9e4-7e1052d60267<span class="tag">&lt;/request-id&gt;</span>
+ <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+ <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+ <span class="tag">&lt;completion-time-stamp&gt;</span>2018-06-05T09:51:03.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+ <span class="tag">&lt;statuses&gt;</span>
+  <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.1126</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">giropay:Successful confirmation received from the bank.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+ <span class="tag">&lt;/statuses&gt;</span>
+ <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1.0<span class="tag">&lt;/requested-amount&gt;</span>
+ <span class="tag">&lt;parent-transaction-id&gt;</span>18ad619c-539a-4ee2-a5de-660f9d404a73<span class="tag">&lt;/parent-transaction-id&gt;</span>
+ <span class="tag">&lt;account-holder&gt;</span>
+  <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+  <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+  <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+ <span class="tag">&lt;/account-holder&gt;</span>
+ <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+ <span class="tag">&lt;order-number&gt;</span>180605114854891<span class="tag">&lt;/order-number&gt;</span>
+ <span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+ <span class="tag">&lt;payment-methods&gt;</span>
+  <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">giropay</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+ <span class="tag">&lt;/payment-methods&gt;</span>
+ <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+ <span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+ <span class="tag">&lt;provider-transaction-reference-id&gt;</span>GIROPAY0028993370F000001ZQU<span class="tag">&lt;/provider-transaction-reference-id&gt;</span>
+ <span class="tag">&lt;Signature</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;SignedInfo&gt;</span>
+   <span class="tag">&lt;CanonicalizationMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/TR/2001/REC-xml-c14n-20010315</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+   <span class="tag">&lt;SignatureMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+   <span class="tag">&lt;Reference</span> <span class="attribute-name">URI</span>=<span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;Transforms&gt;</span>
+     <span class="tag">&lt;Transform</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2000/09/xmldsig#enveloped-signature</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/Transforms&gt;</span>
+    <span class="tag">&lt;DigestMethod</span> <span class="attribute-name">Algorithm</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/04/xmlenc#sha256</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;DigestValue&gt;</span>H9zNz076h9Gya8KMSaAEnJ2qHklPhhWg+pAC9wCTqgk=<span class="tag">&lt;/DigestValue&gt;</span>
+   <span class="tag">&lt;/Reference&gt;</span>
+  <span class="tag">&lt;/SignedInfo&gt;</span>
+  <span class="tag">&lt;SignatureValue&gt;</span>OeFEwh8K8n2lw0jl/MYoHA/ubNO1j/N1ouLK7bz/n0UD1wXSgkhsYBBQJWO7qjPs42b26E+yUn6EjnpePJUvzzvaKQCW1FgiQh8luQ/ITx8k2X/g1Yw+9tBxa5X41QNERSCzhEl1oZv8sBrxNqTE3Jwem9x22ptvET27siQ6NzL1+q+yxHyOPCvWZ54I4HoUyKl13eq3ArkkgbMMJG49V8VXQ3aYAcXqmnUFHufTPSukU1TPdsXQHQQxML/Ek8gclYhpLLjGYi1qoSXz5IQ7E95CuQl0la1LWddVDQ+WuokEEsfdWPtmlh3yUlC+6Q9Jjv584iGqvZPbcNXC083D5L6trOYgc7Z8Jl1N4ueB7IBg0TSXwvvq7Nt9rYycLyYW+zra/X5GWL3AgFnY5GLlZBqmRV5/mz5NPNvDDmSoznx6B8GCuMrg5g4/Gb8pWSIaATJJujcC5pXrCf28f8O3ahVtV2h5U29N4u+gj8oZRmW/R/GHzNGn6G3Fxa3amLwHQObYhlhnNUzcXwb0A5MzbSkXOECkzn7Y8QkHZcnx/Lk45fXmXmohKjNn7b7OKxrBChBhEKomdkSjzdncI3UNNxxiIU2SV6d3fSXjAQJ8yctuoaDFTah8PCKiGPxmxUhryyyXqoarx0SueuR1AW8oh2hbHQp8e8QDQWhck5/nV1A=<span class="tag">&lt;/SignatureValue&gt;</span>
+  <span class="tag">&lt;KeyInfo&gt;</span>
+   <span class="tag">&lt;X509Data&gt;</span>
+    <span class="tag">&lt;X509SubjectName&gt;</span>L=Ascheim,2.5.4.4=#130642617965726e,CN=api-test.wirecard.com,OU=Operations,O=Wirecard Technologies GmbH,C=DE<span class="tag">&lt;/X509SubjectName&gt;</span>
+    <span class="tag">&lt;X509Certificate&gt;</span>MIIF5DCCBMygAwIBAgICLHQwDQYJKoZIhvcNAQELBQAwWzELMAkGA1UEBhMCREUxETAPBgNVBAoTCFdpcmVjYXJkMTkwNwYDVQQDFDB3aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIwHhcNMTcwMTEyMTM1OTI2WhcNMTkwMTEyMTM1OTI2WjCBijELMAkGA1UEBhMCREUxIzAhBgNVBAoTGldpcmVjYXJkIFRlY2hub2xvZ2llcyBHbWJIMRMwEQYDVQQLEwpPcGVyYXRpb25zMR4wHAYDVQQDExVhcGktdGVzdC53aXJlY2FyZC5jb20xDzANBgNVBAQTBkJheWVybjEQMA4GA1UEBxMHQXNjaGVpbTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAKSkExBY8FjRcZdrxOuJF+HZY8+McQaOB8B0E/hTUhoclsF4OJNaMThje7R6w6OYWBMKpssGngHFaZv35rCo5XVUpJmjZa04ytxE72GKO/uP4yIR7ZBXZx42B22MFaJJZTgPRCCFd6jrz906BZ//CmEAmk5gKelfPxfWJgGyTX6xz7I9R/G57E1xNOuEihN0ma5Q2IhD71MPVseFIGazyfGbJD6rYYbeBbOQSGk//TL8sdRCn0BLcm4DH5oqcPxDKzkaBP4ohNkCWsxpLLSyV6Wx0ihT0S1OLVNkEeTvcrYgUk124VyGatwWNUuCBYyOGQSOGqrW8IHmrhjzzT0NQog0/m38lpdqw/eWmt39qhODqSfILUk2Dxv1+W0IRKJCKcJrcTbXEQCuHl+XWY+U2AhinIPNRA0KX2oOgC//inwyKWSGWHdQnaake646R1wHqtoEfCtEcfyaeR+IrMr1rCAA3RZ+MH1J5UlUCWcnxPT0kad6dUwe3Qjq3jK4gaFzYU2yVScX5LVZMlWy2NiGCIvngHQmhArESzxMVvz5METZujfax6hfmiLNRWu0Zqs09Mpxy5zk5m/WRi5izb0uBeCfcA6x9pmjMx8M4OGG5RO2HTXSwLYJTKI47VXNsLLOY+nMFmhj/dkLJ5d3zI7EczToPMRHmHG7EqEdAfbb+oUlAgMBAAGjggGAMIIBfDARBgNVHQ4ECgQIS6wVIA0mJ9IwEwYDVR0jBAwwCoAIQ2weFtQ9BQ4wCwYDVR0PBAQDAgTwMIIBQwYDVR0fBIIBOjCCATYwggEyoIIBLqCCASqGgdVsZGFwOi8vd2lyZWNhcmQubGFuL0NOPXdpcmVjYXJkLURRLU1VQy1pbnRlcm5hbC13ZWJzZXJ2aWNlLWlzc3VpbmdDQV8wMixDTj1DRFAsQ049UHVibGljIEtleSBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLGRjPXdpcmVjYXJkLGRjPWxhbj9jZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Q1JMRGlzdHJpYnV0aW9uUG9pbnSGUGh0dHA6Ly9jcmwud2lyZWNhcmQubGFuL0NSTF93aXJlY2FyZC1EUS1NVUMtaW50ZXJuYWwtd2Vic2VydmljZS1pc3N1aW5nQ0FfMDIuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAmlUoiEFPRsOjGPb7SYiuJLxqTXCvZQeuXiUydF6FQl/zIpR/zSltaZKK86L+1i7t1C89OyTTXBD9FN6EKmlHo/ulsMn9V2B4zK3lT/NUclST98BmCla4Jzm+roeOHTqlPz3gPRJiPsr3wdvM+FSAJ2MRdv3l77mTE3v3hjsVVMmShR3VwwpxCICl3mpMsSaJZLyJdOHwvnpXs1m9kESwPD3DQ3RAQ/OGa0pPxAkHaauog4DhPvr/nBQnWHd2Us5b/ep7LME9hZ8u3hu/Kc6Vk24c5p3WUOiyaTiw+Ym3QDXl1wBSl9DdM94KbmAAQ5D/FUqyQnSc4TpmYvJ+Iavag<span class="tag">&lt;/X509Certificate&gt;</span>
+   <span class="tag">&lt;/X509Data&gt;</span>
+  <span class="tag">&lt;/KeyInfo&gt;</span>
+ <span class="tag">&lt;/Signature&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML get-url Request (Failure)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>9b4b0e5f-1bc8-422e-be42-d0bad2eadabc<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>46a60198-2062-49ed-a36c-7f070b9f4b45<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>get-url<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>1.0<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>180605125116611<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;bank-account&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;bic&gt;</span>TESTBIC<span style="color:#070;font-weight:bold">&lt;/bic&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/bank-account&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+ <span class="tag">&lt;payment-methods&gt;</span>
+  <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">giropay</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+ <span class="tag">&lt;/payment-methods&gt;</span>
+ <span class="tag">&lt;merchant-account-id&gt;</span>9b4b0e5f-1bc8-422e-be42-d0bad2eadabc<span class="tag">&lt;/merchant-account-id&gt;</span>
+ <span class="tag">&lt;request-id&gt;</span>46a60198-2062-49ed-a36c-7f070b9f4b45<span class="tag">&lt;/request-id&gt;</span>
+ <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+ <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1.0<span class="tag">&lt;/requested-amount&gt;</span>
+ <span class="tag">&lt;order-number&gt;</span>180605125116611<span class="tag">&lt;/order-number&gt;</span>
+ <span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+ <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+ <span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+ <span class="tag">&lt;account-holder&gt;</span>
+  <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+  <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+  <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+ <span class="tag">&lt;/account-holder&gt;</span>
+ <span class="tag">&lt;bank-account&gt;</span>
+  <span class="tag">&lt;bic&gt;</span>TESTBIC<span class="tag">&lt;/bic&gt;</span>
+ <span class="tag">&lt;/bank-account&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">XML get-url Response (Failure)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns:ns2</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/epa/transaction</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>9b4b0e5f-1bc8-422e-be42-d0bad2eadabc<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>b1ebb3d7-16de-45c0-adc9-80b02ae3340b<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>46a60198-2062-49ed-a36c-7f070b9f4b45<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>get-url<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>failed<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2018-06-05T10:51:16.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">400.1197</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">BIC is invalid.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">error</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>1.0<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>180605125116611<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>Test product 001<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;bank-account&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;bic&gt;</span>TESTBIC<span style="color:#070;font-weight:bold">&lt;/bic&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/bank-account&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;locale&gt;</span>en<span style="color:#070;font-weight:bold">&lt;/locale&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/payment&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns:ns2</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/epa/transaction</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+ <span class="tag">&lt;merchant-account-id&gt;</span>9b4b0e5f-1bc8-422e-be42-d0bad2eadabc<span class="tag">&lt;/merchant-account-id&gt;</span>
+ <span class="tag">&lt;transaction-id&gt;</span>b1ebb3d7-16de-45c0-adc9-80b02ae3340b<span class="tag">&lt;/transaction-id&gt;</span>
+ <span class="tag">&lt;request-id&gt;</span>46a60198-2062-49ed-a36c-7f070b9f4b45<span class="tag">&lt;/request-id&gt;</span>
+ <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+ <span class="tag">&lt;transaction-state&gt;</span>failed<span class="tag">&lt;/transaction-state&gt;</span>
+ <span class="tag">&lt;completion-time-stamp&gt;</span>2018-06-05T10:51:16.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+ <span class="tag">&lt;statuses&gt;</span>
+  <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">400.1197</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">BIC is invalid.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">error</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+ <span class="tag">&lt;/statuses&gt;</span>
+ <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1.0<span class="tag">&lt;/requested-amount&gt;</span>
+ <span class="tag">&lt;account-holder&gt;</span>
+  <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+  <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+  <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+ <span class="tag">&lt;/account-holder&gt;</span>
+ <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+ <span class="tag">&lt;order-number&gt;</span>180605125116611<span class="tag">&lt;/order-number&gt;</span>
+ <span class="tag">&lt;order-detail&gt;</span>Test product 001<span class="tag">&lt;/order-detail&gt;</span>
+ <span class="tag">&lt;payment-methods&gt;</span>
+  <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">giropay</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+ <span class="tag">&lt;/payment-methods&gt;</span>
+ <span class="tag">&lt;bank-account&gt;</span>
+  <span class="tag">&lt;bic&gt;</span>TESTBIC<span class="tag">&lt;/bic&gt;</span>
+ <span class="tag">&lt;/bank-account&gt;</span>
+ <span class="tag">&lt;locale&gt;</span>en<span class="tag">&lt;/locale&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6822,28 +6822,28 @@ the <a href="PaymentPageSolutions.html#PPSolutions_PPv2_PPv2Security">WPP v2 Sec
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-        <span style="color:#606"><span style="color:#404">"</span><span>payment</span><span style="color:#404">"</span></span>: {
-                <span style="color:#606"><span style="color:#404">"</span><span>merchant-account-id</span><span style="color:#404">"</span></span>: {
-                        <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">9b4b0e5f-1bc8-422e-be42-d0bad2eadabc</span><span style="color:#710">"</span></span>
+        <span class="key"><span class="delimiter">"</span><span class="content">payment</span><span class="delimiter">"</span></span>: {
+                <span class="key"><span class="delimiter">"</span><span class="content">merchant-account-id</span><span class="delimiter">"</span></span>: {
+                        <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">9b4b0e5f-1bc8-422e-be42-d0bad2eadabc</span><span class="delimiter">"</span></span>
                 },
-                <span style="color:#606"><span style="color:#404">"</span><span>request-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">{{$guid}}</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>transaction-type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">debit</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>requested-amount</span><span style="color:#404">"</span></span>: {
-                        <span style="color:#606"><span style="color:#404">"</span><span>currency</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-                        <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">1.00</span><span style="color:#710">"</span></span>
+                <span class="key"><span class="delimiter">"</span><span class="content">request-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">{{$guid}}</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">transaction-type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">debit</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">requested-amount</span><span class="delimiter">"</span></span>: {
+                        <span class="key"><span class="delimiter">"</span><span class="content">currency</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+                        <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">1.00</span><span class="delimiter">"</span></span>
 
                 },
-                <span style="color:#606"><span style="color:#404">"</span><span>payment-methods</span><span style="color:#404">"</span></span>: {
-                        <span style="color:#606"><span style="color:#404">"</span><span>payment-method</span><span style="color:#404">"</span></span>: [{
-                                <span style="color:#606"><span style="color:#404">"</span><span>name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay</span><span style="color:#710">"</span></span>
+                <span class="key"><span class="delimiter">"</span><span class="content">payment-methods</span><span class="delimiter">"</span></span>: {
+                        <span class="key"><span class="delimiter">"</span><span class="content">payment-method</span><span class="delimiter">"</span></span>: [{
+                                <span class="key"><span class="delimiter">"</span><span class="content">name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">giropay</span><span class="delimiter">"</span></span>
                         }
                 ]},
-                <span style="color:#606"><span style="color:#404">"</span><span>bank-account</span><span style="color:#404">"</span></span>: {
-                        <span style="color:#606"><span style="color:#404">"</span><span>bic</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">GENODETT488</span><span style="color:#710">"</span></span>
+                <span class="key"><span class="delimiter">"</span><span class="content">bank-account</span><span class="delimiter">"</span></span>: {
+                        <span class="key"><span class="delimiter">"</span><span class="content">bic</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">GENODETT488</span><span class="delimiter">"</span></span>
                 },
-                <span style="color:#606"><span style="color:#404">"</span><span>success-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/success</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>fail-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/error</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>cancel-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/cancel</span><span style="color:#710">"</span></span>
+                <span class="key"><span class="delimiter">"</span><span class="content">success-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://demoshop-test.wirecard.com/demoshop/#/success</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">fail-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://demoshop-test.wirecard.com/demoshop/#/error</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">cancel-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://demoshop-test.wirecard.com/demoshop/#/cancel</span><span class="delimiter">"</span></span>
         }
 }</code></pre>
 </div>
@@ -6978,7 +6978,7 @@ Allowed characters: <code>([a-zA-Z]{4}[a-zA-Z]{2}[a-zA-Z0-9]{2}([a-zA-Z0-9]{3})<
 <div class="title">2. Redirect the Consumer to the Payment Page (Sample Response URL)</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-<span style="color:#606"><span style="color:#404">"</span><span>payment-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://wpp-test.wirecard.com/processing?wPaymentToken=juZgmpkCN8v4tG3qKjmHGwcUKOyW9-eHE-Xm_6gzT5o</span><span style="color:#710">"</span></span>
+<span class="key"><span class="delimiter">"</span><span class="content">payment-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://wpp-test.wirecard.com/processing?wPaymentToken=juZgmpkCN8v4tG3qKjmHGwcUKOyW9-eHE-Xm_6gzT5o</span><span class="delimiter">"</span></span>
 }</code></pre>
 </div>
 </div>
@@ -7046,39 +7046,39 @@ notifications.</p>
 <div class="title">3. Parse and Process the Payment Response (Decoded Payment Response)</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-    <span style="color:#606"><span style="color:#404">"</span><span>payment</span><span style="color:#404">"</span></span> : {
-      <span style="color:#606"><span style="color:#404">"</span><span>parent-transaction-id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">eb434519-7794-4d6e-94b8-b65af5a88175</span><span style="color:#710">"</span></span>,
-      <span style="color:#606"><span style="color:#404">"</span><span>transaction-id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2a0f8a4a-d4a1-4c83-b3bb-d4042b3aefc0</span><span style="color:#710">"</span></span>,
-      <span style="color:#606"><span style="color:#404">"</span><span>request-id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">14013748-518c-41ac-acc8-fb99195ddcb0</span><span style="color:#710">"</span></span>,
-      <span style="color:#606"><span style="color:#404">"</span><span>transaction-state</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">success</span><span style="color:#710">"</span></span>,
-      <span style="color:#606"><span style="color:#404">"</span><span>completion-time-stamp</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2020-01-08T12:39:39</span><span style="color:#710">"</span></span>,
-      <span style="color:#606"><span style="color:#404">"</span><span>requested-amount</span><span style="color:#404">"</span></span> : {
-        <span style="color:#606"><span style="color:#404">"</span><span>currency</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span> : <span style="color:#60E">1.000000</span>
+    <span class="key"><span class="delimiter">"</span><span class="content">payment</span><span class="delimiter">"</span></span> : {
+      <span class="key"><span class="delimiter">"</span><span class="content">parent-transaction-id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">eb434519-7794-4d6e-94b8-b65af5a88175</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">transaction-id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">2a0f8a4a-d4a1-4c83-b3bb-d4042b3aefc0</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">request-id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">14013748-518c-41ac-acc8-fb99195ddcb0</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">transaction-state</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">completion-time-stamp</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">2020-01-08T12:39:39</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">requested-amount</span><span class="delimiter">"</span></span> : {
+        <span class="key"><span class="delimiter">"</span><span class="content">currency</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span> : <span class="float">1.000000</span>
       },
-      <span style="color:#606"><span style="color:#404">"</span><span>bank-account</span><span style="color:#404">"</span></span> : {
-        <span style="color:#606"><span style="color:#404">"</span><span>bic</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">GENODETT488</span><span style="color:#710">"</span></span>
+      <span class="key"><span class="delimiter">"</span><span class="content">bank-account</span><span class="delimiter">"</span></span> : {
+        <span class="key"><span class="delimiter">"</span><span class="content">bic</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">GENODETT488</span><span class="delimiter">"</span></span>
       },
-      <span style="color:#606"><span style="color:#404">"</span><span>transaction-type</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">debit</span><span style="color:#710">"</span></span>,
-      <span style="color:#606"><span style="color:#404">"</span><span>success-redirect-url</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/success</span><span style="color:#710">"</span></span>,
-      <span style="color:#606"><span style="color:#404">"</span><span>cancel-redirect-url</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/cancel</span><span style="color:#710">"</span></span>,
-      <span style="color:#606"><span style="color:#404">"</span><span>fail-redirect-url</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/error</span><span style="color:#710">"</span></span>,
-      <span style="color:#606"><span style="color:#404">"</span><span>merchant-account-id</span><span style="color:#404">"</span></span> : {
-        <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">9b4b0e5f-1bc8-422e-be42-d0bad2eadabc</span><span style="color:#710">"</span></span>
+      <span class="key"><span class="delimiter">"</span><span class="content">transaction-type</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">debit</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">success-redirect-url</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">https://demoshop-test.wirecard.com/demoshop/#/success</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">cancel-redirect-url</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">https://demoshop-test.wirecard.com/demoshop/#/cancel</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">fail-redirect-url</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">https://demoshop-test.wirecard.com/demoshop/#/error</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">merchant-account-id</span><span class="delimiter">"</span></span> : {
+        <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">9b4b0e5f-1bc8-422e-be42-d0bad2eadabc</span><span class="delimiter">"</span></span>
       },
-      <span style="color:#606"><span style="color:#404">"</span><span>statuses</span><span style="color:#404">"</span></span> : {
-        <span style="color:#606"><span style="color:#404">"</span><span>status</span><span style="color:#404">"</span></span> : [ {
-          <span style="color:#606"><span style="color:#404">"</span><span>description</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Successful confirmation received from the bank.</span><span style="color:#710">"</span></span>,
-          <span style="color:#606"><span style="color:#404">"</span><span>severity</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span>,
-          <span style="color:#606"><span style="color:#404">"</span><span>code</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.1126</span><span style="color:#710">"</span></span>
+      <span class="key"><span class="delimiter">"</span><span class="content">statuses</span><span class="delimiter">"</span></span> : {
+        <span class="key"><span class="delimiter">"</span><span class="content">status</span><span class="delimiter">"</span></span> : [ {
+          <span class="key"><span class="delimiter">"</span><span class="content">description</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">Successful confirmation received from the bank.</span><span class="delimiter">"</span></span>,
+          <span class="key"><span class="delimiter">"</span><span class="content">severity</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span>,
+          <span class="key"><span class="delimiter">"</span><span class="content">code</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">201.1126</span><span class="delimiter">"</span></span>
         } ]
       },
-      <span style="color:#606"><span style="color:#404">"</span><span>payment-methods</span><span style="color:#404">"</span></span> : {
-        <span style="color:#606"><span style="color:#404">"</span><span>payment-method</span><span style="color:#404">"</span></span> : [ {
-          <span style="color:#606"><span style="color:#404">"</span><span>name</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">giropay</span><span style="color:#710">"</span></span>
+      <span class="key"><span class="delimiter">"</span><span class="content">payment-methods</span><span class="delimiter">"</span></span> : {
+        <span class="key"><span class="delimiter">"</span><span class="content">payment-method</span><span class="delimiter">"</span></span> : [ {
+          <span class="key"><span class="delimiter">"</span><span class="content">name</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">giropay</span><span class="delimiter">"</span></span>
         } ]
       },
-      <span style="color:#606"><span style="color:#404">"</span><span>api-id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">wpp</span><span style="color:#710">"</span></span>
+      <span class="key"><span class="delimiter">"</span><span class="content">api-id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">wpp</span><span class="delimiter">"</span></span>
     }
   }</code></pre>
 </div>
@@ -7237,70 +7237,70 @@ Check the REST API <a href="giropay_Main.html#giropay">giropay specification</a>
 <div class="title">JSON Structure of a giropay Request</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-    <span style="color:#606"><span style="color:#404">"</span><span>payment</span><span style="color:#404">"</span></span>: {
-        <span style="color:#606"><span style="color:#404">"</span><span>merchant-account-id</span><span style="color:#404">"</span></span>: {
-            <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+    <span class="key"><span class="delimiter">"</span><span class="content">payment</span><span class="delimiter">"</span></span>: {
+        <span class="key"><span class="delimiter">"</span><span class="content">merchant-account-id</span><span class="delimiter">"</span></span>: {
+            <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>
         },
-        <span style="color:#606"><span style="color:#404">"</span><span>request-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>transaction-type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>requested-amount</span><span style="color:#404">"</span></span>: {
-            <span style="color:#606"><span style="color:#404">"</span><span>value</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Numeric</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>currency</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        <span class="key"><span class="delimiter">"</span><span class="content">request-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">transaction-type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">requested-amount</span><span class="delimiter">"</span></span>: {
+            <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Numeric</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">currency</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>
         },
-        <span style="color:#606"><span style="color:#404">"</span><span>parent-transaction-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>account-holder</span><span style="color:#404">"</span></span>: {
-            <span style="color:#606"><span style="color:#404">"</span><span>first-name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>last-name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>email</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>phone</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>address</span><span style="color:#404">"</span></span>: {
-                <span style="color:#606"><span style="color:#404">"</span><span>city</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>country</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>postal-code</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>state</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>street1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>street2</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>street3</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        <span class="key"><span class="delimiter">"</span><span class="content">parent-transaction-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">account-holder</span><span class="delimiter">"</span></span>: {
+            <span class="key"><span class="delimiter">"</span><span class="content">first-name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">last-name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">email</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">phone</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">address</span><span class="delimiter">"</span></span>: {
+                <span class="key"><span class="delimiter">"</span><span class="content">city</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">country</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">postal-code</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">state</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">street1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">street2</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">street3</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>
             }
         },
-        <span style="color:#606"><span style="color:#404">"</span><span>shipping</span><span style="color:#404">"</span></span>: {
-            <span style="color:#606"><span style="color:#404">"</span><span>first-name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>last-name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>phone</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>address</span><span style="color:#404">"</span></span>: {
-                <span style="color:#606"><span style="color:#404">"</span><span>city</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>country</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>postal-code</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>state</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>street1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>street2</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-                <span style="color:#606"><span style="color:#404">"</span><span>street3</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        <span class="key"><span class="delimiter">"</span><span class="content">shipping</span><span class="delimiter">"</span></span>: {
+            <span class="key"><span class="delimiter">"</span><span class="content">first-name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">last-name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">phone</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">address</span><span class="delimiter">"</span></span>: {
+                <span class="key"><span class="delimiter">"</span><span class="content">city</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">country</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">postal-code</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">state</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">street1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">street2</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+                <span class="key"><span class="delimiter">"</span><span class="content">street3</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>
             }
         },
-        <span style="color:#606"><span style="color:#404">"</span><span>payment-methods</span><span style="color:#404">"</span></span>: {
-            <span style="color:#606"><span style="color:#404">"</span><span>payment-method</span><span style="color:#404">"</span></span>: [
+        <span class="key"><span class="delimiter">"</span><span class="content">payment-methods</span><span class="delimiter">"</span></span>: {
+            <span class="key"><span class="delimiter">"</span><span class="content">payment-method</span><span class="delimiter">"</span></span>: [
                 {
-                    <span style="color:#606"><span style="color:#404">"</span><span>name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+                    <span class="key"><span class="delimiter">"</span><span class="content">name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>
                 }
             ]
         },
-        <span style="color:#606"><span style="color:#404">"</span><span>bank-account</span><span style="color:#404">"</span></span>: {
-            <span style="color:#606"><span style="color:#404">"</span><span>iban</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        <span class="key"><span class="delimiter">"</span><span class="content">bank-account</span><span class="delimiter">"</span></span>: {
+            <span class="key"><span class="delimiter">"</span><span class="content">iban</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>
         },
-        <span style="color:#606"><span style="color:#404">"</span><span>mandate</span><span style="color:#404">"</span></span>: {
-            <span style="color:#606"><span style="color:#404">"</span><span>mandate-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>signed-date</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        <span class="key"><span class="delimiter">"</span><span class="content">mandate</span><span class="delimiter">"</span></span>: {
+            <span class="key"><span class="delimiter">"</span><span class="content">mandate-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">signed-date</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>
         },
-        <span style="color:#606"><span style="color:#404">"</span><span>creditor-id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>periodic</span><span style="color:#404">"</span></span>: {
-            <span style="color:#606"><span style="color:#404">"</span><span>periodic-type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-            <span style="color:#606"><span style="color:#404">"</span><span>sequence-type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        <span class="key"><span class="delimiter">"</span><span class="content">creditor-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">periodic</span><span class="delimiter">"</span></span>: {
+            <span class="key"><span class="delimiter">"</span><span class="content">periodic-type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+            <span class="key"><span class="delimiter">"</span><span class="content">sequence-type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>
         },
-        <span style="color:#606"><span style="color:#404">"</span><span>descriptor</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>order-number</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>success-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>fail-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>cancel-redirect-url</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">String</span><span style="color:#710">"</span></span>
+        <span class="key"><span class="delimiter">"</span><span class="content">descriptor</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">order-number</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">success-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">fail-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">cancel-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">String</span><span class="delimiter">"</span></span>
     }
 }</code></pre>
 </div>
@@ -7505,9 +7505,10 @@ Check the REST API <a href="giropay_Main.html#giropay">giropay specification</a>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

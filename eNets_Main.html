@@ -6102,25 +6102,25 @@ For details on hash-generation, go to our <strong>WPP v1 Security</strong> secti
 <div class="listingblock">
 <div class="title">debit Request (successful)</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="javascript"> <span style="color:#080;font-weight:bold">var</span> requestedData = {
-    <span style="color:#606"><span style="color:#404">"</span><span>request_time_stamp</span><span style="color:#404">"</span></span> : getTimeStamp(), <span style="color:#777">//get current timestamp</span>
-    <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span> : generateUid(), <span style="color:#777">//generate unique ID</span>
-    <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">dd4ec05b-3d4e-46c3-a32c-d3bb6aa69c82</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">debit</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">1000</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">SGD</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>success_redirect_url</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/success</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>cancel_redirect_url</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/cancel</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>fail_redirect_url</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://demoshop-test.wirecard.com/demoshop/#/error</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>ip_address</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>secret_key</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">f8de5ff0-1539-4a24-922e-9cfe9fe675a1</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>psp_name</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">demo</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>first_name</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">test_user</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>last_name</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">test_user</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>attempt_three_d</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">false</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>request_signature</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#710">"</span></span>, <span style="color:#777">//generate request signature</span>
-    <span style="color:#606"><span style="color:#404">"</span><span>payment_method</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">enets</span><span style="color:#710">"</span></span>,
-    <span style="color:#606"><span style="color:#404">"</span><span>order_number</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">123445</span><span style="color:#710">"</span></span>
+<pre class="CodeRay highlight"><code data-lang="javascript"> <span class="keyword">var</span> requestedData = {
+    <span class="key"><span class="delimiter">"</span><span class="content">request_time_stamp</span><span class="delimiter">"</span></span> : getTimeStamp(), <span class="comment">//get current timestamp</span>
+    <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span> : generateUid(), <span class="comment">//generate unique ID</span>
+    <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">dd4ec05b-3d4e-46c3-a32c-d3bb6aa69c82</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">debit</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">1000</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">SGD</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">success_redirect_url</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">https://demoshop-test.wirecard.com/demoshop/#/success</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">cancel_redirect_url</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">https://demoshop-test.wirecard.com/demoshop/#/cancel</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">fail_redirect_url</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">https://demoshop-test.wirecard.com/demoshop/#/error</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">ip_address</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">127.0.0.1</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">secret_key</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">f8de5ff0-1539-4a24-922e-9cfe9fe675a1</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">psp_name</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">demo</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">first_name</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">test_user</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">last_name</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">test_user</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">attempt_three_d</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">false</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">request_signature</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="delimiter">"</span></span>, <span class="comment">//generate request signature</span>
+    <span class="key"><span class="delimiter">"</span><span class="content">payment_method</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">enets</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">order_number</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">123445</span><span class="delimiter">"</span></span>
 }
 WirecardPaymentPage.hostedPay(requestData);</code></pre>
 </div>
@@ -6134,9 +6134,10 @@ WirecardPaymentPage.hostedPay(requestData);</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

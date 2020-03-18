@@ -6043,10 +6043,10 @@ Then you add the following code to your <code>build.gradle</code> file:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">repositories {
-     maven { url <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://jitpack.io</span><span style="color:#710">"</span></span> }
+     maven { url <span class="string"><span class="delimiter">"</span><span class="content">https://jitpack.io</span><span class="delimiter">"</span></span> }
  }
  dependencies {
-     compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.github.wirecard:paymentSDK-Android:2.7.1</span><span style="color:#710">'</span></span>
+     compile <span class="string"><span class="delimiter">'</span><span class="content">com.github.wirecard:paymentSDK-Android:2.7.1</span><span class="delimiter">'</span></span>
  }</code></pre>
 </div>
 </div>
@@ -6061,7 +6061,7 @@ information using the phone’s camera).</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">dependencies {
-    compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.github.wirecard:paymentSDK-Android:2.7.1-cardScannerDisabled</span><span style="color:#710">'</span></span>
+    compile <span class="string"><span class="delimiter">'</span><span class="content">com.github.wirecard:paymentSDK-Android:2.7.1-cardScannerDisabled</span><span class="delimiter">'</span></span>
  }</code></pre>
 </div>
 </div>
@@ -6084,7 +6084,7 @@ as shown in the example:</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">dependencies {
    ...
-   compile project(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">:paymentsdk</span><span style="color:#710">'</span></span>)
+   compile project(<span class="string"><span class="delimiter">'</span><span class="content">:paymentsdk</span><span class="delimiter">'</span></span>)
    ...
  }</code></pre>
 </div>
@@ -6103,27 +6103,27 @@ versions:</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">dependencies {
        ...
-       compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.android.support:appcompat-v7:26.0.1</span><span style="color:#710">'</span></span>
-       compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.zapp.library:merchant:1.1.0</span><span style="color:#710">'</span></span>
-       compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">org.iban4j:iban4j:3.2.1</span><span style="color:#710">'</span></span>
-       compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.android.support:customtabs:26.1.0</span><span style="color:#710">'</span></span> <span style="color:#777">//only for card and PayPal payments</span>
-       compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.squareup.retrofit2:retrofit:2.3.0</span><span style="color:#710">'</span></span>
-       compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.squareup.retrofit2:converter-gson:2.3.0</span><span style="color:#710">'</span></span>
-       compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.squareup.okhttp3:logging-interceptor:3.8.0</span><span style="color:#710">'</span></span>
-       compile(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.squareup.retrofit2:converter-simplexml:2.3.0</span><span style="color:#710">'</span></span>) {
-         exclude module: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">stax</span><span style="color:#710">'</span></span>
-         exclude module: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">stax-api</span><span style="color:#710">'</span></span>
-         exclude module: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">xpp3</span><span style="color:#710">'</span></span>
+       compile <span class="string"><span class="delimiter">'</span><span class="content">com.android.support:appcompat-v7:26.0.1</span><span class="delimiter">'</span></span>
+       compile <span class="string"><span class="delimiter">'</span><span class="content">com.zapp.library:merchant:1.1.0</span><span class="delimiter">'</span></span>
+       compile <span class="string"><span class="delimiter">'</span><span class="content">org.iban4j:iban4j:3.2.1</span><span class="delimiter">'</span></span>
+       compile <span class="string"><span class="delimiter">'</span><span class="content">com.android.support:customtabs:26.1.0</span><span class="delimiter">'</span></span> <span class="comment">//only for card and PayPal payments</span>
+       compile <span class="string"><span class="delimiter">'</span><span class="content">com.squareup.retrofit2:retrofit:2.3.0</span><span class="delimiter">'</span></span>
+       compile <span class="string"><span class="delimiter">'</span><span class="content">com.squareup.retrofit2:converter-gson:2.3.0</span><span class="delimiter">'</span></span>
+       compile <span class="string"><span class="delimiter">'</span><span class="content">com.squareup.okhttp3:logging-interceptor:3.8.0</span><span class="delimiter">'</span></span>
+       compile(<span class="string"><span class="delimiter">'</span><span class="content">com.squareup.retrofit2:converter-simplexml:2.3.0</span><span class="delimiter">'</span></span>) {
+         exclude module: <span class="string"><span class="delimiter">'</span><span class="content">stax</span><span class="delimiter">'</span></span>
+         exclude module: <span class="string"><span class="delimiter">'</span><span class="content">stax-api</span><span class="delimiter">'</span></span>
+         exclude module: <span class="string"><span class="delimiter">'</span><span class="content">xpp3</span><span class="delimiter">'</span></span>
  }
 
-cardIOEnabledCompile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">io.card:android-sdk:5.5.1</span><span style="color:#710">'</span></span>
+cardIOEnabledCompile <span class="string"><span class="delimiter">'</span><span class="content">io.card:android-sdk:5.5.1</span><span class="delimiter">'</span></span>
 
-<span style="color:#777">// iban validator</span>
-compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">org.iban4j:iban4j:3.2.1</span><span style="color:#710">'</span></span>
-<span style="color:#777">// ocr</span>
-compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.google.android.gms:play-services-vision:11.6.2</span><span style="color:#710">'</span></span>
-<span style="color:#777">// tracker</span>
-compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">org.piwik.sdk:piwik-sdk:2.0.0</span><span style="color:#710">'</span></span>
+<span class="comment">// iban validator</span>
+compile <span class="string"><span class="delimiter">'</span><span class="content">org.iban4j:iban4j:3.2.1</span><span class="delimiter">'</span></span>
+<span class="comment">// ocr</span>
+compile <span class="string"><span class="delimiter">'</span><span class="content">com.google.android.gms:play-services-vision:11.6.2</span><span class="delimiter">'</span></span>
+<span class="comment">// tracker</span>
+compile <span class="string"><span class="delimiter">'</span><span class="content">org.piwik.sdk:piwik-sdk:2.0.0</span><span class="delimiter">'</span></span>
        ...
  }</code></pre>
 </div>
@@ -6146,8 +6146,8 @@ latest version of the support library.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;uses-permission</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.permission.INTERNET</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;uses-permission</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.permission.ACCESS_NETWORK_STATE</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;uses-permission</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.permission.INTERNET</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;uses-permission</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.permission.ACCESS_NETWORK_STATE</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6159,8 +6159,8 @@ latest version of the support library.</p>
 <p>add these permissions</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;uses-permission</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.permission.VIBRATE</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;uses-permission</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.permission.CAMERA</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;uses-permission</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.permission.VIBRATE</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;uses-permission</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.permission.CAMERA</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -6168,8 +6168,8 @@ latest version of the support library.</p>
 <p>add this activity into your <em>AndroidManifest</em> file</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;activity</span>
-    <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">de.wirecard.paymentsdk.ui.activity.CardScannerActivity</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;activity</span>
+    <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">de.wirecard.paymentsdk.ui.activity.CardScannerActivity</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6181,19 +6181,19 @@ you can safely omit this step.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;activity</span>
-<span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">de.wirecard.paymentsdk.ui.activity.CustomTabsActivity</span><span style="color:#710">"</span></span>
-<span style="color:#b48">android:launchMode</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">singleTop</span><span style="color:#710">"</span></span>
-<span style="color:#b48">android:screenOrientation</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">portrait</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;intent-filter&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;action</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.intent.action.VIEW</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;category</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.intent.category.DEFAULT</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;category</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.intent.category.BROWSABLE</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;data</span>
-<span style="color:#b48">android:host</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">web.result</span><span style="color:#710">"</span></span>
-<span style="color:#b48">android:scheme</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">paymentsdkdemo</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/intent-filter&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/activity&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;activity</span>
+<span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">de.wirecard.paymentsdk.ui.activity.CustomTabsActivity</span><span class="delimiter">"</span></span>
+<span class="attribute-name">android:launchMode</span>=<span class="string"><span class="delimiter">"</span><span class="content">singleTop</span><span class="delimiter">"</span></span>
+<span class="attribute-name">android:screenOrientation</span>=<span class="string"><span class="delimiter">"</span><span class="content">portrait</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+<span class="tag">&lt;intent-filter&gt;</span>
+<span class="tag">&lt;action</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.intent.action.VIEW</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;category</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.intent.category.DEFAULT</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;category</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.intent.category.BROWSABLE</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;data</span>
+<span class="attribute-name">android:host</span>=<span class="string"><span class="delimiter">"</span><span class="content">web.result</span><span class="delimiter">"</span></span>
+<span class="attribute-name">android:scheme</span>=<span class="string"><span class="delimiter">"</span><span class="content">paymentsdkdemo</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+<span class="tag">&lt;/intent-filter&gt;</span>
+<span class="tag">&lt;/activity&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -6408,12 +6408,12 @@ that is rooted, it will throw an exception during initialization of the
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">WirecardClient wirecardClient;
-<span style="color:#0a8;font-weight:bold">String</span> environment = WirecardEnvironment.TEST.getValue();
-<span style="color:#080;font-weight:bold">try</span> {
+<span class="predefined-type">String</span> environment = WirecardEnvironment.TEST.getValue();
+<span class="keyword">try</span> {
     wirecardClient = WirecardClientBuilder.newInstance(context, environment)
                     .build();
-} <span style="color:#080;font-weight:bold">catch</span> (WirecardException exception) {
-    <span style="color:#777">//device is rooted</span>
+} <span class="keyword">catch</span> (WirecardException exception) {
+    <span class="comment">//device is rooted</span>
 }</code></pre>
 </div>
 </div>
@@ -6427,7 +6427,7 @@ payment object (e.g. <code>WirecardCardPayment</code>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">wirecardPayment.setProcessingURL(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">paymentsdkdemo://web.result</span><span style="color:#710">"</span></span>);</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">wirecardPayment.setProcessingURL(<span class="string"><span class="delimiter">"</span><span class="content">paymentsdkdemo://web.result</span><span class="delimiter">"</span></span>);</code></pre>
 </div>
 </div>
 </div>
@@ -6490,7 +6490,7 @@ start of this section.
 the transaction’s payload &amp; signature:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardCardPayment wirecardCardPayment = <span style="color:#080;font-weight:bold">new</span> WirecardCardPayment (signature, requestTimeStamp, requestID,merchantID, transactionType, amount, currency);</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardCardPayment wirecardCardPayment = <span class="keyword">new</span> WirecardCardPayment (signature, requestTimeStamp, requestID,merchantID, transactionType, amount, currency);</code></pre>
 </div>
 </div>
 </li>
@@ -6501,33 +6501,33 @@ errors, should they occur:</p>
 <div class="listingblock">
 <div class="title">WirecardResponseListener Initialization</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardResponseListener wirecardResponseListener = <span style="color:#080;font-weight:bold">new</span> WirecardResponseListener() {
-    <span style="color:#007">@Override</span>
-    <span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onResponse(WirecardPaymentResponse paymentResponse) {
-        <span style="color:#777">// handle server response</span>
-        <span style="color:#080;font-weight:bold">if</span> (paymentResponse.getTransactionState().equals(TransactionState.SUCCESS)) {
-            <span style="color:#777">// handle successful transaction</span>
-        } <span style="color:#080;font-weight:bold">else</span> {
-            <span style="color:#777">// handle unsuccessful transaction</span>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardResponseListener wirecardResponseListener = <span class="keyword">new</span> WirecardResponseListener() {
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onResponse(WirecardPaymentResponse paymentResponse) {
+        <span class="comment">// handle server response</span>
+        <span class="keyword">if</span> (paymentResponse.getTransactionState().equals(TransactionState.SUCCESS)) {
+            <span class="comment">// handle successful transaction</span>
+        } <span class="keyword">else</span> {
+            <span class="comment">// handle unsuccessful transaction</span>
         }
     }
-    <span style="color:#007">@Override</span>
-    <span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onError(WirecardResponseError responseError) {
-        <span style="color:#777">// handle error</span>
-        <span style="color:#080;font-weight:bold">switch</span> (responseError.getErrorCode()) {
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_GENERAL:
-                <span style="color:#0a8;font-weight:bold">String</span> detailedMessage = responseError.getErrorMessage();
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_INVALID_PAYMENT_DATA:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_NETWORK_ISSUE:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_USER_CANCELED:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onError(WirecardResponseError responseError) {
+        <span class="comment">// handle error</span>
+        <span class="keyword">switch</span> (responseError.getErrorCode()) {
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_GENERAL:
+                <span class="predefined-type">String</span> detailedMessage = responseError.getErrorMessage();
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_INVALID_PAYMENT_DATA:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_NETWORK_ISSUE:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_USER_CANCELED:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
         }
     }
 };</code></pre>
@@ -6573,7 +6573,7 @@ the <code>wirecardCardPayment</code> instance:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">CardToken cardToken = <span style="color:#080;font-weight:bold">new</span> CardToken(tokenID, maskedAccountNumber);
+<pre class="CodeRay highlight"><code data-lang="java">CardToken cardToken = <span class="keyword">new</span> CardToken(tokenID, maskedAccountNumber);
 wirecardPayment.setCardToken(cardToken);</code></pre>
 </div>
 </div>
@@ -6607,7 +6607,7 @@ within the limits of the PCI DSS standards.</p>
 <p>To begin customizing, initialize <code>PaymentPageStyle</code>:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">PaymentPageStyle style = <span style="color:#080;font-weight:bold">new</span> PaymentPageStyle();</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">PaymentPageStyle style = <span class="keyword">new</span> PaymentPageStyle();</code></pre>
 </div>
 </div>
 </li>
@@ -6615,7 +6615,7 @@ within the limits of the PCI DSS standards.</p>
 <p>Then, provide your customized resources:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">PaymentPageStyle style = <span style="color:#080;font-weight:bold">new</span> PaymentPageStyle();
+<pre class="CodeRay highlight"><code data-lang="java">PaymentPageStyle style = <span class="keyword">new</span> PaymentPageStyle();
            style.backgroundResourceId = R.color.yellow;
            style.inputTextColor = context.getResources().getColor(R.color.red);
            style.inputFieldColor = context.getResources().getColor(R.color.red);
@@ -6627,8 +6627,8 @@ within the limits of the PCI DSS standards.</p>
            style.toolbarTextColor = context.getResources().getColor(R.color.yellow);
            style.payButtonTextColor = context.getResources().getColor(R.color.yellow);
 
-           <span style="color:#777">//!!!</span>
-           <span style="color:#0a8;font-weight:bold">Set</span>&lt;CardBrand&gt; supportedCardBrands = <span style="color:#080;font-weight:bold">new</span> <span style="color:#0a8;font-weight:bold">HashSet</span>&lt;&gt;();
+           <span class="comment">//!!!</span>
+           <span class="predefined-type">Set</span>&lt;CardBrand&gt; supportedCardBrands = <span class="keyword">new</span> <span class="predefined-type">HashSet</span>&lt;&gt;();
            supportedCardBrands.add(CardBrand.MASTERCARD);
            supportedCardBrands.add(CardBrand.AMEX);
            style.supportedCardBrands = supportedCardBrands;
@@ -6686,11 +6686,11 @@ page, there are some changes in the approach.</p>
 <p>In the XML layout, create a container where you will place the <code>WirecardCardFormFragment</code> :</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;FrameLayout</span>
-   <span style="color:#b48">android:id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">@+id/container</span><span style="color:#710">"</span></span>
-   <span style="color:#b48">android:layout_width</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">match_parent</span><span style="color:#710">"</span></span>
-   <span style="color:#b48">android:layout_height</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">wrap_content</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
- <span style="color:#070;font-weight:bold">&lt;/FrameLayout&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;FrameLayout</span>
+   <span class="attribute-name">android:id</span>=<span class="string"><span class="delimiter">"</span><span class="content">@+id/container</span><span class="delimiter">"</span></span>
+   <span class="attribute-name">android:layout_width</span>=<span class="string"><span class="delimiter">"</span><span class="content">match_parent</span><span class="delimiter">"</span></span>
+   <span class="attribute-name">android:layout_height</span>=<span class="string"><span class="delimiter">"</span><span class="content">wrap_content</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+ <span class="tag">&lt;/FrameLayout&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -6698,7 +6698,7 @@ page, there are some changes in the approach.</p>
 <p>Create a new instance of this fragment:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardCardFormFragment wirecardCardFormFragment = <span style="color:#080;font-weight:bold">new</span> WirecardCardFormFragment.Builder(wirecardExtendedCardPayment).build();</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardCardFormFragment wirecardCardFormFragment = <span class="keyword">new</span> WirecardCardFormFragment.Builder(wirecardExtendedCardPayment).build();</code></pre>
 </div>
 </div>
 </li>
@@ -6727,12 +6727,12 @@ create <code>WirecardCardFormFragment</code> using <code>WirecardCardFormFragmen
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardCardFormFragment wirecardCardFormFragment = <span style="color:#080;font-weight:bold">new</span> WirecardCardFormFragment.Builder(wirecardExtendedCardPayment)
-.setLocale(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">de</span><span style="color:#710">"</span></span>)
-.setTextSize(<span style="color:#00D">12</span>)
+<pre class="CodeRay highlight"><code data-lang="java">WirecardCardFormFragment wirecardCardFormFragment = <span class="keyword">new</span> WirecardCardFormFragment.Builder(wirecardExtendedCardPayment)
+.setLocale(<span class="string"><span class="delimiter">"</span><span class="content">de</span><span class="delimiter">"</span></span>)
+.setTextSize(<span class="integer">12</span>)
 .setHintColorID(hintColorID)
 .setTextColorID(textColorID)
-.setRequestFocus(<span style="color:#069">true</span>)
+.setRequestFocus(<span class="predefined-constant">true</span>)
 .build();</code></pre>
 </div>
 </div>
@@ -6742,7 +6742,7 @@ method <code>setSupportedCardBrands(Set&lt;CardBrand&gt; supportedCardBrands)</c
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span style="color:#0a8;font-weight:bold">Set</span>&lt;CardBrand&gt; supportedCardBrands = <span style="color:#080;font-weight:bold">new</span> <span style="color:#0a8;font-weight:bold">HashSet</span>&lt;&gt;();
+<pre class="CodeRay highlight"><code data-lang="java"><span class="predefined-type">Set</span>&lt;CardBrand&gt; supportedCardBrands = <span class="keyword">new</span> <span class="predefined-type">HashSet</span>&lt;&gt;();
 supportedCardBrands.add(CardBrand.MASTERCARD);
 supportedCardBrands.add(CardBrand.AMEX);
 
@@ -6776,7 +6776,7 @@ use <code>WirecardExtendedCardPayment</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardExtendedCardPayment wirecardExtendedCardPayment = <span style="color:#080;font-weight:bold">new</span> WirecardExtendedCardPayment(signature, requestTimeStamp, requestID, merchantID, transactionType, amount, currency);</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardExtendedCardPayment wirecardExtendedCardPayment = <span class="keyword">new</span> WirecardExtendedCardPayment(signature, requestTimeStamp, requestID, merchantID, transactionType, amount, currency);</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6785,7 +6785,7 @@ it to <code>WirecardExtendedCardPayment</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">CustomerData accountHolder = <span style="color:#080;font-weight:bold">new</span> CustomerData();
+<pre class="CodeRay highlight"><code data-lang="java">CustomerData accountHolder = <span class="keyword">new</span> CustomerData();
 accountHolder.setLastName(lastName);
 wirecardExtendedCardPayment.setAccountHolder(accountHolder);</code></pre>
 </div>
@@ -6807,14 +6807,14 @@ text message or alerts for certain cases).</p>
 <p>Create a <code>WirecardInputFormsStateChangedListener</code> instance:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardInputFormsStateChangedListener wirecardInputFormsStateChangedListener = <span style="color:#080;font-weight:bold">new</span> WirecardInputFormsStateChangedListener() {
-    <span style="color:#007">@Override</span>
-        <span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onStateChanged(<span style="color:#339;font-weight:bold">int</span> code) {
-            <span style="color:#080;font-weight:bold">switch</span>(code){
-                <span style="color:#080;font-weight:bold">case</span> WirecardInputFormsStateChangedListener.CARD_NUMBER_FORM_FOCUS_GAINED:
+<pre class="CodeRay highlight"><code data-lang="java">WirecardInputFormsStateChangedListener wirecardInputFormsStateChangedListener = <span class="keyword">new</span> WirecardInputFormsStateChangedListener() {
+    <span class="annotation">@Override</span>
+        <span class="directive">public</span> <span class="type">void</span> onStateChanged(<span class="type">int</span> code) {
+            <span class="keyword">switch</span>(code){
+                <span class="keyword">case</span> WirecardInputFormsStateChangedListener.CARD_NUMBER_FORM_FOCUS_GAINED:
                     ...
                     break;
-                <span style="color:#080;font-weight:bold">case</span> WirecardInputFormsStateChangedListener.EXPIRATION_MONTH_FORM_FOCUS_GAINED:
+                <span class="keyword">case</span> WirecardInputFormsStateChangedListener.EXPIRATION_MONTH_FORM_FOCUS_GAINED:
                     ...
                     break;
                 ...
@@ -6829,7 +6829,7 @@ text message or alerts for certain cases).</p>
 manages communication between the input fields and the listener:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardInputFormsStateManager wirecardInputFormsStateManager = <span style="color:#080;font-weight:bold">new</span> WirecardInputFormsStateManager(context, wirecardInputFormsStateChangedListener);</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardInputFormsStateManager wirecardInputFormsStateManager = <span class="keyword">new</span> WirecardInputFormsStateManager(context, wirecardInputFormsStateChangedListener);</code></pre>
 </div>
 </div>
 </li>
@@ -6859,14 +6859,14 @@ and <code>stopReceivingEvents()</code> in the <code>onPause()</code> method:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span style="color:#007">@Override</span>
-<span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onResume() {
-    <span style="color:#950">super</span>.onResume();
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Override</span>
+<span class="directive">public</span> <span class="type">void</span> onResume() {
+    <span class="local-variable">super</span>.onResume();
     wirecardInputFormsStateManager.startReceivingEvents();
 }
-<span style="color:#007">@Override</span>
-<span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onPause() {
-    <span style="color:#950">super</span>.onPause();
+<span class="annotation">@Override</span>
+<span class="directive">public</span> <span class="type">void</span> onPause() {
+    <span class="local-variable">super</span>.onPause();
     wirecardInputFormsStateManager.stopReceivingEvents();
 }</code></pre>
 </div>
@@ -7011,7 +7011,7 @@ the <a href="MobilePaymentSDK_IntegrationGuides.html#MobilePaymentSDK_Android_Em
 <p>Add a card token (as is, or instead of cardholder’s last name) to <code>WirecardExtendedCardPayment</code>:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">wirecardExtendedCardPayment.setCardToken(<span style="color:#080;font-weight:bold">new</span> CardToken(token, maskedCardNumber));</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">wirecardExtendedCardPayment.setCardToken(<span class="keyword">new</span> CardToken(token, maskedCardNumber));</code></pre>
 </div>
 </div>
 </li>
@@ -7021,9 +7021,9 @@ the <code>WirecardCardFormFragment</code> using <code>WirecardCardFormFragment.B
 this:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">wirecardCardFormFragment = <span style="color:#080;font-weight:bold">new</span> WirecardCardFormFragment.Builder(wirecardExtendedCardPayment)
-        .setCardBrand(cardBrand) <span style="color:#777">//for example CardBrand.VISA</span>
-        .setExpirationDate(expirationDate) <span style="color:#777">// for example "1219"</span>
+<pre class="CodeRay highlight"><code data-lang="java">wirecardCardFormFragment = <span class="keyword">new</span> WirecardCardFormFragment.Builder(wirecardExtendedCardPayment)
+        .setCardBrand(cardBrand) <span class="comment">//for example CardBrand.VISA</span>
+        .setExpirationDate(expirationDate) <span class="comment">// for example "1219"</span>
         .build();</code></pre>
 </div>
 </div>
@@ -7080,7 +7080,7 @@ start of this section.
 <p>Create and initialize <code>WirecardPayPalPayment</code>:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardPayPalPayment wirecardPayment = <span style="color:#080;font-weight:bold">new</span> WirecardPayPalPayment(signature, requestTimeStamp, requestID, merchantID, transactionType, amount, currency);</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardPayPalPayment wirecardPayment = <span class="keyword">new</span> WirecardPayPalPayment(signature, requestTimeStamp, requestID, merchantID, transactionType, amount, currency);</code></pre>
 </div>
 </div>
 </li>
@@ -7091,33 +7091,33 @@ errors, should they occur:</p>
 <div class="listingblock">
 <div class="title">WirecardResponseListener Initialization</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardResponseListener wirecardResponseListener = <span style="color:#080;font-weight:bold">new</span> WirecardResponseListener() {
-    <span style="color:#007">@Override</span>
-    <span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onResponse(WirecardPaymentResponse paymentResponse) {
-        <span style="color:#777">// handle server response</span>
-        <span style="color:#080;font-weight:bold">if</span> (paymentResponse.getTransactionState().equals(TransactionState.SUCCESS)) {
-            <span style="color:#777">// handle successful transaction</span>
-        } <span style="color:#080;font-weight:bold">else</span> {
-            <span style="color:#777">// handle unsuccessful transaction</span>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardResponseListener wirecardResponseListener = <span class="keyword">new</span> WirecardResponseListener() {
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onResponse(WirecardPaymentResponse paymentResponse) {
+        <span class="comment">// handle server response</span>
+        <span class="keyword">if</span> (paymentResponse.getTransactionState().equals(TransactionState.SUCCESS)) {
+            <span class="comment">// handle successful transaction</span>
+        } <span class="keyword">else</span> {
+            <span class="comment">// handle unsuccessful transaction</span>
         }
     }
-    <span style="color:#007">@Override</span>
-    <span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onError(WirecardResponseError responseError) {
-        <span style="color:#777">// handle error</span>
-        <span style="color:#080;font-weight:bold">switch</span> (responseError.getErrorCode()) {
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_GENERAL:
-                <span style="color:#0a8;font-weight:bold">String</span> detailedMessage = responseError.getErrorMessage();
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_INVALID_PAYMENT_DATA:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_NETWORK_ISSUE:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_USER_CANCELED:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onError(WirecardResponseError responseError) {
+        <span class="comment">// handle error</span>
+        <span class="keyword">switch</span> (responseError.getErrorCode()) {
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_GENERAL:
+                <span class="predefined-type">String</span> detailedMessage = responseError.getErrorMessage();
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_INVALID_PAYMENT_DATA:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_NETWORK_ISSUE:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_USER_CANCELED:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
         }
     }
 };</code></pre>
@@ -7151,7 +7151,7 @@ into the <code>wirecardPayPalPayment</code> instance:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">Periodic periodic = <span style="color:#080;font-weight:bold">new</span> Periodic(periodicType, sequenceType);
+<pre class="CodeRay highlight"><code data-lang="java">Periodic periodic = <span class="keyword">new</span> Periodic(periodicType, sequenceType);
 wirecardPayPalPayment.setPeriodic(periodic);</code></pre>
 </div>
 </div>
@@ -7185,7 +7185,7 @@ start of this section.
 <p>Create and initialize <code>WirecardSepaPayment</code>:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardSepaPayment payment = <span style="color:#080;font-weight:bold">new</span> WirecardSepaPayment (signature, requestTimeStamp, requestID, merchantID, transactionType, amount, currency, creditorId, mandateId, mandateSignedDate, merchantName, dueDate);</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardSepaPayment payment = <span class="keyword">new</span> WirecardSepaPayment (signature, requestTimeStamp, requestID, merchantID, transactionType, amount, currency, creditorId, mandateId, mandateSignedDate, merchantName, dueDate);</code></pre>
 </div>
 </div>
 </li>
@@ -7196,33 +7196,33 @@ errors, should they occur:</p>
 <div class="listingblock">
 <div class="title">WirecardResponseListener Initialization</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardResponseListener wirecardResponseListener = <span style="color:#080;font-weight:bold">new</span> WirecardResponseListener() {
-    <span style="color:#007">@Override</span>
-    <span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onResponse(WirecardPaymentResponse paymentResponse) {
-        <span style="color:#777">// handle server response</span>
-        <span style="color:#080;font-weight:bold">if</span> (paymentResponse.getTransactionState().equals(TransactionState.SUCCESS)) {
-            <span style="color:#777">// handle successful transaction</span>
-        } <span style="color:#080;font-weight:bold">else</span> {
-            <span style="color:#777">// handle unsuccessful transaction</span>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardResponseListener wirecardResponseListener = <span class="keyword">new</span> WirecardResponseListener() {
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onResponse(WirecardPaymentResponse paymentResponse) {
+        <span class="comment">// handle server response</span>
+        <span class="keyword">if</span> (paymentResponse.getTransactionState().equals(TransactionState.SUCCESS)) {
+            <span class="comment">// handle successful transaction</span>
+        } <span class="keyword">else</span> {
+            <span class="comment">// handle unsuccessful transaction</span>
         }
     }
-    <span style="color:#007">@Override</span>
-    <span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onError(WirecardResponseError responseError) {
-        <span style="color:#777">// handle error</span>
-        <span style="color:#080;font-weight:bold">switch</span> (responseError.getErrorCode()) {
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_GENERAL:
-                <span style="color:#0a8;font-weight:bold">String</span> detailedMessage = responseError.getErrorMessage();
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_INVALID_PAYMENT_DATA:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_NETWORK_ISSUE:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_USER_CANCELED:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onError(WirecardResponseError responseError) {
+        <span class="comment">// handle error</span>
+        <span class="keyword">switch</span> (responseError.getErrorCode()) {
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_GENERAL:
+                <span class="predefined-type">String</span> detailedMessage = responseError.getErrorMessage();
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_INVALID_PAYMENT_DATA:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_NETWORK_ISSUE:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_USER_CANCELED:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
         }
     }
 };</code></pre>
@@ -7255,7 +7255,7 @@ into the <code>wirecardSepaPayment</code> instance:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">Periodic periodic = <span style="color:#080;font-weight:bold">new</span> Periodic(periodicType, sequenceType);
+<pre class="CodeRay highlight"><code data-lang="java">Periodic periodic = <span class="keyword">new</span> Periodic(periodicType, sequenceType);
 wirecardSepaPayment.setPeriodic(periodic);</code></pre>
 </div>
 </div>
@@ -7291,7 +7291,7 @@ details on dependencies
 see <a href="MobilePaymentSDK_IntegrationGuides.html#MobilePaymentSDK_BasicSetup">Basic Setup and Integration</a>:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">compile <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com.zapp.library:merchant:1.1.0</span><span style="color:#710">'</span></span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">compile <span class="string"><span class="delimiter">'</span><span class="content">com.zapp.library:merchant:1.1.0</span><span class="delimiter">'</span></span></code></pre>
 </div>
 </div>
 </li>
@@ -7299,7 +7299,7 @@ see <a href="MobilePaymentSDK_IntegrationGuides.html#MobilePaymentSDK_BasicSetup
 <p>Create and initialize <code>WirecardPBBAPayment</code>:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardPBBAPayment wirecardPayment = <span style="color:#080;font-weight:bold">new</span> WirecardPBBAPayment(signature, timestamp, requestID, merchantID, transactionType, amount, currency, zappTransactionType, zappDeliveryType, returnValue);</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardPBBAPayment wirecardPayment = <span class="keyword">new</span> WirecardPBBAPayment(signature, timestamp, requestID, merchantID, transactionType, amount, currency, zappTransactionType, zappDeliveryType, returnValue);</code></pre>
 </div>
 </div>
 <div class="exampleblock">
@@ -7346,33 +7346,33 @@ errors, should they occur:</p>
 <div class="listingblock">
 <div class="title">WirecardResponseListener Initialization</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">WirecardResponseListener wirecardResponseListener = <span style="color:#080;font-weight:bold">new</span> WirecardResponseListener() {
-    <span style="color:#007">@Override</span>
-    <span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onResponse(WirecardPaymentResponse paymentResponse) {
-        <span style="color:#777">// handle server response</span>
-        <span style="color:#080;font-weight:bold">if</span> (paymentResponse.getTransactionState().equals(TransactionState.SUCCESS)) {
-            <span style="color:#777">// handle successful transaction</span>
-        } <span style="color:#080;font-weight:bold">else</span> {
-            <span style="color:#777">// handle unsuccessful transaction</span>
+<pre class="CodeRay highlight"><code data-lang="java">WirecardResponseListener wirecardResponseListener = <span class="keyword">new</span> WirecardResponseListener() {
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onResponse(WirecardPaymentResponse paymentResponse) {
+        <span class="comment">// handle server response</span>
+        <span class="keyword">if</span> (paymentResponse.getTransactionState().equals(TransactionState.SUCCESS)) {
+            <span class="comment">// handle successful transaction</span>
+        } <span class="keyword">else</span> {
+            <span class="comment">// handle unsuccessful transaction</span>
         }
     }
-    <span style="color:#007">@Override</span>
-    <span style="color:#088;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> onError(WirecardResponseError responseError) {
-        <span style="color:#777">// handle error</span>
-        <span style="color:#080;font-weight:bold">switch</span> (responseError.getErrorCode()) {
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_GENERAL:
-                <span style="color:#0a8;font-weight:bold">String</span> detailedMessage = responseError.getErrorMessage();
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_INVALID_PAYMENT_DATA:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_NETWORK_ISSUE:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
-            <span style="color:#080;font-weight:bold">case</span> WirecardErrorCode.ERROR_CODE_USER_CANCELED:
-                <span style="color:#777">//...</span>
-                <span style="color:#080;font-weight:bold">break</span>;
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onError(WirecardResponseError responseError) {
+        <span class="comment">// handle error</span>
+        <span class="keyword">switch</span> (responseError.getErrorCode()) {
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_GENERAL:
+                <span class="predefined-type">String</span> detailedMessage = responseError.getErrorMessage();
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_INVALID_PAYMENT_DATA:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_NETWORK_ISSUE:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
+            <span class="keyword">case</span> WirecardErrorCode.ERROR_CODE_USER_CANCELED:
+                <span class="comment">//...</span>
+                <span class="keyword">break</span>;
         }
     }
 };</code></pre>
@@ -7384,20 +7384,20 @@ errors, should they occur:</p>
 the custom URL scheme:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;activity</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">.MainActivity</span><span style="color:#710">"</span></span>
-    <span style="color:#b48">android:launchMode</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">singleTask</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;intent-filter&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;action</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.intent.action.MAIN</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;category</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.intent.category.LAUNCHER</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/intent-filter&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;intent-filter</span> <span style="color:#b48">android:autoVerify</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;data</span> <span style="color:#b48">android:scheme</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">paymentsdkdemo</span><span style="color:#710">"</span></span> <span style="color:#b48">android:host</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">open.pbba</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;activity</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">.MainActivity</span><span class="delimiter">"</span></span>
+    <span class="attribute-name">android:launchMode</span>=<span class="string"><span class="delimiter">"</span><span class="content">singleTask</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;intent-filter&gt;</span>
+        <span class="tag">&lt;action</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.intent.action.MAIN</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+        <span class="tag">&lt;category</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.intent.category.LAUNCHER</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;/intent-filter&gt;</span>
+    <span class="tag">&lt;intent-filter</span> <span class="attribute-name">android:autoVerify</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;data</span> <span class="attribute-name">android:scheme</span>=<span class="string"><span class="delimiter">"</span><span class="content">paymentsdkdemo</span><span class="delimiter">"</span></span> <span class="attribute-name">android:host</span>=<span class="string"><span class="delimiter">"</span><span class="content">open.pbba</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
 
-        <span style="color:#070;font-weight:bold">&lt;action</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.intent.action.VIEW</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;category</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.intent.category.DEFAULT</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;category</span> <span style="color:#b48">android:name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">android.intent.category.BROWSABLE</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/intent-filter&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/activity&gt;</span></code></pre>
+        <span class="tag">&lt;action</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.intent.action.VIEW</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+        <span class="tag">&lt;category</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.intent.category.DEFAULT</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+        <span class="tag">&lt;category</span> <span class="attribute-name">android:name</span>=<span class="string"><span class="delimiter">"</span><span class="content">android.intent.category.BROWSABLE</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;/intent-filter&gt;</span>
+<span class="tag">&lt;/activity&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7409,9 +7409,9 @@ activity record in your <em>AndroidManifest</em> file:</p>
 <div class="title">Example Usage</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">        &lt;activity
-            android:name=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">.ui.activity.PaymentActivity</span><span style="color:#710">"</span></span>
-            android:label=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Payment</span><span style="color:#710">"</span></span>
-            android:configChanges=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">orientation|screenSize</span><span style="color:#710">"</span></span> /&gt;</code></pre>
+            android:name=<span class="string"><span class="delimiter">"</span><span class="content">.ui.activity.PaymentActivity</span><span class="delimiter">"</span></span>
+            android:label=<span class="string"><span class="delimiter">"</span><span class="content">Payment</span><span class="delimiter">"</span></span>
+            android:configChanges=<span class="string"><span class="delimiter">"</span><span class="content">orientation|screenSize</span><span class="delimiter">"</span></span> /&gt;</code></pre>
 </div>
 </div>
 </li>
@@ -7420,10 +7420,10 @@ activity record in your <em>AndroidManifest</em> file:</p>
 (see ZAPP guidelines for more details):</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;com.zapp.library.merchant.ui.view.PBBAButton</span>
-    <span style="color:#b48">android:id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">@+id/pbba</span><span style="color:#710">"</span></span>
-    <span style="color:#b48">android:layout_width</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">@dimen/pbba_button_width</span><span style="color:#710">"</span></span>
-    <span style="color:#b48">android:layout_height</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">@dimen/pbba_button_height</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;com.zapp.library.merchant.ui.view.PBBAButton</span>
+    <span class="attribute-name">android:id</span>=<span class="string"><span class="delimiter">"</span><span class="content">@+id/pbba</span><span class="delimiter">"</span></span>
+    <span class="attribute-name">android:layout_width</span>=<span class="string"><span class="delimiter">"</span><span class="content">@dimen/pbba_button_width</span><span class="delimiter">"</span></span>
+    <span class="attribute-name">android:layout_height</span>=<span class="string"><span class="delimiter">"</span><span class="content">@dimen/pbba_button_height</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -8170,9 +8170,10 @@ payment.requestSignature = signature;            // generated on server</code></
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

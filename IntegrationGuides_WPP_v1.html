@@ -5909,7 +5909,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="html"><span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="html"><span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5917,16 +5917,16 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="js"><span style="color:#080;font-weight:bold">var</span> requestedData = {
-  <span style="color:#606">merchant_account_id</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">request_id</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">c68b9039-968d-1c6b-d9f6-27e9ab2bcb3e</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">request_time_stamp</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20200116084718</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">payment_method</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">transaction_type</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">authorization</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">requested_amount</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2.56</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">requested_amount_currency</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">locale</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">en</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">request_signature</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">e44730486d180cca590bc2e8dea22bd175395636a37b0da0ef785</span><span style="color:#710">"</span></span>
+<pre class="CodeRay highlight"><code data-lang="js"><span class="keyword">var</span> requestedData = {
+  <span class="key">merchant_account_id</span>: <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+  <span class="key">request_id</span>: <span class="string"><span class="delimiter">"</span><span class="content">c68b9039-968d-1c6b-d9f6-27e9ab2bcb3e</span><span class="delimiter">"</span></span>,
+  <span class="key">request_time_stamp</span>: <span class="string"><span class="delimiter">"</span><span class="content">20200116084718</span><span class="delimiter">"</span></span>,
+  <span class="key">payment_method</span>: <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>,
+  <span class="key">transaction_type</span>: <span class="string"><span class="delimiter">"</span><span class="content">authorization</span><span class="delimiter">"</span></span>,
+  <span class="key">requested_amount</span>: <span class="string"><span class="delimiter">"</span><span class="content">2.56</span><span class="delimiter">"</span></span>,
+  <span class="key">requested_amount_currency</span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+  <span class="key">locale</span>: <span class="string"><span class="delimiter">"</span><span class="content">en</span><span class="delimiter">"</span></span>,
+  <span class="key">request_signature</span>: <span class="string"><span class="delimiter">"</span><span class="content">e44730486d180cca590bc2e8dea22bd175395636a37b0da0ef785</span><span class="delimiter">"</span></span>
 }</code></pre>
 </div>
 </div>
@@ -5954,103 +5954,103 @@
 <div class="listingblock">
 <div class="title">Basic HTML Sample</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="html"><span style="color:#070;font-weight:bold">&lt;html&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;head&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;title&gt;</span>example 01<span style="color:#070;font-weight:bold">&lt;/title&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;script&gt;</span>
-<span style="background-color:hsla(0,0%,0%,0.07);color:black">    <span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">pay</span>() {
-      <span style="color:#080;font-weight:bold">var</span> requestData = {
-        <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">4d87f443-423c-6b13-e609-cc8b59c32d6b</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>request_time_stamp</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20160817140742</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">auto-sale</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">0</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>request_signature</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">283a346275444f3f4fbbbd7e3bcf815b41c4edf1a2531208e201fab12a9b0d53</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>payment_method</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>first_name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">John</span><span style="color:#710">"</span></span>,
-        <span style="color:#606"><span style="color:#404">"</span><span>last_name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Doe</span><span style="color:#710">"</span></span>
+<pre class="CodeRay highlight"><code data-lang="html"><span class="tag">&lt;html&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+  <span class="tag">&lt;title&gt;</span>example 01<span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+  <span class="tag">&lt;script&gt;</span>
+<span class="inline">    <span class="keyword">function</span> <span class="function">pay</span>() {
+      <span class="keyword">var</span> requestData = {
+        <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">4d87f443-423c-6b13-e609-cc8b59c32d6b</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">request_time_stamp</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">20160817140742</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">auto-sale</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">0</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">request_signature</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">283a346275444f3f4fbbbd7e3bcf815b41c4edf1a2531208e201fab12a9b0d53</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">payment_method</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">first_name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">John</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">last_name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Doe</span><span class="delimiter">"</span></span>
       };
       WirecardPaymentPage.hostedPay(requestData);
     }</span>
-  <span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/head&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;body&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;h1&gt;</span>example 01<span style="color:#070;font-weight:bold">&lt;/h1&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;form&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">button</span><span style="color:#710">"</span></span> <span style="color:#b48">value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Pay</span><span style="color:#710">"</span></span> <span style="color:#b48">onClick</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span>pay()<span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/form&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/body&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/html&gt;</span></code></pre>
+  <span class="tag">&lt;/script&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>example 01<span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;form&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">button</span><span class="delimiter">"</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Pay</span><span class="delimiter">"</span></span> <span class="attribute-name">onClick</span>=<span class="string"><span class="delimiter">"</span>pay()<span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;/form&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Basic HTML Sample with Credit Card Form</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="html"><span style="color:#34b">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;html&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;head&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;title&gt;</span>
+<pre class="CodeRay highlight"><code data-lang="html"><span class="doctype">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>
       Demo shop
-    <span style="color:#070;font-weight:bold">&lt;/title&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/head&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;body&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;form&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">wirecard_pay_btn</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">button</span><span style="color:#710">"</span></span> <span style="color:#b48">onclick</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span>pay()<span style="color:#710">"</span></span> <span style="color:#b48">value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Pay Now</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span> <span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-<span style="background-color:hsla(0,0%,0%,0.07);color:black">        <span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">pay</span>() {
-        <span style="color:#080;font-weight:bold">var</span> requestedData = {
-            <span style="color:#606">merchant_account_id</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">request_id</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">c68b9039-968d-1c6b-d9f6-27e9ab2bcb3e</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">request_time_stamp</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20150226084718</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">payment_method</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">transaction_type</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">purchase</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">requested_amount</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2.56</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">requested_amount_currency</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">locale</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">en</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">request_signature</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">kg44730486d159df0bc2e8dea22bd175395636a37b0da0ef785</span><span style="color:#710">"</span></span>
+    <span class="tag">&lt;/title&gt;</span>
+    <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+  <span class="tag">&lt;/head&gt;</span>
+  <span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;form&gt;</span>
+      <span class="tag">&lt;input</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">wirecard_pay_btn</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">button</span><span class="delimiter">"</span></span> <span class="attribute-name">onclick</span>=<span class="string"><span class="delimiter">"</span>pay()<span class="delimiter">"</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Pay Now</span><span class="delimiter">"</span></span><span class="tag">&gt;</span> <span class="tag">&lt;script</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+<span class="inline">        <span class="keyword">function</span> <span class="function">pay</span>() {
+        <span class="keyword">var</span> requestedData = {
+            <span class="key">merchant_account_id</span>: <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+            <span class="key">request_id</span>: <span class="string"><span class="delimiter">"</span><span class="content">c68b9039-968d-1c6b-d9f6-27e9ab2bcb3e</span><span class="delimiter">"</span></span>,
+            <span class="key">request_time_stamp</span>: <span class="string"><span class="delimiter">"</span><span class="content">20150226084718</span><span class="delimiter">"</span></span>,
+            <span class="key">payment_method</span>: <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>,
+            <span class="key">transaction_type</span>: <span class="string"><span class="delimiter">"</span><span class="content">purchase</span><span class="delimiter">"</span></span>,
+            <span class="key">requested_amount</span>: <span class="string"><span class="delimiter">"</span><span class="content">2.56</span><span class="delimiter">"</span></span>,
+            <span class="key">requested_amount_currency</span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+            <span class="key">locale</span>: <span class="string"><span class="delimiter">"</span><span class="content">en</span><span class="delimiter">"</span></span>,
+            <span class="key">request_signature</span>: <span class="string"><span class="delimiter">"</span><span class="content">kg44730486d159df0bc2e8dea22bd175395636a37b0da0ef785</span><span class="delimiter">"</span></span>
          }
         WirecardPaymentPage.hostedPay(requestedData);
         }</span>
-      <span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/form&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/body&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/html&gt;</span></code></pre>
+      <span class="tag">&lt;/script&gt;</span>
+    <span class="tag">&lt;/form&gt;</span>
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Basic HTML Sample with PayPal Checkout Portal</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="html"><span style="color:#34b">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;html&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;head&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;title&gt;</span>
+<pre class="CodeRay highlight"><code data-lang="html"><span class="doctype">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>
       Demo shop
-    <span style="color:#070;font-weight:bold">&lt;/title&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/head&gt;</span>
-   <span style="color:#070;font-weight:bold">&lt;body&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;form&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">wirecard_pay_btn</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">button</span><span style="color:#710">"</span></span> <span style="color:#b48">onclick</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span>pay()<span style="color:#710">"</span></span> <span style="color:#b48">value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Pay Now</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span> <span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-<span style="background-color:hsla(0,0%,0%,0.07);color:black">      <span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">pay</span>() {
-         <span style="color:#080;font-weight:bold">var</span> requestedData = {
-            <span style="color:#606">merchant_account_id</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">request_id</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">c68b9039-968d-1c6b-d9f6-27e9ab2bcb3e</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">request_time_stamp</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20150226084718</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">payment_method</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">paypal</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">transaction_type</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">debit</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">requested_amount</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2.56</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">requested_amount_currency</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">locale</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">en</span><span style="color:#710">"</span></span>,
-            <span style="color:#606">request_signature</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">d730486d159df0bc2e8dea22bd175395636a37b0da0ef785</span><span style="color:#710">"</span></span>
+    <span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+  <span class="tag">&lt;/head&gt;</span>
+   <span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;form&gt;</span>
+      <span class="tag">&lt;input</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">wirecard_pay_btn</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">button</span><span class="delimiter">"</span></span> <span class="attribute-name">onclick</span>=<span class="string"><span class="delimiter">"</span>pay()<span class="delimiter">"</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Pay Now</span><span class="delimiter">"</span></span><span class="tag">&gt;</span> <span class="tag">&lt;script</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+<span class="inline">      <span class="keyword">function</span> <span class="function">pay</span>() {
+         <span class="keyword">var</span> requestedData = {
+            <span class="key">merchant_account_id</span>: <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+            <span class="key">request_id</span>: <span class="string"><span class="delimiter">"</span><span class="content">c68b9039-968d-1c6b-d9f6-27e9ab2bcb3e</span><span class="delimiter">"</span></span>,
+            <span class="key">request_time_stamp</span>: <span class="string"><span class="delimiter">"</span><span class="content">20150226084718</span><span class="delimiter">"</span></span>,
+            <span class="key">payment_method</span>: <span class="string"><span class="delimiter">"</span><span class="content">paypal</span><span class="delimiter">"</span></span>,
+            <span class="key">transaction_type</span>: <span class="string"><span class="delimiter">"</span><span class="content">debit</span><span class="delimiter">"</span></span>,
+            <span class="key">requested_amount</span>: <span class="string"><span class="delimiter">"</span><span class="content">2.56</span><span class="delimiter">"</span></span>,
+            <span class="key">requested_amount_currency</span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+            <span class="key">locale</span>: <span class="string"><span class="delimiter">"</span><span class="content">en</span><span class="delimiter">"</span></span>,
+            <span class="key">request_signature</span>: <span class="string"><span class="delimiter">"</span><span class="content">d730486d159df0bc2e8dea22bd175395636a37b0da0ef785</span><span class="delimiter">"</span></span>
          }
        WirecardPaymentPage.hostedPay(requestedData);
        }</span>
-      <span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/form&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/body&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/html&gt;</span></code></pre>
+      <span class="tag">&lt;/script&gt;</span>
+    <span class="tag">&lt;/form&gt;</span>
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -6076,7 +6076,7 @@ Please note that only the fields <code>payment_method</code> and <code>transacti
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="html"><span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="html"><span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6102,66 +6102,66 @@ Please note that only the fields <code>payment_method</code> and <code>transacti
 <div class="listingblock">
 <div class="title">Basic HTML Sample</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="html"><span style="color:#070;font-weight:bold">&lt;html&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;head&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;title&gt;</span>example 01<span style="color:#070;font-weight:bold">&lt;/title&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span> <span style="color:#D20">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-<span style="background-color:hsla(0,0%,0%,0.07);color:black">        &lt;script&gt;
-<span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">pay</span>() {
-<span style="color:#080;font-weight:bold">var</span> requestData = {
-<span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">4d87f443-423c-6b13-e609-cc8b59c32d6b</span><span style="color:#710">"</span></span>,
-<span style="color:#606"><span style="color:#404">"</span><span>request_time_stamp</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20160817140742</span><span style="color:#710">"</span></span>,
-<span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-<span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">auto-sale</span><span style="color:#710">"</span></span>,
-<span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">0</span><span style="color:#710">"</span></span>,
-<span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-<span style="color:#606"><span style="color:#404">"</span><span>request_signature</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">283a346275444f3f4fbbbd7e3bcf815b41c4edf1a2531208e201fab12a9b0d53</span><span style="color:#710">"</span></span>,
-<span style="color:#606"><span style="color:#404">"</span><span>payment_method</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>,
-<span style="color:#606"><span style="color:#404">"</span><span>first_name</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">John</span><span style="color:#710">"</span></span>,
-<span style="color:#606"><span style="color:#404">"</span><span>last_name</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Doe</span><span style="color:#710">"</span></span>
+<pre class="CodeRay highlight"><code data-lang="html"><span class="tag">&lt;html&gt;</span>
+    <span class="tag">&lt;head&gt;</span>
+        <span class="tag">&lt;title&gt;</span>example 01<span class="tag">&lt;/title&gt;</span>
+        <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span> <span class="content">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+<span class="inline">        &lt;script&gt;
+<span class="keyword">function</span> <span class="function">pay</span>() {
+<span class="keyword">var</span> requestData = {
+<span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">4d87f443-423c-6b13-e609-cc8b59c32d6b</span><span class="delimiter">"</span></span>,
+<span class="key"><span class="delimiter">"</span><span class="content">request_time_stamp</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">20160817140742</span><span class="delimiter">"</span></span>,
+<span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+<span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">auto-sale</span><span class="delimiter">"</span></span>,
+<span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">0</span><span class="delimiter">"</span></span>,
+<span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+<span class="key"><span class="delimiter">"</span><span class="content">request_signature</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">283a346275444f3f4fbbbd7e3bcf815b41c4edf1a2531208e201fab12a9b0d53</span><span class="delimiter">"</span></span>,
+<span class="key"><span class="delimiter">"</span><span class="content">payment_method</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>,
+<span class="key"><span class="delimiter">"</span><span class="content">first_name</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">John</span><span class="delimiter">"</span></span>,
+<span class="key"><span class="delimiter">"</span><span class="content">last_name</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">Doe</span><span class="delimiter">"</span></span>
 };
 WirecardPaymentPage.embeddedPay(requestData);
 }</span>
-        <span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/head&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;body&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;h1&gt;</span>example 01<span style="color:#070;font-weight:bold">&lt;/h1&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;form&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">button</span><span style="color:#710">"</span></span> <span style="color:#b48">value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Pay</span><span style="color:#710">"</span></span> <span style="color:#b48">onClick</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span>pay()<span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/form&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/body&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/html&gt;</span></code></pre>
+        <span class="tag">&lt;/script&gt;</span>
+    <span class="tag">&lt;/head&gt;</span>
+    <span class="tag">&lt;body&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>example 01<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;form&gt;</span>
+            <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">button</span><span class="delimiter">"</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Pay</span><span class="delimiter">"</span></span> <span class="attribute-name">onClick</span>=<span class="string"><span class="delimiter">"</span>pay()<span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;/form&gt;</span>
+        <span class="tag">&lt;/body&gt;</span>
+    <span class="tag">&lt;/html&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Basic HTML Sample with Credit Card Form</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="html"><span style="color:#34b">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;html&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;head&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;title&gt;</span>Demo shop<span style="color:#070;font-weight:bold">&lt;/title&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/head&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;body&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">wirecard_pay_btn</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">button</span><span style="color:#710">"</span></span> <span style="color:#b48">onclick</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span>pay()<span style="color:#710">"</span></span> <span style="color:#b48">value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Pay Now</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-<span style="background-color:hsla(0,0%,0%,0.07);color:black">        <span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">pay</span>() {
-          <span style="color:#080;font-weight:bold">var</span> requestedData = {
-          <span style="color:#606">merchant_account_id</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-          <span style="color:#606">request_id</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">c68b9039-968d-1c6b-d9f6-27e9ab2bcb3e</span><span style="color:#710">"</span></span>,
-          <span style="color:#606">request_time_stamp</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20150226084718</span><span style="color:#710">"</span></span>,
-          <span style="color:#606">payment_method</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>,
-          <span style="color:#606">transaction_type</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">purchase</span><span style="color:#710">"</span></span>,
-          <span style="color:#606">requested_amount</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2.56</span><span style="color:#710">"</span></span>,
-          <span style="color:#606">requested_amount_currency</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-          <span style="color:#606">locale</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">en</span><span style="color:#710">"</span></span>,
-          <span style="color:#606">request_signature</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">e44730486d180cca590bc2e8dea22bd175395636a37b0da0ef785</span><span style="color:#710">"</span></span>
+<pre class="CodeRay highlight"><code data-lang="html"><span class="doctype">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>Demo shop<span class="tag">&lt;/title&gt;</span>
+    <span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">wirecard_pay_btn</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">button</span><span class="delimiter">"</span></span> <span class="attribute-name">onclick</span>=<span class="string"><span class="delimiter">"</span>pay()<span class="delimiter">"</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">Pay Now</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;script</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+<span class="inline">        <span class="keyword">function</span> <span class="function">pay</span>() {
+          <span class="keyword">var</span> requestedData = {
+          <span class="key">merchant_account_id</span>: <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+          <span class="key">request_id</span>: <span class="string"><span class="delimiter">"</span><span class="content">c68b9039-968d-1c6b-d9f6-27e9ab2bcb3e</span><span class="delimiter">"</span></span>,
+          <span class="key">request_time_stamp</span>: <span class="string"><span class="delimiter">"</span><span class="content">20150226084718</span><span class="delimiter">"</span></span>,
+          <span class="key">payment_method</span>: <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>,
+          <span class="key">transaction_type</span>: <span class="string"><span class="delimiter">"</span><span class="content">purchase</span><span class="delimiter">"</span></span>,
+          <span class="key">requested_amount</span>: <span class="string"><span class="delimiter">"</span><span class="content">2.56</span><span class="delimiter">"</span></span>,
+          <span class="key">requested_amount_currency</span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+          <span class="key">locale</span>: <span class="string"><span class="delimiter">"</span><span class="content">en</span><span class="delimiter">"</span></span>,
+          <span class="key">request_signature</span>: <span class="string"><span class="delimiter">"</span><span class="content">e44730486d180cca590bc2e8dea22bd175395636a37b0da0ef785</span><span class="delimiter">"</span></span>
           }
          WirecardPaymentPage.embeddedPay(requestedData);
         }</span>
-    <span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/body&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/html&gt;</span></code></pre>
+    <span class="tag">&lt;/script&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6176,7 +6176,7 @@ their checkout page:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="html"><span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span style="color:#710">"</span></span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text/javascript</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="html"><span class="tag">&lt;script</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/hpp/paymentPageLoader.js</span><span class="delimiter">"</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text/javascript</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span></code></pre>
 </div>
 </div>
 <div id="Seamless_Integration_Library" class="paragraph">
@@ -6211,9 +6211,9 @@ You can optionally use <code>ElasticPaymentPage</code> instead of <code>Wirecard
 <div class="title">Render the form</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="js">WirecardPaymentPage.seamlessRenderForm({
-    <span style="color:#606">requestData</span> : requestData, <i class="conum" data-value="1"></i><b>(1)</b>
-    <span style="color:#606">wrappingDivId</span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">seamless-target</span><span style="color:#710">"</span></span>, <i class="conum" data-value="2"></i><b>(2)</b>
-    <span style="color:#606">onSuccess</span> : processSucceededResult <i class="conum" data-value="3"></i><b>(3)</b>
+    <span class="key">requestData</span> : requestData, <i class="conum" data-value="1"></i><b>(1)</b>
+    <span class="key">wrappingDivId</span> : <span class="string"><span class="delimiter">"</span><span class="content">seamless-target</span><span class="delimiter">"</span></span>, <i class="conum" data-value="2"></i><b>(2)</b>
+    <span class="key">onSuccess</span> : processSucceededResult <i class="conum" data-value="3"></i><b>(3)</b>
     onError : processErrorResult <i class="conum" data-value="4"></i><b>(4)</b>
 });</code></pre>
 </div>
@@ -6257,9 +6257,9 @@ You can optionally use <code>ElasticPaymentPage</code> instead of <code>Wirecard
 <div class="title">Submit the form</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="js">WirecardPaymentPage.seamlessSubmitForm({
-    <span style="color:#606">requestData</span> : requestData, <i class="conum" data-value="1"></i><b>(1)</b>
-    <span style="color:#606">onSuccess</span> : processSucceededResult, <i class="conum" data-value="2"></i><b>(2)</b>
-    <span style="color:#606">onError</span> : processErrorResult <i class="conum" data-value="3"></i><b>(3)</b>
+    <span class="key">requestData</span> : requestData, <i class="conum" data-value="1"></i><b>(1)</b>
+    <span class="key">onSuccess</span> : processSucceededResult, <i class="conum" data-value="2"></i><b>(2)</b>
+    <span class="key">onError</span> : processErrorResult <i class="conum" data-value="3"></i><b>(3)</b>
 });</code></pre>
 </div>
 </div>
@@ -6295,9 +6295,9 @@ You can optionally use <code>ElasticPaymentPage</code> instead of <code>Wirecard
 <div class="title">Submit the payment request</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="js">WirecardPaymentPage.seamlessPay({
-    <span style="color:#606">requestData</span> : requestData, <i class="conum" data-value="1"></i><b>(1)</b>
-    <span style="color:#606">onSuccess</span> : processSucceededResult, <i class="conum" data-value="2"></i><b>(2)</b>
-    <span style="color:#606">onError</span> : processErrorResult <i class="conum" data-value="3"></i><b>(3)</b>
+    <span class="key">requestData</span> : requestData, <i class="conum" data-value="1"></i><b>(1)</b>
+    <span class="key">onSuccess</span> : processSucceededResult, <i class="conum" data-value="2"></i><b>(2)</b>
+    <span class="key">onError</span> : processErrorResult <i class="conum" data-value="3"></i><b>(3)</b>
 });</code></pre>
 </div>
 </div>
@@ -6359,22 +6359,22 @@ identified by <code>wrappingDivId</code> parameter.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="js"><span style="color:#080;font-weight:bold">var</span> requestData = {
-  <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_time_stamp</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20190403095835</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">purchase</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2.00</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>ip_address</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_signature</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">43fd8c261a8fdad693024c7cc009239ad344f1e5716de0c3163237b5392d5700</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>payment_method</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>
+<pre class="CodeRay highlight"><code data-lang="js"><span class="keyword">var</span> requestData = {
+  <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_time_stamp</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">20190403095835</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">purchase</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">2.00</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">ip_address</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">127.0.0.1</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_signature</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">43fd8c261a8fdad693024c7cc009239ad344f1e5716de0c3163237b5392d5700</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">payment_method</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>
 };
 WirecardPaymentPage.seamlessRenderForm({
-  <span style="color:#606">requestData</span> : requestData,
-  <span style="color:#606">wrappingDivId</span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">seamless-target</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">onSuccess</span> : processSucceededResult,
-  <span style="color:#606">onError</span> : processErrorResult
+  <span class="key">requestData</span> : requestData,
+  <span class="key">wrappingDivId</span> : <span class="string"><span class="delimiter">"</span><span class="content">seamless-target</span><span class="delimiter">"</span></span>,
+  <span class="key">onSuccess</span> : processSucceededResult,
+  <span class="key">onError</span> : processErrorResult
 });</code></pre>
 </div>
 </div>
@@ -6394,17 +6394,17 @@ Use a unique Request ID for each request.
 <div class="title">Transaction Data Received from onSuccess Callback of seamlessRenderForm()</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-  <span style="color:#606"><span style="color:#404">"</span><span>ip_address</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2.00</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_code_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_description_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_severity_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">5ff1cf52-8471-11e5-95ea-005056b13376</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_state</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">success</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">check-signature</span><span style="color:#710">"</span></span>
+  <span class="key"><span class="delimiter">"</span><span class="content">ip_address</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">127.0.0.1</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">2.00</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_code_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_description_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_severity_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">5ff1cf52-8471-11e5-95ea-005056b13376</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_state</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">check-signature</span><span class="delimiter">"</span></span>
 }</code></pre>
 </div>
 </div>
@@ -6421,8 +6421,8 @@ data from the first step. Form input is validated before the submit.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="js">WirecardPaymentPage.seamlessSubmitForm({
-  <span style="color:#606">onSuccess</span> : processSucceededResult,
-  <span style="color:#606">onError</span> : processErrorResult
+  <span class="key">onSuccess</span> : processSucceededResult,
+  <span class="key">onError</span> : processErrorResult
 });</code></pre>
 </div>
 </div>
@@ -6430,27 +6430,27 @@ data from the first step. Form input is validated before the submit.</p>
 <div class="title">Transaction Data Received from onSuccess Callback of seamlessSubmitForm()</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-  <span style="color:#606"><span style="color:#404">"</span><span>api_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>authorization_code</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">153620</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>completion_time_stamp</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20190406103540</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>first_name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">John</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>ip_address</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>last_name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Doe</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>masked_account_number</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">444433******1111</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>payment_method</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>provider_transaction_id_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">8ee6e543-c96f-459a-a379-50d0e9152fd3</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">2.00</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>self</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com:9000/engine/rest/merchants/61e8c484-dbb3-4b69-ad8f-706f13ca141b/payments/1fe8a33a-8472-11e5-95ea-005056b13376</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_code_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_description_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">3d-acquirer:The resource was successfully created.</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_severity_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>token_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">4186409015611111</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">1fe8a33a-8472-11e5-95ea-005056b13376</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_state</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">success</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">purchase</span><span style="color:#710">"</span></span>
+  <span class="key"><span class="delimiter">"</span><span class="content">api_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">elastic-api</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">authorization_code</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">153620</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">completion_time_stamp</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">20190406103540</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">first_name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">John</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">ip_address</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">127.0.0.1</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">last_name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Doe</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">masked_account_number</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">444433******1111</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">payment_method</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">provider_transaction_id_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">8ee6e543-c96f-459a-a379-50d0e9152fd3</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">2.00</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">self</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com:9000/engine/rest/merchants/61e8c484-dbb3-4b69-ad8f-706f13ca141b/payments/1fe8a33a-8472-11e5-95ea-005056b13376</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_code_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_description_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">3d-acquirer:The resource was successfully created.</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_severity_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">token_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">4186409015611111</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">1fe8a33a-8472-11e5-95ea-005056b13376</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_state</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">purchase</span><span class="delimiter">"</span></span>
 }</code></pre>
 </div>
 </div>
@@ -6503,22 +6503,22 @@ identified by <code>wrappingDivId</code> parameter.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="js"><span style="color:#080;font-weight:bold">var</span> requestData = {
-  <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_time_stamp</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20190403095835</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">authorization-only</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">0</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>ip_address</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_signature</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">43fd8c261a8fdad693024c7cc009239ad344f1e5716de0c3163237b5392d5700</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>payment_method</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>
+<pre class="CodeRay highlight"><code data-lang="js"><span class="keyword">var</span> requestData = {
+  <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_time_stamp</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">20190403095835</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">authorization-only</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">0</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">ip_address</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">127.0.0.1</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_signature</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">43fd8c261a8fdad693024c7cc009239ad344f1e5716de0c3163237b5392d5700</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">payment_method</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>
 };
 WirecardPaymentPage.seamlessRenderForm({
-  <span style="color:#606">requestData</span> : requestData,
-  <span style="color:#606">wrappingDivId</span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">seamless-target</span><span style="color:#710">"</span></span>,
-  <span style="color:#606">onSuccess</span> : processSucceededResult,
-  <span style="color:#606">onError</span> : processErrorResult
+  <span class="key">requestData</span> : requestData,
+  <span class="key">wrappingDivId</span> : <span class="string"><span class="delimiter">"</span><span class="content">seamless-target</span><span class="delimiter">"</span></span>,
+  <span class="key">onSuccess</span> : processSucceededResult,
+  <span class="key">onError</span> : processErrorResult
 });</code></pre>
 </div>
 </div>
@@ -6538,17 +6538,17 @@ Use a unique Request ID for each request.
 <div class="title">Transaction Data Received from onSuccess Callback of seamlessRenderForm()</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-  <span style="color:#606"><span style="color:#404">"</span><span>ip_address</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">0</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_code_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_description_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The resource was successfully created.</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_severity_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">5ff1cf52-8471-11e5-95ea-005056b13376</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_state</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">success</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">check-signature</span><span style="color:#710">"</span></span>
+  <span class="key"><span class="delimiter">"</span><span class="content">ip_address</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">127.0.0.1</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">0</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_code_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_description_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_severity_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">5ff1cf52-8471-11e5-95ea-005056b13376</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_state</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">check-signature</span><span class="delimiter">"</span></span>
 }</code></pre>
 </div>
 </div>
@@ -6566,8 +6566,8 @@ the submit.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="js">WirecardPaymentPage.seamlessSubmitForm({
-  <span style="color:#606">onSuccess</span> : processSucceededResult,
-  <span style="color:#606">onError</span> : processErrorResult
+  <span class="key">onSuccess</span> : processSucceededResult,
+  <span class="key">onError</span> : processErrorResult
 });</code></pre>
 </div>
 </div>
@@ -6575,27 +6575,27 @@ the submit.</p>
 <div class="title">Transaction Data Received from onSuccess Callback of seamlessSubmitForm()</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-   <span style="color:#606"><span style="color:#404">"</span><span>api_id</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>authorization_code</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">153620</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>completion_time_stamp</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20190406103540</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>first_name</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">John</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>ip_address</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>last_name</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Doe</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>masked_account_number</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">444433******1111</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>payment_method</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>provider_transaction_id_1</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">8ee6e543-c96f-459a-a379-50d0e9152fd3</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">0</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>self</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com:9000/engine/rest/merchants/61e8c484-dbb3-4b69-ad8f-706f13ca141b/payments/1fe8a33a-8472-11e5-95ea-005056b13376</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>status_code_1</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>status_description_1</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">3d-acquirer:The resource was successfully created.</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>status_severity_1</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>token_id</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">4186409015611111</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>transaction_id</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">1fe8a33a-8472-11e5-95ea-005056b13376</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>transaction_state</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">success</span><span style="color:#710">"</span></span>,
-   <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span>:<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">authorization-only</span><span style="color:#710">"</span></span>
+   <span class="key"><span class="delimiter">"</span><span class="content">api_id</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">elastic-api</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">authorization_code</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">153620</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">completion_time_stamp</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">20190406103540</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">first_name</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">John</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">ip_address</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">127.0.0.1</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">last_name</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">Doe</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">masked_account_number</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">444433******1111</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">payment_method</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">provider_transaction_id_1</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">8ee6e543-c96f-459a-a379-50d0e9152fd3</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">0</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">self</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com:9000/engine/rest/merchants/61e8c484-dbb3-4b69-ad8f-706f13ca141b/payments/1fe8a33a-8472-11e5-95ea-005056b13376</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">status_code_1</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">status_description_1</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">3d-acquirer:The resource was successfully created.</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">status_severity_1</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">token_id</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">4186409015611111</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">transaction_id</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">1fe8a33a-8472-11e5-95ea-005056b13376</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">transaction_state</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span>,
+   <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span>:<span class="string"><span class="delimiter">"</span><span class="content">authorization-only</span><span class="delimiter">"</span></span>
 }</code></pre>
 </div>
 </div>
@@ -6612,22 +6612,22 @@ browser.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="js"><span style="color:#080;font-weight:bold">var</span> requestData = {
-  <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">679047dc-8a4d-657b-91dc-df6d80cd6a10</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_time_stamp</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20190403101310</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">purchase</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">12</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>ip_address</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_signature</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">ea468004287bf191a43b4c5ac33e38d5f035050ad784cad293646c1533e7fc48</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>payment_method</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>parent_transaction_id</span><span style="color:#404">"</span></span> : <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">26c14051-8213-11e5-a96e-0050b667eb91</span><span style="color:#710">"</span></span>
+<pre class="CodeRay highlight"><code data-lang="js"><span class="keyword">var</span> requestData = {
+  <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">679047dc-8a4d-657b-91dc-df6d80cd6a10</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_time_stamp</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">20190403101310</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">purchase</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">12</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">ip_address</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">127.0.0.1</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_signature</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">ea468004287bf191a43b4c5ac33e38d5f035050ad784cad293646c1533e7fc48</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">payment_method</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">parent_transaction_id</span><span class="delimiter">"</span></span> : <span class="string"><span class="delimiter">"</span><span class="content">26c14051-8213-11e5-a96e-0050b667eb91</span><span class="delimiter">"</span></span>
 };
 WirecardPaymentPage.seamlessPay({
-  <span style="color:#606">requestData</span> : requestData,
-  <span style="color:#606">onSuccess</span> : processSucceededResult,
-  <span style="color:#606">onError</span> : processErrorResult
+  <span class="key">requestData</span> : requestData,
+  <span class="key">onSuccess</span> : processSucceededResult,
+  <span class="key">onError</span> : processErrorResult
 });</code></pre>
 </div>
 </div>
@@ -6647,27 +6647,27 @@ Use a unique Request ID for each request.
 <div class="title">Transaction Data Received from onSuccess Callback of seamlessPay()</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-  <span style="color:#606"><span style="color:#404">"</span><span>api_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">elastic-api</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>authorization_code</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">153620</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>completion_time_stamp</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20190406103540</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>first_name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">John</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>ip_address</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>last_name</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Doe</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>masked_account_number</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">444433******1111</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>merchant_account_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>payment_method</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>provider_transaction_id_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">8ee6e543-c96f-459a-a379-50d0e9152fd3</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>request_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">12</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>requested_amount_currency</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>self</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com:9000/engine/rest/merchants/61e8c484-dbb3-4b69-ad8f-706f13ca141b/payments/1fe8a33a-8472-11e5-95ea-005056b13376</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_code_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_description_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">3d-acquirer:The resource was successfully created.</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>status_severity_1</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>token_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">4186409015611111</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_id</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">1fe8a33a-8472-11e5-95ea-005056b13376</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_state</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">success</span><span style="color:#710">"</span></span>,
-  <span style="color:#606"><span style="color:#404">"</span><span>transaction_type</span><span style="color:#404">"</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">purchase</span><span style="color:#710">"</span></span>
+  <span class="key"><span class="delimiter">"</span><span class="content">api_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">elastic-api</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">authorization_code</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">153620</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">completion_time_stamp</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">20190406103540</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">first_name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">John</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">ip_address</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">127.0.0.1</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">last_name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Doe</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">masked_account_number</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">444433******1111</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">merchant_account_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">61e8c484-dbb3-4b69-ad8f-706f13ca141b</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">payment_method</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">provider_transaction_id_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">8ee6e543-c96f-459a-a379-50d0e9152fd3</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">request_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">217c3832-8575-c1d5-0e3a-2fa08003b0fd</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">12</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">requested_amount_currency</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">self</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com:9000/engine/rest/merchants/61e8c484-dbb3-4b69-ad8f-706f13ca141b/payments/1fe8a33a-8472-11e5-95ea-005056b13376</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_code_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_description_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">3d-acquirer:The resource was successfully created.</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">status_severity_1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">token_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">4186409015611111</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">1fe8a33a-8472-11e5-95ea-005056b13376</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_state</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span>,
+  <span class="key"><span class="delimiter">"</span><span class="content">transaction_type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">purchase</span><span class="delimiter">"</span></span>
 }</code></pre>
 </div>
 </div>
@@ -6690,7 +6690,7 @@ Use a unique Request ID for each request.
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="js">WirecardPaymentPage.seamlessFormIsValid({
- <span style="color:#606">onValidationResult</span> : processValidationResult
+ <span class="key">onValidationResult</span> : processValidationResult
 });</code></pre>
 </div>
 </div>
@@ -6704,7 +6704,7 @@ the form is validated always on form submit.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="js">WirecardPaymentPage.seamlessValidateForm({
- <span style="color:#606">onValidationResult</span> : processValidationResult
+ <span class="key">onValidationResult</span> : processValidationResult
 });</code></pre>
 </div>
 </div>
@@ -6721,7 +6721,7 @@ the form is validated always on form submit.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="js">WirecardPaymentPage.seamlessChangeLocale(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">en</span><span style="color:#710">"</span></span>);</code></pre>
+<pre class="CodeRay highlight"><code data-lang="js">WirecardPaymentPage.seamlessChangeLocale(<span class="string"><span class="delimiter">"</span><span class="content">en</span><span class="delimiter">"</span></span>);</code></pre>
 </div>
 </div>
 </div>
@@ -6739,99 +6739,99 @@ tag of the page, so it is a simple HTML form:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="html"><span style="color:#070;font-weight:bold">&lt;h3</span> <span style="color:#b48">data-i18n</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">cc_form_title</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>Billing information<span style="color:#070;font-weight:bold">&lt;/h3&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;form</span> <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">seamless-form</span><span style="color:#710">"</span></span> <span style="color:#b48">data-wd-validate-form</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span> <span style="color:#b48">th:object</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">${payment}</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">row</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-group col-xs-12</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card-types btn-group</span><span style="color:#710">"</span></span> <span style="color:#b48">data-toggle</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">buttons</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;label</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">btn btn-default active</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span> <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">radio</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">ee-request-nvp</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card_type</span><span style="color:#710">"</span></span> <span style="color:#b48">value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">visa</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">checked</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">checked</span><span style="color:#710">"</span></span> <span style="color:#b48">data-fv-wdcardtype</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdcardtype-message</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">select_valid_card_type</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdcardtype-creditcardfield</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">account_number</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span> <span style="color:#070;font-weight:bold">&lt;img</span>
-          <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1280px-Visa_Inc._logo.svg.png</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">alt</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Visa</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/label&gt;</span> <span style="color:#070;font-weight:bold">&lt;label</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">btn btn-default</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span> <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">radio</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">ee-request-nvp</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card_type</span><span style="color:#710">"</span></span> <span style="color:#b48">value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">mastercard</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span> <span style="color:#070;font-weight:bold">&lt;img</span>
-          <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://lh5.googleusercontent.com/-_o1E3Ie8C8Y/U1YW_49rhBI/AAAAAAAAAbI/vGfq1_kakSU/w800-h800/mastercard-logo-in-jokerman-font.png</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">alt</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Mastercard</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/label&gt;</span> <span style="color:#070;font-weight:bold">&lt;label</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">btn btn-default</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span> <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">radio</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">ee-request-nvp</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card_type</span><span style="color:#710">"</span></span> <span style="color:#b48">value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">diners</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span> <span style="color:#070;font-weight:bold">&lt;img</span>
-          <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.golf.co.nz/uploads/diners-logo-transparent.png</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">alt</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Diners</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/label&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">row</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">col-sm-8</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-group</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text</span><span style="color:#710">"</span></span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-control ee-request-nvp</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">account_number</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">account_number</span><span style="color:#710">"</span></span> <span style="color:#b48">placeholder</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Card number</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-i18n</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card_number</span><span style="color:#710">"</span></span> <span style="color:#b48">data-fv-wdcreditcard</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdcreditcard-message</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">enter_creditcard_number</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdcreditcard-cardtypefield</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card_type</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdcreditcard-cvvfield</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card_security_code</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdcreditcard-allowedcardtypes</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">visa,mastercard,diners</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-onsuccess</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">FormValidation.WDHelper.onCardNumberSuccess</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-onerror</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">FormValidation.WDHelper.onCardNumberError</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">col-sm-4</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-group</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text</span><span style="color:#710">"</span></span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-control ee-request-nvp</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card_security_code</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card_security_code</span><span style="color:#710">"</span></span> <span style="color:#b48">placeholder</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">CVV</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdcvv</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span> <span style="color:#b48">data-fv-wdcvv-message</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">enter_cvv</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdcvv-creditcardfield</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">account_number</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-i18n</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">card_security_code</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">expiry-date-div</span><span style="color:#710">"</span></span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">row</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">col-sm-8</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">col-sm-2</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-group</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">number</span><span style="color:#710">"</span></span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-control ee-request-nvp</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">expiration_month</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">expiration_month</span><span style="color:#710">"</span></span> <span style="color:#b48">placeholder</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Month</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-i18n</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">expiration_month</span><span style="color:#710">"</span></span> <span style="color:#b48">data-fv-notempty</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-notempty-message</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">enter_value</span><span style="color:#710">"</span></span> <span style="color:#b48">data-fv-wdexpirymonth</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdexpirymonth-message</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">invalid_expiry_date</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdexpirymonth-yearfield</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">expiration_year</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">col-sm-2</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-group</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">number</span><span style="color:#710">"</span></span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-control ee-request-nvp</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">expiration_year</span><span style="color:#710">"</span></span> <span style="color:#b48">data-fv-notempty</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-notempty-message</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">enter_value</span><span style="color:#710">"</span></span> <span style="color:#b48">data-fv-wdexpiryyear</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdexpiryyear-message</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">invalid_expiry_date</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdexpiryyear-yearscount</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">20</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-wdexpiryyear-monthfield</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">expiration_month</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">expiration_year</span><span style="color:#710">"</span></span> <span style="color:#b48">placeholder</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Year</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-i18n</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">expiration_year</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">row</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">col-sm-6</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-group</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text</span><span style="color:#710">"</span></span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-control ee-request-nvp</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">first_name</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">first_name</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">placeholder</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Cardholder first name</span><span style="color:#710">"</span></span> <span style="color:#b48">data-i18n</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">first_name</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">th:value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">*{accountHolder} ? *{accountHolder.firstName}</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">col-sm-6</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-group</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;input</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">text</span><span style="color:#710">"</span></span> <span style="color:#b48">class</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">form-control ee-request-nvp</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">last_name</span><span style="color:#710">"</span></span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">last_name</span><span style="color:#710">"</span></span> <span style="color:#b48">placeholder</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Cardholder last name</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-fv-notempty</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">true</span><span style="color:#710">"</span></span> <span style="color:#b48">data-fv-notempty-message</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">enter_value</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">data-i18n</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">last_name</span><span style="color:#710">"</span></span>
-          <span style="color:#b48">th:value</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">*{accountHolder} ? *{accountHolder.lastName}</span><span style="color:#710">"</span></span> <span style="color:#070;font-weight:bold">/&gt;</span>
-      <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-  <span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/form&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="html"><span class="tag">&lt;h3</span> <span class="attribute-name">data-i18n</span>=<span class="string"><span class="delimiter">"</span><span class="content">cc_form_title</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>Billing information<span class="tag">&lt;/h3&gt;</span>
+<span class="tag">&lt;form</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">seamless-form</span><span class="delimiter">"</span></span> <span class="attribute-name">data-wd-validate-form</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span> <span class="attribute-name">th:object</span>=<span class="string"><span class="delimiter">"</span><span class="content">${payment}</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-group col-xs-12</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">card-types btn-group</span><span class="delimiter">"</span></span> <span class="attribute-name">data-toggle</span>=<span class="string"><span class="delimiter">"</span><span class="content">buttons</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;label</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">btn btn-default active</span><span class="delimiter">"</span></span><span class="tag">&gt;</span> <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">radio</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">ee-request-nvp</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">card_type</span><span class="delimiter">"</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">visa</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">checked</span>=<span class="string"><span class="delimiter">"</span><span class="content">checked</span><span class="delimiter">"</span></span> <span class="attribute-name">data-fv-wdcardtype</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdcardtype-message</span>=<span class="string"><span class="delimiter">"</span><span class="content">select_valid_card_type</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdcardtype-creditcardfield</span>=<span class="string"><span class="delimiter">"</span><span class="content">account_number</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span> <span class="tag">&lt;img</span>
+          <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1280px-Visa_Inc._logo.svg.png</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">alt</span>=<span class="string"><span class="delimiter">"</span><span class="content">Visa</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+        <span class="tag">&lt;/label&gt;</span> <span class="tag">&lt;label</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">btn btn-default</span><span class="delimiter">"</span></span><span class="tag">&gt;</span> <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">radio</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">ee-request-nvp</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">card_type</span><span class="delimiter">"</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">mastercard</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span> <span class="tag">&lt;img</span>
+          <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://lh5.googleusercontent.com/-_o1E3Ie8C8Y/U1YW_49rhBI/AAAAAAAAAbI/vGfq1_kakSU/w800-h800/mastercard-logo-in-jokerman-font.png</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">alt</span>=<span class="string"><span class="delimiter">"</span><span class="content">Mastercard</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+        <span class="tag">&lt;/label&gt;</span> <span class="tag">&lt;label</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">btn btn-default</span><span class="delimiter">"</span></span><span class="tag">&gt;</span> <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">radio</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">ee-request-nvp</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">card_type</span><span class="delimiter">"</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">"</span><span class="content">diners</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span> <span class="tag">&lt;img</span>
+          <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.golf.co.nz/uploads/diners-logo-transparent.png</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">alt</span>=<span class="string"><span class="delimiter">"</span><span class="content">Diners</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+        <span class="tag">&lt;/label&gt;</span>
+      <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">col-sm-8</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-group</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text</span><span class="delimiter">"</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-control ee-request-nvp</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">account_number</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">account_number</span><span class="delimiter">"</span></span> <span class="attribute-name">placeholder</span>=<span class="string"><span class="delimiter">"</span><span class="content">Card number</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-i18n</span>=<span class="string"><span class="delimiter">"</span><span class="content">card_number</span><span class="delimiter">"</span></span> <span class="attribute-name">data-fv-wdcreditcard</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdcreditcard-message</span>=<span class="string"><span class="delimiter">"</span><span class="content">enter_creditcard_number</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdcreditcard-cardtypefield</span>=<span class="string"><span class="delimiter">"</span><span class="content">card_type</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdcreditcard-cvvfield</span>=<span class="string"><span class="delimiter">"</span><span class="content">card_security_code</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdcreditcard-allowedcardtypes</span>=<span class="string"><span class="delimiter">"</span><span class="content">visa,mastercard,diners</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-onsuccess</span>=<span class="string"><span class="delimiter">"</span><span class="content">FormValidation.WDHelper.onCardNumberSuccess</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-onerror</span>=<span class="string"><span class="delimiter">"</span><span class="content">FormValidation.WDHelper.onCardNumberError</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">col-sm-4</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-group</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text</span><span class="delimiter">"</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-control ee-request-nvp</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">card_security_code</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">card_security_code</span><span class="delimiter">"</span></span> <span class="attribute-name">placeholder</span>=<span class="string"><span class="delimiter">"</span><span class="content">CVV</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdcvv</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span> <span class="attribute-name">data-fv-wdcvv-message</span>=<span class="string"><span class="delimiter">"</span><span class="content">enter_cvv</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdcvv-creditcardfield</span>=<span class="string"><span class="delimiter">"</span><span class="content">account_number</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-i18n</span>=<span class="string"><span class="delimiter">"</span><span class="content">card_security_code</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">expiry-date-div</span><span class="delimiter">"</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">col-sm-8</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">col-sm-2</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-group</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">number</span><span class="delimiter">"</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-control ee-request-nvp</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">expiration_month</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">expiration_month</span><span class="delimiter">"</span></span> <span class="attribute-name">placeholder</span>=<span class="string"><span class="delimiter">"</span><span class="content">Month</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-i18n</span>=<span class="string"><span class="delimiter">"</span><span class="content">expiration_month</span><span class="delimiter">"</span></span> <span class="attribute-name">data-fv-notempty</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-notempty-message</span>=<span class="string"><span class="delimiter">"</span><span class="content">enter_value</span><span class="delimiter">"</span></span> <span class="attribute-name">data-fv-wdexpirymonth</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdexpirymonth-message</span>=<span class="string"><span class="delimiter">"</span><span class="content">invalid_expiry_date</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdexpirymonth-yearfield</span>=<span class="string"><span class="delimiter">"</span><span class="content">expiration_year</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">col-sm-2</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-group</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">number</span><span class="delimiter">"</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-control ee-request-nvp</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">expiration_year</span><span class="delimiter">"</span></span> <span class="attribute-name">data-fv-notempty</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-notempty-message</span>=<span class="string"><span class="delimiter">"</span><span class="content">enter_value</span><span class="delimiter">"</span></span> <span class="attribute-name">data-fv-wdexpiryyear</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdexpiryyear-message</span>=<span class="string"><span class="delimiter">"</span><span class="content">invalid_expiry_date</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdexpiryyear-yearscount</span>=<span class="string"><span class="delimiter">"</span><span class="content">20</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-wdexpiryyear-monthfield</span>=<span class="string"><span class="delimiter">"</span><span class="content">expiration_month</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">expiration_year</span><span class="delimiter">"</span></span> <span class="attribute-name">placeholder</span>=<span class="string"><span class="delimiter">"</span><span class="content">Year</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-i18n</span>=<span class="string"><span class="delimiter">"</span><span class="content">expiration_year</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">col-sm-6</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-group</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text</span><span class="delimiter">"</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-control ee-request-nvp</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">first_name</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">first_name</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">placeholder</span>=<span class="string"><span class="delimiter">"</span><span class="content">Cardholder first name</span><span class="delimiter">"</span></span> <span class="attribute-name">data-i18n</span>=<span class="string"><span class="delimiter">"</span><span class="content">first_name</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">th:value</span>=<span class="string"><span class="delimiter">"</span><span class="content">*{accountHolder} ? *{accountHolder.firstName}</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">col-sm-6</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-group</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">"</span><span class="content">text</span><span class="delimiter">"</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">form-control ee-request-nvp</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">"</span><span class="content">last_name</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">last_name</span><span class="delimiter">"</span></span> <span class="attribute-name">placeholder</span>=<span class="string"><span class="delimiter">"</span><span class="content">Cardholder last name</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-fv-notempty</span>=<span class="string"><span class="delimiter">"</span><span class="content">true</span><span class="delimiter">"</span></span> <span class="attribute-name">data-fv-notempty-message</span>=<span class="string"><span class="delimiter">"</span><span class="content">enter_value</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">data-i18n</span>=<span class="string"><span class="delimiter">"</span><span class="content">last_name</span><span class="delimiter">"</span></span>
+          <span class="attribute-name">th:value</span>=<span class="string"><span class="delimiter">"</span><span class="content">*{accountHolder} ? *{accountHolder.lastName}</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/form&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6839,26 +6839,26 @@ tag of the page, so it is a simple HTML form:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="css"><span style="color:#070;font-weight:bold">body</span> {
-  <span style="color:#606">font-family</span>: <span style="color:#088">Verdana</span>;
-  <span style="color:#606">font-size</span>: <span style="color:#60E">12px</span>;
-  <span style="color:#606">padding</span>: <span style="color:#60E">20px</span>;
+<pre class="CodeRay highlight"><code data-lang="css"><span class="tag">body</span> {
+  <span class="key">font-family</span>: <span class="value">Verdana</span>;
+  <span class="key">font-size</span>: <span class="float">12px</span>;
+  <span class="key">padding</span>: <span class="float">20px</span>;
 }
-<span style="color:#070;font-weight:bold">input</span> {
-  <span style="color:#606">width</span>: <span style="color:#60E">100%</span>;
+<span class="tag">input</span> {
+  <span class="key">width</span>: <span class="float">100%</span>;
 }
-<span style="color:#B06;font-weight:bold">.btn</span> {
-  <span style="color:#606">outline</span>: <span style="color:#088">none</span> <span style="color:#D00">!important</span>;
+<span class="class">.btn</span> {
+  <span class="key">outline</span>: <span class="value">none</span> <span class="important">!important</span>;
 }
-<span style="color:#B06;font-weight:bold">.card-types</span> <span style="color:#B06;font-weight:bold">.btn</span> {
-  <span style="color:#606">height</span>: <span style="color:#60E">40px</span>
+<span class="class">.card-types</span> <span class="class">.btn</span> {
+  <span class="key">height</span>: <span class="float">40px</span>
 }
-<span style="color:#B06;font-weight:bold">.card-types</span> <span style="color:#B06;font-weight:bold">.btn</span> <span style="color:#070;font-weight:bold">img</span> {
-  <span style="color:#606">width</span>: <span style="color:#60E">40px</span>;
+<span class="class">.card-types</span> <span class="class">.btn</span> <span class="tag">img</span> {
+  <span class="key">width</span>: <span class="float">40px</span>;
 }
-<span style="color:#B06;font-weight:bold">.card-types</span> <span style="color:#B06;font-weight:bold">.form-control-feedback</span> {
-  <span style="color:#606">right</span>: <span style="color:#60E">-40px</span> <span style="color:#D00">!important</span>;
-  <span style="color:#606">top</span>: <span style="color:#60E">1px</span> <span style="color:#D00">!important</span>;
+<span class="class">.card-types</span> <span class="class">.form-control-feedback</span> {
+  <span class="key">right</span>: <span class="float">-40px</span> <span class="important">!important</span>;
+  <span class="key">top</span>: <span class="float">1px</span> <span class="important">!important</span>;
 }</code></pre>
 </div>
 </div>
@@ -10699,9 +10699,10 @@ from the cardholder.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();

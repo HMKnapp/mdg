@@ -6248,269 +6248,269 @@ and status of the individual payments.</p>
 <div class="listingblock">
 <div class="title">Request Purchase Credit Card and 2 Vouchers</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#579">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;multi-payments</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-resolver-category&gt;</span>xyzLimited-Resolver-Multipayment<span style="color:#070;font-weight:bold">&lt;/merchant-account-resolver-category&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-request-id&gt;</span>Purchase-CC-Voucher-8923<span style="color:#070;font-weight:bold">&lt;/multi-payment-request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-transaction-type&gt;</span>purchase<span style="color:#070;font-weight:bold">&lt;/multi-payment-transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>25<span style="color:#070;font-weight:bold">&lt;/multi-payment-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-count&gt;</span>3<span style="color:#070;font-weight:bold">&lt;/transaction-count&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>CC-Voucher-4590<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payments&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;phone</span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;address&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;street1&gt;</span>200.000<span style="color:#070;font-weight:bold">&lt;/street1&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;city&gt;</span>Munich<span style="color:#070;font-weight:bold">&lt;/city&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;state&gt;</span>ON<span style="color:#070;font-weight:bold">&lt;/state&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;country&gt;</span>CA<span style="color:#070;font-weight:bold">&lt;/country&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;/address&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;card&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;account-number&gt;</span>4444333322221111<span style="color:#070;font-weight:bold">&lt;/account-number&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;expiration-month&gt;</span>12<span style="color:#070;font-weight:bold">&lt;/expiration-month&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;expiration-year&gt;</span>2025<span style="color:#070;font-weight:bold">&lt;/expiration-year&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;card-type&gt;</span>visa<span style="color:#070;font-weight:bold">&lt;/card-type&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;card-security-code&gt;</span>123<span style="color:#070;font-weight:bold">&lt;/card-security-code&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/card&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/payment&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>xyzLimited<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;additional-merchant-data&gt;</span>ew0KInh5eiI6ICIxMjMiLA0KImFiYyI6ICI0NTYiLA0KInRlc3QiOiAiQ0ktVFJBVkVMIg0KfQ==<span style="color:#070;font-weight:bold">&lt;/additional-merchant-data&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;voucher&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-code&gt;</span>8396586683723949<span style="color:#070;font-weight:bold">&lt;/voucher-code&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-brand-id&gt;</span>xyz<span style="color:#070;font-weight:bold">&lt;/voucher-brand-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-description&gt;</span>This is Test Voucher 1<span style="color:#070;font-weight:bold">&lt;/voucher-description&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/voucher&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/payment&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>5<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>xyzLimited<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;additional-merchant-data&gt;</span>ew0KIkxNTyI6ICI3ODkiLA0KIlJlYWQiOiAiMzIxIiwNCiJ0ZXN0IjogIkNJLVRSQVZFTCINCn0=<span style="color:#070;font-weight:bold">&lt;/additional-merchant-data&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;voucher&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-code&gt;</span>8101100662655059<span style="color:#070;font-weight:bold">&lt;/voucher-code&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-brand-id&gt;</span>xyz<span style="color:#070;font-weight:bold">&lt;/voucher-brand-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-description&gt;</span>This is Test Voucher 2<span style="color:#070;font-weight:bold">&lt;/voucher-description&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/voucher&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/payment&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payments&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/multi-payments&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;multi-payments</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-resolver-category&gt;</span>xyzLimited-Resolver-Multipayment<span class="tag">&lt;/merchant-account-resolver-category&gt;</span>
+    <span class="tag">&lt;multi-payment-request-id&gt;</span>Purchase-CC-Voucher-8923<span class="tag">&lt;/multi-payment-request-id&gt;</span>
+    <span class="tag">&lt;multi-payment-transaction-type&gt;</span>purchase<span class="tag">&lt;/multi-payment-transaction-type&gt;</span>
+    <span class="tag">&lt;multi-payment-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>25<span class="tag">&lt;/multi-payment-amount&gt;</span>
+    <span class="tag">&lt;transaction-count&gt;</span>3<span class="tag">&lt;/transaction-count&gt;</span>
+    <span class="tag">&lt;order-number&gt;</span>CC-Voucher-4590<span class="tag">&lt;/order-number&gt;</span>
+    <span class="tag">&lt;payments&gt;</span>
+        <span class="tag">&lt;payment&gt;</span>
+            <span class="tag">&lt;payment-methods&gt;</span>
+                <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/payment-methods&gt;</span>
+            <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10<span class="tag">&lt;/requested-amount&gt;</span>
+            <span class="tag">&lt;account-holder&gt;</span>
+                <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+                <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+                <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+                <span class="tag">&lt;phone</span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;address&gt;</span>
+                    <span class="tag">&lt;street1&gt;</span>200.000<span class="tag">&lt;/street1&gt;</span>
+                    <span class="tag">&lt;city&gt;</span>Munich<span class="tag">&lt;/city&gt;</span>
+                    <span class="tag">&lt;state&gt;</span>ON<span class="tag">&lt;/state&gt;</span>
+                    <span class="tag">&lt;country&gt;</span>CA<span class="tag">&lt;/country&gt;</span>
+                <span class="tag">&lt;/address&gt;</span>
+            <span class="tag">&lt;/account-holder&gt;</span>
+            <span class="tag">&lt;card&gt;</span>
+                <span class="tag">&lt;account-number&gt;</span>4444333322221111<span class="tag">&lt;/account-number&gt;</span>
+                <span class="tag">&lt;expiration-month&gt;</span>12<span class="tag">&lt;/expiration-month&gt;</span>
+                <span class="tag">&lt;expiration-year&gt;</span>2025<span class="tag">&lt;/expiration-year&gt;</span>
+                <span class="tag">&lt;card-type&gt;</span>visa<span class="tag">&lt;/card-type&gt;</span>
+                <span class="tag">&lt;card-security-code&gt;</span>123<span class="tag">&lt;/card-security-code&gt;</span>
+            <span class="tag">&lt;/card&gt;</span>
+            <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+        <span class="tag">&lt;/payment&gt;</span>
+        <span class="tag">&lt;payment&gt;</span>
+            <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10<span class="tag">&lt;/requested-amount&gt;</span>
+            <span class="tag">&lt;payment-methods&gt;</span>
+                <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/payment-methods&gt;</span>
+            <span class="tag">&lt;order-detail&gt;</span>xyzLimited<span class="tag">&lt;/order-detail&gt;</span>
+            <span class="tag">&lt;additional-merchant-data&gt;</span>ew0KInh5eiI6ICIxMjMiLA0KImFiYyI6ICI0NTYiLA0KInRlc3QiOiAiQ0ktVFJBVkVMIg0KfQ==<span class="tag">&lt;/additional-merchant-data&gt;</span>
+            <span class="tag">&lt;voucher&gt;</span>
+                <span class="tag">&lt;voucher-code&gt;</span>8396586683723949<span class="tag">&lt;/voucher-code&gt;</span>
+                <span class="tag">&lt;voucher-brand-id&gt;</span>xyz<span class="tag">&lt;/voucher-brand-id&gt;</span>
+                <span class="tag">&lt;voucher-description&gt;</span>This is Test Voucher 1<span class="tag">&lt;/voucher-description&gt;</span>
+            <span class="tag">&lt;/voucher&gt;</span>
+        <span class="tag">&lt;/payment&gt;</span>
+        <span class="tag">&lt;payment&gt;</span>
+            <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>5<span class="tag">&lt;/requested-amount&gt;</span>
+            <span class="tag">&lt;payment-methods&gt;</span>
+                <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/payment-methods&gt;</span>
+            <span class="tag">&lt;order-detail&gt;</span>xyzLimited<span class="tag">&lt;/order-detail&gt;</span>
+            <span class="tag">&lt;additional-merchant-data&gt;</span>ew0KIkxNTyI6ICI3ODkiLA0KIlJlYWQiOiAiMzIxIiwNCiJ0ZXN0IjogIkNJLVRSQVZFTCINCn0=<span class="tag">&lt;/additional-merchant-data&gt;</span>
+            <span class="tag">&lt;voucher&gt;</span>
+                <span class="tag">&lt;voucher-code&gt;</span>8101100662655059<span class="tag">&lt;/voucher-code&gt;</span>
+                <span class="tag">&lt;voucher-brand-id&gt;</span>xyz<span class="tag">&lt;/voucher-brand-id&gt;</span>
+                <span class="tag">&lt;voucher-description&gt;</span>This is Test Voucher 2<span class="tag">&lt;/voucher-description&gt;</span>
+            <span class="tag">&lt;/voucher&gt;</span>
+        <span class="tag">&lt;/payment&gt;</span>
+    <span class="tag">&lt;/payments&gt;</span>
+<span class="tag">&lt;/multi-payments&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Response Purchase Successful</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;multi-payments</span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/rest/multi-payments/resolver-category/xyzLimited-Resolver-Multipayment/multi-payments/a1d8b47e-b7ba-4cda-ac23-b7540dfb59f4</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-resolver-category&gt;</span>xyzLimited-Resolver-Multipayment<span style="color:#070;font-weight:bold">&lt;/merchant-account-resolver-category&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-request-id&gt;</span>Purchase-CC-Voucher-8923<span style="color:#070;font-weight:bold">&lt;/multi-payment-request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>25<span style="color:#070;font-weight:bold">&lt;/multi-payment-amount&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-count&gt;</span>3<span style="color:#070;font-weight:bold">&lt;/transaction-count&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-id&gt;</span>a1d8b47e-b7ba-4cda-ac23-b7540dfb59f4<span style="color:#070;font-weight:bold">&lt;/multi-payment-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>CC-Voucher-4590<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-transaction-type&gt;</span>purchase<span style="color:#070;font-weight:bold">&lt;/multi-payment-transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/multi-payment-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-14T12:33:06.644Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">200.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">The request completed successfully.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/multi-payment-statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payments&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/rest/merchants/4beb6362-faab-4603-9a5f-efa8233c071e/payments/57a668b7-bbcf-4e3e-826d-4a8d3eebdd4d</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>4beb6362-faab-4603-9a5f-efa8233c071e<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>57a668b7-bbcf-4e3e-826d-4a8d3eebdd4d<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>purchase<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-14T12:33:06.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">3d-acquirer:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span> <span style="color:#b48">provider-transaction-id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">C019405148707558120865</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;account-holder&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;first-name&gt;</span>John<span style="color:#070;font-weight:bold">&lt;/first-name&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;last-name&gt;</span>Doe<span style="color:#070;font-weight:bold">&lt;/last-name&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;email&gt;</span>john.doe@wirecard.com<span style="color:#070;font-weight:bold">&lt;/email&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;phone</span><span style="color:#070;font-weight:bold">/&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;address&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;street1&gt;</span>200.000<span style="color:#070;font-weight:bold">&lt;/street1&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;city&gt;</span>Munich<span style="color:#070;font-weight:bold">&lt;/city&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;state&gt;</span>ON<span style="color:#070;font-weight:bold">&lt;/state&gt;</span>
-                    <span style="color:#070;font-weight:bold">&lt;country&gt;</span>CA<span style="color:#070;font-weight:bold">&lt;/country&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;/address&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/account-holder&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;card-token&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;token-id&gt;</span>4498936198431111<span style="color:#070;font-weight:bold">&lt;/token-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;masked-account-number&gt;</span>444433******1111<span style="color:#070;font-weight:bold">&lt;/masked-account-number&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/card-token&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;ip-address&gt;</span>127.0.0.1<span style="color:#070;font-weight:bold">&lt;/ip-address&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>CC-Voucher-4590<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;descriptor&gt;</span>demo descriptor<span style="color:#070;font-weight:bold">&lt;/descriptor&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;authorization-code&gt;</span>689481<span style="color:#070;font-weight:bold">&lt;/authorization-code&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;api-id&gt;</span>---<span style="color:#070;font-weight:bold">&lt;/api-id&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/payment&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/351e61d6-bde7-4d11-b605-e261a40409f8</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>351e61d6-bde7-4d11-b605-e261a40409f8<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>purchase<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-14T12:32:59.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>10<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>CC-Voucher-4590<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>xyzLimited<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;voucher&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-code&gt;</span>8396586683723949<span style="color:#070;font-weight:bold">&lt;/voucher-code&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-brand-id&gt;</span>xyz<span style="color:#070;font-weight:bold">&lt;/voucher-brand-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-token-id&gt;</span>h8r1l3v9b64mblqthfjro24jt3<span style="color:#070;font-weight:bold">&lt;/voucher-token-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-description&gt;</span>This is Test Voucher 1<span style="color:#070;font-weight:bold">&lt;/voucher-description&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/voucher&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;additional-merchant-data&gt;</span>ew0KInh5eiI6ICIxMjMiLA0KImFiYyI6ICI0NTYiLA0KInRlc3QiOiAiQ0ktVFJBVkVMIg0KfQ==<span style="color:#070;font-weight:bold">&lt;/additional-merchant-data&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/payment&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/fe419900-85ae-45d6-9959-642cf2b78200</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>fe419900-85ae-45d6-9959-642cf2b78200<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>purchase<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-14T12:33:00.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;requested-amount</span> <span style="color:#b48">currency</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">EUR</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>5<span style="color:#070;font-weight:bold">&lt;/requested-amount&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;order-number&gt;</span>CC-Voucher-4590<span style="color:#070;font-weight:bold">&lt;/order-number&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;order-detail&gt;</span>xyzLimited<span style="color:#070;font-weight:bold">&lt;/order-detail&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;voucher&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-code&gt;</span>8101100662655059<span style="color:#070;font-weight:bold">&lt;/voucher-code&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-brand-id&gt;</span>xyz<span style="color:#070;font-weight:bold">&lt;/voucher-brand-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-token-id&gt;</span>v2n74tqktgg5kp5j2dl0n83gpl<span style="color:#070;font-weight:bold">&lt;/voucher-token-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-description&gt;</span>This is Test Voucher 2<span style="color:#070;font-weight:bold">&lt;/voucher-description&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/voucher&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;additional-merchant-data&gt;</span>ew0KIkxNTyI6ICI3ODkiLA0KIlJlYWQiOiAiMzIxIiwNCiJ0ZXN0IjogIkNJLVRSQVZFTCINCn0=<span style="color:#070;font-weight:bold">&lt;/additional-merchant-data&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/payment&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payments&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/multi-payments&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;multi-payments</span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/rest/multi-payments/resolver-category/xyzLimited-Resolver-Multipayment/multi-payments/a1d8b47e-b7ba-4cda-ac23-b7540dfb59f4</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-resolver-category&gt;</span>xyzLimited-Resolver-Multipayment<span class="tag">&lt;/merchant-account-resolver-category&gt;</span>
+    <span class="tag">&lt;multi-payment-request-id&gt;</span>Purchase-CC-Voucher-8923<span class="tag">&lt;/multi-payment-request-id&gt;</span>
+    <span class="tag">&lt;multi-payment-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>25<span class="tag">&lt;/multi-payment-amount&gt;</span>
+    <span class="tag">&lt;transaction-count&gt;</span>3<span class="tag">&lt;/transaction-count&gt;</span>
+    <span class="tag">&lt;multi-payment-id&gt;</span>a1d8b47e-b7ba-4cda-ac23-b7540dfb59f4<span class="tag">&lt;/multi-payment-id&gt;</span>
+    <span class="tag">&lt;order-number&gt;</span>CC-Voucher-4590<span class="tag">&lt;/order-number&gt;</span>
+    <span class="tag">&lt;multi-payment-transaction-type&gt;</span>purchase<span class="tag">&lt;/multi-payment-transaction-type&gt;</span>
+    <span class="tag">&lt;multi-payment-state&gt;</span>success<span class="tag">&lt;/multi-payment-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-14T12:33:06.644Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;multi-payment-statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">200.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The request completed successfully.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/multi-payment-statuses&gt;</span>
+    <span class="tag">&lt;payments&gt;</span>
+        <span class="tag">&lt;payment</span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/rest/merchants/4beb6362-faab-4603-9a5f-efa8233c071e/payments/57a668b7-bbcf-4e3e-826d-4a8d3eebdd4d</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;merchant-account-id&gt;</span>4beb6362-faab-4603-9a5f-efa8233c071e<span class="tag">&lt;/merchant-account-id&gt;</span>
+            <span class="tag">&lt;transaction-id&gt;</span>57a668b7-bbcf-4e3e-826d-4a8d3eebdd4d<span class="tag">&lt;/transaction-id&gt;</span>
+            <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+            <span class="tag">&lt;transaction-type&gt;</span>purchase<span class="tag">&lt;/transaction-type&gt;</span>
+            <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+            <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-14T12:33:06.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+            <span class="tag">&lt;statuses&gt;</span>
+                <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">3d-acquirer:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span> <span class="attribute-name">provider-transaction-id</span>=<span class="string"><span class="delimiter">"</span><span class="content">C019405148707558120865</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/statuses&gt;</span>
+            <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10<span class="tag">&lt;/requested-amount&gt;</span>
+            <span class="tag">&lt;account-holder&gt;</span>
+                <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+                <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+                <span class="tag">&lt;email&gt;</span>john.doe@wirecard.com<span class="tag">&lt;/email&gt;</span>
+                <span class="tag">&lt;phone</span><span class="tag">/&gt;</span>
+                <span class="tag">&lt;address&gt;</span>
+                    <span class="tag">&lt;street1&gt;</span>200.000<span class="tag">&lt;/street1&gt;</span>
+                    <span class="tag">&lt;city&gt;</span>Munich<span class="tag">&lt;/city&gt;</span>
+                    <span class="tag">&lt;state&gt;</span>ON<span class="tag">&lt;/state&gt;</span>
+                    <span class="tag">&lt;country&gt;</span>CA<span class="tag">&lt;/country&gt;</span>
+                <span class="tag">&lt;/address&gt;</span>
+            <span class="tag">&lt;/account-holder&gt;</span>
+            <span class="tag">&lt;card-token&gt;</span>
+                <span class="tag">&lt;token-id&gt;</span>4498936198431111<span class="tag">&lt;/token-id&gt;</span>
+                <span class="tag">&lt;masked-account-number&gt;</span>444433******1111<span class="tag">&lt;/masked-account-number&gt;</span>
+            <span class="tag">&lt;/card-token&gt;</span>
+            <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+            <span class="tag">&lt;order-number&gt;</span>CC-Voucher-4590<span class="tag">&lt;/order-number&gt;</span>
+            <span class="tag">&lt;descriptor&gt;</span>demo descriptor<span class="tag">&lt;/descriptor&gt;</span>
+            <span class="tag">&lt;payment-methods&gt;</span>
+                <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">creditcard</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/payment-methods&gt;</span>
+            <span class="tag">&lt;authorization-code&gt;</span>689481<span class="tag">&lt;/authorization-code&gt;</span>
+            <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+        <span class="tag">&lt;/payment&gt;</span>
+        <span class="tag">&lt;payment</span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/351e61d6-bde7-4d11-b605-e261a40409f8</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span class="tag">&lt;/merchant-account-id&gt;</span>
+            <span class="tag">&lt;transaction-id&gt;</span>351e61d6-bde7-4d11-b605-e261a40409f8<span class="tag">&lt;/transaction-id&gt;</span>
+            <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+            <span class="tag">&lt;transaction-type&gt;</span>purchase<span class="tag">&lt;/transaction-type&gt;</span>
+            <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+            <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-14T12:32:59.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+            <span class="tag">&lt;statuses&gt;</span>
+                <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/statuses&gt;</span>
+            <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10<span class="tag">&lt;/requested-amount&gt;</span>
+            <span class="tag">&lt;order-number&gt;</span>CC-Voucher-4590<span class="tag">&lt;/order-number&gt;</span>
+            <span class="tag">&lt;order-detail&gt;</span>xyzLimited<span class="tag">&lt;/order-detail&gt;</span>
+            <span class="tag">&lt;payment-methods&gt;</span>
+                <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/payment-methods&gt;</span>
+            <span class="tag">&lt;voucher&gt;</span>
+                <span class="tag">&lt;voucher-code&gt;</span>8396586683723949<span class="tag">&lt;/voucher-code&gt;</span>
+                <span class="tag">&lt;voucher-brand-id&gt;</span>xyz<span class="tag">&lt;/voucher-brand-id&gt;</span>
+                <span class="tag">&lt;voucher-token-id&gt;</span>h8r1l3v9b64mblqthfjro24jt3<span class="tag">&lt;/voucher-token-id&gt;</span>
+                <span class="tag">&lt;voucher-description&gt;</span>This is Test Voucher 1<span class="tag">&lt;/voucher-description&gt;</span>
+            <span class="tag">&lt;/voucher&gt;</span>
+            <span class="tag">&lt;additional-merchant-data&gt;</span>ew0KInh5eiI6ICIxMjMiLA0KImFiYyI6ICI0NTYiLA0KInRlc3QiOiAiQ0ktVFJBVkVMIg0KfQ==<span class="tag">&lt;/additional-merchant-data&gt;</span>
+        <span class="tag">&lt;/payment&gt;</span>
+        <span class="tag">&lt;payment</span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/fe419900-85ae-45d6-9959-642cf2b78200</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span class="tag">&lt;/merchant-account-id&gt;</span>
+            <span class="tag">&lt;transaction-id&gt;</span>fe419900-85ae-45d6-9959-642cf2b78200<span class="tag">&lt;/transaction-id&gt;</span>
+            <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+            <span class="tag">&lt;transaction-type&gt;</span>purchase<span class="tag">&lt;/transaction-type&gt;</span>
+            <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+            <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-14T12:33:00.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+            <span class="tag">&lt;statuses&gt;</span>
+                <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/statuses&gt;</span>
+            <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>5<span class="tag">&lt;/requested-amount&gt;</span>
+            <span class="tag">&lt;order-number&gt;</span>CC-Voucher-4590<span class="tag">&lt;/order-number&gt;</span>
+            <span class="tag">&lt;order-detail&gt;</span>xyzLimited<span class="tag">&lt;/order-detail&gt;</span>
+            <span class="tag">&lt;payment-methods&gt;</span>
+                <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/payment-methods&gt;</span>
+            <span class="tag">&lt;voucher&gt;</span>
+                <span class="tag">&lt;voucher-code&gt;</span>8101100662655059<span class="tag">&lt;/voucher-code&gt;</span>
+                <span class="tag">&lt;voucher-brand-id&gt;</span>xyz<span class="tag">&lt;/voucher-brand-id&gt;</span>
+                <span class="tag">&lt;voucher-token-id&gt;</span>v2n74tqktgg5kp5j2dl0n83gpl<span class="tag">&lt;/voucher-token-id&gt;</span>
+                <span class="tag">&lt;voucher-description&gt;</span>This is Test Voucher 2<span class="tag">&lt;/voucher-description&gt;</span>
+            <span class="tag">&lt;/voucher&gt;</span>
+            <span class="tag">&lt;additional-merchant-data&gt;</span>ew0KIkxNTyI6ICI3ODkiLA0KIlJlYWQiOiAiMzIxIiwNCiJ0ZXN0IjogIkNJLVRSQVZFTCINCn0=<span class="tag">&lt;/additional-merchant-data&gt;</span>
+        <span class="tag">&lt;/payment&gt;</span>
+    <span class="tag">&lt;/payments&gt;</span>
+<span class="tag">&lt;/multi-payments&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Request Void-Refund-Purchase</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;multi-payments</span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-request-id&gt;</span>Void-Refund-Purchase-CC-Voucher-9955<span style="color:#070;font-weight:bold">&lt;/multi-payment-request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-parent-id&gt;</span>a1d8b47e-b7ba-4cda-ac23-b7540dfb59f4<span style="color:#070;font-weight:bold">&lt;/multi-payment-parent-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-transaction-type&gt;</span>void-refund-purchase<span style="color:#070;font-weight:bold">&lt;/multi-payment-transaction-type&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/multi-payments&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;multi-payments</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;multi-payment-request-id&gt;</span>Void-Refund-Purchase-CC-Voucher-9955<span class="tag">&lt;/multi-payment-request-id&gt;</span>
+    <span class="tag">&lt;multi-payment-parent-id&gt;</span>a1d8b47e-b7ba-4cda-ac23-b7540dfb59f4<span class="tag">&lt;/multi-payment-parent-id&gt;</span>
+    <span class="tag">&lt;multi-payment-transaction-type&gt;</span>void-refund-purchase<span class="tag">&lt;/multi-payment-transaction-type&gt;</span>
+<span class="tag">&lt;/multi-payments&gt;</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Response Void-Refund-Purchase: Voucher 2 failed, Voucher 1 Rolled Back</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span style="color:#070;font-weight:bold">&lt;multi-payments</span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/rest/multi-payments/resolver-category/xyzLimited-Resolver-Multipayment/multi-payments/d4cbfc4b-c755-4b38-814c-1856a5ebba75</span><span style="color:#710">"</span></span> <span style="color:#b48">xmlns</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">http://www.elastic-payments.com/schema/payment</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;merchant-account-resolver-category&gt;</span>xyzLimited-Resolver-Multipayment<span style="color:#070;font-weight:bold">&lt;/merchant-account-resolver-category&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-request-id&gt;</span>Void-Refund-Purchase-CC-Voucher-9955<span style="color:#070;font-weight:bold">&lt;/multi-payment-request-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;transaction-count&gt;</span>3<span style="color:#070;font-weight:bold">&lt;/transaction-count&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-id&gt;</span>d4cbfc4b-c755-4b38-814c-1856a5ebba75<span style="color:#070;font-weight:bold">&lt;/multi-payment-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-parent-id&gt;</span>a1d8b47e-b7ba-4cda-ac23-b7540dfb59f4<span style="color:#070;font-weight:bold">&lt;/multi-payment-parent-id&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-transaction-type&gt;</span>void-refund-purchase<span style="color:#070;font-weight:bold">&lt;/multi-payment-transaction-type&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-state&gt;</span>failed<span style="color:#070;font-weight:bold">&lt;/multi-payment-state&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-14T12:34:08.868Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;multi-payment-statuses&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">500.4001</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Multi Payments request has failed.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">error</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">500.4003</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">creditcard : Transaction is not submitted.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">warning</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">500.4005</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">Rollback was successful.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">warning</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/multi-payment-statuses&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;payments&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/b32f6007-afc3-4e80-91ac-3adcdc668207</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>b32f6007-afc3-4e80-91ac-3adcdc668207<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>void-purchase<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-14T12:34:06.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>351e61d6-bde7-4d11-b605-e261a40409f8<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;voucher&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-code&gt;</span>8396586683723949<span style="color:#070;font-weight:bold">&lt;/voucher-code&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-brand-id&gt;</span>oebb<span style="color:#070;font-weight:bold">&lt;/voucher-brand-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-token-id&gt;</span>h8r1l3v9b64mblqthfjro24jt3<span style="color:#070;font-weight:bold">&lt;/voucher-token-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-description&gt;</span>This is Test Voucher 1<span style="color:#070;font-weight:bold">&lt;/voucher-description&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/voucher&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/payment&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/f039b66b-3106-4aa2-8543-afce070b4a7a</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>f039b66b-3106-4aa2-8543-afce070b4a7a<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>void-cancel-redeem<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>success<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-14T12:34:08.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">201.0000</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher:The resource was successfully created.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">information</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>b32f6007-afc3-4e80-91ac-3adcdc668207<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;voucher&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-code&gt;</span>8396586683723949<span style="color:#070;font-weight:bold">&lt;/voucher-code&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-brand-id&gt;</span>oebb<span style="color:#070;font-weight:bold">&lt;/voucher-brand-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-token-id&gt;</span>h8r1l3v9b64mblqthfjro24jt3<span style="color:#070;font-weight:bold">&lt;/voucher-token-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-description&gt;</span>This is Test Voucher 1<span style="color:#070;font-weight:bold">&lt;/voucher-description&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/voucher&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/payment&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;payment</span> <span style="color:#b48">self</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/368c53ca-6c24-4a05-962b-87792d403101</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span style="color:#070;font-weight:bold">&lt;/merchant-account-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-id&gt;</span>368c53ca-6c24-4a05-962b-87792d403101<span style="color:#070;font-weight:bold">&lt;/transaction-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;request-id&gt;</span>{{$guid}}<span style="color:#070;font-weight:bold">&lt;/request-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-type&gt;</span>void-purchase<span style="color:#070;font-weight:bold">&lt;/transaction-type&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;transaction-state&gt;</span>failed<span style="color:#070;font-weight:bold">&lt;/transaction-state&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;completion-time-stamp&gt;</span>2019-02-14T12:34:07.000Z<span style="color:#070;font-weight:bold">&lt;/completion-time-stamp&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;statuses&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;status</span> <span style="color:#b48">code</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">500.2377</span><span style="color:#710">"</span></span> <span style="color:#b48">description</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher:Already settled referenced authorization found.</span><span style="color:#710">"</span></span> <span style="color:#b48">severity</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">error</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/statuses&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;parent-transaction-id&gt;</span>fe419900-85ae-45d6-9959-642cf2b78200<span style="color:#070;font-weight:bold">&lt;/parent-transaction-id&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;payment-methods&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;payment-method</span> <span style="color:#b48">name</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">"</span><span style="color:#D20">voucher</span><span style="color:#710">"</span></span><span style="color:#070;font-weight:bold">/&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/payment-methods&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;voucher&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-code&gt;</span>8101100662655059<span style="color:#070;font-weight:bold">&lt;/voucher-code&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-brand-id&gt;</span>oebb<span style="color:#070;font-weight:bold">&lt;/voucher-brand-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-token-id&gt;</span>v2n74tqktgg5kp5j2dl0n83gpl<span style="color:#070;font-weight:bold">&lt;/voucher-token-id&gt;</span>
-                <span style="color:#070;font-weight:bold">&lt;voucher-description&gt;</span>This is Test Voucher 2<span style="color:#070;font-weight:bold">&lt;/voucher-description&gt;</span>
-            <span style="color:#070;font-weight:bold">&lt;/voucher&gt;</span>
-        <span style="color:#070;font-weight:bold">&lt;/payment&gt;</span>
-    <span style="color:#070;font-weight:bold">&lt;/payments&gt;</span>
-<span style="color:#070;font-weight:bold">&lt;/multi-payments&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;multi-payments</span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/rest/multi-payments/resolver-category/xyzLimited-Resolver-Multipayment/multi-payments/d4cbfc4b-c755-4b38-814c-1856a5ebba75</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-resolver-category&gt;</span>xyzLimited-Resolver-Multipayment<span class="tag">&lt;/merchant-account-resolver-category&gt;</span>
+    <span class="tag">&lt;multi-payment-request-id&gt;</span>Void-Refund-Purchase-CC-Voucher-9955<span class="tag">&lt;/multi-payment-request-id&gt;</span>
+    <span class="tag">&lt;transaction-count&gt;</span>3<span class="tag">&lt;/transaction-count&gt;</span>
+    <span class="tag">&lt;multi-payment-id&gt;</span>d4cbfc4b-c755-4b38-814c-1856a5ebba75<span class="tag">&lt;/multi-payment-id&gt;</span>
+    <span class="tag">&lt;multi-payment-parent-id&gt;</span>a1d8b47e-b7ba-4cda-ac23-b7540dfb59f4<span class="tag">&lt;/multi-payment-parent-id&gt;</span>
+    <span class="tag">&lt;multi-payment-transaction-type&gt;</span>void-refund-purchase<span class="tag">&lt;/multi-payment-transaction-type&gt;</span>
+    <span class="tag">&lt;multi-payment-state&gt;</span>failed<span class="tag">&lt;/multi-payment-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-14T12:34:08.868Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;multi-payment-statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">500.4001</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">Multi Payments request has failed.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">error</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">500.4003</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">creditcard : Transaction is not submitted.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">warning</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">500.4005</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">Rollback was successful.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">warning</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/multi-payment-statuses&gt;</span>
+    <span class="tag">&lt;payments&gt;</span>
+        <span class="tag">&lt;payment</span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/b32f6007-afc3-4e80-91ac-3adcdc668207</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span class="tag">&lt;/merchant-account-id&gt;</span>
+            <span class="tag">&lt;transaction-id&gt;</span>b32f6007-afc3-4e80-91ac-3adcdc668207<span class="tag">&lt;/transaction-id&gt;</span>
+            <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+            <span class="tag">&lt;transaction-type&gt;</span>void-purchase<span class="tag">&lt;/transaction-type&gt;</span>
+            <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+            <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-14T12:34:06.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+            <span class="tag">&lt;statuses&gt;</span>
+                <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/statuses&gt;</span>
+            <span class="tag">&lt;parent-transaction-id&gt;</span>351e61d6-bde7-4d11-b605-e261a40409f8<span class="tag">&lt;/parent-transaction-id&gt;</span>
+            <span class="tag">&lt;payment-methods&gt;</span>
+                <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/payment-methods&gt;</span>
+            <span class="tag">&lt;voucher&gt;</span>
+                <span class="tag">&lt;voucher-code&gt;</span>8396586683723949<span class="tag">&lt;/voucher-code&gt;</span>
+                <span class="tag">&lt;voucher-brand-id&gt;</span>oebb<span class="tag">&lt;/voucher-brand-id&gt;</span>
+                <span class="tag">&lt;voucher-token-id&gt;</span>h8r1l3v9b64mblqthfjro24jt3<span class="tag">&lt;/voucher-token-id&gt;</span>
+                <span class="tag">&lt;voucher-description&gt;</span>This is Test Voucher 1<span class="tag">&lt;/voucher-description&gt;</span>
+            <span class="tag">&lt;/voucher&gt;</span>
+        <span class="tag">&lt;/payment&gt;</span>
+        <span class="tag">&lt;payment</span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/f039b66b-3106-4aa2-8543-afce070b4a7a</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span class="tag">&lt;/merchant-account-id&gt;</span>
+            <span class="tag">&lt;transaction-id&gt;</span>f039b66b-3106-4aa2-8543-afce070b4a7a<span class="tag">&lt;/transaction-id&gt;</span>
+            <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+            <span class="tag">&lt;transaction-type&gt;</span>void-cancel-redeem<span class="tag">&lt;/transaction-type&gt;</span>
+            <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+            <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-14T12:34:08.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+            <span class="tag">&lt;statuses&gt;</span>
+                <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/statuses&gt;</span>
+            <span class="tag">&lt;parent-transaction-id&gt;</span>b32f6007-afc3-4e80-91ac-3adcdc668207<span class="tag">&lt;/parent-transaction-id&gt;</span>
+            <span class="tag">&lt;payment-methods&gt;</span>
+                <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/payment-methods&gt;</span>
+            <span class="tag">&lt;voucher&gt;</span>
+                <span class="tag">&lt;voucher-code&gt;</span>8396586683723949<span class="tag">&lt;/voucher-code&gt;</span>
+                <span class="tag">&lt;voucher-brand-id&gt;</span>oebb<span class="tag">&lt;/voucher-brand-id&gt;</span>
+                <span class="tag">&lt;voucher-token-id&gt;</span>h8r1l3v9b64mblqthfjro24jt3<span class="tag">&lt;/voucher-token-id&gt;</span>
+                <span class="tag">&lt;voucher-description&gt;</span>This is Test Voucher 1<span class="tag">&lt;/voucher-description&gt;</span>
+            <span class="tag">&lt;/voucher&gt;</span>
+        <span class="tag">&lt;/payment&gt;</span>
+        <span class="tag">&lt;payment</span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://api-test.wirecard.com/engine/rest/merchants/02ac174b-f453-4017-bb8e-c675dcf80e6c/payments/368c53ca-6c24-4a05-962b-87792d403101</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+            <span class="tag">&lt;merchant-account-id&gt;</span>02ac174b-f453-4017-bb8e-c675dcf80e6c<span class="tag">&lt;/merchant-account-id&gt;</span>
+            <span class="tag">&lt;transaction-id&gt;</span>368c53ca-6c24-4a05-962b-87792d403101<span class="tag">&lt;/transaction-id&gt;</span>
+            <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+            <span class="tag">&lt;transaction-type&gt;</span>void-purchase<span class="tag">&lt;/transaction-type&gt;</span>
+            <span class="tag">&lt;transaction-state&gt;</span>failed<span class="tag">&lt;/transaction-state&gt;</span>
+            <span class="tag">&lt;completion-time-stamp&gt;</span>2019-02-14T12:34:07.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+            <span class="tag">&lt;statuses&gt;</span>
+                <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">500.2377</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher:Already settled referenced authorization found.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">error</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/statuses&gt;</span>
+            <span class="tag">&lt;parent-transaction-id&gt;</span>fe419900-85ae-45d6-9959-642cf2b78200<span class="tag">&lt;/parent-transaction-id&gt;</span>
+            <span class="tag">&lt;payment-methods&gt;</span>
+                <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+            <span class="tag">&lt;/payment-methods&gt;</span>
+            <span class="tag">&lt;voucher&gt;</span>
+                <span class="tag">&lt;voucher-code&gt;</span>8101100662655059<span class="tag">&lt;/voucher-code&gt;</span>
+                <span class="tag">&lt;voucher-brand-id&gt;</span>oebb<span class="tag">&lt;/voucher-brand-id&gt;</span>
+                <span class="tag">&lt;voucher-token-id&gt;</span>v2n74tqktgg5kp5j2dl0n83gpl<span class="tag">&lt;/voucher-token-id&gt;</span>
+                <span class="tag">&lt;voucher-description&gt;</span>This is Test Voucher 2<span class="tag">&lt;/voucher-description&gt;</span>
+            <span class="tag">&lt;/voucher&gt;</span>
+        <span class="tag">&lt;/payment&gt;</span>
+    <span class="tag">&lt;/payments&gt;</span>
+<span class="tag">&lt;/multi-payments&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -6521,9 +6521,10 @@ and status of the individual payments.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-03-17 15:47:43 UTC
+Last updated 2020-03-18 09:17:56 UTC
 </div>
 </div>
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
 <script src="js/navigation.js"></script>
 <script>
  enableRequestDetailsHideShow();
