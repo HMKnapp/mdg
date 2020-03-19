@@ -80,13 +80,13 @@ table.CodeRay td { padding: 2px 4px; vertical-align: top; }
 .color { color: #00aa00; }
 
 /* line 50, ../../style/sass/elements/_coderay-theme.scss */
-.comment { color: #777777; }
+.comment { color: #a2aaad; }
 
 /* line 51, ../../style/sass/elements/_coderay-theme.scss */
-.comment .char { color: #444444; }
+.comment .char { color: #a2aaad; }
 
 /* line 52, ../../style/sass/elements/_coderay-theme.scss */
-.comment .delimiter { color: #444444; }
+.comment .delimiter { color: #a2aaad; }
 
 /* line 53, ../../style/sass/elements/_coderay-theme.scss */
 .constant { color: #036; font-weight: bold; }
