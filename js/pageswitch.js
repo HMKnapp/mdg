@@ -14,13 +14,20 @@ const options = {
 const swup = new Swup(options);
 
 swup.on('clickLink', function (e) {
-  const clickedURL = e.toElement.href;
-  const clickedHash = clickedURL.replace(window.origin + window.location.pathname + '#', '');
+  console.log('clicked')
+  console.log(e)
+  const clickedHash = e.delegateTarget.hash.substr(1);
+  console.log(clickedHash);
   const element = document.getElementById(clickedHash);
   if (element) {
-      element.scrollIntoView({
-      behavior: 'smooth'
-    });
+      element.scrollIntoView();
   }
-  initializeScrollspy();
+  /* TODO: do not trigger initialize if user stays on same page */
+  reinitializeAfterPageSwitch();
 });
+
+function reinitializeAfterPageSwitch() {
+  enableRequestDetailsHideShow();
+  createSampleTabs();
+  initializeScrollspy();
+}
