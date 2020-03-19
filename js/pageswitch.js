@@ -1,4 +1,3 @@
-/* defaults, except for container selector and link selector had to be modified */
 const options = {
   containers: ["#content"],
   cache: true,
@@ -16,18 +15,20 @@ const swup = new Swup(options);
 swup.on('clickLink', function (e) {
   console.log('clicked')
   console.log(e)
-  const clickedHash = e.delegateTarget.hash.substr(1);
-  console.log(clickedHash);
+  reinitializeAfterPageSwitch();
+});
+
+swup.on('samePageWithHash', function (e) {
+  const clickedHash = e.target.hash.substr(1);
   const element = document.getElementById(clickedHash);
   if (element) {
       element.scrollIntoView();
   }
-  /* TODO: do not trigger initialize if user stays on same page */
-  reinitializeAfterPageSwitch();
 });
 
 function reinitializeAfterPageSwitch() {
   enableRequestDetailsHideShow();
   createSampleTabs();
   initializeScrollspy();
+  window.scrollTo(0,0);
 }

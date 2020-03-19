@@ -15,7 +15,7 @@
 <script src="js/sample-tabs.js"></script>
 <script src="js/search.js"></script>
 </head>
-<body id="GeneralIntegrationOptions" class="article toc2 toc-left">
+<body id="AlipayQRPay_Main" class="article toc2 toc-left">
 <div id="toc" class="toc2">
 <a id="logo" href="index.html"><img src="images/logo.png" alt="Logo"></a><div id="search-overlay-wrapper">
     <div id="search-overlay">
@@ -49,7 +49,7 @@
   <input id="toc_cb_Home" type="checkbox" disabled><label for="toc_cb_Home"><a href="Home.html">Home</a></label>
 </li>
 <li id="toc_li_GeneralIntegrationOptions" data-level="1">
-  <input id="toc_cb_GeneralIntegrationOptions" type="checkbox" checked><label for="toc_cb_GeneralIntegrationOptions"><a href="GeneralIntegrationOptions.html">Integration Options</a></label>
+  <input id="toc_cb_GeneralIntegrationOptions" type="checkbox"><label for="toc_cb_GeneralIntegrationOptions"><a href="GeneralIntegrationOptions.html">Integration Options</a></label>
 <ul>
 <li id="toc_li_ShopSystems" data-level="2">
   <input id="toc_cb_ShopSystems" type="checkbox"><label for="toc_cb_ShopSystems"><a href="ShopSystems.html">Shop Extensions</a></label>
@@ -982,7 +982,7 @@
 </ul>
 </li>
 <li id="toc_li_PaymentMethods" data-level="1">
-  <input id="toc_cb_PaymentMethods" type="checkbox"><label for="toc_cb_PaymentMethods"><a href="PaymentMethods.html">Payment Methods</a></label>
+  <input id="toc_cb_PaymentMethods" type="checkbox" checked><label for="toc_cb_PaymentMethods"><a href="PaymentMethods.html">Payment Methods</a></label>
 <ul>
 <li id="toc_li_CC_Main" data-level="2">
   <input id="toc_cb_CC_Main" type="checkbox"><label for="toc_cb_CC_Main"><a href="CC_Main.html">Credit Card</a></label>
@@ -1789,7 +1789,7 @@
 </ul>
 </li>
 <li id="toc_li_AlipayQRPay_Main" data-level="2">
-  <input id="toc_cb_AlipayQRPay_Main" type="checkbox"><label for="toc_cb_AlipayQRPay_Main"><a href="AlipayQRPay_Main.html">Alipay QR Pay</a></label>
+  <input id="toc_cb_AlipayQRPay_Main" type="checkbox" checked><label for="toc_cb_AlipayQRPay_Main"><a href="AlipayQRPay_Main.html">Alipay QR Pay</a></label>
 <ul>
 <li id="toc_li_API_AlipayQRPay" data-level="3">
   <input id="toc_cb_API_AlipayQRPay" type="checkbox"><label for="toc_cb_API_AlipayQRPay"><a href="AlipayQRPay_Main.html#API_AlipayQRPay">REST API</a></label>
@@ -5957,14 +5957,54 @@
 
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="GeneralIntegrationOptions">
-<a class="anchor" href="#GeneralIntegrationOptions"></a><a class="link" href="#GeneralIntegrationOptions">Integration Options</a>
-</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="AlipayQRPay_Main">
+<a class="anchor" href="#AlipayQRPay_Main"></a><a class="link" href="#AlipayQRPay_Main">Alipay QR Pay</a>
+</h3>
+<div class="sect3">
+<h4 id="API_AlipayQRPay">
+<a class="anchor" href="#API_AlipayQRPay"></a><a class="link" href="#API_AlipayQRPay">REST API</a>
+</h4>
 <div class="paragraph">
-<p>There are multiple integration options available for Wirecard Payment Gateway.</p>
+<p><em>Alipay QR Pay</em> is a type of <a href="PaymentMethods.html#PaymentMethods_PaymentMode_Wallet">Wallet</a>.</p>
 </div>
+<div class="sect4">
+<h5 id="API_AlipayQRPay_GeneralInformation_PaymentMode">
+<a class="anchor" href="#API_AlipayQRPay_GeneralInformation_PaymentMode"></a><a class="link" href="#API_AlipayQRPay_GeneralInformation_PaymentMode">Countries and Currencies</a>
+</h5>
+<table class="tableblock frame-all grid-all stripes-none" style="width: 75%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Countries</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">International</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Currencies</p></th>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="paragraph">
+<p>Alipay collects payment (RMB) from shoppers to buy foreign currency.</p>
+</div>
+<div class="paragraph">
+<p>At the moment, Alipay supports the settlement of 12 foreign currencies: USD, EUR, JPY, GBP, CAD, AUD, SGD, CHF, SEK, DKK, NOK, HKD.</p>
+</div>
+<div class="paragraph">
+<p>Consumers can pay in CNY,USD, EUR, JPY, GBP, CAD, AUD, SGD, CHF, SEK, DKK, NOK, NZD, THB, HKD, and major settlement currencies are included but not limited to USD, EUR, JPY, GBP, CAD, AUD, SGD, CHF, SEK, DKK, NOK, NZD, THB, HKD. For unsupported currencies, transactions can be made in USD.</p>
+</div>
+<div class="ulist">
+<ul>
+</ul>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -5972,239 +6012,903 @@
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>The integration via <strong>Payment Page</strong> is described under <a href="GeneralIntegrationOptions.html#GeneralIntegrationOptions_PP">Payment Page</a>.</p>
-</li>
-<li>
-<p>For (near) real-time processing the <strong>backend</strong> implementation is
-described under <a href="RestApi.html">REST API</a>. However, the description of payment methods, for example,
-is common for both Payment Page and REST API.</p>
-</li>
-<li>
-<p>Processing of multiple transactions using <strong>batches</strong> is described under
-<a href="BatchProcessingApi.html">Batch Processing API</a>, available for both SEPA Direct Debit and SEPA Credit Transfer.</p>
-</li>
-<li>
-<p>Our <strong>Payment SDK</strong> offers a seamless user experience by rendering a payment form as an integral part of the merchant’s mobile application.</p>
-</li>
-</ul>
-</div>
+One merchant account only supports one settlement currency.
 </td>
 </tr>
 </table>
 </div>
-<h3 id="GeneralIntegrationOptions_PP" class="discrete">Payment Page</h3>
+</div>
+<div class="sect4">
+<h5 id="API_AlipayQRPay_GeneralInformation_Communication">
+<a class="anchor" href="#API_AlipayQRPay_GeneralInformation_Communication"></a><a class="link" href="#API_AlipayQRPay_GeneralInformation_Communication">Communication Formats</a>
+</h5>
 <div class="paragraph">
-<p>Wirecard Payment Page stands for secure, flexible, easy and
-transparent payment processing.</p>
+<p>This table illustrates how <em>Alipay QR Pay</em> notifications are encoded and which formats and methods can be used for requests and responses.</p>
 </div>
+<table class="tableblock frame-all grid-all stripes-none" style="width: 75%;">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Requests/Responses</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XML, NVP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Methods</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">POST, GET</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">IPN Encodements</p></th>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Please follow the instructions given at
+<a href="GeneralPlatformFeatures.html#GeneralPlatformFeatures_IPN_NotificationExamples">Instant Payment Notification</a> to set up IPN.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="API_AlipayQRPay_TransactionTypes">
+<a class="anchor" href="#API_AlipayQRPay_TransactionTypes"></a><a class="link" href="#API_AlipayQRPay_TransactionTypes">Transaction Types</a>
+</h5>
 <div class="paragraph">
-<p>It provides all payment methods and
-related options in one solution: Credit Card (with/without 3D
-secure), SEPA, online banking payments, mobile payments, alternative
-payment methods, and industry-specific solutions.</p>
+<p>For <a href="Glossary.html#Glossary_TransactionType">transaction type</a> details, which are not given here look at
+<a href="AppendixB.html">Transaction Types</a>.</p>
 </div>
-<div class="paragraph">
-<p>It handles the payment method selection as well as the collection
-of payment details or consumer redirects to alternative payment provider
-sites. With this solution, the merchant is only required to conform to a
-limited PCI scope (self-questionnaire A).</p>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<colgroup>
+<col style="width: 22.7272%;">
+<col style="width: 77.2728%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Transaction Type</th>
+<th class="tableblock halign-left valign-top">Link to the Sample</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get-url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="AlipayQRPay_Main.html#API_AlipayQRPay_Samples_geturl"><em>get-url</em> samples</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">check-signature</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">debit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="AlipayQRPay_Main.html#API_AlipayQRPay_Samples_debit"><em>debit</em> samples</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">refund-debit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="AlipayQRPay_Main.html#API_AlipayQRPay_Samples_refunddebit"><em>refund-debit</em> samples</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">void-debit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Voids the validity of a QR code. After a <em>void-debit</em>, the consumer can no longer pay with the QR code that was generated with the preceding <em>debit</em> request. If a payment has already occurred, it will be refunded.<br>
+<a href="AlipayQRPay_Main.html#API_AlipayQRPay_Samples_VoidDebit"><em>void-debit</em> samples</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="paragraph">
-<p>Wirecard Payment Page is available in three formats:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Hosted Payment Page (HPP): The consumer is redirected to
-Wirecard Payment Gateway to finish the checkout process.</p>
-</li>
-<li>
-<p>Embedded Payment Page (EPP): The payment screen is displayed in
-overlay directly on the merchant’s checkout page.</p>
-</li>
-<li>
-<p>Seamless integration:  The merchant’s checkout page is incorporated
-into Wirecard’s payment form. This solution provides a seamless shopping
-experience for web-shoppers.</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
+<div class="sect4">
+<h5 id="AlipayQRPay_TestCredentials">
+<a class="anchor" href="#AlipayQRPay_TestCredentials"></a><a class="link" href="#AlipayQRPay_TestCredentials">Test Credentials</a>
+</h5>
+<div class="admonitionblock warning">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Only HTML knowledge is required for Wirecard Payment Page integration.
+<div class="paragraph">
+<p>Test transactions with the given credentials bill your Alipay account. Use only small amounts for test transactions.<br>
+You can request a refund within 6 months of the initial transaction.</p>
+</div>
 </td>
 </tr>
 </table>
 </div>
-<h3 id="GeneralIntegrationOptions_RestApi" class="discrete">REST API</h3>
-<div class="paragraph">
-<p>When merchants want full control over the checkout and payment process
-they can create requests themselves and send them directly to the
-<em>REST API</em>. All communications between a merchant and the REST API
-are secured by TLS encryption (HTTPS).</p>
-</div>
-<div class="paragraph">
-<p>Integration is possible by:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>XML requests sent from merchant’s backend (server-to-server)</p>
-</li>
-<li>
-<p>JSON respectively</p>
-</li>
-<li>
-<p>NVP (for credit card only)</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
+<table class="tableblock frame-all grid-all stripes-none fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
 <tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-For the integration of Wirecard Payment Gateway via REST API, advanced programming skills are required.
-</td>
+<th class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">URL(s) Endpoints</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For transaction types <em>get-url</em>, <em>debit</em> and <em>void-debit</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://api-test.wirecard.com/engine/rest/paymentmethods/</code></p></td>
 </tr>
-</table>
-</div>
-<div class="paragraph">
-<p>PCI certified merchants can use Wirecard Payment Gateway without any restrictions.</p>
-</div>
-<div class="paragraph">
-<p>Non PCI certified merchants can use <em>Wirecard Payment Gateway</em> only with
-referenced or recurring transactions. For initial transactions they must use a front end solution (e.g. <a href="PaymentPageSolutions.html#PP">HPP</a>).</p>
-</div>
-<div class="paragraph">
-<p>Details to integrate <em>Wirecard Payment Gateway</em> via REST API are
-described <a href="RestApi.html">here</a>.</p>
-</div>
-<h3 id="GeneralIntegrationOptions_Batch" class="discrete">Batch Processing API</h3>
-<div class="paragraph">
-<p>In order to process multiple transactions at the same time, Wirecard’s Batch Processing is the ideal solution for both fast and easy to
-implement offline bulk transaction processing.</p>
-</div>
-<div class="paragraph">
-<p>Batch processing is possible for the following payment methods:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>SEPA Direct Debit</p>
-</li>
-<li>
-<p>SEPA Credit Transfer</p>
-</li>
-<li>
-<p>Credit Card</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
 <tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Working programming knowledge is required to integrate this way.
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For transaction type <em>refund-debit</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://api-test.wirecard.com/engine/rest/payments/</code></p></td>
 </tr>
-</table>
-</div>
-<h3 id="GeneralIntegrationOptions_SDK" class="discrete">SDK</h3>
-<div class="paragraph">
-<p>The Software Development Kit (SDK) serves as a wrapper for the Wirecard Payment Gateway with a PCI V3 compliant native mobile payment
-form. SDK is naturally developed for the integration into a merchant’s
-app as a software library where it covers sending payment requests to
-the Wirecard Payment Gateway. It uses REST requests constructed by the merchant
-sent over HTTPS protocol to Wirecard Payment Gateway
-end-point where the REST API is exposed.</p>
-</div>
-<div class="paragraph">
-<p>The following payment methods are currently supported:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Credit Card</p>
-</li>
-<li>
-<p>PayPal</p>
-</li>
-<li>
-<p>SEPA Direct Debit</p>
-</li>
-<li>
-<p>Apple Pay</p>
-</li>
-<li>
-<p>Google Pay™</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Operation system interfaces:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>iOS</p>
-</li>
-<li>
-<p>Android</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
 <tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Working programmer knowledge is required to integrate this way.
-</td>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Merchant Account ID (MAID)</p></th>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">41c95d64-f929-4374-a067-f023ab3f08d4</p></td>
 </tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Username</p></th>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">engine.alipayqr</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Password</p></th>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Changeme@123</p></td>
+</tr>
+</tbody>
 </table>
 </div>
-<div class="ulist">
-<ul>
+<div class="sect4">
+<h5 id="API_AlipayQRPay_Workflow">
+<a class="anchor" href="#API_AlipayQRPay_Workflow"></a><a class="link" href="#API_AlipayQRPay_Workflow">Workflow</a>
+</h5>
+<div class="imageblock">
+<div class="content">
+<img src="images/11-49-alipay-qr-pay/alipay-qr-workflow.png" alt="Alipay QR Pay Workflow">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p><a href="ShopSystems.html">Shop Extensions</a></p>
+<p>The consumer approaches the cashier to pay for the selected items.</p>
 </li>
 <li>
-<p><a href="PaymentPageSolutions.html">Payment Page Solutions</a></p>
+<p>Create a request to the Wirecard Payment Gateway to generate the QR code so that the consumer can make the payment.</p>
 </li>
 <li>
-<p><a href="RestApi.html">REST API</a></p>
+<p>Wirecard Payment Gateway transmits the request to Alipay.</p>
 </li>
 <li>
-<p><a href="MobilePaymentSDK.html">Mobile Payment SDK</a></p>
+<p>Alipay sends a response to Wirecard Payment Gateway with a URL that contains the generated QR code in different sizes.</p>
 </li>
 <li>
-<p><a href="BatchProcessingApi.html">Batch Processing API</a></p>
+<p>You receive the QR code based on the returned payment URL from Alipay.</p>
 </li>
 <li>
-<p><a href="MultiPaymentApi.html">Multi Payment API</a></p>
+<p>The consumer scans the QR code with Alipay Wallet and confirms the payment on their device.</p>
 </li>
-</ul>
+<li>
+<p>Alipay returns the payment result to Wirecard Payment Gateway.</p>
+</li>
+<li>
+<p>Wirecard Payment Gateway notifies you about the payment result.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="API_AlipayQRPay_Fields">
+<a class="anchor" href="#API_AlipayQRPay_Fields"></a><a class="link" href="#API_AlipayQRPay_Fields">Fields</a>
+</h5>
+<div class="paragraph">
+<p>The fields used for Alipay QR Pay requests, responses and notifications are the same as the <a href="RestApi_Fields.html">REST API Fields</a>. Only the fields listed below have different properties.</p>
+</div>
+<div class="paragraph">
+<p>The following elements are mandatory (M) or optional (O) for a request/response/notification. If the respective cell is empty, the field is disregarded or not sent.</p>
+</div>
+<div class="sect5">
+<h6 id="API_AlipayQRPay_Fields_customfields">
+<a class="anchor" href="#API_AlipayQRPay_Fields_customfields"></a><a class="link" href="#API_AlipayQRPay_Fields_customfields"><code>custom-fields.custom-field</code></a>
+</h6>
+<table class="tableblock frame-all grid-all stripes-none fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field Name</th>
+<th class="tableblock halign-left valign-top"><a href="APIRef_FieldDefs.html#APIRef_FieldDefs_Cardinality">M/O</a></th>
+<th class="tableblock halign-left valign-top">Size</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>alipay_buyer_login_id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The consumer’s Alipay ID, which can be an email address or phone number. Returned from Alipay. Can be used on receipt.<br>
+e.g. <code>paul.peterson@alitest.com</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>alipay_pay_time</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The time when the payment has been completed. Can be used on receipt.<br>
+Format: <code>yyyyMMddHHmmss</code><br>
+e.g. <code>20200220225336</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>alipay_trans_id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alipay Transaction ID as returned from Alipay. Can be used on receipt.<br>
+e.g. <code>2020022022001447411000303594</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>big_pic_url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification and Response</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL to the large QR code format<br>
+e.g. <code>http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6&amp;picSize=L</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>exchange_rate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The exchange rate between the currency given in the request to CNY. The exchange occurs when the Alipay trade order is created. Returned from Alipay. Can be used on receipt.<br>
+e.g. <code>6.64640000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>partner_trans_id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returned from Alipay. Can be used on receipt.<br>
+e.g. <code>ef0c0782-c224-423d-aedd-c0e2557dab6b</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>pic_url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification and Response</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL to the medium QR code format<br>
+e.g. <code>http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6&amp;picSize=M</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>small_pic_url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification and Response</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URL to small QR code<br>
+e.g. <code>http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6&amp;picSize=S</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>trans_amount_cny</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The total transaction amount in CNY. Returned from Alipay. Can be used on receipt.<br>
+e.g. <code>192.81</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>voucher_type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification and Response</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The voucher type returned from Alipay. Can be used on receipt.<br>
+e.g. <code>qrcode</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5">
+<h6 id="API_AlipayQRPay_Fields_wallet">
+<a class="anchor" href="#API_AlipayQRPay_Fields_wallet"></a><a class="link" href="#API_AlipayQRPay_Fields_wallet"><code>wallet</code></a>
+</h6>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field Name</th>
+<th class="tableblock halign-left valign-top"><a href="APIRef_FieldDefs.html#APIRef_FieldDefs_Cardinality">M/O</a></th>
+<th class="tableblock halign-left valign-top">Size</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>account-id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The consumer’s unique Alipay User ID returned from Alipay. Can be used on receipt.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5">
+<h6 id="API_AlipayQRPay_Fields_methods">
+<a class="anchor" href="#API_AlipayQRPay_Fields_methods"></a><a class="link" href="#API_AlipayQRPay_Fields_methods"><code>payment-methods</code></a>
+</h6>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field Name</th>
+<th class="tableblock halign-left valign-top"><a href="APIRef_FieldDefs.html#APIRef_FieldDefs_Cardinality">M/O</a></th>
+<th class="tableblock halign-left valign-top">Size</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>paymentmethod@url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notification and Response</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL to the default QR code format<br>
+e.g. <code>https://qr.alipay.com/bax023098uz6jvkieyrx00b6</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect5">
+<h6 id="API_AlipayQRPay_DisplayOptions">
+<a class="anchor" href="#API_AlipayQRPay_DisplayOptions"></a><a class="link" href="#API_AlipayQRPay_DisplayOptions">QR Code Display Options</a>
+</h6>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Large Size<br>
+<code>&lt;custom-field field-name="big_pic_url" field-value="http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6&amp;picSize=L"/&gt;</code></p>
+</li>
+<li>
+<p>Medium Size<br>
+<code>&lt;custom-field field-name="pic_url" field-value="http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6&amp;picSize=M"/&gt;</code></p>
+</li>
+<li>
+<p>Small Size (default)<br>
+<code>&lt;payment-method url="http://mobilecodec.alipaydev.com/show.htm?code=bax074522rpql8xy1wul00bf&amp;picSize=S" name="alipay-qr-gen"/&gt;</code></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="API_AlipayQRPay_Samples">
+<a class="anchor" href="#API_AlipayQRPay_Samples"></a><a class="link" href="#API_AlipayQRPay_Samples">Samples</a>
+</h5>
+<div class="sect5">
+<h6 id="API_AlipayQRPay_Samples_RestAPI">
+<a class="anchor" href="#API_AlipayQRPay_Samples_RestAPI"></a><a class="link" href="#API_AlipayQRPay_Samples_RestAPI">REST API</a>
+</h6>
+<div class="sect6">
+<h7 id="API_AlipayQRPay_Samples_geturl"><a class="anchor" href="#API_AlipayQRPay_Samples_geturl"></a><a class="link" href="#API_AlipayQRPay_Samples_geturl"><em>get-url</em></a></h7>
+<div class="listingblock">
+<div class="title">XML get-url Request (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+  <span class="tag">&lt;payment-methods&gt;</span>
+    <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+  <span class="tag">&lt;/payment-methods&gt;</span>
+  <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+  <span class="tag">&lt;request-id&gt;</span>7501dcd1-f1c8-4c9e-9e01-3e84141cd5120<span class="tag">&lt;/request-id&gt;</span>
+  <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.01<span class="tag">&lt;/requested-amount&gt;</span>
+  <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code<span class="tag">&lt;/descriptor&gt;</span>
+  <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">XML get-url Response (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>a2521d7d-4b30-4577-b55e-10fbdfad8832<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ca591b27-b56c-45b3-afcb-3fa3a9a497d81<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2020-02-19T11:56:45.000-05:00<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>ipad<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;description&gt;</span>Cellphone at a sale<span class="tag">&lt;/description&gt;</span>
+            <span class="tag">&lt;article-number&gt;</span>apple-01<span class="tag">&lt;/article-number&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.01<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code <span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">big_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax074522rpql8xy1wul00bf</span><span class="entity">&amp;amp;</span><span class="content">picSize=L</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher_type</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">qrcode</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">qr_code</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://qr.alipay.com/bax074522rpql8xy1wul00bf</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">small_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax074522rpql8xy1wul00bf</span><span class="entity">&amp;amp;</span><span class="content">picSize=S</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax074522rpql8xy1wul00bf</span><span class="entity">&amp;amp;</span><span class="content">picSize=M</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax074522rpql8xy1wul00bf</span><span class="entity">&amp;amp;</span><span class="content">picSize=S</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;sub-merchant-info&gt;</span>
+        <span class="tag">&lt;id&gt;</span>A11<span class="tag">&lt;/id&gt;</span>
+        <span class="tag">&lt;name&gt;</span>Muku<span class="tag">&lt;/name&gt;</span>
+        <span class="tag">&lt;category&gt;</span>7011<span class="tag">&lt;/category&gt;</span>
+        <span class="tag">&lt;store-id&gt;</span>BJ_ZZ_001<span class="tag">&lt;/store-id&gt;</span>
+        <span class="tag">&lt;store-name&gt;</span>Muku in the Dreieichstrabe<span class="tag">&lt;/store-name&gt;</span>
+    <span class="tag">&lt;/sub-merchant-info&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect6">
+<h7 id="API_AlipayQRPay_Samples_debit"><a class="anchor" href="#API_AlipayQRPay_Samples_debit"></a><a class="link" href="#API_AlipayQRPay_Samples_debit"><em>debit</em></a></h7>
+<div class="listingblock">
+<div class="title">XML debit Request (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+  <span class="tag">&lt;payment-methods&gt;</span>
+    <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+  <span class="tag">&lt;/payment-methods&gt;</span>
+  <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+  <span class="tag">&lt;request-id&gt;</span>7501dcd1-f1c8-4c9e-9e01-3e84141cd5120<span class="tag">&lt;/request-id&gt;</span>
+  <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.01<span class="tag">&lt;/requested-amount&gt;</span>
+  <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code<span class="tag">&lt;/descriptor&gt;</span>
+  <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">XML debit Response (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>08eeb371-5391-45bf-b2f8-995cf998be8b<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ca591b27-b56c-45b3-afcb-3fa3a9a497d90<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2020-02-25T11:21:35.000-05:00<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>ipad<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;description&gt;</span>Cellphone at a sale<span class="tag">&lt;/description&gt;</span>
+            <span class="tag">&lt;article-number&gt;</span>apple-01<span class="tag">&lt;/article-number&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.01<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code <span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">transaction-state</span>=<span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://alipay-qr-gen.free.beeceptor.com</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/notification&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">big_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax00386wmxsbbpujkcs0027</span><span class="entity">&amp;amp;</span><span class="content">picSize=L</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher_type</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">qrcode</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">qr_code</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://qr.alipay.com/bax00386wmxsbbpujkcs0027</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">small_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax00386wmxsbbpujkcs0027</span><span class="entity">&amp;amp;</span><span class="content">picSize=S</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax00386wmxsbbpujkcs0027</span><span class="entity">&amp;amp;</span><span class="content">picSize=M</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax00386wmxsbbpujkcs0027</span><span class="entity">&amp;amp;</span><span class="content">picSize=S</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;sub-merchant-info&gt;</span>
+        <span class="tag">&lt;id&gt;</span>A11<span class="tag">&lt;/id&gt;</span>
+        <span class="tag">&lt;name&gt;</span>Muku<span class="tag">&lt;/name&gt;</span>
+        <span class="tag">&lt;category&gt;</span>7011<span class="tag">&lt;/category&gt;</span>
+        <span class="tag">&lt;store-id&gt;</span>BJ_ZZ_001<span class="tag">&lt;/store-id&gt;</span>
+        <span class="tag">&lt;store-name&gt;</span>Muku in the Dreieichstrabe<span class="tag">&lt;/store-name&gt;</span>
+    <span class="tag">&lt;/sub-merchant-info&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">XML debit Notification (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>82864dd5-6e31-4dd0-91d3-f72c20212b7d<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ca591b27-b56c-45b3-afcb-3fa3a9a497d83<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2020-02-20T14:53:41.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.010000<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>ef0c0782-c224-423d-aedd-c0e2557dab6b<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>ipad<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;description&gt;</span>Cellphone at a sale<span class="tag">&lt;/description&gt;</span>
+            <span class="tag">&lt;article-number&gt;</span>apple-01<span class="tag">&lt;/article-number&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.010000<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code <span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">transaction-state</span>=<span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://alipay-qr-gen.free.beeceptor.com</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">big_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6</span><span class="entity">&amp;amp;</span><span class="content">picSize=L</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher_type</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">qrcode</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">qr_code</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://qr.alipay.com/bax023098uz6jvkieyrx00b6</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">small_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6</span><span class="entity">&amp;amp;</span><span class="content">picSize=S</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6</span><span class="entity">&amp;amp;</span><span class="content">picSize=M</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay_pay_time</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">20200220225336</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay_trans_id</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">2020022022001447411000303594</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">partner_trans_id</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">ef0c0782-c224-423d-aedd-c0e2557dab6b</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay_buyer_login_id</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">for*@alitest.*</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">exchange_rate</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">6.64640000</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trans_amount_cny</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">192.81</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;account-id&gt;</span>2088622924847415<span class="tag">&lt;/account-id&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+    <span class="tag">&lt;provider-transaction-reference-id&gt;</span>ef0c0782-c224-423d-aedd-c0e2557dab6b<span class="tag">&lt;/provider-transaction-reference-id&gt;</span>
+    <span class="tag">&lt;sub-merchant-info&gt;</span>
+        <span class="tag">&lt;id&gt;</span>A11<span class="tag">&lt;/id&gt;</span>
+        <span class="tag">&lt;name&gt;</span>Muku<span class="tag">&lt;/name&gt;</span>
+        <span class="tag">&lt;category&gt;</span>7011<span class="tag">&lt;/category&gt;</span>
+        <span class="tag">&lt;store-id&gt;</span>BJ_ZZ_001<span class="tag">&lt;/store-id&gt;</span>
+        <span class="tag">&lt;store-name&gt;</span>Muku in the Dreieichstrabe<span class="tag">&lt;/store-name&gt;</span>
+    <span class="tag">&lt;/sub-merchant-info&gt;</span>
+    <span class="tag">&lt;provider-account-id&gt;</span>2088621922365105<span class="tag">&lt;/provider-account-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">XML debit Request (Failure)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+  <span class="tag">&lt;payment-methods&gt;</span>
+    <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+  <span class="tag">&lt;/payment-methods&gt;</span>
+  <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+  <span class="tag">&lt;request-id&gt;</span>ca591b27-b56c-45b3-afcb-3fa3a9a497d81<span class="tag">&lt;/request-id&gt;</span>
+  <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.01<span class="tag">&lt;/requested-amount&gt;</span>
+  <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code <span class="tag">&lt;/descriptor&gt;</span>
+  <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+  <span class="tag">&lt;order-items&gt;</span>
+      <span class="tag">&lt;order-item&gt;</span>
+          <span class="tag">&lt;article-number&gt;</span>apple-01<span class="tag">&lt;/article-number&gt;</span>
+          <span class="tag">&lt;name&gt;</span>ipad<span class="tag">&lt;/name&gt;</span>
+          <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+          <span class="tag">&lt;description&gt;</span>Cellphone at a sale<span class="tag">&lt;/description&gt;</span>
+          <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.01<span class="tag">&lt;/amount&gt;</span>
+      <span class="tag">&lt;/order-item&gt;</span>
+  <span class="tag">&lt;/order-items&gt;</span>
+  <span class="tag">&lt;sub-merchant-info&gt;</span>
+      <span class="tag">&lt;id&gt;</span>A11<span class="tag">&lt;/id&gt;</span>
+      <span class="tag">&lt;name&gt;</span>Muku<span class="tag">&lt;/name&gt;</span>
+      <span class="tag">&lt;category&gt;</span>7011<span class="tag">&lt;/category&gt;</span>
+      <span class="tag">&lt;store-id&gt;</span>BJ_ZZ_001<span class="tag">&lt;/store-id&gt;</span>
+      <span class="tag">&lt;store-name&gt;</span>Muku in the Dreieichstrabe<span class="tag">&lt;/store-name&gt;</span>
+  <span class="tag">&lt;/sub-merchant-info&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">XML debit Request (Failure)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>8aff35f9-cc76-4eda-80fb-6ce5e3c7aef5<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ca591b27-b56c-45b3-afcb-3fa3a9a497d81<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>get-url<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>failed<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2020-02-20T14:29:50.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">400.1018</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The same Request Id for the Merchant Account is being tried a second time.  Please use another Request Id.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">error</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>ipad<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;description&gt;</span>Cellphone at a sale<span class="tag">&lt;/description&gt;</span>
+            <span class="tag">&lt;article-number&gt;</span>apple-01<span class="tag">&lt;/article-number&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.01<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code <span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;sub-merchant-info&gt;</span>
+        <span class="tag">&lt;id&gt;</span>A11<span class="tag">&lt;/id&gt;</span>
+        <span class="tag">&lt;name&gt;</span>Muku<span class="tag">&lt;/name&gt;</span>
+        <span class="tag">&lt;category&gt;</span>7011<span class="tag">&lt;/category&gt;</span>
+        <span class="tag">&lt;store-id&gt;</span>BJ_ZZ_001<span class="tag">&lt;/store-id&gt;</span>
+        <span class="tag">&lt;store-name&gt;</span>Muku in the Dreieichstrabe<span class="tag">&lt;/store-name&gt;</span>
+    <span class="tag">&lt;/sub-merchant-info&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect6">
+<h7 id="API_AlipayQRPay_Samples_refunddebit"><a class="anchor" href="#API_AlipayQRPay_Samples_refunddebit"></a><a class="link" href="#API_AlipayQRPay_Samples_refunddebit"><em>refund-debit</em></a></h7>
+<div class="listingblock">
+<div class="title">XML refund-debit Request (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ace1267f-3bfc-4a32-a4ba-2b8d944e4641<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>refund-debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>82864dd5-6e31-4dd0-91d3-f72c20212b7d<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">XML refund-debit Response (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span> <span class="attribute-name">self</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://dev.thesolution.com/engine/rest/merchants/00332ddc-bae7-4e35-ba87-c395dd5a6eb4/payments/67677fc4-d48b-4c05-bd54-a1c7d4ade930</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id</span> <span class="attribute-name">ref</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://dev.thesolution.com/engine/rest/config/merchants/41c95d64-f929-4374-a067-f023ab3f08d4</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>67677fc4-d48b-4c05-bd54-a1c7d4ade930<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ace1267f-3bfc-4a32-a4ba-2b8d944e4641<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>refund-debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2020-02-20T15:00:12.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>82864dd5-6e31-4dd0-91d3-f72c20212b7d<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>ipad<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;description&gt;</span>Cellphone at a sale<span class="tag">&lt;/description&gt;</span>
+            <span class="tag">&lt;article-number&gt;</span>apple-01<span class="tag">&lt;/article-number&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.010000<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code <span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">transaction-state</span>=<span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://alipay-qr-gen.free.beeceptor.com</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+         <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">big_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6</span><span class="entity">&amp;amp;</span><span class="content">picSize=L</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher_type</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">qrcode</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">qr_code</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://qr.alipay.com/bax023098uz6jvkieyrx00b6</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">small_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6</span><span class="entity">&amp;amp;</span><span class="content">picSize=S</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6</span><span class="entity">&amp;amp;</span><span class="content">picSize=M</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay_pay_time</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">20200220225336</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay_trans_id</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">2020022022001447411000303594</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">partner_trans_id</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">ef0c0782-c224-423d-aedd-c0e2557dab6b</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay_buyer_login_id</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">for*@alitest.*</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">exchange_rate</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">6.64640000</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trans_amount_cny</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">192.81</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;parent-transaction-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.010000<span class="tag">&lt;/parent-transaction-amount&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>elastic-api<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;account-id&gt;</span>2088622924847415<span class="tag">&lt;/account-id&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+    <span class="tag">&lt;sub-merchant-info&gt;</span>
+        <span class="tag">&lt;id&gt;</span>A11<span class="tag">&lt;/id&gt;</span>
+        <span class="tag">&lt;name&gt;</span>Muku<span class="tag">&lt;/name&gt;</span>
+        <span class="tag">&lt;category&gt;</span>7011<span class="tag">&lt;/category&gt;</span>
+        <span class="tag">&lt;store-id&gt;</span>BJ_ZZ_001<span class="tag">&lt;/store-id&gt;</span>
+        <span class="tag">&lt;store-name&gt;</span>Muku in the Dreieichstrabe<span class="tag">&lt;/store-name&gt;</span>
+    <span class="tag">&lt;/sub-merchant-info&gt;</span>
+    <span class="tag">&lt;provider-account-id&gt;</span>2088621922365105<span class="tag">&lt;/provider-account-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">XML refund-debit Notification (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>67677fc4-d48b-4c05-bd54-a1c7d4ade930<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>ace1267f-3bfc-4a32-a4ba-2b8d944e4641<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>refund-debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2020-02-20T15:00:12.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen:The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>82864dd5-6e31-4dd0-91d3-f72c20212b7d<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>ipad<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;description&gt;</span>Cellphone at a sale<span class="tag">&lt;/description&gt;</span>
+            <span class="tag">&lt;article-number&gt;</span>apple-01<span class="tag">&lt;/article-number&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.010000<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code <span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">transaction-state</span>=<span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://alipay-qr-gen.free.beeceptor.com</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">big_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6</span><span class="entity">&amp;amp;</span><span class="content">picSize=L</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher_type</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">qrcode</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">qr_code</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://qr.alipay.com/bax023098uz6jvkieyrx00b6</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">small_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6</span><span class="entity">&amp;amp;</span><span class="content">picSize=S</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax023098uz6jvkieyrx00b6</span><span class="entity">&amp;amp;</span><span class="content">picSize=M</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay_pay_time</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">20200220225336</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay_trans_id</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">2020022022001447411000303594</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">partner_trans_id</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">ef0c0782-c224-423d-aedd-c0e2557dab6b</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay_buyer_login_id</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">for*@alitest.*</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">exchange_rate</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">6.64640000</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">trans_amount_cny</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">192.81</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;parent-transaction-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.010000<span class="tag">&lt;/parent-transaction-amount&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>elastic-api<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;wallet&gt;</span>
+        <span class="tag">&lt;account-id&gt;</span>2088622924847415<span class="tag">&lt;/account-id&gt;</span>
+    <span class="tag">&lt;/wallet&gt;</span>
+    <span class="tag">&lt;sub-merchant-info&gt;</span>
+        <span class="tag">&lt;id&gt;</span>A11<span class="tag">&lt;/id&gt;</span>
+        <span class="tag">&lt;name&gt;</span>Muku<span class="tag">&lt;/name&gt;</span>
+        <span class="tag">&lt;category&gt;</span>7011<span class="tag">&lt;/category&gt;</span>
+        <span class="tag">&lt;store-id&gt;</span>BJ_ZZ_001<span class="tag">&lt;/store-id&gt;</span>
+        <span class="tag">&lt;store-name&gt;</span>Muku in the Dreieichstrabe<span class="tag">&lt;/store-name&gt;</span>
+    <span class="tag">&lt;/sub-merchant-info&gt;</span>
+    <span class="tag">&lt;provider-account-id&gt;</span>2088621922365105<span class="tag">&lt;/provider-account-id&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect6">
+<h7 id="API_AlipayQRPay_Samples_VoidDebit"><a class="anchor" href="#API_AlipayQRPay_Samples_VoidDebit"></a><a class="link" href="#API_AlipayQRPay_Samples_VoidDebit"><em>void-debit</em></a></h7>
+<div class="listingblock">
+<div class="title">XML void-debit Request (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>a1e1267f-3bfc-4a32-a4ba-2b8d944e3630<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>void-debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>a7b76bcf-6a0c-43d6-a51d-56edf5044ca5<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">XML void-debit Response (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>0cb307df-bf43-4d93-8294-bbcb5c4a32a4<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>a1e1267f-3bfc-4a32-a4ba-2b8d944e3630<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>void-debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2020-02-20T16:41:10.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>a7b76bcf-6a0c-43d6-a51d-56edf5044ca5<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>ipad<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;description&gt;</span>Cellphone at a sale<span class="tag">&lt;/description&gt;</span>
+            <span class="tag">&lt;article-number&gt;</span>apple-01<span class="tag">&lt;/article-number&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.010000<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code <span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">transaction-state</span>=<span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://alipay-qr-gen.free.beeceptor.com</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">big_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax03232pcjua5tzyqgz00b3</span><span class="entity">&amp;amp;</span><span class="content">picSize=L</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher_type</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">qrcode</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">qr_code</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://qr.alipay.com/bax03232pcjua5tzyqgz00b3</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">small_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax03232pcjua5tzyqgz00b3</span><span class="entity">&amp;amp;</span><span class="content">picSize=S</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax03232pcjua5tzyqgz00b3</span><span class="entity">&amp;amp;</span><span class="content">picSize=M</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;sub-merchant-info&gt;</span>
+        <span class="tag">&lt;id&gt;</span>A11<span class="tag">&lt;/id&gt;</span>
+        <span class="tag">&lt;name&gt;</span>Muku<span class="tag">&lt;/name&gt;</span>
+        <span class="tag">&lt;category&gt;</span>7011<span class="tag">&lt;/category&gt;</span>
+        <span class="tag">&lt;store-id&gt;</span>BJ_ZZ_001<span class="tag">&lt;/store-id&gt;</span>
+        <span class="tag">&lt;store-name&gt;</span>Muku in the Dreieichstrabe<span class="tag">&lt;/store-name&gt;</span>
+    <span class="tag">&lt;/sub-merchant-info&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">XML void-debit Response (Failed)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>41c95d64-f929-4374-a067-f023ab3f08d4<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;transaction-id&gt;</span>0cb307df-bf43-4d93-8294-bbcb5c4a32a4<span class="tag">&lt;/transaction-id&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>a1e1267f-3bfc-4a32-a4ba-2b8d944e3640<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>void-debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;transaction-state&gt;</span>failed<span class="tag">&lt;/transaction-state&gt;</span>
+    <span class="tag">&lt;completion-time-stamp&gt;</span>2020-02-20T17:31:09.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+    <span class="tag">&lt;statuses&gt;</span>
+        <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">500.1085</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen:Alipay system error</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">error</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/statuses&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>29.01<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;parent-transaction-id&gt;</span>a7b76bcf-6a0c-43d6-a51d-56edf5044ca5<span class="tag">&lt;/parent-transaction-id&gt;</span>
+    <span class="tag">&lt;ip-address&gt;</span>127.0.0.1<span class="tag">&lt;/ip-address&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>iphone cellphone<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;order-items&gt;</span>
+        <span class="tag">&lt;order-item&gt;</span>
+            <span class="tag">&lt;name&gt;</span>ipad<span class="tag">&lt;/name&gt;</span>
+            <span class="tag">&lt;description&gt;</span>Cellphone at a sale<span class="tag">&lt;/description&gt;</span>
+            <span class="tag">&lt;article-number&gt;</span>apple-01<span class="tag">&lt;/article-number&gt;</span>
+            <span class="tag">&lt;amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">USD</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>20.010000<span class="tag">&lt;/amount&gt;</span>
+            <span class="tag">&lt;quantity&gt;</span>1<span class="tag">&lt;/quantity&gt;</span>
+        <span class="tag">&lt;/order-item&gt;</span>
+    <span class="tag">&lt;/order-items&gt;</span>
+    <span class="tag">&lt;descriptor&gt;</span>Payment by QR-Code <span class="tag">&lt;/descriptor&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+        <span class="tag">&lt;notification</span> <span class="attribute-name">transaction-state</span>=<span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://alipay-qr-gen.free.beeceptor.com</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+    <span class="tag">&lt;custom-fields&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">big_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax03232pcjua5tzyqgz00b3</span><span class="entity">&amp;amp;</span><span class="content">picSize=L</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">voucher_type</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">qrcode</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">qr_code</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://qr.alipay.com/bax03232pcjua5tzyqgz00b3</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">small_pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax03232pcjua5tzyqgz00b3</span><span class="entity">&amp;amp;</span><span class="content">picSize=S</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;custom-field</span> <span class="attribute-name">field-name</span>=<span class="string"><span class="delimiter">"</span><span class="content">pic_url</span><span class="delimiter">"</span></span> <span class="attribute-name">field-value</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://mobilecodec.alipaydev.com/show.htm?code=bax03232pcjua5tzyqgz00b3</span><span class="entity">&amp;amp;</span><span class="content">picSize=M</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/custom-fields&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">alipay-qr-gen</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;api-id&gt;</span>---<span class="tag">&lt;/api-id&gt;</span>
+    <span class="tag">&lt;sub-merchant-info&gt;</span>
+        <span class="tag">&lt;id&gt;</span>A11<span class="tag">&lt;/id&gt;</span>
+        <span class="tag">&lt;name&gt;</span>Muku<span class="tag">&lt;/name&gt;</span>
+        <span class="tag">&lt;category&gt;</span>7011<span class="tag">&lt;/category&gt;</span>
+        <span class="tag">&lt;store-id&gt;</span>BJ_ZZ_001<span class="tag">&lt;/store-id&gt;</span>
+        <span class="tag">&lt;store-name&gt;</span>Muku in the Dreieichstrabe<span class="tag">&lt;/store-name&gt;</span>
+    <span class="tag">&lt;/sub-merchant-info&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>← <a href="Home.html">Home</a> |  <a href="ShopSystems.html">Shop Extensions</a> →</p>
+<p>← <a href="AlipayDomestic_Main.html">Alipay Domestic</a> |  <a href="ApplePay_Main.html">Apple Pay</a> →</p>
 </div>
 </div>
 <div id="footer">
@@ -6212,6 +6916,7 @@ Working programmer knowledge is required to integrate this way.
 Last updated 2020-03-19 15:15:15 UTC
 </div>
 </div>
+
 <script src="js/navigation.js"></script>
 <script src="js/pageswitch.js"></script>
 <script>
