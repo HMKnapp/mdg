@@ -5,7 +5,6 @@
 document.addEventListener('DOMContentLoaded', enableToc);
 
 function enableToc() {
-
   /* scroll toc to currents main section */
   const pageID = document.querySelector('body').getAttribute('id');
 
@@ -24,6 +23,7 @@ function enableToc() {
   tocLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
       tickBox(this);
+      closeOverlay();
     })
   })
   document.tocInitialized = true;
@@ -100,6 +100,9 @@ window.onresize = () => {
 }
 
 function initializeScrollspy() {
+  document.scrollspy = {
+    disabled: false
+  }
   /* cache all headline elements */
   document.headingsSelector = ['div#content h4', 'div#content h5', 'div#content h6']
   document.headingsElementsArray = [];
@@ -107,14 +110,15 @@ function initializeScrollspy() {
     document.headingsElementsArray.push(element);
   });
 
-  console.log(document.headingsElementsArray);
-
   /* remove existing eventlistener (for pageswitch) before adding it again */
   window.removeEventListener('scroll', handleScrollEvent, { scrollspy: true });
   window.addEventListener('scroll', handleScrollEvent, { scrollspy: true });
 }
 
 function handleScrollEvent() {
+  if(document.scrollspy.disabled) {
+    return true;
+  }
   document.headingsElementsArray.forEach(element => {
     const etopY = element.offsetTop - 50;
     const ebottomY = etopY + element.parentElement.offsetHeight;
@@ -151,24 +155,3 @@ function getParents(element, filter = '*', stop = false) {
   parents.pop();
   return parents.reverse();
 }
-
-/* loop through cached heading elements starting at the end
-   until scrollposition is no longer larger than element position
-   highlight last element */
-// function handleScrollEvent() {
-//   //window.cancelIdleCallback(document.scrollHandleTimer);
-//   window.clearTimeout(document.scrollHandleTimer);
-//   //document.scrollHandleTimer = window.requestIdleCallback(() => {
-//   document.scrollHandleTimer = window.setTimeout(() => {
-//     /* deep copy elements stack */
-//     var elementsStack = JSON.parse(JSON.stringify(document.headingsElementsArray.reverse()));
-//     var elementPosition = 0;
-//     while (window.scrollY > elementPosition && elementsStack.length > 1) {
-//       elementPosition = elementsStack.pop().offsetTop;
-//     }
-//     var elementToHighlight = elementsStack.pop().id;
-//     console.log('highlight ' + elementToHighlight)
-//     //}, {timeout: 3000 });
-//   }, 500);
-// }
-

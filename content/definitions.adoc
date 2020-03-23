@@ -1,0 +1,15 @@
+:POC: PoC
+
+:env-wirecard:
+
+:domain: proof-of-concept.com
+:documentation-url: doc.{domain}
+:payment-gateway: Proof Of Concept
+:payment-gateway-abbr: PoC
+:payment-page-abbr: PoC-P
+:payment-page-anchor: PPP
+:payment-page-abbr-lower-case: ppp
+:payment-provider-name-lower-case: proof-of-concept
+:payment-provider-name: ProofOfConcept
+:payment-page-v2: PoC Payment Page v2
+:payment-page-v2-abbr: PPPv2

@@ -1,0 +1,55 @@
+[#intro]
+== Introduction
+
+An introduction to http://asciidoc.org[AsciiDoc].
+
+[#admonitions_test]
+== Admonitions Test
+
+NOTE: An admonition paragraph draws the reader's attention to
+auxiliary information.
+Its purpose is determined by the label
+at the beginning of the paragraph.
+
+Here are the other built-in admonition types:
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+
+[[first]]
+=== First Section
+The first section is very important, make sure it's good.
+
+==== Another section here
+
+* item 1
+* item 2
+
+[source,ruby]
+----
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../lib/cli.rb'
+require_relative '../lib/stages/build.rb'
+
+def main(argv = ARGV)
+  args, opt_parser = Toolchain::Build::CLI.parse_args(argv)
+  if args.help
+    puts opt_parser
+    exit 0
+  end
+
+  stage_log(:build, 'Starting build stage')
+  stage_log(:build, "running build with index: #{args.index}")
+  Toolchain::Build.build(index: args.index)
+  stage_log(:build, 'Build done')
+end
+
+main
+----
