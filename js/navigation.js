@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', enableToc);
 
 function enableToc() {
+  console.log('enableToc');
   /* scroll toc to currents main section */
   const pageID = document.querySelector('body').getAttribute('id');
 
@@ -87,6 +88,7 @@ function initBoxes(anchorElement) {
 document.onreadystatechange = function () {
   if (document.readyState === 'complete') {
     initializeScrollspy();
+    refreshTitle();
   }
 }
 
@@ -100,6 +102,7 @@ window.onresize = () => {
 }
 
 function initializeScrollspy() {
+  console.log('initializeScrollspy')
   document.scrollspy = {
     disabled: false
   }
