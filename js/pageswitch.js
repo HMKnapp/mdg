@@ -12,23 +12,37 @@ const options = {
 };
 const swup = new Swup(options);
 
-swup.on('clickLink', function (e) {
-  console.log('clicked')
-  console.log(e)
-  reinitializeAfterPageSwitch();
+swup.on('samePageWithHash', function (e) {
+  /* to avoid tiggering scroll after jumping to anchor which opens the menu list again */
+  const id = e.target.hash.substr(1);
+  scrollToHash(id);
 });
 
-swup.on('samePageWithHash', function (e) {
-  const clickedHash = e.target.hash.substr(1);
-  const element = document.getElementById(clickedHash);
-  if (element) {
-      element.scrollIntoView();
+swup.on('contentReplaced', function (e) {
+  reinitializeAfterPageSwitch();
+  /* for deep links to anchors inside other pages */
+  const id = window.location.hash.substr(1);
+  if (id) {
+    scrollToHash(id);
   }
 });
 
+function scrollToHash(id) {
+  document.scrollspy.disabled = true;
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView();
+    /* because scrollIntoView has no callback */
+    setTimeout(() => {
+      document.scrollspy.disabled = false;
+    }, 1000);
+  }
+}
+
 function reinitializeAfterPageSwitch() {
+  enableToc();
   enableRequestDetailsHideShow();
   createSampleTabs();
   initializeScrollspy();
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 }

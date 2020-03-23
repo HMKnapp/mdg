@@ -1408,64 +1408,64 @@ input#search:hover { cursor: pointer; }
 
 /* CLOSE BUTTON */
 /* line 30, ../../style/sass/elements/_search.scss */
-button.close { display: none; position: fixed; top: 15px; right: 15px; opacity: 1; font-size: 1.2em; font-weight: bold; background-color: transparent; height: 2em; width: 2em; }
-/* line 42, ../../style/sass/elements/_search.scss */
-button.close:hover { background-color: #ff7373; color: white; cursor: pointer; }
+#btn-search-close { display: none; position: fixed; top: 1.5em; right: 1.5em; color: white; font-size: 1.2em; background-color: #ff7373; height: 2em; width: 2em; cursor: pointer; }
+/* line 41, ../../style/sass/elements/_search.scss */
+#btn-search-close:hover { background-color: white; color: #ff7373; }
 
 /* SEARCH RESULTS */
-/* line 50, ../../style/sass/elements/_search.scss */
+/* line 48, ../../style/sass/elements/_search.scss */
 ul#search-results { display: none; }
-/* line 52, ../../style/sass/elements/_search.scss */
+/* line 50, ../../style/sass/elements/_search.scss */
 ul#search-results li { display: none; }
 
 /* INSTRUCTIONS */
-/* line 56, ../../style/sass/elements/_search.scss */
+/* line 54, ../../style/sass/elements/_search.scss */
 #instructions { display: none; position: fixed; bottom: 50px; border: 2px solid #425563; border-radius: 15px; box-sizing: border-box; background-color: white; margin-left: 10em; }
-@media only screen and (min-width: 768px) { /* line 56, ../../style/sass/elements/_search.scss */
+@media only screen and (min-width: 768px) { /* line 54, ../../style/sass/elements/_search.scss */
   #instructions { left: 15em; width: calc(75% - 15em); } }
-@media only screen and (min-width: 1280px) { /* line 56, ../../style/sass/elements/_search.scss */
+@media only screen and (min-width: 1280px) { /* line 54, ../../style/sass/elements/_search.scss */
   #instructions { left: 20em; width: calc(75% - 20em); } }
-/* line 74, ../../style/sass/elements/_search.scss */
+/* line 72, ../../style/sass/elements/_search.scss */
 #instructions > div { display: none; padding: 10px; }
 
-/* line 80, ../../style/sass/elements/_search.scss */
+/* line 78, ../../style/sass/elements/_search.scss */
 span.nav-key { border: 1px solid #425563; border-radius: 3px; padding: 3px 5px; background-color: #ebebeb; color: #425563; font-weight: bold; min-width: 2em; }
 
-/* line 89, ../../style/sass/elements/_search.scss */
+/* line 87, ../../style/sass/elements/_search.scss */
 span.nav-text { color: #425563; font-size: 1.2rem; line-height: 1.2rem; }
 
 /* OVERLAY */
-/* line 96, ../../style/sass/elements/_search.scss */
+/* line 94, ../../style/sass/elements/_search.scss */
 #search-overlay { /* END &.open */ }
-/* line 97, ../../style/sass/elements/_search.scss */
+/* line 95, ../../style/sass/elements/_search.scss */
 #search-overlay.open { /* CLOSE BUTTON */ /* SEARCH WRAPPER */ /* END SEARCH WRAPPER */ }
-/* line 99, ../../style/sass/elements/_search.scss */
-#search-overlay.open button.close { display: initial; z-index: 100; }
-/* line 104, ../../style/sass/elements/_search.scss */
+/* line 97, ../../style/sass/elements/_search.scss */
+#search-overlay.open #btn-search-close { display: block; z-index: 2; }
+/* line 102, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper { /* SEARCH RESULTS WRAPPER */ /* END SEARCH RESULTS WRAPPER */ /* FIXME does not look good, therefore disabled */ /* INSTRUCTIONS */ }
-/* line 106, ../../style/sass/elements/_search.scss */
+/* line 104, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper { position: fixed; top: 0; padding-left: 10em; padding-top: 1em; background-color: white; overflow: scroll; height: 100vh; /* SEARCH RESULTS */ /* END SEARCH RESULTS */ }
-@media only screen and (min-width: 768px) { /* line 106, ../../style/sass/elements/_search.scss */
+@media only screen and (min-width: 768px) { /* line 104, ../../style/sass/elements/_search.scss */
   #search-overlay.open #search-wrapper #search-results-wrapper { left: 15em; width: calc(100% - 15em); } }
-@media only screen and (min-width: 1280px) { /* line 106, ../../style/sass/elements/_search.scss */
+@media only screen and (min-width: 1280px) { /* line 104, ../../style/sass/elements/_search.scss */
   #search-overlay.open #search-wrapper #search-results-wrapper { left: 20em; width: calc(100% - 20em); } }
-/* line 124, ../../style/sass/elements/_search.scss */
+/* line 122, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results { display: block; list-style: none; max-width: 62.5em; width: 75%; margin-bottom: 150px; }
-/* line 125, ../../style/sass/elements/_search.scss */
+/* line 123, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results::before { content: 'Search Results'; font-size: 3em; margin-bottom: 0.5em; display: block; border-bottom: 3px solid #002846; }
-/* line 137, ../../style/sass/elements/_search.scss */
+/* line 135, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li { display: block; margin-bottom: 10px; }
-/* line 140, ../../style/sass/elements/_search.scss */
+/* line 138, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div { width: inherit; border-radius: 15px; position: relative; border: 1px solid #425563; }
-/* line 146, ../../style/sass/elements/_search.scss */
+/* line 144, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div * { margin: 0px; text-decoration: none; }
-/* line 151, ../../style/sass/elements/_search.scss */
+/* line 149, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a h3, #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a #toctitle, #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a .sidebarblock > .content > .title, #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a p { margin-left: 40px; margin-right: 40px; margin-top: 10px; color: #002846 !important; }
-/* line 157, ../../style/sass/elements/_search.scss */
+/* line 155, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a span.label { position: absolute; top: -1px; right: -1px; border-top-right-radius: 15px; border-bottom-left-radius: 15px; color: white; background-color: #425563; padding: 4px 10px; font-weight: bold; }
-/* line 168, ../../style/sass/elements/_search.scss */
+/* line 166, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li > div a:hover { text-decoration: none; color: #002846; }
-/* line 175, ../../style/sass/elements/_search.scss */
+/* line 173, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li.selected > div { border: 1px solid #2983fb; background-color: rgba(41, 131, 251, 0.2); }
-/* line 178, ../../style/sass/elements/_search.scss */
+/* line 176, ../../style/sass/elements/_search.scss */
 #search-overlay.open #search-wrapper #search-results-wrapper ul#search-results li.selected > div a > span.label { background-color: #2983fb; }

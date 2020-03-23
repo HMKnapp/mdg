@@ -17,7 +17,7 @@
 <script src="js/sample-tabs.js"></script>
 <script src="js/search.js"></script>
 </head>
-<body id="CarrierBilling_Main" class="article toc2 toc-left">
+<body id="first" class="article toc2 toc-left">
 <div id="toc" class="toc2">
 <a id="logo" href="index.html"><img src="images/logo.png" alt="Logo"></a><div id="search-overlay-wrapper">
     <div id="search-overlay">
@@ -54,10 +54,10 @@
   <input id="toc_cb_intro" type="checkbox" disabled><label for="toc_cb_intro"><a href="intro.html">Introduction</a></label>
 </li>
 <li id="toc_li_admonitions_test" data-level="1">
-  <input id="toc_cb_admonitions_test" type="checkbox"><label for="toc_cb_admonitions_test"><a href="admonitions_test.html">Admonitions Test</a></label>
+  <input id="toc_cb_admonitions_test" type="checkbox" checked><label for="toc_cb_admonitions_test"><a href="admonitions_test.html">Admonitions Test</a></label>
 <ul>
 <li id="toc_li_first" data-level="2">
-  <input id="toc_cb_first" type="checkbox"><label for="toc_cb_first"><a href="first.html">First Section</a></label>
+  <input id="toc_cb_first" type="checkbox" checked><label for="toc_cb_first"><a href="first.html">First Section</a></label>
 <ul>
 <li id="toc_li__another_section_here" data-level="3">
   <input id="toc_cb__another_section_here" type="checkbox" disabled><label for="toc_cb__another_section_here"><a href="first.html#_another_section_here">Another section here</a></label>
@@ -80,7 +80,7 @@
 </ul>
 </li>
 <li id="toc_li_CarrierBilling_Main" data-level="1">
-  <input id="toc_cb_CarrierBilling_Main" type="checkbox" checked><label for="toc_cb_CarrierBilling_Main"><a href="CarrierBilling_Main.html">Carrier Billing</a></label>
+  <input id="toc_cb_CarrierBilling_Main" type="checkbox"><label for="toc_cb_CarrierBilling_Main"><a href="CarrierBilling_Main.html">Carrier Billing</a></label>
 <ul>
 <li id="toc_li_CarrierBilling_RESTAPI" data-level="2">
   <input id="toc_cb_CarrierBilling_RESTAPI" type="checkbox"><label for="toc_cb_CarrierBilling_RESTAPI"><a href="CarrierBilling_RESTAPI.html">REST API</a></label>
@@ -142,22 +142,55 @@
 
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="CarrierBilling_Main">
-<a class="anchor" href="#CarrierBilling_Main"></a><a class="link" href="#CarrierBilling_Main">Carrier Billing</a>
-</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="first">
+<a class="anchor" href="#first"></a><a class="link" href="#first">First Section</a>
+</h3>
+<div class="paragraph">
+<p>The first section is very important, make sure it’s good.</p>
+</div>
+<div class="sect3">
+<h4 id="_another_section_here">
+<a class="anchor" href="#_another_section_here"></a><a class="link" href="#_another_section_here">Another section here</a>
+</h4>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="CarrierBilling_RESTAPI.html">REST API</a></p>
+<p>item 1</p>
+</li>
+<li>
+<p>item 2</p>
 </li>
 </ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="ruby"><span class="doctype">#!/usr/bin/env ruby</span>
+<span class="comment"># frozen_string_literal: true</span>
+
+require_relative <span class="string"><span class="delimiter">'</span><span class="content">../lib/cli.rb</span><span class="delimiter">'</span></span>
+require_relative <span class="string"><span class="delimiter">'</span><span class="content">../lib/stages/build.rb</span><span class="delimiter">'</span></span>
+
+<span class="keyword">def</span> <span class="function">main</span>(argv = <span class="predefined-constant">ARGV</span>)
+  args, opt_parser = <span class="constant">Toolchain</span>::<span class="constant">Build</span>::<span class="constant">CLI</span>.parse_args(argv)
+  <span class="keyword">if</span> args.help
+    puts opt_parser
+    exit <span class="integer">0</span>
+  <span class="keyword">end</span>
+
+  stage_log(<span class="symbol">:build</span>, <span class="string"><span class="delimiter">'</span><span class="content">Starting build stage</span><span class="delimiter">'</span></span>)
+  stage_log(<span class="symbol">:build</span>, <span class="string"><span class="delimiter">"</span><span class="content">running build with index: </span><span class="inline"><span class="inline-delimiter">#{</span>args.index<span class="inline-delimiter">}</span></span><span class="delimiter">"</span></span>)
+  <span class="constant">Toolchain</span>::<span class="constant">Build</span>.build(<span class="key">index</span>: args.index)
+  stage_log(<span class="symbol">:build</span>, <span class="string"><span class="delimiter">'</span><span class="content">Build done</span><span class="delimiter">'</span></span>)
+<span class="keyword">end</span>
+
+main</code></pre>
+</div>
 </div>
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>← <a href="second.html">Second Section</a> |  <a href="CarrierBilling_RESTAPI.html">REST API</a> →</p>
+<p> <a href="further_reading.html">Further reading</a> →</p>
 </div>
 </div>
 <div id="footer">
@@ -165,6 +198,7 @@
 Last updated 2020-03-23 16:48:32 UTC
 </div>
 </div>
+
 <script src="js/navigation.js"></script>
 <script src="js/pageswitch.js"></script>
 <script>

@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="author" content="Multipage level is 2.">
+<title>Proof of Concept</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/coderay-asciidoctor.css">
+<script src="js/swup.min.js"></script>
+<script src="js/jquery-3.4.1.min.js" noblob></script>
+<script src="js/lunr.js" noblob></script>
+<script src="js/sample-tabs.js"></script>
+<script src="js/search.js"></script>
+</head>
+<body id="CarrierBilling_RESTAPI" class="article toc2 toc-left">
+<div id="toc" class="toc2">
+<a id="logo" href="index.html"><img src="images/logo.png" alt="Logo"></a><div id="search-overlay-wrapper">
+    <div id="search-overlay">
+        <button type="button" id="btn-search-close" class="close fa"></button>
+        <div id="search-wrapper">
+            <input id="search" type="search" value="" autocomplete="off" placeholder="Search...">
+            <div id="search-results-wrapper">
+                <ul id="search-results"></ul>
+            </div>
+            <div id="instructions">
+                <div id="nav-navigate">
+                    <span class="nav-key">↑</span>
+                    <span class="nav-key">↓</span>
+                    <span class="nav-text">navigate</span>
+                </div>
+                <div id="nav-select">
+                    <span class="nav-key">enter</span>
+                    <span class="nav-text">select</span>
+                </div>
+                <div id="nav-close">
+                    <span class="nav-key">esc</span>
+                    <span class="nav-text">close</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <ul>
+<li id="toc_li_Home" data-level="1">
+  <input id="toc_cb_Home" type="checkbox" disabled><label for="toc_cb_Home"><a href="Home.html">Home</a></label>
+</li>
+<li id="toc_li_intro" data-level="1">
+  <input id="toc_cb_intro" type="checkbox" disabled><label for="toc_cb_intro"><a href="intro.html">Introduction</a></label>
+</li>
+<li id="toc_li_admonitions_test" data-level="1">
+  <input id="toc_cb_admonitions_test" type="checkbox"><label for="toc_cb_admonitions_test"><a href="admonitions_test.html">Admonitions Test</a></label>
+<ul>
+<li id="toc_li_first" data-level="2">
+  <input id="toc_cb_first" type="checkbox"><label for="toc_cb_first"><a href="first.html">First Section</a></label>
+<ul>
+<li id="toc_li__another_section_here" data-level="3">
+  <input id="toc_cb__another_section_here" type="checkbox" disabled><label for="toc_cb__another_section_here"><a href="first.html#_another_section_here">Another section here</a></label>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="toc_li_further_reading" data-level="1">
+  <input id="toc_cb_further_reading" type="checkbox"><label for="toc_cb_further_reading"><a href="further_reading.html">Further reading</a></label>
+<ul>
+<li id="toc_li_second" data-level="2">
+  <input id="toc_cb_second" type="checkbox"><label for="toc_cb_second"><a href="second.html">Second Section</a></label>
+<ul>
+<li id="toc_li__second_second_section" data-level="3">
+  <input id="toc_cb__second_second_section" type="checkbox" disabled><label for="toc_cb__second_second_section"><a href="second.html#_second_second_section">Second Second Section</a></label>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="toc_li_CarrierBilling_Main" data-level="1">
+  <input id="toc_cb_CarrierBilling_Main" type="checkbox" checked><label for="toc_cb_CarrierBilling_Main"><a href="CarrierBilling_Main.html">Carrier Billing</a></label>
+<ul>
+<li id="toc_li_CarrierBilling_RESTAPI" data-level="2">
+  <input id="toc_cb_CarrierBilling_RESTAPI" type="checkbox" checked><label for="toc_cb_CarrierBilling_RESTAPI"><a href="CarrierBilling_RESTAPI.html">REST API</a></label>
+<ul>
+<li id="toc_li_CarrierBilling_GeneralInformation_PaymentMode" data-level="3">
+  <input id="toc_cb_CarrierBilling_GeneralInformation_PaymentMode" type="checkbox" disabled><label for="toc_cb_CarrierBilling_GeneralInformation_PaymentMode"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_GeneralInformation_PaymentMode">Countries and Currencies</a></label>
+</li>
+<li id="toc_li_CarrierBilling_GeneralInformation_Communication" data-level="3">
+  <input id="toc_cb_CarrierBilling_GeneralInformation_Communication" type="checkbox" disabled><label for="toc_cb_CarrierBilling_GeneralInformation_Communication"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_GeneralInformation_Communication">Communication Formats</a></label>
+</li>
+<li id="toc_li_CarrierBilling_TransactionTypes" data-level="3">
+  <input id="toc_cb_CarrierBilling_TransactionTypes" type="checkbox"><label for="toc_cb_CarrierBilling_TransactionTypes"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_TransactionTypes">Transaction Types</a></label>
+<ul>
+<li id="toc_li_CarrierBilling_TransactionTypes_Debit" data-level="4">
+  <input id="toc_cb_CarrierBilling_TransactionTypes_Debit" type="checkbox" disabled><label for="toc_cb_CarrierBilling_TransactionTypes_Debit"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_TransactionTypes_Debit">debit for carrier-billing</a></label>
+</li>
+</ul>
+</li>
+<li id="toc_li_CarrierBilling_TestCredentials" data-level="3">
+  <input id="toc_cb_CarrierBilling_TestCredentials" type="checkbox"><label for="toc_cb_CarrierBilling_TestCredentials"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_TestCredentials">Test Credentials</a></label>
+<ul>
+<li id="toc_li_CarrierBilling_TestCredentials_Additional" data-level="4">
+  <input id="toc_cb_CarrierBilling_TestCredentials_Additional" type="checkbox" disabled><label for="toc_cb_CarrierBilling_TestCredentials_Additional"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_TestCredentials_Additional">Additional Test Credentials on carrier billing’s Environment</a></label>
+</li>
+</ul>
+</li>
+<li id="toc_li_CarrierBilling_Workflow" data-level="3">
+  <input id="toc_cb_CarrierBilling_Workflow" type="checkbox"><label for="toc_cb_CarrierBilling_Workflow"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_Workflow">Workflow</a></label>
+<ul>
+<li id="toc_li_CarrierBilling_Workflow_REST" data-level="4">
+  <input id="toc_cb_CarrierBilling_Workflow_REST" type="checkbox" disabled><label for="toc_cb_CarrierBilling_Workflow_REST"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_Workflow_REST">Using ReST API</a></label>
+</li>
+<li id="toc_li_CarrierBilling_Workflow_PP" data-level="4">
+  <input id="toc_cb_CarrierBilling_Workflow_PP" type="checkbox" disabled><label for="toc_cb_CarrierBilling_Workflow_PP"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_Workflow_PP">Using Payment Page</a></label>
+</li>
+</ul>
+</li>
+<li id="toc_li_CarrierBilling_Fields" data-level="3">
+  <input id="toc_cb_CarrierBilling_Fields" type="checkbox" disabled><label for="toc_cb_CarrierBilling_Fields"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_Fields">Fields</a></label>
+</li>
+<li id="toc_li_CarrierBilling_Features" data-level="3">
+  <input id="toc_cb_CarrierBilling_Features" type="checkbox" disabled><label for="toc_cb_CarrierBilling_Features"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_Features">Features</a></label>
+</li>
+<li id="toc_li_CarrierBilling_Samples" data-level="3">
+  <input id="toc_cb_CarrierBilling_Samples" type="checkbox" disabled><label for="toc_cb_CarrierBilling_Samples"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_Samples">Samples</a></label>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div id="header">
+<h1>Proof of Concept</h1>
+<div class="details">
+<span id="author" class="author">Multipage level is 2.</span><br>
+</div>
+
+</div>
+<div id="content">
+<div class="sect2">
+<h3 id="CarrierBilling_RESTAPI">
+<a class="anchor" href="#CarrierBilling_RESTAPI"></a><a class="link" href="#CarrierBilling_RESTAPI">REST API</a>
+</h3>
+<div class="paragraph">
+<p><em>Carrier Billing</em> is a type of <a href="#PaymentMethods_PaymentMode_OnlineBankTransfer">Online Bank Transfer</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="CarrierBilling_GeneralInformation_PaymentMode">
+<a class="anchor" href="#CarrierBilling_GeneralInformation_PaymentMode"></a><a class="link" href="#CarrierBilling_GeneralInformation_PaymentMode">Countries and Currencies</a>
+</h4>
+<table class="tableblock frame-all grid-all stripes-none" style="width: 75%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Countries</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EUR Countries</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Currencies</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EUR</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="CarrierBilling_GeneralInformation_Communication">
+<a class="anchor" href="#CarrierBilling_GeneralInformation_Communication"></a><a class="link" href="#CarrierBilling_GeneralInformation_Communication">Communication Formats</a>
+</h4>
+<div class="paragraph">
+<p>This table illustrates how <em>carrier billing</em> notifications are encoded
+and which formats and methods can be used for requests and responses.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-none" style="width: 75%;">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Requests/Responses</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XML</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Methods</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">POST, GET</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">IPN Encodement</p></th>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Base64, JSON</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="CarrierBilling_TransactionTypes">
+<a class="anchor" href="#CarrierBilling_TransactionTypes"></a><a class="link" href="#CarrierBilling_TransactionTypes">Transaction Types</a>
+</h4>
+<div class="paragraph">
+<p>For <a href="#Glossary_TransactionType">transaction type</a> details look at <a href="#AppendixB">Transaction Types</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Transaction Type</th>
+<th class="tableblock halign-left valign-top">Link  to the Sample</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>debit</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="CarrierBilling_RESTAPI.html#CarrierBilling_Samples"><em>debit</em> sample</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>refund-debit</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="sect4">
+<h5 id="CarrierBilling_TransactionTypes_Debit">
+<a class="anchor" href="#CarrierBilling_TransactionTypes_Debit"></a><a class="link" href="#CarrierBilling_TransactionTypes_Debit"><em>debit</em> for <em>carrier-billing</em></a>
+</h5>
+<div class="paragraph">
+<p>The payment method within the request must be <em>carrier-billing,</em> the
+transaction type <em>debit.</em> If the request is successful, the
+<em>Forward-URL</em> to the Landing-Page of the <em>carrier-billing</em> provider will
+be sent in the response. The notification allows a merchant to receive
+the final status of a payment as soon as Wirecard receives it from the
+<em>carrier-billing</em> provider. Usually, this status is received within
+seconds of the completion of the transaction, however, may take up to a
+few days depending on the respective mobile provider.</p>
+</div>
+<div class="paragraph">
+<p>Once Wirecard has received a notification from the <em>carrier-billing</em>
+provider about the final status of the transaction, this status will be
+communicated to the merchant via the <a href="#GeneralPlatformFeatures_IPN">Notification URL</a> that is configured in the merchant account or provided with the
+initial payment transaction request.</p>
+</div>
+<div class="paragraph">
+<p>If no notification URL is provided with the request and also not
+configured in the merchant account, the notification will be sent via
+Email to the merchant in case the Email address has been configured. In
+case merchant has not received the notification, the status of the
+transaction can be requested by sending a <a href="#GeneralPlatformFeatures_RetrieveTransaction_TransactionID">Retrieve Transaction by Transaction ID</a> or
+<a href="#GeneralPlatformFeatures_RetrieveTransaction_RequestID">Retrieve Transaction by Request ID</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CarrierBilling_TestCredentials">
+<a class="anchor" href="#CarrierBilling_TestCredentials"></a><a class="link" href="#CarrierBilling_TestCredentials">Test Credentials</a>
+</h4>
+<table class="tableblock frame-all grid-all stripes-none fit-content strech">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">URLs (Endpoints)</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://{test-instance-hostname}/engine/rest/paymentmethods</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Test Merchant Account ID (MAID)</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8b99e2dc-c8d0-43b8-9ebb-0a35fa808af7</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Username</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16390-testing</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Password</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3!3013=D3fD8X7</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Secret Key</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">c5baf402-82cd-453d-9f5a-1b20ad44f982</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect4">
+<h5 id="CarrierBilling_TestCredentials_Additional">
+<a class="anchor" href="#CarrierBilling_TestCredentials_Additional"></a><a class="link" href="#CarrierBilling_TestCredentials_Additional">Additional Test Credentials on <em>carrier billing’s</em> Environment</a>
+</h5>
+<table class="tableblock frame-all grid-all fit-content strech">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Test Number</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DE00, SK00</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CarrierBilling_Workflow">
+<a class="anchor" href="#CarrierBilling_Workflow"></a><a class="link" href="#CarrierBilling_Workflow">Workflow</a>
+</h4>
+<div class="sect4">
+<h5 id="CarrierBilling_Workflow_REST">
+<a class="anchor" href="#CarrierBilling_Workflow_REST"></a><a class="link" href="#CarrierBilling_Workflow_REST">Using ReST API</a>
+</h5>
+<div class="imageblock">
+<div class="content">
+<img src="images/11-07-carrier-billing/carrierbilling_workflow_rest.png" alt="CarrierBilling Workflow REST">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the merchant site.</p>
+</li>
+<li>
+<p>Consumers select <em>carrier billing.</em></p>
+</li>
+<li>
+<p>The merchant sends a payment request to <em>Proof Of Concept.</em></p>
+</li>
+<li>
+<p>Proof Of Concept redirects consumers to provider’s page.</p>
+</li>
+<li>
+<p>Continue with point 4 of "Using Payment Page".</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="CarrierBilling_Workflow_PP">
+<a class="anchor" href="#CarrierBilling_Workflow_PP"></a><a class="link" href="#CarrierBilling_Workflow_PP">Using Payment Page</a>
+</h5>
+<div class="imageblock">
+<div class="content">
+<img src="images/11-07-carrier-billing/carrierbilling_workflow_pp.png" alt="CarrierBilling Workflow PP">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <em>Payment Page.</em></p>
+</li>
+<li>
+<p>Consumers select <em>carrier billing.</em></p>
+</li>
+<li>
+<p>Proof Of Concept redirects consumers to provider’s page.</p>
+</li>
+<li>
+<p>Consumers select their mobile network provider.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/11-07-carrier-billing/carrierbilling_selectNWprovider.png" alt="SelectProvider">
+</div>
+</div>
+<div class="paragraph">
+<p>and confirm payment.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/11-07-carrier-billing/carrierbilling_confirmPayment.png" alt="Confirm Payment">
+</div>
+</div>
+</li>
+<li>
+<p>Consumers submit the payment.</p>
+</li>
+<li>
+<p>The provider processes the payment and sends a notification to
+<em>Proof Of Concept.</em></p>
+</li>
+<li>
+<p>Proof Of Concept confirms the payment.</p>
+</li>
+<li>
+<p>Merchant redirects consumers to merchant’s confirmation page.</p>
+</li>
+<li>
+<p>The amount to be paid appears on the consumer’s monthly carrier
+invoice.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CarrierBilling_Fields">
+<a class="anchor" href="#CarrierBilling_Fields"></a><a class="link" href="#CarrierBilling_Fields">Fields</a>
+</h4>
+<div class="paragraph">
+<p>The following elements are either mandatory (M), optional (O) or
+conditional (C) in a transaction process.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-none fit-content strech">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field</th>
+<th class="tableblock halign-left valign-top">Request</th>
+<th class="tableblock halign-left valign-top">Response</th>
+<th class="tableblock halign-left valign-top">Notification</th>
+<th class="tableblock halign-left valign-top">Datatype</th>
+<th class="tableblock halign-left valign-top">Size</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>transaction-type</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is the type for a
+transaction. For <em>carrier-billing</em> only <code>debit</code> is allowed in the initial
+request.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>transaction-id</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Transaction ID is the
+unique identifier for a transaction. It is generated by Wirecard.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>statuses.status@severity</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This field gives
+information if a  status is a warning, an error or an information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>statuses.status@description</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is the
+description to the status code of a transaction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>statuses.status@code</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is the code of
+the status of a transaction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>state</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The payment transaction state. For
+<em>carrier-billing</em> can only be success, failed  or in-progress.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>requested-amount@currency</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The ISO code of
+the payment currency. Currently only <code>EUR</code> is supported.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>requested-amount</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18,3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is the amount of the transaction.
+The amount of the decimal place is dependent of the currency. The
+maximum amount is highly dependent on the country and mobile network
+operator. Currently the maximal allowed amount is 30 EUR.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>request-id</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is the identification
+number of the request. It has to be unique for each request.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>payment-methods.payment-method-name@url</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The forward URL to the <em>carrier-billing</em> provider checkout page. The
+end-consumer must be redirected to this URL in order to be able to
+complete the payment.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>payment-methods.payment-method-name@name</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is the name of the payment method that that is chosen from the
+end-consumer. Currently only <code>carrier-billing</code> is supported.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>parent-transaction-id</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transaction ID of the first transaction in the series.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>order-detail</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional description of the provided product or service.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>notifications.notification@url</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL to be used for the Instant Payment Notification. It overwrites the
+notification URL that is set up in the merchant configuration.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>merchant-account-id</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">36</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique identifier for a merchant account.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>locale</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO code of the language. Can be sent
+in the format <code>&lt;language&gt;</code> or in the format <code>&lt;language_country&gt;</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>instrument-country</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The instrument country
+contains the information where the end-consumer belongs to.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>descriptor</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description of the provided
+product or service. It will appear on the checkout web page and SMS
+texts and may also appear on the end-customers billing invoice from the
+mobile operator depending on the country and operator.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>consumer-id</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An id of the end-consumer in the merchant’s application e.g. account
+name, gamer alias, login username.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>completion-time-stamp</em></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datetime</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The completion timestamp of the transaction processing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>account-holder.phone</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The phone number of
+the end-customer (MSISDN) intended to be used for payment</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>account-holder.address.country</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The ISO code
+of the country used for the mobile payment. It influences the language
+of the checkout page and usage of the mobile operators. Currently only
+<code>DE</code> is supported.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>account-holder.address.city</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The city of residence of the account holder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>account-holder.address.street1</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The street name of residence of the account holder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>account-holder.first-name</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The first name of the account holder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>account-holder.last-name</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The last name of the account holder.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>account-holder.email</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The e-mail address of the account holder.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="CarrierBilling_Features">
+<a class="anchor" href="#CarrierBilling_Features"></a><a class="link" href="#CarrierBilling_Features">Features</a>
+</h4>
+<h5 id="CarrierBilling_MerchantCountryCodeSecurity" class="discrete">Merchant Country Code Security</h5>
+<div class="paragraph">
+<p>Depending on the merchant account ID, merchants will only be able to
+accept payments from the setup country. This means one country for one
+merchant account ID.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="CarrierBilling_Samples">
+<a class="anchor" href="#CarrierBilling_Samples"></a><a class="link" href="#CarrierBilling_Samples">Samples</a>
+</h4>
+<h6 id="CarrierBilling_Debit_Samples" class="discrete sample-tabs">Carrier Billing: Debit</h6>
+<h7 id="CarrierBilling_Debit_Samples_JSON" class="discrete tab-content tab-json">JSON</h7>
+<table class="tableblock frame-all grid-all stretch r-details">
+<caption class="title">Request Details</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2">API Endpoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Method</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">POST</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>URI</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://api-test.wirecard.com/engine/rest/paymentmethods/</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Headers</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Content-Type</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>application/json</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Accept</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>application/json</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="json">{
+  <span class="key"><span class="delimiter">"</span><span class="content">payment</span><span class="delimiter">"</span></span>: {
+    <span class="key"><span class="delimiter">"</span><span class="content">merchant-account-id</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">8b99e2dc-c8d0-43b8-9ebb-0a35fa808af7</span><span class="delimiter">"</span></span>
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">requested-amount</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">currency</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span>: <span class="integer">10</span>
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">request-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">{{$guid}}</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">transaction-type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">debit</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">payment-methods</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">payment-method</span><span class="delimiter">"</span></span>: [
+        {
+          <span class="key"><span class="delimiter">"</span><span class="content">name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">carrier-billing</span><span class="delimiter">"</span></span>
+        }
+      ]
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">account-holder</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">email</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">john.doe@example.com</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">first-name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">John</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">last-name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Doe</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">phone</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">SK00</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">address</span><span class="delimiter">"</span></span>: {
+        <span class="key"><span class="delimiter">"</span><span class="content">street1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Test Street 123</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">city</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Test City</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">country</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">SK</span><span class="delimiter">"</span></span>
+      }
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">consumer-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Test Consumer</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">order-detail</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Test Order</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">cancel-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://{pp-redirect-url-cancel}</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">success-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://{pp-redirect-url-success}</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">fail-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://{pp-redirect-url-error}</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">notifications</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">notification</span><span class="delimiter">"</span></span>: [
+        {
+          <span class="key"><span class="delimiter">"</span><span class="content">url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">http://requestbin.fullcontact.com/uom1iruo</span><span class="delimiter">"</span></span>
+        }
+      ],
+      <span class="key"><span class="delimiter">"</span><span class="content">format</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">application/json</span><span class="delimiter">"</span></span>
+    }
+  }
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch r-details">
+<caption class="title">Response Details</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2">Headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Content-Type</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>application/json</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Status</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Code</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>201.0000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Severity</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>information</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Description</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>The resource was successfully created.</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="json">{
+  <span class="key"><span class="delimiter">"</span><span class="content">payment</span><span class="delimiter">"</span></span>: {
+    <span class="key"><span class="delimiter">"</span><span class="content">statuses</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">status</span><span class="delimiter">"</span></span>: [
+        {
+          <span class="key"><span class="delimiter">"</span><span class="content">code</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span>,
+          <span class="key"><span class="delimiter">"</span><span class="content">description</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span>,
+          <span class="key"><span class="delimiter">"</span><span class="content">severity</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span>
+        }
+      ]
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">notifications</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">notification</span><span class="delimiter">"</span></span>: [
+        {
+          <span class="key"><span class="delimiter">"</span><span class="content">url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">http://requestbin.fullcontact.com/uom1iruo</span><span class="delimiter">"</span></span>
+        }
+      ],
+      <span class="key"><span class="delimiter">"</span><span class="content">format</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">application/json</span><span class="delimiter">"</span></span>
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">merchant-account-id</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">8b99e2dc-c8d0-43b8-9ebb-0a35fa808af7</span><span class="delimiter">"</span></span>
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">transaction-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">5de8661b-959d-49ba-aca0-d884df0c6d4b</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">request-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">3e667077-81fe-4415-b8c5-e3d471d66ccd</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">transaction-type</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">debit</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">transaction-state</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">success</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">completion-time-stamp</span><span class="delimiter">"</span></span>: <span class="integer">1573460983000</span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">requested-amount</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">value</span><span class="delimiter">"</span></span>: <span class="integer">10</span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">currency</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span>
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">account-holder</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">email</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">john.doe@example.com</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">phone</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">SK00</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">address</span><span class="delimiter">"</span></span>: {
+        <span class="key"><span class="delimiter">"</span><span class="content">street1</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Test Street 123</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">city</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Test City</span><span class="delimiter">"</span></span>,
+        <span class="key"><span class="delimiter">"</span><span class="content">country</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">SK</span><span class="delimiter">"</span></span>
+      },
+      <span class="key"><span class="delimiter">"</span><span class="content">first-name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">John</span><span class="delimiter">"</span></span>,
+      <span class="key"><span class="delimiter">"</span><span class="content">last-name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Doe</span><span class="delimiter">"</span></span>
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">order-detail</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Test Order</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">payment-methods</span><span class="delimiter">"</span></span>: {
+      <span class="key"><span class="delimiter">"</span><span class="content">payment-method</span><span class="delimiter">"</span></span>: [
+        {
+          <span class="key"><span class="delimiter">"</span><span class="content">url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://buy.boku.com/checkoutidentify/5v6oz1myvszdhcwp5jxz5plz/buy.js</span><span class="delimiter">"</span></span>,
+          <span class="key"><span class="delimiter">"</span><span class="content">name</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">carrier-billing</span><span class="delimiter">"</span></span>
+        }
+      ]
+    },
+    <span class="key"><span class="delimiter">"</span><span class="content">consumer-id</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">Test Consumer</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">cancel-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://{pp-redirect-url-cancel}</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">fail-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://{pp-redirect-url-error}</span><span class="delimiter">"</span></span>,
+    <span class="key"><span class="delimiter">"</span><span class="content">success-redirect-url</span><span class="delimiter">"</span></span>: <span class="string"><span class="delimiter">"</span><span class="content">https://{pp-redirect-url-success}</span><span class="delimiter">"</span></span>
+  }
+}</code></pre>
+</div>
+</div>
+<h7 id="CarrierBilling_Debit_Samples_NVP" class="discrete tab-content tab-nvp">NVP</h7>
+<table class="tableblock frame-all grid-all stretch r-details">
+<caption class="title">Request Details</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2">API Endpoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Method</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">POST</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>URI</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://api-test.wirecard.com/engine/rest/paymentmethods/</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Headers</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Content-Type</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>application/x-www-form-urlencoded;charset=UTF-8</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Accept</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>text/plain</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="nvp">merchant_account_id=8b99e2dc-c8d0-43b8-9ebb-0a35fa808af7&amp;requested_amount_currency=EUR&amp;requested_amount=10&amp;request_id={{$guid}}&amp;transaction_type=debit&amp;payment_method=carrier-billing&amp;email=john.doe%40example.com&amp;first_name=John&amp;last_name=Doe&amp;phone=SK00&amp;street1=Test%20Street%20123&amp;city=Test%20City&amp;country=SK&amp;consumer_id=Test%20Consumer&amp;order_detail=Test%20Order&amp;cancel_redirect_url=https%3A%2F%2Fdemoshop-test.wirecard.com%2Fdemoshop%2F%23%2Fcancel&amp;success_redirect_url=https%3A%2F%2Fdemoshop-test.wirecard.com%2Fdemoshop%2F%23%2Fsuccess&amp;fail_redirect_url=https%3A%2F%2Fdemoshop-test.wirecard.com%2Fdemoshop%2F%23%2Ferror&amp;notification_url=http%3A%2F%2Frequestbin.fullcontact.com%2Fuom1iruo</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">merchant_account_id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8b99e2dc-c8d0-43b8-9ebb-0a35fa808af7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">requested_amount_currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EUR</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">requested_amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">request_id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{{$guid}}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">transaction_type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">debit</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">payment_method</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">carrier-billing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">john.doe@example.com</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">first_name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">John</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">last_name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Doe</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">phone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SK00</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">street1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test Street 123</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">city</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test City</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">country</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SK</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer_id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test Consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">order_detail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test Order</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cancel_redirect_url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://{pp-redirect-url-cancel}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">success_redirect_url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://{pp-redirect-url-success}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fail_redirect_url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://{pp-redirect-url-error}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">notification_url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">http://requestbin.fullcontact.com/uom1iruo</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch r-details">
+<caption class="title">Response Details</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2">Headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Content-Type</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>application/x-www-form-urlencoded;charset=UTF-8</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Status</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Code</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>201.0000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Severity</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>information</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Description</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>The resource was successfully created.</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="nvp">country=SK&amp;notification_url_1=http%3A%2F%2Frequestbin.fullcontact.com%2Fuom1iruo&amp;city=Test+City&amp;order_detail=Test+Order&amp;payment_method_url=https%3A%2F%2Fbuy.boku.com%2Fcheckoutidentify%2F5v6pqf4a91di5r7jb8luiv8z%2Fbuy.js&amp;requested_amount=10&amp;completion_time_stamp=20191111083029&amp;consumer_id=Test+Consumer&amp;merchant_account_id=8b99e2dc-c8d0-43b8-9ebb-0a35fa808af7&amp;fail_redirect_url=https%3A%2F%2Fdemoshop-test.wirecard.com%2Fdemoshop%2F%23%2Ferror&amp;street1=Test+Street+123&amp;first_name=John&amp;email=john.doe%40example.com&amp;payment_method=carrier-billing&amp;transaction_id=38aaca3d-3951-4dd5-9345-449f97762fc5&amp;status_severity_1=information&amp;last_name=Doe&amp;transaction_type=debit&amp;status_code_1=201.0000&amp;status_description_1=The+resource+was+successfully+created.&amp;phone=SK00&amp;cancel_redirect_url=https%3A%2F%2Fdemoshop-test.wirecard.com%2Fdemoshop%2F%23%2Fcancel&amp;success_redirect_url=https%3A%2F%2Fdemoshop-test.wirecard.com%2Fdemoshop%2F%23%2Fsuccess&amp;transaction_state=success&amp;requested_amount_currency=EUR&amp;request_id=de6406bf-e901-4ac8-80c5-7e56f82e05a2&amp;</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">country</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SK</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">notification_url_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">http://requestbin.fullcontact.com/uom1iruo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">city</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test City</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">order_detail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test Order</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">payment_method_url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://buy.boku.com/checkoutidentify/5v6pqf4a91di5r7jb8luiv8z/buy.js</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">requested_amount</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">completion_time_stamp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20191111083029</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">consumer_id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test Consumer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">merchant_account_id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8b99e2dc-c8d0-43b8-9ebb-0a35fa808af7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fail_redirect_url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://{pp-redirect-url-error}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">street1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test Street 123</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">first_name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">John</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">email</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">john.doe@example.com</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">payment_method</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">carrier-billing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">transaction_id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">38aaca3d-3951-4dd5-9345-449f97762fc5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status_severity_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">information</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">last_name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Doe</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">transaction_type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">debit</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status_code_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">201.0000</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status_description_1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The resource was successfully created.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">phone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SK00</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cancel_redirect_url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://{pp-redirect-url-cancel}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">success_redirect_url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://{pp-redirect-url-success}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">transaction_state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">success</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">requested_amount_currency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EUR</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">request_id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">de6406bf-e901-4ac8-80c5-7e56f82e05a2</p></td>
+</tr>
+</tbody>
+</table>
+<h7 id="CarrierBilling_Debit_Samples_XML" class="discrete tab-content tab-xml">XML</h7>
+<table class="tableblock frame-all grid-all stretch r-details">
+<caption class="title">Request Details</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2">API Endpoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Method</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">POST</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>URI</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>https://api-test.wirecard.com/engine/rest/paymentmethods/</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Headers</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Content-Type</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>application/xml</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Accept</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>application/xml</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;merchant-account-id&gt;</span>8b99e2dc-c8d0-43b8-9ebb-0a35fa808af7<span class="tag">&lt;/merchant-account-id&gt;</span>
+    <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10<span class="tag">&lt;/requested-amount&gt;</span>
+    <span class="tag">&lt;request-id&gt;</span>{{$guid}}<span class="tag">&lt;/request-id&gt;</span>
+    <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+    <span class="tag">&lt;payment-methods&gt;</span>
+        <span class="tag">&lt;payment-method</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">carrier-billing</span><span class="delimiter">"</span></span> <span class="tag">/&gt;</span>
+    <span class="tag">&lt;/payment-methods&gt;</span>
+    <span class="tag">&lt;account-holder&gt;</span>
+        <span class="comment">&lt;!-- either set mandatoty element: payment/wallet/account-id or payment/account-holder/email --&gt;</span>
+        <span class="tag">&lt;email&gt;</span>john.doe@example.com<span class="tag">&lt;/email&gt;</span>
+        <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+        <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+        <span class="tag">&lt;phone&gt;</span>SK00<span class="tag">&lt;/phone&gt;</span>
+        <span class="tag">&lt;address&gt;</span>
+            <span class="tag">&lt;street1&gt;</span>Test Street 123<span class="tag">&lt;/street1&gt;</span>
+            <span class="tag">&lt;city&gt;</span>Test City<span class="tag">&lt;/city&gt;</span>
+            <span class="tag">&lt;country&gt;</span>SK<span class="tag">&lt;/country&gt;</span>
+        <span class="tag">&lt;/address&gt;</span>
+    <span class="tag">&lt;/account-holder&gt;</span>
+    <span class="tag">&lt;consumer-id&gt;</span>Test Consumer<span class="tag">&lt;/consumer-id&gt;</span>
+    <span class="tag">&lt;order-detail&gt;</span>Test Order<span class="tag">&lt;/order-detail&gt;</span>
+    <span class="tag">&lt;cancel-redirect-url&gt;</span>https://{pp-redirect-url-cancel}<span class="tag">&lt;/cancel-redirect-url&gt;</span>
+    <span class="tag">&lt;success-redirect-url&gt;</span>https://{pp-redirect-url-success}<span class="tag">&lt;/success-redirect-url&gt;</span>
+    <span class="tag">&lt;fail-redirect-url&gt;</span>https://{pp-redirect-url-error}<span class="tag">&lt;/fail-redirect-url&gt;</span>
+    <span class="tag">&lt;notifications&gt;</span>
+            <span class="tag">&lt;notification</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://requestbin.fullcontact.com/uom1iruo</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+    <span class="tag">&lt;/notifications&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch r-details">
+<caption class="title">Response Details</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2">Headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Content-Type</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>application/xml</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Status</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Code</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>201.0000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Severity</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>information</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Description</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>The resource was successfully created.</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="tag">&lt;payment</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.elastic-payments.com/schema/payment</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;merchant-account-id&gt;</span>8b99e2dc-c8d0-43b8-9ebb-0a35fa808af7<span class="tag">&lt;/merchant-account-id&gt;</span>
+  <span class="tag">&lt;transaction-id&gt;</span>af048f9c-a808-402f-bb42-53cb9fa9977f<span class="tag">&lt;/transaction-id&gt;</span>
+  <span class="tag">&lt;request-id&gt;</span>eb0740d7-c329-4301-9ac3-cde4b16b62f0<span class="tag">&lt;/request-id&gt;</span>
+  <span class="tag">&lt;transaction-type&gt;</span>debit<span class="tag">&lt;/transaction-type&gt;</span>
+  <span class="tag">&lt;transaction-state&gt;</span>success<span class="tag">&lt;/transaction-state&gt;</span>
+  <span class="tag">&lt;completion-time-stamp&gt;</span>2019-11-11T08:31:15.000Z<span class="tag">&lt;/completion-time-stamp&gt;</span>
+  <span class="tag">&lt;statuses&gt;</span>
+    <span class="tag">&lt;status</span> <span class="attribute-name">code</span>=<span class="string"><span class="delimiter">"</span><span class="content">201.0000</span><span class="delimiter">"</span></span> <span class="attribute-name">description</span>=<span class="string"><span class="delimiter">"</span><span class="content">The resource was successfully created.</span><span class="delimiter">"</span></span> <span class="attribute-name">severity</span>=<span class="string"><span class="delimiter">"</span><span class="content">information</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+  <span class="tag">&lt;/statuses&gt;</span>
+  <span class="tag">&lt;requested-amount</span> <span class="attribute-name">currency</span>=<span class="string"><span class="delimiter">"</span><span class="content">EUR</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10<span class="tag">&lt;/requested-amount&gt;</span>
+  <span class="tag">&lt;account-holder&gt;</span>
+    <span class="tag">&lt;first-name&gt;</span>John<span class="tag">&lt;/first-name&gt;</span>
+    <span class="tag">&lt;last-name&gt;</span>Doe<span class="tag">&lt;/last-name&gt;</span>
+    <span class="tag">&lt;email&gt;</span>john.doe@example.com<span class="tag">&lt;/email&gt;</span>
+    <span class="tag">&lt;phone&gt;</span>SK00<span class="tag">&lt;/phone&gt;</span>
+    <span class="tag">&lt;address&gt;</span>
+      <span class="tag">&lt;street1&gt;</span>Test Street 123<span class="tag">&lt;/street1&gt;</span>
+      <span class="tag">&lt;city&gt;</span>Test City<span class="tag">&lt;/city&gt;</span>
+      <span class="tag">&lt;country&gt;</span>SK<span class="tag">&lt;/country&gt;</span>
+    <span class="tag">&lt;/address&gt;</span>
+  <span class="tag">&lt;/account-holder&gt;</span>
+  <span class="tag">&lt;order-detail&gt;</span>Test Order<span class="tag">&lt;/order-detail&gt;</span>
+  <span class="tag">&lt;notifications&gt;</span>
+    <span class="tag">&lt;notification</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://requestbin.fullcontact.com/uom1iruo</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/notification&gt;</span>
+  <span class="tag">&lt;/notifications&gt;</span>
+  <span class="tag">&lt;payment-methods&gt;</span>
+    <span class="tag">&lt;payment-method</span> <span class="attribute-name">url</span>=<span class="string"><span class="delimiter">"</span><span class="content">https://buy.boku.com/checkoutidentify/5v6pqbfttmh2y8xt8xzf5k4b/buy.js</span><span class="delimiter">"</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">"</span><span class="content">carrier-billing</span><span class="delimiter">"</span></span><span class="tag">/&gt;</span>
+  <span class="tag">&lt;/payment-methods&gt;</span>
+  <span class="tag">&lt;consumer-id&gt;</span>Test Consumer<span class="tag">&lt;/consumer-id&gt;</span>
+  <span class="tag">&lt;cancel-redirect-url&gt;</span>https://{pp-redirect-url-cancel}<span class="tag">&lt;/cancel-redirect-url&gt;</span>
+  <span class="tag">&lt;fail-redirect-url&gt;</span>https://{pp-redirect-url-error}<span class="tag">&lt;/fail-redirect-url&gt;</span>
+  <span class="tag">&lt;success-redirect-url&gt;</span>https://{pp-redirect-url-success}<span class="tag">&lt;/success-redirect-url&gt;</span>
+<span class="tag">&lt;/payment&gt;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Notification (Successful)</div>
+<div class="content">
+<pre class="CodeRay highlight"><code>response_signature=2a715f3ac100ad38906d48c84717840c40f6a0990390c8be0273cb23104d7960&amp;phone=SK00&amp;transaction_type=debit&amp;locale=&amp;completion_time_stamp=20150709141336&amp;status_code_1=201.0000&amp;status_severity_1=information&amp;transaction_state=success&amp;transaction_id=ec87fe6b-2633-11e5-94a1-0050b65c678c&amp;country=SK&amp;merchant_account_id=d97a261d-dbee-4993-b323-2349d51b768b&amp;ip_address=127.0.0.1&amp;provider_transaction_reference_id=&amp;request_id=5ebb92fc-b72d-478c-98ec-7aca869b1e4c&amp;requested_amount=15.00&amp;requested_amount_currency=EUR&amp;status_description_1=boku%3AThe+resource+was+successfully+created.&amp;provider_transaction_id_1=&amp;authorization_code=&amp;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph nav-footer">
+<p></p>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-03-23 16:48:32 UTC
+</div>
+</div>
+
+<script src="js/navigation.js"></script>
+<script src="js/pageswitch.js"></script>
+<script>
+ enableRequestDetailsHideShow();
+ createSampleTabs();
+</script>
+</body>
+</html>
