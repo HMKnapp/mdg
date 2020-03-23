@@ -13,21 +13,27 @@ const options = {
 const swup = new Swup(options);
 
 swup.on('samePageWithHash', function (e) {
+  console.log('_SWUUP: samePageWithHash')
   /* to avoid tiggering scroll after jumping to anchor which opens the menu list again */
   const id = e.target.hash.substr(1);
   scrollToHash(id);
 });
 
-swup.on('contentReplaced', function (e) {
+swup.on('clickLink', function (e) {
+  console.log('_SWUUP: clickLink')
   reinitializeAfterPageSwitch();
   /* for deep links to anchors inside other pages */
-  const id = window.location.hash.substr(1);
+  const id = e.target.hash.substr(1);
   if (id) {
     scrollToHash(id);
   }
+  setTimeout(refreshTitle, 500);
 });
 
+swup.on('contentReplaced', refreshTitle);
+
 function scrollToHash(id) {
+  console.log('scrollToHash 222 id: ' + id)
   document.scrollspy.disabled = true;
   const element = document.getElementById(id);
   if (element) {
@@ -37,12 +43,30 @@ function scrollToHash(id) {
       document.scrollspy.disabled = false;
     }, 1000);
   }
+  else {
+    document.scrollspy.disabled = false;
+  }
 }
 
 function reinitializeAfterPageSwitch() {
-  enableToc();
+  console.log('reinitializeAfterPageSwitch')
   enableRequestDetailsHideShow();
   createSampleTabs();
   initializeScrollspy();
   window.scrollTo(0, 0);
+}
+
+function refreshTitle() {
+  console.log('refreshTitle');
+  //const id = window.location.pathname.slice(1,-5);
+  //const element = document.getElementById(id);
+  var pageTitle;
+  //const titleMain = Array.from(element.children).filter(e => e.matches('a.link'))[0].innerHTML
+  const idMain = document.querySelector('div.sect2 > h3 > a.link')
+  if(idMain) pageTitle = idMain.innerText;
+
+  const idSecondary = document.querySelector('div.sect3 > h4 > a.link')
+  if(window.location.hash && idSecondary) pageTitle += ' - ' + idSecondary.innerText;
+
+  if(pageTitle) document.title = pageTitle;
 }
