@@ -2,7 +2,10 @@
  * BASIC TOC FUNCTIONALITY
  */
 
-document.addEventListener('DOMContentLoaded', enableToc);
+document.addEventListener('DOMContentLoaded', () => {
+  enableToc();
+  initPageLinks();
+});
 
 function enableToc() {
   console.log('enableToc');
@@ -10,7 +13,7 @@ function enableToc() {
   const pageID = document.querySelector('body').getAttribute('id');
 
   /* TODO: doesn#t work. minor issue but check why */
-  document.querySelector('#toc_cb_' + pageID).scrollIntoView({behavior: "smooth"});
+  document.querySelector('#toc_cb_' + pageID).scrollIntoView({ behavior: "smooth" });
 
   /* if page is openen with a deep link (hash), check the correct box (if it exists) */
   var hash = window.location.hash.substring(1);
@@ -31,6 +34,8 @@ function enableToc() {
 }
 
 function tickBox(anchorElement) {
+  console.log('tickBox')
+  console.log(anchorElement)
   var parent = anchorElement.parentNode;
   var checkbox = parent.previousElementSibling;
   if (checkbox.disabled) {
@@ -78,7 +83,33 @@ function initBoxes(anchorElement) {
   }
 }
 
+/* all links in div#content need a click event that triggers ticing of correct boxes after switch
+  often only the page.html is available in the TOC, not the deep link anchor
+  1. check if whole page.html#anchor is available in TOC. if yes, click it
+     if no, take page from page.html, click TOC and scroll to #anchor
 
+  TODO: make it better, knock yourself out
+*/
+function initPageLinks() {
+  console.log('initPageLinks');
+  document.querySelectorAll('div#content a').forEach(a => {
+    if (a.hasAttribute('class')) return;
+    if (a.href.startsWith(window.location.origin) === false) return;
+
+    a.addEventListener('click', function (e) {
+      console.log('click triggered')
+      const id = a.href.split('.html#') ? a.href.split('.html#')[1] : a.href.splice(0, -5);
+      console.log(id)
+      var toc_anchor = document.querySelector('#toc_li_' + id + ' a');
+      console.log(toc_anchor);
+      if (toc_anchor) {
+        initBoxes(toc_anchor);
+        console.log(a.hash);
+        scrollToHash(id);
+      }
+    })
+  });
+}
 
 /**
  * SCROLLSPY FOR TOC
@@ -119,7 +150,7 @@ function initializeScrollspy() {
 }
 
 function handleScrollEvent() {
-  if(document.scrollspy.disabled) {
+  if (document.scrollspy.disabled) {
     return true;
   }
   document.headingsElementsArray.forEach(element => {
@@ -127,7 +158,7 @@ function handleScrollEvent() {
     const ebottomY = etopY + element.parentElement.offsetHeight;
     if (window.scrollY >= etopY && window.scrollY <= ebottomY) {
       const anchorElement = document.querySelectorAll('#toc_cb_' + element.id + ' + label > a')[0];
-      if (anchorElement !== null) {
+      if (anchorElement) {
         initBoxes(anchorElement);
       }
     }
