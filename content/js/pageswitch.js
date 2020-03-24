@@ -34,7 +34,7 @@ swup.on('contentReplaced', () => {
   refreshTitle();
   const id = window.location.hash.substr(1);
   console.log('scroll in contentReplaced to id: ' + id)
-  const pageID = window.location.pathname.replace(/.*\//,'');
+  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//,'');
   const anchorElement = document.querySelectorAll('#toc_cb_' + pageID + ' + label > a')[0];
   if (anchorElement) {
     initBoxes(anchorElement);
