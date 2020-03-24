@@ -30,7 +30,25 @@ swup.on('clickLink', function (e) {
   setTimeout(refreshTitle, 500);
 });
 
-swup.on('contentReplaced', refreshTitle);
+swup.on('contentReplaced', () => {
+  refreshTitle();
+  const id = window.location.hash.substr(1);
+  console.log('scroll in contentReplaced to id: ' + id)
+  const pageID = window.location.pathname.slice(1, -5);
+  const anchorElement = document.querySelectorAll('#toc_cb_' + pageID + ' + label > a')[0];
+  if (anchorElement) {
+    initBoxes(anchorElement);
+  }
+  if (id) {
+    scrollToHash(id);
+  }
+  initPageLinks();
+  initializeScrollspy();
+});
+
+// swup.on('popState'), () => {
+//   console.log('popState triggered')
+// };
 
 function scrollToHash(id) {
   console.log('scrollToHash 222 id: ' + id)
