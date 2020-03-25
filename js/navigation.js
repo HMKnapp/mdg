@@ -41,7 +41,8 @@ function tickBox(anchorElement) {
   if (checkbox.disabled) {
     //return true;
   }
-  var setTo = !checkbox.checked;
+  //var setTo = !checkbox.checked;
+  var setTo = true;
   /* uncheck same level end below checkboxes */
   var sameLevelCheckboxes = parent.parentNode.parentNode.querySelectorAll(':scope > li input[type=checkbox]');
   for (var cb of sameLevelCheckboxes.entries()) {
@@ -92,6 +93,8 @@ function initBoxes(anchorElement) {
 */
 function initPageLinks() {
   console.log('initPageLinks');
+  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//,'');
+  const pageRootElementAnchor = document.querySelector('#toc_cb_' + pageID + ' + label > a');
   document.querySelectorAll('div#content a').forEach(a => {
     if (a.hasAttribute('class')) return;
     if (a.href.startsWith(window.location.origin) === false) return;
@@ -104,9 +107,11 @@ function initPageLinks() {
       console.log(toc_anchor);
       if (toc_anchor) {
         initBoxes(toc_anchor);
-        console.log(a.hash);
-        scrollToHash(id);
       }
+      else {
+        initBoxes(pageRootElementAnchor);
+      }
+      scrollToHash(id);
     })
   });
 }
