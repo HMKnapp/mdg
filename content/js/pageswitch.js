@@ -15,6 +15,7 @@ const swup = new Swup(options);
 swup.on('samePage', function (e) {
   console.log('_SWUUP: samePage')
   window.scrollTo(0,0);
+  removeHash();
 });
 
 swup.on('samePageWithHash', function (e) {
@@ -78,7 +79,6 @@ function reinitializeAfterPageSwitch() {
   if(id) {
     initBoxes(idElement);
   }
-
   enableRequestDetailsHideShow();
   createSampleTabs();
   initializeScrollspy();
