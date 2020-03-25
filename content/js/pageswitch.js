@@ -75,7 +75,7 @@ function reinitializeAfterPageSwitch() {
   var pageAnchorElement = document.querySelector('#toc_cb_' + pageID + ' + label > a')
   console.log('contentReplaced. new page: ' + pageID)
   initBoxes(pageAnchorElement);
-  tickBox(pageAnchorElement);
+  //tickBox(pageAnchorElement);
   if(id) {
     initBoxes(idElement);
   }
