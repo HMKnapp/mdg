@@ -12,6 +12,11 @@ const options = {
 };
 const swup = new Swup(options);
 
+swup.on('samePage', function (e) {
+  console.log('_SWUUP: samePage')
+  window.scrollTo(0,0);
+});
+
 swup.on('samePageWithHash', function (e) {
   console.log('_SWUUP: samePageWithHash')
   /* to avoid tiggering scroll after jumping to anchor which opens the menu list again */
@@ -53,6 +58,11 @@ function scrollToHash(id) {
   else {
     document.scrollspy.disabled = false;
   }
+}
+
+/* remove swup from mailto and tel links, because not possible with selector */
+function removePageswitch() {
+
 }
 
 function reinitializeAfterPageSwitch() {
