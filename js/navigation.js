@@ -41,8 +41,8 @@ function tickBox(anchorElement) {
   if (checkbox.disabled) {
     //return true;
   }
-  //var setTo = !checkbox.checked;
-  var setTo = true;
+  var setTo = !checkbox.checked;
+  //var setTo = true;
   /* uncheck same level end below checkboxes */
   var sameLevelCheckboxes = parent.parentNode.parentNode.querySelectorAll(':scope > li input[type=checkbox]');
   for (var cb of sameLevelCheckboxes.entries()) {
