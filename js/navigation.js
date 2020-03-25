@@ -158,6 +158,9 @@ function handleScrollEvent() {
   if (document.scrollspy.disabled) {
     return true;
   }
+  if(window.scrollY === 0) {
+    removeHash();
+  }
   document.headingsElementsArray.forEach(element => {
     const etopY = element.offsetTop - 50;
     const ebottomY = etopY + element.parentElement.offsetHeight;
@@ -193,4 +196,21 @@ function getParents(element, filter = '*', stop = false) {
   }
   parents.pop();
   return parents.reverse();
+}
+
+function removeHash() {
+  var scrollV, scrollH, loc = window.location;
+  if ("pushState" in history)
+      history.pushState("", document.title, loc.pathname + loc.search);
+  else {
+      // Prevent scrolling by storing the page's current scroll offset
+      scrollV = document.body.scrollTop;
+      scrollH = document.body.scrollLeft;
+
+      loc.hash = "";
+
+      // Restore the scroll offset, should be flicker free
+      document.body.scrollTop = scrollV;
+      document.body.scrollLeft = scrollH;
+  }
 }
