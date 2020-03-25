@@ -21,29 +21,18 @@ swup.on('samePageWithHash', function (e) {
 
 swup.on('clickLink', function (e) {
   console.log('_SWUUP: clickLink')
-  reinitializeAfterPageSwitch();
   /* for deep links to anchors inside other pages */
   const id = e.target.hash.substr(1);
   if (id) {
-    scrollToHash(id);
+    setTimeout(()=>{
+      scrollToHash(id)
+    }, 250);
   }
-  setTimeout(refreshTitle, 500);
+  setTimeout(refreshTitle, 250);
 });
 
 swup.on('contentReplaced', () => {
-  refreshTitle();
-  const id = window.location.hash.substr(1);
-  console.log('scroll in contentReplaced to id: ' + id)
-  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//,'');
-  const anchorElement = document.querySelectorAll('#toc_cb_' + pageID + ' + label > a')[0];
-  if (anchorElement) {
-    initBoxes(anchorElement);
-  }
-  if (id) {
-    scrollToHash(id);
-  }
-  initPageLinks();
-  initializeScrollspy();
+  reinitializeAfterPageSwitch();
 });
 
 // swup.on('popState'), () => {
@@ -68,10 +57,25 @@ function scrollToHash(id) {
 
 function reinitializeAfterPageSwitch() {
   console.log('reinitializeAfterPageSwitch')
+
+  const id = window.location.hash.substr(1);
+  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//,'');
+  const idElement = document.querySelector('#toc_cb_' + id + ' + label > a');
+  var pageAnchorElement = document.querySelector('#toc_cb_' + pageID + ' + label > a')
+  console.log('contentReplaced. new page: ' + pageID)
+  initBoxes(pageAnchorElement);
+  tickBox(pageAnchorElement);
+  if(id) {
+    initBoxes(idElement);
+  }
+
   enableRequestDetailsHideShow();
   createSampleTabs();
   initializeScrollspy();
+  initPageLinks();
+  refreshTitle();
   window.scrollTo(0, 0);
+
 }
 
 function refreshTitle() {
