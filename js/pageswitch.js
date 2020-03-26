@@ -1,3 +1,6 @@
+/**
+ * swup defaults except for linkSelector and containers
+ */
 const options = {
   containers: ["#content"],
   cache: true,
@@ -12,19 +15,28 @@ const options = {
 };
 const swup = new Swup(options);
 
+/**
+ * Remove Hash if we "page switch" to the same page but have no hash
+ * Reset scroll position
+ */
 swup.on('samePage', function (e) {
   console.log('_SWUUP: samePage')
   window.scrollTo(0,0);
   removeHash();
 });
 
+/**
+ * Scroll to targeted anchor when staying on same page during page switch
+ */
 swup.on('samePageWithHash', function (e) {
   console.log('_SWUUP: samePageWithHash')
-  /* to avoid tiggering scroll after jumping to anchor which opens the menu list again */
   const id = e.target.hash.substr(1);
   scrollToHash(id);
 });
 
+/**
+ * Scroll to target of link and change window title after page switches
+ */
 swup.on('clickLink', function (e) {
   console.log('_SWUUP: clickLink')
   /* for deep links to anchors inside other pages */
@@ -45,8 +57,12 @@ swup.on('contentReplaced', () => {
 //   console.log('popState triggered')
 // };
 
+/**
+ * Scrolls to hash==id of anchor without engaging scrollspy
+ * @param {string} id id of element to scroll to 
+ */
 function scrollToHash(id) {
-  console.log('scrollToHash 222 id: ' + id)
+  console.log('scrollToHash id: ' + id)
   document.scrollspy.disabled = true;
   const element = document.getElementById(id);
   if (element) {
@@ -61,11 +77,17 @@ function scrollToHash(id) {
   }
 }
 
-/* remove swup from mailto and tel links, because not possible with selector */
+/**
+ * Stub that will remove faulty behaviour for non http links
+ */
 function removePageswitch() {
 
 }
 
+/**
+ * Reinitializes all frontend functionality that is required in div#content
+ * after content replacement by a page switch
+ */
 function reinitializeAfterPageSwitch() {
   console.log('reinitializeAfterPageSwitch')
 
@@ -74,8 +96,8 @@ function reinitializeAfterPageSwitch() {
   const idElement = document.querySelector('#toc_cb_' + id + ' + label > a');
   var pageAnchorElement = document.querySelector('#toc_cb_' + pageID + ' + label > a')
   console.log('contentReplaced. new page: ' + pageID)
+  toggleBox(pageAnchorElement);
   initBoxes(pageAnchorElement);
-  //tickBox(pageAnchorElement);
   if(id) {
     initBoxes(idElement);
   }
@@ -85,15 +107,16 @@ function reinitializeAfterPageSwitch() {
   initPageLinks();
   refreshTitle();
   window.scrollTo(0, 0);
-
 }
 
+/**
+ * Sets the window title according to page headlines found in the page
+ * Format: Page - Section
+ * Mainly for SEO purposes
+ */
 function refreshTitle() {
   console.log('refreshTitle');
-  //const id = window.location.pathname.slice(1,-5);
-  //const element = document.getElementById(id);
   var pageTitle;
-  //const titleMain = Array.from(element.children).filter(e => e.matches('a.link'))[0].innerHTML
   const idMain = document.querySelector('div.sect2 > h3 > a.link')
   if(idMain) pageTitle = idMain.innerText;
 

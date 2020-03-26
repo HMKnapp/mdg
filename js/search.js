@@ -40,23 +40,25 @@ function hoverResult(event) {
 }
 
 $(document).ready(function() {
+    // open/close overlay depending on where the user clicks
     $('#search').click(openOverlay);
-
     $('#search-overlay button.close').click(closeOverlay);
 
 
     $(window).keyup(function(event) {
         var keyCode = event.keyCode || event.which;
         switch (keyCode) {
-        case 38:
-        case 40:
+        case 38: // arrow up
+        case 40: // arrow down
             event.preventDefault();
             if (event.stopPropagation) event.stopPropagation();
             return false;
         }
     });
 
+    // TODO fix scrolling when navigating with arrow keys and overflow: scroll
     $(window).keyup(function(event) {
+        // return if overlay is not open, i.e. do nothing
         if (!overlayOpen)
             return;
 
@@ -131,6 +133,7 @@ function search(term) {
     return idx.search(term);
 }
 
+// show the search results in the list ul#serach-results
 function render(results) {
     var resultsList = $('ul#search-results');
     resultsList.empty();
@@ -150,6 +153,7 @@ function render(results) {
 
 }
 
+// format and style each entry
 function formatEntry(entry, count) {
     var dbentry = db[entry.ref];
     var div = $('<div/>');
@@ -157,8 +161,6 @@ function formatEntry(entry, count) {
 
     link.append($('<h3>').text(dbentry.title));
     link.append($('<p/>').text(dbentry.body));
-    // if(dbentry.label !== null && dbentry.label !== '')
-    //     link.append($('<span/>', {class: 'label'}).text(dbentry.label));
     if (dbentry.parents !== null && dbentry.parents.length > 0)
         link.append($('<span/>', {class: 'label'}).text(dbentry.parents.join(' / ')));
     div.append(link);
