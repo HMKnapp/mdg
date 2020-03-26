@@ -5,7 +5,7 @@ const options = {
   containers: ["#content"],
   cache: true,
   linkSelector:
-    'a:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])',
+    'a:not([data-no-swup]):not([href^="tel:"]):not([href^="mailto:"]):not([href*="://"]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])',
   skipPopStateHandling: function (event) {
     if (event.state && event.state.source == "swup") {
       return false;
