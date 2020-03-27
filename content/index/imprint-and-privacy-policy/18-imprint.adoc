@@ -40,8 +40,8 @@ include::{root}/include/privacy-policy.adoc[]
 
 Copyright © {localyear} Wirecard AG All rights reserved.
 
-[.builddate]
-.Last Update
+[#builddate]
+.Last update
 {systemtimestamp}
 
 //-
