@@ -158,7 +158,7 @@ function render(results) {
 function formatEntry(entry, count) {
     var dbentry = db[entry.ref];
     var div = $('<div/>');
-    var link = $('<a/>').attr('href', dbentry.file + '#' + entry.ref);
+    var link = $('<a/>').attr('href', dbentry.file + '#' + entry.ref).attr('onclick', 'closeOverlay()');
 
     link.append($('<h3>').text(dbentry.title));
     link.append($('<p/>').text(dbentry.body));
