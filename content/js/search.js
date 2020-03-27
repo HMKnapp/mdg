@@ -115,7 +115,7 @@ var db;
 function loadLunrIndex() {
     if (searchIndexLoaded)
         return true;
-
+    try {
     $.getJSON('lunrindex.json', function (data) {
         idx = lunr.Index.load(data);
         searchIndexLoaded = true;
@@ -123,6 +123,9 @@ function loadLunrIndex() {
     $.getJSON('lunrdb.json', function(data) {
         db = data;
     });
+    } catch(e) {
+        console.log(e);
+    }
     return true;
 }
 
@@ -147,10 +150,8 @@ function render(results) {
         count++;
     });
 
-    $('ul#search-results > li')
-        .hover(hoverResult)
-        .click(closeOverlay);
-
+    $('ul#search-results > li').hover(hoverResult);
+    initSearchResultsLinks();
 }
 
 // format and style each entry
