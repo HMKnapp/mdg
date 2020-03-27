@@ -143,3 +143,9 @@ Any questions? Need help? Just want to get in touch?
 <<ContactUs, Contact Us>>
 |===
 --
+
+[.builddate]
+.Last Update
+{systemtimestamp}
+
+//-
