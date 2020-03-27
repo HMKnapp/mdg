@@ -1225,14 +1225,14 @@ a:hover { color: #ff7373; }
 ul, ol, dl { font-size: 1em; line-height: 1.6; margin-bottom: 1.25em; list-style-position: outside; font-family: inherit; }
 
 /* line 125, ../../style/sass/main.scss */
-table.tableblock tbody td.tableblock div.paragraph p { font-size: 1em !important; }
-
-/* line 131, ../../style/sass/main.scss */
-body#Home > #footer { display: block; }
+td.tableblock div.content div.paragraph p { font-size: 1em !important; }
 
 /* line 132, ../../style/sass/main.scss */
+body#Home > #footer { display: block; }
+
+/* line 133, ../../style/sass/main.scss */
 #footer { display: none; /* hide by default, show only on home page */ background-color: rgba(0, 0, 0, 0.05); }
-/* line 135, ../../style/sass/main.scss */
+/* line 136, ../../style/sass/main.scss */
 #footer #footer-text { color: #a2aaad; text-align: right; }
 
 /* line 4, ../../style/sass/elements/_default.scss */
