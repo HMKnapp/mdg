@@ -44,7 +44,6 @@ $(document).ready(function() {
     $('#search').click(openOverlay);
     $('#search-overlay button.close').click(closeOverlay);
 
-
     $(window).keyup(function(event) {
         var keyCode = event.keyCode || event.which;
         switch (keyCode) {
@@ -149,7 +148,8 @@ function render(results) {
     });
 
     $('ul#search-results > li')
-        .hover(hoverResult);
+        .hover(hoverResult)
+        .click(closeOverlay);
 
 }
 
