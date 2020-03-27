@@ -51,9 +51,6 @@ function createSampleTabs() {
 
             btn.on('click touch', function () {
                 // hide all
-                console.log("CLICK");
-                console.log($(this));
-                console.log(Tabs[language]);
                 $('.tab-wrapper').hide();
                 $(this).siblings('.btn-samples-tab.active').removeClass('active');
                 $(this).addClass('active');
