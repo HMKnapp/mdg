@@ -97,17 +97,20 @@ function initBoxes(anchorElement) {
 }
 
 /**
- * Links in +selector+ need a click event that triggers.
+ * Links in div#content need a click event that triggers.
  * ticking of correct boxes after a page switch (== replacement of div#content).
  * Checks if id corresponding to URL page.html#anchor is available in TOC.
  * If yes, click it.
  * If no, take page from page.html#anchor, click TOC accordingly and scroll to #anchor
- * @param {selector} selector which a tags to equip with an eventListener
  */
-function addClickHander(selector) {
-  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//,'');
+function initPageLinks() {
+  console.log('initPageLinks');
+  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//, '');
   const pageRootElementAnchor = document.querySelector('#toc_cb_' + pageID + ' + label > a');
-  document.querySelectorAll(selector).forEach(a => {
+  document.querySelectorAll('div#content a').forEach(a => {
+    if (a.href.startsWith('http')) {
+      a.setAttribute('target', '_blank');
+    }
     if (a.hasAttribute('class')) return;
     if (a.href.startsWith(window.location.origin) === false) return;
 
@@ -127,18 +130,6 @@ function addClickHander(selector) {
     })
   });
 }
-
-function initPageLinks() {
-  console.log('initPageLinks');
-  addClickHander('div#content a');
-}
-
-function initSearchResultsLinks() {
-  console.log('initSearchResultsLinks');
-  addClickHander('div#search-results > li a');
-}
-
-
 
 
 
@@ -203,7 +194,7 @@ function handleScrollEvent() {
   if (document.scrollspy.disabled) {
     return true;
   }
-  if(window.scrollY === 0) {
+  if (window.scrollY === 0) {
     removeHash();
   }
   requestAnimationFrame(() => {
@@ -252,14 +243,14 @@ function getParents(element, filter = '*', stop = false) {
 function removeHash() {
   var scrollV, scrollH, loc = window.location;
   if ('pushState' in history)
-      history.pushState('', document.title, loc.pathname + loc.search);
+    history.pushState('', document.title, loc.pathname + loc.search);
   else {
-      // Prevent scrolling by storing the page's current scroll offset
-      scrollV = document.body.scrollTop;
-      scrollH = document.body.scrollLeft;
-      loc.hash = '';
-      // Restore the scroll offset, should be flicker free
-      document.body.scrollTop = scrollV;
-      document.body.scrollLeft = scrollH;
+    // Prevent scrolling by storing the page's current scroll offset
+    scrollV = document.body.scrollTop;
+    scrollH = document.body.scrollLeft;
+    loc.hash = '';
+    // Restore the scroll offset, should be flicker free
+    document.body.scrollTop = scrollV;
+    document.body.scrollLeft = scrollH;
   }
 }

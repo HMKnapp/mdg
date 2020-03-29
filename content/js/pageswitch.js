@@ -107,6 +107,7 @@ function reinitializeAfterPageSwitch() {
   initPageLinks();
   refreshTitle();
   window.scrollTo(0, 0);
+  setBuildDate();
 }
 
 /**
