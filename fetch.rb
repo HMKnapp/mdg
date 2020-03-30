@@ -3,8 +3,8 @@
 require 'fileutils'
 
 WORKSPACE = File.expand_path('~/Work/github')
-MDG_PATH = File.join(WORKSPACE, 'merchant-documentation-gateway')
-POC_PATH = File.join(WORKSPACE, 'proof-of-concept')
+MDG_PATH = File.join(WORKSPACE, 'wirecard', 'merchant-documentation-gateway')
+POC_PATH = File.join(WORKSPACE, 'wirecard', 'docs-template')
 
 Dir.mkdir('content') unless Dir.exist?('content')
 
@@ -53,4 +53,7 @@ puts "Moving content/#{POC_CONTENT_ASSETS} -> content/"
 FileUtils.cp_r(POC_CONTENT_ASSETS, 'content/')
 FileUtils.cp_r(POC_ASSETS, './')
 
-FileUtils.rm(%w[ie print screen].map { |css| File.join('content', 'css', "#{css}.css") })
+FileUtils.rm(%w[ie print screen].map do |css|
+  path = File.join('content', 'css', "#{css}.css")
+  return path if File.file? path
+end.compact)
