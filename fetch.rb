@@ -4,7 +4,7 @@ require 'fileutils'
 
 WORKSPACE = File.expand_path('~/Work/github')
 MDG_PATH = File.join(WORKSPACE, 'merchant-documentation-gateway')
-POC_PATH = File.join(WORKSPACE, 'proof-of-concept')
+POC_PATH = File.join(WORKSPACE, 'docs-template')
 
 Dir.mkdir('content') unless Dir.exist?('content')
 
