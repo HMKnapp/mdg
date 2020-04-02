@@ -31,32 +31,32 @@ function hoverResult(event) {
     // selected hovered item and unselect .selected
     unselect($('.selected'));
     select($(this));
-    $(this).attr('class').split(/\s+/).forEach(function(cls) {
-        if(cls.startsWith('entry')) {
+    $(this).attr('class').split(/\s+/).forEach(function (cls) {
+        if (cls.startsWith('entry')) {
             var spl = cls.split('-');
             selectIdx = parseInt(spl.pop());
         }
     });
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     // open/close overlay depending on where the user clicks
     $('#search').click(openOverlay);
     $('#search-overlay button.close').click(closeOverlay);
 
-    $(window).keyup(function(event) {
+    $(window).keyup(function (event) {
         var keyCode = event.keyCode || event.which;
         switch (keyCode) {
-        case 38: // arrow up
-        case 40: // arrow down
-            event.preventDefault();
-            if (event.stopPropagation) event.stopPropagation();
-            return false;
+            case 38: // arrow up
+            case 40: // arrow down
+                event.preventDefault();
+                if (event.stopPropagation) event.stopPropagation();
+                return false;
         }
     });
 
     // TODO fix scrolling when navigating with arrow keys and overflow: scroll
-    $(window).keyup(function(event) {
+    $(window).keyup(function (event) {
         // return if overlay is not open, i.e. do nothing
         if (!overlayOpen)
             return;
@@ -66,36 +66,36 @@ $(document).ready(function() {
         var next = null;
 
         switch (keyCode) {
-        case 27: // escape
-            event.preventDefault();
-            closeOverlay(event);
-            return;
-        case 13: // enter
-            event.preventDefault();
-            closeOverlay();
-            // select first element because it is packaged in another object
-            $(selected).find('> div > a')[0].click();
-            return;
-        case 38: // arrow up
-            event.preventDefault();
-            if (selectIdx > 0) {
-                selectIdx--;
-                next = selected.prev();
-            }
-            break;
-        case 40: // arrow down
-            event.preventDefault();
-            if (selectIdx < $('ul#search-results > li').length - 1) {
-                selectIdx++;
-                next = selected.next();
-            }
-            break;
-        default:
-            render(search($('#search').val()));
-            return;
+            case 27: // escape
+                event.preventDefault();
+                closeOverlay(event);
+                return;
+            case 13: // enter
+                event.preventDefault();
+                closeOverlay();
+                // select first element because it is packaged in another object
+                $(selected).find('> div > a')[0].click();
+                return;
+            case 38: // arrow up
+                event.preventDefault();
+                if (selectIdx > 0) {
+                    selectIdx--;
+                    next = selected.prev();
+                }
+                break;
+            case 40: // arrow down
+                event.preventDefault();
+                if (selectIdx < $('ul#search-results > li').length - 1) {
+                    selectIdx++;
+                    next = selected.next();
+                }
+                break;
+            default:
+                render(search($('#search').val()));
+                return;
         }
 
-        if(next !== null) {
+        if (next !== null) {
             select(next);
             unselect(selected);
         }
@@ -115,14 +115,17 @@ var db;
 function loadLunrIndex() {
     if (searchIndexLoaded)
         return true;
-
-    $.getJSON('lunrindex.json', function (data) {
-        idx = lunr.Index.load(data);
-        searchIndexLoaded = true;
-    });
-    $.getJSON('lunrdb.json', function(data) {
-        db = data;
-    });
+    try {
+        $.getJSON('lunrindex.json', function (data) {
+            idx = lunr.Index.load(data);
+            searchIndexLoaded = true;
+        });
+        $.getJSON('lunrdb.json', function (data) {
+            db = data;
+        });
+    } catch (e) {
+        console.log(e);
+    }
     return true;
 }
 
@@ -138,8 +141,8 @@ function render(results) {
     resultsList.empty();
     var count = 0;
 
-    results.forEach(function(entry) {
-        var li = $('<li/>', { class: 'search-list-entry entry-' + count})
+    results.forEach(function (entry) {
+        var li = $('<li/>', { class: 'search-list-entry entry-' + count })
             .append(formatEntry(entry, count));
         resultsList.append(li);
         if (count === 0)
@@ -147,27 +150,25 @@ function render(results) {
         count++;
     });
 
-    $('ul#search-results > li')
-        .hover(hoverResult)
-        .click(closeOverlay);
-
+    $('ul#search-results > li').hover(hoverResult);
+    initSearchResultsLinks();
 }
 
 // format and style each entry
 function formatEntry(entry, count) {
     var dbentry = db[entry.ref];
     var div = $('<div/>');
-    var link = $('<a/>').attr('href', dbentry.file + '#' + entry.ref);
+    var link = $('<a/>').attr('href', dbentry.file + '#' + entry.ref).attr('onclick', 'closeOverlay()');
 
     link.append($('<h3>').text(dbentry.title));
     link.append($('<p/>').text(dbentry.body));
     if (dbentry.parents !== null && dbentry.parents.length > 0)
-        link.append($('<span/>', {class: 'label'}).text(dbentry.parents.join(' / ')));
+        link.append($('<span/>', { class: 'label' }).text(dbentry.parents.join(' / ')));
     div.append(link);
 
     return div;
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     loadLunrIndex();
 });
