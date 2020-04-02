@@ -9,7 +9,22 @@
 document.addEventListener('DOMContentLoaded', () => {
   enableToc();
   initPageLinks();
+  trackVisit();
 });
+
+/**
+ * Wrapper for triggering your page tracking.
+ * @param  {...any} args any args your trackPageView function accepts
+ */
+function trackVisit(...args) {
+  console.log('trackVisit');
+  if (typeof trackPageView === 'function') {
+    setTimeout(trackPageView.bind(null, ...args), 250);
+  }
+  else {
+    console.log('tracking not available. possibly blocked by browser.')
+  }
+}
 
 /**
  * Is called on each page switch and also if page is opened by itself
@@ -46,19 +61,19 @@ function enableToc() {
  * @param {Element} anchorElement specifies which TOC anchor was clicked
  */
 function toggleBox(anchorElement) {
-  console.log('toggleBox')
-  console.log(anchorElement)
-  var parent = anchorElement.parentNode;
-  var checkbox = parent.previousElementSibling;
-  var setTo = !checkbox.checked;
-  /* uncheck same level end below checkboxes */
-  var sameLevelCheckboxes = parent.parentNode.parentNode.querySelectorAll(':scope > li input[type=checkbox]');
-  for (var cb of sameLevelCheckboxes.entries()) {
-    var other_cb = cb[1];
-    other_cb.checked = false;
-  }
-  checkbox.checked = setTo;
-  return true;
+  requestAnimationFrame(()=> {
+    console.log('toggleBox')
+    var parent = anchorElement.parentNode;
+    var checkbox = parent.previousElementSibling;
+    var setTo = !checkbox.checked;
+    /* uncheck same level end below checkboxes */
+    var sameLevelCheckboxes = parent.parentNode.parentNode.querySelectorAll(':scope > li input[type=checkbox]');
+    for (var cb of sameLevelCheckboxes.entries()) {
+      var other_cb = cb[1];
+      other_cb.checked = false;
+    }
+    checkbox.checked = setTo;
+  });
 }
 
 /**
@@ -68,49 +83,48 @@ function toggleBox(anchorElement) {
  * @param {Element} anchorElement specifies which TOC anchor is the base
  */
 function initBoxes(anchorElement) {
-  try {
-    var parent = anchorElement.parentNode;
-    var checkbox = parent.previousElementSibling;
-    /* TODO: debug why this can happen */
-    if (checkbox.matches('input[type=checkbox]') === false) {
-      return false;
+  requestAnimationFrame(()=> {
+    try {
+      var parent = anchorElement.parentNode;
+      var checkbox = parent.previousElementSibling;
+      /* TODO: debug why this can happen */
+      if (checkbox.matches('input[type=checkbox]') === false) {
+        return false;
+      }
+      var sameLevelCheckboxes = parent.parentNode.parentNode.querySelectorAll(':scope > li > input[type=checkbox]');
+      for (var cb of sameLevelCheckboxes.entries()) {
+        var other_cb = cb[1];
+        other_cb.checked = false;
+      }
+      checkbox.checked = true;
     }
-    var sameLevelCheckboxes = parent.parentNode.parentNode.querySelectorAll(':scope > li > input[type=checkbox]');
-    for (var cb of sameLevelCheckboxes.entries()) {
-      var other_cb = cb[1];
-      other_cb.checked = false;
+    catch (e) {
+      console.log(e)
     }
-    checkbox.checked = true;
-  }
-  catch (e) {
-    console.log(e)
-  }
 
-  /* tick parent boxes */
-  try {
-    var ancestor_anchor = parent.parentNode.parentNode.previousElementSibling.firstChild;
-    initBoxes(ancestor_anchor);
-  }
-  catch (e) {
-    console.log('no more ancestor found');
-  }
+    /* tick parent boxes */
+    try {
+      var ancestor_anchor = parent.parentNode.parentNode.previousElementSibling.firstChild;
+      initBoxes(ancestor_anchor);
+    }
+    catch (e) {
+      console.log('no more ancestor found');
+    }
+  });
 }
 
 /**
- * Links in div#content need a click event that triggers.
+ * Links in +selector+ need a click event that triggers.
  * ticking of correct boxes after a page switch (== replacement of div#content).
  * Checks if id corresponding to URL page.html#anchor is available in TOC.
  * If yes, click it.
  * If no, take page from page.html#anchor, click TOC accordingly and scroll to #anchor
+ * @param {selector} selector which a tags to equip with an eventListener
  */
-function initPageLinks() {
-  console.log('initPageLinks');
-  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//, '');
+function addClickHander(selector) {
+  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//,'');
   const pageRootElementAnchor = document.querySelector('#toc_cb_' + pageID + ' + label > a');
-  document.querySelectorAll('div#content a').forEach(a => {
-    if (a.href.startsWith('http')) {
-      a.setAttribute('target', '_blank');
-    }
+  document.querySelectorAll(selector).forEach(a => {
     if (a.hasAttribute('class')) return;
     if (a.href.startsWith(window.location.origin) === false) return;
 
@@ -130,6 +144,18 @@ function initPageLinks() {
     })
   });
 }
+
+function initPageLinks() {
+  console.log('initPageLinks');
+  addClickHander('div#content a');
+}
+
+function initSearchResultsLinks() {
+  console.log('initSearchResultsLinks');
+  addClickHander('div#search-results > li a');
+}
+
+
 
 
 
