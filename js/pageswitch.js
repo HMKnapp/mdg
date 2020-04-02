@@ -29,8 +29,8 @@ swup.on('samePage', function (e) {
  * Scroll to targeted anchor when staying on same page during page switch
  */
 swup.on('samePageWithHash', function (e) {
-  console.log('_SWUUP: samePageWithHash');
-  const id = e.target.hash.substr(1);
+  console.log('_SWUUP: samePageWithHash')
+  const id = e.delegateTarget.hash.substr(1);
   scrollToHash(id);
 });
 
@@ -38,15 +38,19 @@ swup.on('samePageWithHash', function (e) {
  * Scroll to target of link and change window title after page switches
  */
 swup.on('clickLink', function (e) {
-  console.log('_SWUUP: clickLink');
+  console.log('_SWUUP: clickLink')
   /* for deep links to anchors inside other pages */
-  const id = e.target.hash.substr(1);
+  const id = e.delegateTarget.hash.substr(1);
   if (id) {
     setTimeout(() => {
       scrollToHash(id)
     }, 250);
   }
-  setTimeout(refreshTitle, 250);
+  setTimeout(() => {
+    console.log('clickling timeout')
+    refreshTitle();
+    trackVisit();
+  }, 350);  
 });
 
 swup.on('contentReplaced', () => {
