@@ -29,9 +29,9 @@ swup.on('samePage', function (e) {
  * Scroll to targeted anchor when staying on same page during page switch
  */
 swup.on('samePageWithHash', function (e) {
-  console.log('_SWUUP: samePageWithHash')
-  const id = e.delegateTarget.hash.substr(1);
-  scrollToHash(id);
+   console.log('_SWUUP: samePageWithHash')
+   const id = e.delegateTarget.hash.substr(1);
+   scrollToHash(id);
 });
 
 /**
@@ -40,21 +40,20 @@ swup.on('samePageWithHash', function (e) {
 swup.on('clickLink', function (e) {
   console.log('_SWUUP: clickLink')
   /* for deep links to anchors inside other pages */
-  const id = e.delegateTarget.hash.substr(1);
-  if (id) {
-    setTimeout(() => {
-      scrollToHash(id)
-    }, 250);
-  }
   setTimeout(() => {
-    console.log('clickling timeout')
+    console.log('clicklink timeout')
     refreshTitle();
     trackVisit();
   }, 350);  
 });
 
 swup.on('contentReplaced', () => {
+  console.log('_SWUUP: contentReplaced')
+
   reinitializeAfterPageSwitch();
+  if (window.location.hash) {
+      scrollToHash(window.location.hash.substring(1));
+  }
 });
 
 // swup.on('popState'), () => {
@@ -73,6 +72,7 @@ function scrollToHash(id) {
     element.scrollIntoView();
     /* because scrollIntoView has no callback */
     setTimeout(() => {
+      handleScrollEvent();
       document.scrollspy.disabled = false;
     }, 1000);
   }
