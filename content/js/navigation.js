@@ -49,7 +49,6 @@ function enableToc() {
   var tocLinks = document.querySelectorAll('#toc label > a');
   tocLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
-      if (miniTocEnabled == true) destroyMiniToc();
       toggleBox(this);
       closeOverlay();
     })
@@ -62,7 +61,7 @@ function enableToc() {
  * @param {Element} anchorElement specifies which TOC anchor was clicked
  */
 function toggleBox(anchorElement) {
-  requestAnimationFrame(() => {
+  requestAnimationFrame(()=> {
     console.log('toggleBox')
     var parent = anchorElement.parentNode;
     var checkbox = parent.previousElementSibling;
@@ -84,25 +83,25 @@ function toggleBox(anchorElement) {
  * @param {Element} anchorElement specifies which TOC anchor is the base
  */
 function initBoxes(anchorElement) {
-  try {
-    var parent = anchorElement.parentNode;
-    var checkbox = parent.previousElementSibling;
-    /* TODO: debug why this can happen */
-    if (checkbox.matches('input[type=checkbox]') === false) {
-      return false;
+  requestAnimationFrame(()=> {
+    try {
+      var parent = anchorElement.parentNode;
+      var checkbox = parent.previousElementSibling;
+      /* TODO: debug why this can happen */
+      if (checkbox.matches('input[type=checkbox]') === false) {
+        return false;
+      }
+      var sameLevelCheckboxes = parent.parentNode.parentNode.querySelectorAll(':scope > li > input[type=checkbox]');
+      for (var cb of sameLevelCheckboxes.entries()) {
+        var other_cb = cb[1];
+        other_cb.checked = false;
+      }
+      checkbox.checked = true;
     }
-    var sameLevelCheckboxes = parent.parentNode.parentNode.querySelectorAll(':scope > li > input[type=checkbox]');
-  }
-  catch (e) {
-    console.log(e)
-  }
+    catch (e) {
+      console.log(e)
+    }
 
-  requestAnimationFrame(() => {
-    for (var cb of sameLevelCheckboxes.entries()) {
-      var other_cb = cb[1];
-      other_cb.checked = false;
-    }
-    checkbox.checked = true;
     /* tick parent boxes */
     try {
       var ancestor_anchor = parent.parentNode.parentNode.previousElementSibling.firstChild;
@@ -123,7 +122,7 @@ function initBoxes(anchorElement) {
  * @param {selector} selector which a tags to equip with an eventListener
  */
 function addClickHander(selector) {
-  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//, '');
+  const pageID = window.location.pathname.slice(1, -5).replace(/.*\//,'');
   const pageRootElementAnchor = document.querySelector('#toc_cb_' + pageID + ' + label > a');
   document.querySelectorAll(selector).forEach(a => {
     if (a.hasAttribute('class')) return;
@@ -165,12 +164,6 @@ function initSearchResultsLinks() {
  * SCROLLSPY FOR TOC
  */
 
- /* TODO: rewrite with Intersection_Observer_API for all scroll events
-    see minitoc.js IntersectionObserver
-  */
-
-document.scrollspy = { disabled: false };
-
 /**
  * Waits for page to load completely, not just TOC.
  * Necessary for position caching of elements used for scrollspy performance.
@@ -179,7 +172,6 @@ document.onreadystatechange = function () {
   if (document.readyState === 'complete') {
     initializeScrollspy();
     refreshTitle();
-    handleScrollEvent(); // trigger minitoc
   }
 }
 
@@ -223,44 +215,26 @@ function initializeScrollspy() {
  * Calculates whether scoll position is within area of section a cached headline belongs to.
  * Resets TOC to that specific section.
  */
-var scrollTimer;
-var lastScroll = {
-  miniTocElement: null,
-  miniTocHeadElement: null,
-  navAnchorElement: null
-}; // store element that has been ticked or highlighted to avoid unnecessary redraws
-function handleScrollEvent(skipScrollSpy = true) {
-  if (document.scrollspy.disabled && skipScrollSpy == true) {
+var ssTimer;
+function handleScrollEvent() {
+  if (document.scrollspy.disabled) {
     return true;
   }
   if (window.scrollY === 0) {
     removeHash();
   }
-  window.cancelIdleCallback(scrollTimer);
-  scrollTimer = window.requestIdleCallback(() => {
+  requestAnimationFrame(() => {
     document.headingsElementsArray.forEach(element => {
       const etopY = element.offsetTop - 50;
       const ebottomY = etopY + element.parentElement.offsetHeight;
       if (window.scrollY >= etopY && window.scrollY <= ebottomY) {
         const anchorElement = document.querySelectorAll('#toc_cb_' + element.id + ' + label > a')[0];
-        if (anchorElement && lastScroll.navAnchorElement != anchorElement) {
-          if(initBoxes(anchorElement)) {
-            lastScroll.navAnchorElement = anchorElement;
-          }
-        }
-        if (typeof refreshMiniToc === 'function'
-          && miniTocEnabled === true
-          && lastScroll.miniTocElement != element) {
-          lastScroll.miniTocElement = element;
-          refreshMiniToc(element);
-        }
-      } else { // if we are inside the same section but not inside a subsection
-        if (element == lastScroll.miniTocHeadElement) {
-          highlightMiniTocElementByID('none');
+        if (anchorElement) {
+          initBoxes(anchorElement);
         }
       }
     })
-  }, { timeout: 500 });
+  });
 }
 
 /**
