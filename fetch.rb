@@ -45,7 +45,7 @@ DOCINFO = %w[docinfo.html docinfo-footer.html docinfo-search.html]
 POC_CONTENT_ASSETS = (%w[css js fonts].concat(DOCINFO)).map do |asset|
   File.join(POC_PATH, 'content', asset)
 end
-POC_ASSETS = %w[Rakefile .vale.ini].map do |asset|
+POC_ASSETS = %w[Rakefile .vale.ini config.yaml end2end].map do |asset|
   File.join(POC_PATH, asset)
 end
 
