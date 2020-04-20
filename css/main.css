@@ -1211,42 +1211,42 @@ div#header > h1 { display: none; }
 
 /* increase size of h2, h3, h4, h5, relative to now missing h1 */
 @media only screen and (min-width: 768px) { /* line 79, ../../style/sass/main.scss */
-  h2 { font-size: 2.75em; }
-  /* line 80, ../../style/sass/main.scss */
+  h2 { font-size: 2.75em; font-weight: bold; }
+  /* line 81, ../../style/sass/main.scss */
   h3, #toctitle, .sidebarblock > .content > .title { font-size: 2.6125em; font-weight: bold; }
-  /* line 82, ../../style/sass/main.scss */
+  /* line 83, ../../style/sass/main.scss */
   h4 { font-size: 1.7875em; font-weight: bold; }
-  /* line 84, ../../style/sass/main.scss */
+  /* line 85, ../../style/sass/main.scss */
   h5 { font-size: 1.5375em; font-weight: bold; }
-  /* line 86, ../../style/sass/main.scss */
+  /* line 87, ../../style/sass/main.scss */
   h6 { font-size: 1.375em; font-weight: bold; }
-  /* line 90, ../../style/sass/main.scss */
+  /* line 91, ../../style/sass/main.scss */
   h7 { font-size: 1.175em; font-weight: bold; }
-  /* line 93, ../../style/sass/main.scss */
-  table.tableblock > .title, div.listingblock > .title { font-size: 1.15em; }
   /* line 94, ../../style/sass/main.scss */
+  table.tableblock > .title, div.listingblock > .title { font-size: 1.15em; }
+  /* line 95, ../../style/sass/main.scss */
   .imageblock > .title { font-size: 1.15em; text-align: right; }
-  /* line 96, ../../style/sass/main.scss */
+  /* line 97, ../../style/sass/main.scss */
   #toctitle, .sidebarblock > .content > .title { font-size: 1.6875em; } }
-/* line 102, ../../style/sass/main.scss */
+/* line 103, ../../style/sass/main.scss */
 h1 > a:hover, h2 > a:hover, h3 > a:hover, #toctitle > a:hover, .sidebarblock > .content > .title > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover { color: #002846; }
-/* line 106, ../../style/sass/main.scss */
+/* line 107, ../../style/sass/main.scss */
 h1 > a.anchor, h2 > a.anchor, h3 > a.anchor, #toctitle > a.anchor, .sidebarblock > .content > .title > a.anchor, h4 > a.anchor, h5 > a.anchor, h6 > a.anchor { display: none; }
-/* line 112, ../../style/sass/main.scss */
+/* line 113, ../../style/sass/main.scss */
 h1 > a.link:hover::after, h2 > a.link:hover::after, h3 > a.link:hover::after, #toctitle > a.link:hover::after, .sidebarblock > .content > .title > a.link:hover::after, h4 > a.link:hover::after, h5 > a.link:hover::after, h6 > a.link:hover::after { font-family: "FontAwesome"; content: "\f0c1" !important; line-height: inherit; font-size: smaller; padding-left: 10px; }
 
-/* line 126, ../../style/sass/main.scss */
+/* line 127, ../../style/sass/main.scss */
 a:hover { color: #ff7373; }
 
-/* line 132, ../../style/sass/main.scss */
+/* line 133, ../../style/sass/main.scss */
 ul, ol, dl { font-size: 1em; line-height: 1.6; margin-bottom: 1.25em; list-style-position: outside; font-family: inherit; }
 
-/* line 141, ../../style/sass/main.scss */
+/* line 142, ../../style/sass/main.scss */
 td.tableblock div.content div.paragraph p { font-size: 1em !important; }
 
-/* line 148, ../../style/sass/main.scss */
+/* line 149, ../../style/sass/main.scss */
 #footer { display: none; /* hide by default */ background-color: rgba(0, 0, 0, 0.05); }
-/* line 151, ../../style/sass/main.scss */
+/* line 152, ../../style/sass/main.scss */
 #footer #footer-text { color: #a2aaad; text-align: right; }
 
 /* line 4, ../../style/sass/elements/_default.scss */
