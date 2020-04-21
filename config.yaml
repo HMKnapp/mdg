@@ -22,7 +22,6 @@ extensions:
     - IdChecker
     - LinkChecker
     - PatternBlacklist
-    - HelloWorld
 
 # Enable processes
 processes:
@@ -30,14 +29,12 @@ processes:
     enable:
       - CombineJS
       - TranspileJS
-      - HelloWorld
   post:
     enable:
       - CompileSearchIndex
       - Rename
-      - HTMLTest
+      # - HTMLTest
       - CodeRayStyleCopy
-      - HelloWorld
 
 # Settings for individual checkers/extensions
 checkers:
