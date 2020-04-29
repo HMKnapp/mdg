@@ -48,9 +48,8 @@ IMPORTANT: Field definitions may vary by transaction type. Deviations from stand
 === XML Elements
 Click the X in the respective column for request and response fields.
 
-ifndef::env-nova[]
 Please refer to our <<Appendix_Xml, XSD>> for the structural relationship between these fields.
-endif::[]
+
 
 [cols="m,,"]
 |===
@@ -72,7 +71,6 @@ endif::[]
 | <<CC_Fields_xmlelements_request_address, X>>
 | 
 
-ifndef::env-nova[]
 | airline-industry
 | <<CC_Fields_xmlelements_request_airlineindustry, X>>
 | 
@@ -84,7 +82,6 @@ ifndef::env-nova[]
 | avs
 | 
 | <<CC_Fields_xmlelements_response_avs, X>>
-endif::[]
 
 | browser
 | <<CC_Fields_xmlelements_request_browser, X>>
@@ -93,8 +90,6 @@ endif::[]
 | card
 | <<CC_Fields_xmlelements_request_card, X>>
 |  
-
-ifndef::env-nova[]
 
 | card-emv
 | <<CC_Fields_xmlelements_request_cardEMV, X>>
@@ -107,13 +102,11 @@ ifndef::env-nova[]
 // |card-raw
 // | <<CC_Fields_xmlelements_cardRaw, X>>
 // | 
-endif::[]
 
 | card-token
 | <<CC_Fields_xmlelements_request_cardtoken, X>>
 | 
 
-ifndef::env-nova[]
 | credit-sender-data
 | <<CC_Fields_xmlelements_request_creditsenderdata, X>>
 | 
@@ -121,7 +114,6 @@ ifndef::env-nova[]
 | cruise-industry
 | <<CC_Fields_xmlelements_request_cruiseindustry, X>>
 | 
-endif::[]
 
 | custom-fields
 | <<CC_Fields_xmlelements_request_customfield, X>>
@@ -131,7 +123,6 @@ endif::[]
 | <<CC_Fields_xmlelements_request_device, X>>
 | 
 
-ifndef::env-nova[]
 // | encryption-context
 // | <<CC_Fields_xmlelements_request_encryptionContext, X>>
 // | 
@@ -139,7 +130,6 @@ ifndef::env-nova[]
 | iso
 | <<CC_Fields_xmlelements_request_ISO, X>>
 | 
-endif::[]
 
 | notifications
 | <<CC_Fields_xmlelements_request_notification, X>>
@@ -157,11 +147,9 @@ endif::[]
 | <<CC_Fields_xmlelements_request_riskinfo, X>>
 | 
 
-ifndef::env-nova[]
 | segment
 | <<CC_Fields_xmlelements_request_segment, X>>
 | 
-endif::[]
 
 | shipping
 | <<CC_Fields_xmlelements_request_shipping, X>>
@@ -171,11 +159,9 @@ endif::[]
 | 
 | <<CC_Fields_xmlelements_response_status, X>>
 
-ifndef::env-nova[]
 | sub-merchant-info
 | <<CC_Fields_xmlelements_request_submerchantinfo, X>>
 | 
-endif::[]
 
 | three-d
 | <<CC_Fields_xmlelements_request_threed, X>>
@@ -230,28 +216,21 @@ include::{root}/include/fields/rest_cc/request/req-account-info.adoc[]
 [#CC_Fields_xmlelements_request_address]
 .address
 
-ifdef::env-nova[]
-``address`` is a child of
-<<CC_Fields_xmlelements_request_accountholder, account-holder>> and <<CC_Fields_xmlelements_request_shipping, shipping>>. It is used to specify the consumer's address and can refer to
-endif::[]
 
-ifndef::env-nova[]
+
 ``address`` is a child of
 <<CC_Fields_xmlelements_request_accountholder, account-holder>>, <<CC_Fields_xmlelements_request_shipping, shipping>>, and <<CC_Fields_xmlelements_request_airlineindustry, airline-industry>>. It is used to specify the consumer's address and can refer to
-endif::[]
+
 
 - the consumer (for ``account-holder``). The account holder's address is used as the billing address.
 - the consumer's shipping address (for ``shipping``). For 3D Secure 2 transactions it is highly recommended to send ``shipping.address`` data in any case, as a complete set of ``shipping.address`` data reduces the likelihood of a challenge test.
-ifndef::env-nova[]
 - the ticket issuer (for ``airline-industry``).
-endif::[]
+
 
 Data can be provided optionally but it helps with fraud checks, if ``address`` is complete.
 
 include::{root}/include/fields/rest_cc/request/req-address.adoc[]
 
-
-ifndef::env-nova[]
 
 [#CC_Fields_xmlelements_request_airlineindustry]
 .airline-industry
@@ -269,8 +248,6 @@ include::{root}/include/fields/rest_cc/request/req-airline-industry.adoc[]
 Audit data is displayed in _{enterprise-portal-abbr}_ for each transaction it has been send with.
 
 include::{root}/include/fields/rest_cc/request/req-audit.adoc[]
-
-endif::[]
 
 
 [#CC_Fields_xmlelements_request_browser]
@@ -300,7 +277,6 @@ include::{root}/include/fields/api/request/req-card.adoc[]
 
 :!listname:
 
-ifndef::env-nova[]
 [#CC_Fields_xmlelements_request_cardEMV]
 .card.card-emv
 
@@ -321,7 +297,6 @@ include::{root}/include/fields/rest_cc/request/req-card-emv.adoc[tags="**;!respo
 
 // include::{root}/include/fields/rest_cc/request/req-card-raw.adoc[]
 
-endif::[]
 
 [#CC_Fields_xmlelements_request_cardtoken]
 .card-token
@@ -334,8 +309,6 @@ compliance, ``card`` data must not be sent in payment transactions. The _{paymen
 
 include::{root}/include/fields/rest_cc/request/req-card-token.adoc[]
 
-
-ifndef::env-nova[]
 
 [#CC_Fields_xmlelements_request_creditsenderdata]
 .credit-sender-data
@@ -363,7 +336,6 @@ include::{root}/include/fields/rest_cc/request/req-credit-sender-data.adoc[]
 
 include::{root}/include/fields/rest_cc/request/req-cruise-industry.adoc[]
 
-endif::[]
 
 
 [#CC_Fields_xmlelements_request_customfield]
@@ -386,7 +358,6 @@ include::{root}/include/fields/rest_cc/request/req-custom-field.adoc[]
 include::{root}/include/fields/rest_cc/request/req-device.adoc[]
 
 
-ifndef::env-nova[]
 // [#CC_Fields_xmlelements_request_encryptionContext]
 // .encryption-context
 
@@ -397,8 +368,6 @@ ifndef::env-nova[]
 .iso
 
 include::{root}/include/fields/rest_cc/request/req-iso.adoc[]
-
-endif::[]
 
 
 [#CC_Fields_xmlelements_request_notification]
@@ -464,7 +433,6 @@ include::{root}/include/fields/rest_cc/request/req-periodic.adoc[]
 include::{root}/include/fields/rest_cc/request/req-risk-info.adoc[]
 
 
-ifndef::env-nova[]
 
 [#CC_Fields_xmlelements_request_segment]
 .segment
@@ -474,7 +442,6 @@ ifndef::env-nova[]
 
 include::{root}/include/fields/rest_cc/request/req-segment.adoc[]
 
-endif::[]
 
 
 [#CC_Fields_xmlelements_request_shipping]
@@ -494,7 +461,6 @@ include::{root}/include/fields/rest_cc/request/req-shipping.adoc[]
 |===
 
 
-ifndef::env-nova[]
 
 [#CC_Fields_xmlelements_request_submerchantinfo]
 .sub-merchant-info
@@ -503,8 +469,6 @@ ifndef::env-nova[]
 <<CC_Fields_xmlelements_request_payment, payment>>. ``sub-merchant-info`` fields are required for the <<CreditCard_PaymentFeatures_PaymentFacilitator, Payment Facilitator>>. If you want to use ``sub-merchant-info``, all the fields in this table are mandatory for every initial step of a transaction. It is recommended to include ``sub-merchant-info`` in all transaction steps. Otherwise, some transactions cannot be completed successfully. ``state`` is an exception. See ``state`` description for details.
 
 include::{root}/include/fields/rest_cc/request/req-sub-merchant-info.adoc[]
-
-endif::[]
 
 
 [#CC_Fields_xmlelements_request_threed]
@@ -536,7 +500,7 @@ Here you can find the ``payment`` element fields which are sent in the response 
 
 include::{root}/include/fields/rest_cc/response/res-payment.adoc[]
 
-ifndef::env-nova[]
+
 [#CC_Fields_xmlelements_response_avs]
 .avs
 
@@ -558,7 +522,6 @@ See the complete list of the
 
 include::{root}/include/fields/rest_cc/response/res-avs.adoc[]
 
-endif::[]
 
 [#CC_Fields_xmlelements_response_customfield]
 .custom-field
@@ -574,13 +537,12 @@ NOTE: As the fields, shown here, have already been defined, _Datatype_ and _Size
 
 include::{root}/include/fields/rest_cc/response/res-custom-field.adoc[]
 
-ifndef::env-nova[]
+
 [#CC_Fields_xmlelements_response_cardEMV]
 .card.card-emv
 
 include::{root}/include/fields/rest_cc/request/req-card-emv.adoc[tags="**;!request;!requestHeader"]
 
-endif::[]
 
 [#CC_Fields_xmlelements_response_status]
 .status
