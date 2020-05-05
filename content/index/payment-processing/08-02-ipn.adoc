@@ -108,7 +108,7 @@ include::{root}/samples/json/GeneralPlatformFeatures_IPN_Json_JSON_Notification.
 ----
 
 .application/JSON-signed Notification Example
-[source,nvp,subs=attributes+]
+[source,subs=attributes+]
 ----
 include::{root}/samples/json/GeneralPlatformFeatures_IPN_Json_applicationJSONSignedNotificationExample.json[]
 ----

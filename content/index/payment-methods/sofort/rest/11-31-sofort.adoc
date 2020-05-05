@@ -281,28 +281,28 @@ The following is the general form of the link to the badge:
 
 Go to <<GeneralPlatformFeatures_IPN_NotificationExamples, Notification Examples>>, if you want to see corresponding notification samples.
 
-.XML Get-Url Request (Successful)
+.XML get-url Request (Successful)
 
 [source,xml,subs=attributes+]
 ----
 include::{root}/samples/xml/sofortbanking_get-url_request_success.xml[]
 ----
 
-.XML Get-Url Response (Successful)
+.XML get-url Response (Successful)
 
 [source,xml,subs=attributes+]
 ----
 include::{root}/samples/xml/sofortbanking_get-url_response_success.xml[]
 ----
 
-.XML Get-Url Request (Failure)
+.XML get-url Request (Failure)
 
 [source,xml,subs=attributes+]
 ----
 include::{root}/samples/xml/sofortbanking_get-url_request_failure.xml[]
 ----
 
-.XML Get-Url Response (Failure)
+.XML get-url Response (Failure)
 
 [source,xml,subs=attributes+]
 ----

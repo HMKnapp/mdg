@@ -81,7 +81,7 @@ include::{root}/samples/xml/ideal_get-url_request__installment_first_72d9c4.xml[
 include::{root}/samples/xml/ideal_get-url_response__installment_first_8b4f66.xml[]
 ----
 
-.XML Debit Notification for iDEAL
+.XML debit Notification for iDEAL
 
 [source,xml,subs=attributes+]
 ----
@@ -179,12 +179,13 @@ Payment Page integrations.
 
 Cross-Payment-Methods Referencing is executed in two steps:
 
-- The initial transaction is placed by the customer actively via one of
+The initial transaction is placed by the customer actively via one of
 the supported online banking payment methods:
-* Sofort.
-* iDEAL
-* giropay
-* eps-Überweisung
+
+- Sofort.
+- iDEAL
+- giropay
+- eps-Überweisung
 
 //-
 
@@ -194,7 +195,7 @@ are saved in the database, but not returned in the response.
 NOTE: Not every bank provides bank account data. {payment-gateway}
 can only process bank account data if provided by the bank.
 
-- The subsequent transaction is a SEPA Direct Debit transaction.
+The subsequent transaction is a SEPA Direct Debit transaction.
 The merchant receives a transaction ID from the initial transaction
 which is used later to place a referenced SEPA Direct Debit transaction
 without knowing the bank account details as they are automatically

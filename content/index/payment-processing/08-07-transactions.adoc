@@ -289,7 +289,7 @@ Mandatory (M) or optional (O).
 ``\https://{test-instance-hostname}/engine/rest/resolver-category/CATEGORY_X/payments/?request_id=c1052ad7-1372-4755-b6e1-fb32e7519be1``
 
 [#GeneralPlatformFeatures_RetrieveTransaction_RequestIDCategory_SampleResponse]
-.Sample: XML Authorization Response (Successful)
+.Sample: XML authorization Response (Successful)
 
 
 [source,xml,subs=attributes+]

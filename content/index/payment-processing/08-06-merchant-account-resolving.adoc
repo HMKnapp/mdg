@@ -3,8 +3,8 @@
 
 _Merchant Account Resolving_ allows the merchant to create a transaction
 without a specific Merchant Account ID (MAID) present in time of the 
-transaction request. Instead of the MAID, a Super Merchant ID and a
-Resolver Category Code is sent in the request and a _specific MAID_ used
+transaction request. Instead of the MAID, a Super Merchant ID and a 
+resolver category is sent in the request and a _specific MAID_ used
 for payment is automatically calculated by the Payment Processor Engine
 during payment processing. The calculation is based on
 <<GeneralPlatformFeatures_ResolvingRules, resolving rules>>.
