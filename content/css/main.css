@@ -1357,7 +1357,7 @@ button.secondary, button.close { color: #ff7373; border: 1px solid #ff7373; }
 h2.discrete.tab-content.tab, h3.discrete.tab-content.tab, .discrete.tab-content.tab#toctitle, .sidebarblock > .content > .discrete.tab-content.tab.title, h4.discrete.tab-content.tab, h5.discrete.tab-content.tab, h6.discrete.tab-content.tab, h7.discrete.tab-content.tab { display: none; }
 
 /* line 11, ../../style/sass/elements/_sample-tabs.scss */
-.tabs-wrapper { background-color: white; border: 1px solid #2983fb; border-radius: 5px; padding: 10px; margin-top: -1px; }
+.tabs-wrapper { background-color: white; border: 1px solid #112233; border-radius: 5px; padding: 10px; margin-top: -1px; }
 
 /* line 18, ../../style/sass/elements/_sample-tabs.scss */
 .tab-wrapper pre { white-space: pre-wrap; /* css-3 */ white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ white-space: -pre-wrap; /* Opera 4-6 */ white-space: -o-pre-wrap; /* Opera 7 */ word-wrap: break-word; /* Internet Explorer 5.5+ */ }
@@ -1366,11 +1366,11 @@ h2.discrete.tab-content.tab, h3.discrete.tab-content.tab, .discrete.tab-content.
 h7.tab-content.tab { display: none; }
 
 /* line 30, ../../style/sass/elements/_sample-tabs.scss */
-div.btn-samples-row { color: #2983fb; background-color: white; border: 1px solid #2983fb; border-radius: 5px; margin-bottom: 10px; }
+div.btn-samples-row { color: #112233; background-color: white; border: 1px solid #112233; border-radius: 5px; margin-bottom: 10px; }
 /* line 37, ../../style/sass/elements/_sample-tabs.scss */
 div.btn-samples-row button.btn-samples-tab { padding: .6em 3em .4em; background-color: white; transition: all 0.25s ease; border: none; }
 /* line 43, ../../style/sass/elements/_sample-tabs.scss */
-div.btn-samples-row button.btn-samples-tab.active { background-color: #2983fb; color: white; font-weight: bold; transition: all 0.25s ease; border: none; }
+div.btn-samples-row button.btn-samples-tab.active { background-color: #112233; color: white; font-weight: bold; transition: all 0.25s ease; border: none; }
 /* line 50, ../../style/sass/elements/_sample-tabs.scss */
 div.btn-samples-row button.btn-samples-tab:hover { font-weight: bold; }
 
@@ -1389,10 +1389,10 @@ table.r-details > caption.r-details-expanded ~ tbody { display: table-row-group;
 /* line 81, ../../style/sass/elements/_sample-tabs.scss */
 table.r-details > caption ~ thead, table.r-details > caption ~ tbody { display: none; }
 /* line 85, ../../style/sass/elements/_sample-tabs.scss */
-table.r-details > caption.title.hide-show-enabled { font-style: normal; font-weight: bold; font-size: larger; color: white; background-color: #2983fb; border: 0; margin: 0; padding: .25em 0 .2em .5em; cursor: pointer; }
+table.r-details > caption.title.hide-show-enabled { font-style: normal; font-weight: bold; font-size: larger; color: white; background-color: #112233; border: 0; margin: 0; padding: .25em 0 .2em .5em; cursor: pointer; }
 
 /* line 3, ../../style/sass/elements/_global-toc.scss */
-#toc.toc2 { background: linear-gradient(90deg, #002846 0%, #2983fb 100%); /* overwrite asciidoctor default margins,paddings */ padding: 0; /* indent manually to allow <a> width of 100% */ /* have a span the whole width of the TOC to avoid doing this with JS trickery */ /* do not display anything below level 5 in main toc */ /* do not display a real checkbox in front of the label*/ /* hide children of unchecked toc items */ /* show children of checked toc items */ }
+#toc.toc2 { background: #112233; /* overwrite asciidoctor default margins,paddings */ padding: 0; /* indent manually to allow <a> width of 100% */ /* have a span the whole width of the TOC to avoid doing this with JS trickery */ /* do not display anything below level 5 in main toc */ /* do not display a real checkbox in front of the label*/ /* hide children of unchecked toc items */ /* show children of checked toc items */ }
 /* line 5, ../../style/sass/elements/_global-toc.scss */
 #toc.toc2 > ul { background-position-x: right; }
 /* line 12, ../../style/sass/elements/_global-toc.scss */
