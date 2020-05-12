@@ -26,7 +26,7 @@ if (document.pageswitch.disabled === false) {
     options.plugins = [new SwupPreloadPlugin()];
   }
 
-  const swup = new Swup(options);
+  window.swup = new Swup(options);
 
   if (document.pageswitch.preload === true) {
     document.pageswitch.pages = [];
