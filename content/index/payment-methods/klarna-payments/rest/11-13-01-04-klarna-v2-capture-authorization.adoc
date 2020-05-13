@@ -27,7 +27,7 @@ _Klarna_ sends *payment instructions* (containing bank account details) per emai
 [#KlarnaV2_TransactionTypes_captureAuthorization_Workflow]
 ===== _capture-authorization_ Workflow
 
-include::{root}/images/Klarnav2_workflow_captureAuthorization.svg[]
+image::images/Klarnav2_workflow_captureAuthorization.svg[]
 
 . -> Send an _capture-authorization_ request. This request must contain the ``parent-transaction-id``. Enter the ``transaction-id`` of the preceding _authorization_ or _adjust-authorization_ response.
 

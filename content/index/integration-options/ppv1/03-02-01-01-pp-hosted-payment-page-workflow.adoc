@@ -10,7 +10,7 @@ re-direct to a provider.
 
 .Hosted Payment Page: Credit card payment flow
 [HPP Workflow]
-include::{root}/images/PP_HPP_Workflow.svg[]
+image::images/PP_HPP_Workflow.svg[]
 
 . Consumer checks out with the purchased goods/services.
 . Merchant system redirects to the Hosted Payment Page URL with a

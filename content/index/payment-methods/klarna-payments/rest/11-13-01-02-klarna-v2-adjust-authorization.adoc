@@ -32,7 +32,7 @@ To refer to a specific _authorization_ or _adjust-authorization_, you need the `
 [#KlarnaV2_TransactionTypes_adjustAuthorization_Workflow]
 ===== _adjust-authorization_ Workflow
 
-include::{root}/images/Klarnav2_workflow_adjustAuthorization.svg[]
+image::images/Klarnav2_workflow_adjustAuthorization.svg[]
 
 . -> Send an _adjust-authorization_ request. This request must contain the ``parent-transaction-id``. Enter the ``transaction-id`` of the preceding _authorization_ or _adjust-authorization_ response.
 
