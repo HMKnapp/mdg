@@ -5,11 +5,11 @@
  */
 
 var isIE = /MSIE|Trident|Edge\//.test(window.navigator.userAgent);
-var isSafariDesktop = (/Safari/i.test(window.navigator.userAgent)
-    && /Apple Computer/.test(navigator.vendor))
+var isSafariDesktop = (/Safari/i.test(window.navigator.userAgent) &&
+                       /Apple Computer/.test(navigator.vendor));
 var isIOS = (/iPad|iPhone|iPod/.test(navigator.platform) ||
-    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) &&
-    !window.MSStream
+             (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) &&
+    !window.MSStream;
 
 function swapSVGandPNG() {
     document.querySelectorAll('img').forEach((img) => {
@@ -23,20 +23,15 @@ function swapSVGandPNG() {
  * Load fixes at DOMContentLoaded and call this again on every pageSwitch
  */
 function loadBrowserFixes() {
-    switch (true) {
-        case isIE:
-            swapSVGandPNG();
-            break;
-
-        case isSafariDesktop:
-            break;
-
-        case isIOS:
-            break;
-
-        default:
-            break;
+    if(isIE) {
+        swapSVGandPNG();
     }
+
+    // if(isSafariDesktop())
+    //     todo;
+
+    // if(isIOS())
+    //     todo
 }
 
 document.addEventListener('DOMContentLoaded', loadBrowserFixes);
