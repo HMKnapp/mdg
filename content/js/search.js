@@ -5,7 +5,7 @@ var selectIdx = 0;
 var overlayOpen = false;
 
 function openOverlay(event) {
-    $('#search-overlay').addClass('open');
+    $('#search-results-wrapper').show();
     $('input#search').focus();
     $('div#content').addClass('blur');
     $('body').addClass('no-scroll');
@@ -13,7 +13,7 @@ function openOverlay(event) {
 }
 
 function closeOverlay(event) {
-    $('#search-overlay').removeClass('open');
+    $('#search-results-wrapper').hide();
     $('div#content').removeClass('blur');
     $('body').removeClass('no-scroll');
     overlayOpen = false;
@@ -40,9 +40,20 @@ function hoverResult(event) {
 }
 
 $(document).ready(function () {
+    var wrapper = $('<div id="search-results-wrapper"><div class="sect1"><h2>Search Results <span id="num-results">...</span></h2></div></div>');
+    var btnCloseSearch = $('<button type="button" id="btn-search-close" class="close fa"></button>');
+    var resultsList = $('<ul id="search-results">');
+    btnCloseSearch.appendTo(wrapper);
+    resultsList.appendTo(wrapper);
+    wrapper.insertBefore('div#content');
+
     // open/close overlay depending on where the user clicks
-    $('#search').click(openOverlay);
-    $('#search-overlay button.close').click(closeOverlay);
+    $('#search').on('click', (event) =>{
+        event.stopPropagation();
+        openOverlay();
+    });
+    //$('#search').on('blur', closeOverlay);
+    $('#btn-search-close').click(closeOverlay);
 
     $(window).keyup(function (event) {
         var keyCode = event.keyCode || event.which;
@@ -91,7 +102,16 @@ $(document).ready(function () {
                 }
                 break;
             default:
-                render(search($('#search').val()));
+                var searchTerm = $('#search').val();
+                if(searchTerm != '') {
+                    var results = search(searchTerm);
+                    $('#num-results').text('(' + results.length + ')');
+                    render(results);
+                }
+                else {
+                    $('#num-results').text('...');
+                    $('#search-results').empty();
+                }
                 return;
         }
 
@@ -137,10 +157,11 @@ function search(term) {
 
 // show the search results in the list ul#serach-results
 function render(results) {
+
     var resultsList = $('ul#search-results');
+    console.log(results);
     resultsList.empty();
     var count = 0;
-
     results.forEach(function (entry) {
         var li = $('<li/>', { class: 'search-list-entry entry-' + count })
             .append(formatEntry(entry, count));
@@ -160,7 +181,7 @@ function formatEntry(entry, count) {
     var div = $('<div/>');
     var link = $('<a/>').attr('href', dbentry.file + '#' + entry.ref).attr('onclick', 'closeOverlay()');
 
-    link.append($('<h3>').text(dbentry.title));
+    link.append($('<h4>').text(dbentry.title));
     link.append($('<p/>').text(dbentry.body));
     if (dbentry.parents !== null && dbentry.parents.length > 0)
         link.append($('<span/>', { class: 'label' }).text(dbentry.parents.join(' / ')));

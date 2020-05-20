@@ -63,7 +63,7 @@ if (document.pageswitch.disabled === false) {
    * Reset scroll position
    */
   swup.on('samePage', function (e) {
-    console.log('_SWUUP: samePage');
+    //  console.log('_SWUUP: samePage');
     window.scrollTo(0, 0);
     removeHash();
   });
@@ -72,7 +72,7 @@ if (document.pageswitch.disabled === false) {
    * Scroll to targeted anchor when staying on same page during page switch
    */
   swup.on('samePageWithHash', function (e) {
-    console.log('_SWUUP: samePageWithHash')
+    //  console.log('_SWUUP: samePageWithHash')
     const id = e.delegateTarget.hash.substr(1);
     scrollToHash(id);
   });
@@ -81,18 +81,17 @@ if (document.pageswitch.disabled === false) {
    * Scroll to target of link and change window title after page switches
    */
   swup.on('clickLink', function (e) {
-    console.log('_SWUUP: clickLink')
+    //  console.log('_SWUUP: clickLink')
     /* for deep links to anchors inside other pages */
     setTimeout(() => {
-      console.log('clicklink timeout')
+      //  console.log('clicklink timeout')
       refreshTitle();
       trackVisit();
     }, 350);
   });
 
   swup.on('contentReplaced', () => {
-    console.log('_SWUUP: contentReplaced')
-
+    //  console.log('_SWUUP: contentReplaced')
     reinitializeAfterPageSwitch();
     if (window.location.hash) {
       scrollToHash(window.location.hash.substring(1));
@@ -106,7 +105,7 @@ if (document.pageswitch.disabled === false) {
  * @param {string} id id of element to scroll to
  */
 function scrollToHash(id) {
-  console.log('scrollToHash id: ' + id);
+  //  console.log('scrollToHash id: ' + id);
   document.scrollspy.disabled = true;
   const element = document.getElementById(id);
   if (element) {
@@ -123,24 +122,17 @@ function scrollToHash(id) {
 }
 
 /**
- * Stub that will remove faulty behaviour for non http links
- */
-function removePageswitch() {
-
-}
-
-/**
  * Reinitializes all frontend functionality that is required in div#content
  * after content replacement by a page switch
  */
 function reinitializeAfterPageSwitch() {
-  console.log('reinitializeAfterPageSwitch');
+  //  console.log('reinitializeAfterPageSwitch');
 
   const id = window.location.hash.substr(1);
   const pageID = window.location.pathname.slice(1, -5).replace(/.*\//, '');
   const idElement = document.querySelector('#toc_cb_' + id + ' + label > a');
   var pageAnchorElement = document.querySelector('#toc_cb_' + pageID + ' + label > a');
-  console.log('contentReplaced. new page: ' + pageID);
+  //  console.log('contentReplaced. new page: ' + pageID);
   toggleBox(pageAnchorElement);
   initBoxes(pageAnchorElement);
   if (id) {
@@ -153,6 +145,7 @@ function reinitializeAfterPageSwitch() {
   refreshTitle();
   window.scrollTo(0, 0);
   setBuildDate();
+  loadBrowserFixes();
 }
 
 /**
@@ -161,7 +154,7 @@ function reinitializeAfterPageSwitch() {
  * Mainly for SEO purposes
  */
 function refreshTitle() {
-  console.log('refreshTitle');
+  //  console.log('refreshTitle');
   var pageTitle;
   const idMain = document.querySelector('div.sect2 > h3 > a.link');
   if (idMain) pageTitle = idMain.innerText;
