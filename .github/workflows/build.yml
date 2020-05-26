@@ -78,3 +78,15 @@ jobs:
       env:
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
 
+    # - name: Deploy to Public Bucket
+    #   if: steps.extract.outputs.build_name == 'master' && contains(github.ref, 'release')
+    #   run: bash .scripts/deploy.sh
+    #   env:
+    #     AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_PUBLIC }}
+
+    # - name: Deploy to Private Bucket
+    #   if: ! contains(github.ref, 'release')
+    #   run: bash .scripts/deploy.sh
+    #   env:
+    #     AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_PRIVATE }}
+
