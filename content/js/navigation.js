@@ -69,10 +69,9 @@ function toggleBox(anchorElement) {
     var setTo = !checkbox.checked;
     /* uncheck same level end below checkboxes */
     var sameLevelCheckboxes = parent.parentNode.parentNode.querySelectorAll(':scope > li input[type=checkbox]');
-    for (var cb of sameLevelCheckboxes.entries()) {
-      var other_cb = cb[1];
-      other_cb.checked = false;
-    }
+    Array.prototype.forEach.call(sameLevelCheckboxes, function (cb) {
+      cb.checked = false;
+    });
     checkbox.checked = setTo;
   });
 }

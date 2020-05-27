@@ -1,0 +1,95 @@
+On branch cleanup
+Your branch is up to date with 'origin/cleanup'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   content/docinfo.html
+	modified:   content/index/integration-options/ppv1/03-02-01-01-pp-hosted-payment-page-workflow.adoc
+	modified:   content/index/payment-methods/enets/ppv1/11-46-enets.adoc
+	modified:   content/index/payment-methods/fpx/ppv1/11-47-fpx.adoc
+	modified:   content/index/payment-methods/klarna-payments/rest/11-13-01-01-klarna-v2-authorization.adoc
+	modified:   content/index/payment-methods/klarna-payments/rest/11-13-01-02-klarna-v2-adjust-authorization.adoc
+	modified:   content/index/payment-methods/klarna-payments/rest/11-13-01-03-klarna-v2-void-authorization.adoc
+	modified:   content/index/payment-methods/klarna-payments/rest/11-13-01-04-klarna-v2-capture-authorization.adoc
+	modified:   content/index/payment-methods/klarna-payments/rest/11-13-01-05-klarna-v2-refund-capture.adoc
+	modified:   content/index/payment-methods/klarna-payments/rest/11-13-01-06-klarna-v2-adjust-capture.adoc
+	modified:   content/index/payment-processing/3-d-secure-2/11-01-09-three-d-secure-two-payment-flows.adoc
+	modified:   content/index/payment-processing/3-d-secure-2/payment-flows/unusedpf-1.adoc
+	modified:   content/js/navigation.js
+	modified:   content/js/pageswitch.js
+	deleted:    content/js/polyfill-foreach.js
+	deleted:    content/js/polyfill-idlecallback.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	changes.txt
+	content/images/APIRef_FieldDefs_elements_parentchild.png
+	content/images/APIRef_FieldDefs_elements_parentchild.svg
+	content/images/API_CC_3DS2_PaymentFlows_FirstPaymentCICheckout_First.png
+	content/images/API_CC_3DS2_PaymentFlows_FirstPaymentCICheckout_First.svg
+	content/images/API_CC_3DS2_PaymentFlows_FirstPaymentCICheckout_SubsequentOptionOne.png
+	content/images/API_CC_3DS2_PaymentFlows_FirstPaymentCICheckout_SubsequentOptionOne.svg
+	content/images/API_CC_3DS2_PaymentFlows_FirstPaymentCICheckout_SubsequentOptionTwo.png
+	content/images/API_CC_3DS2_PaymentFlows_FirstPaymentCICheckout_SubsequentOptionTwo.svg
+	content/images/API_CC_3DS2_PaymentFlows_InstallmentMIT_FirstPaymentAndInstallment_FirstCI.png
+	content/images/API_CC_3DS2_PaymentFlows_InstallmentMIT_FirstPaymentAndInstallment_FirstCI.svg
+	content/images/API_CC_3DS2_PaymentFlows_InstallmentMIT_SubsequentNoAuth_TwoStep.png
+	content/images/API_CC_3DS2_PaymentFlows_InstallmentMIT_SubsequentNoAuth_TwoStep.svg
+	content/images/API_CC_3DS2_PaymentFlows_MITUCOF_FirstAndUnscheduledMIT_FirstPayment.png
+	content/images/API_CC_3DS2_PaymentFlows_MITUCOF_FirstAndUnscheduledMIT_FirstPayment.svg
+	content/images/API_CC_3DS2_PaymentFlows_MITUCOF_StoringCard_AuthAndVoid.png
+	content/images/API_CC_3DS2_PaymentFlows_MITUCOF_StoringCard_AuthAndVoid.svg
+	content/images/API_CC_3DS2_PaymentFlows_MITUCOF_StoringCard_TwoStepMIT.png
+	content/images/API_CC_3DS2_PaymentFlows_MITUCOF_StoringCard_TwoStepMIT.svg
+	content/images/API_CC_3DS2_PaymentFlows_MITUCOF_Subsequent_NoAuth_TwoStepMIT.png
+	content/images/API_CC_3DS2_PaymentFlows_MITUCOF_Subsequent_NoAuth_TwoStepMIT.svg
+	content/images/API_CC_3DS2_PaymentFlows_MIT_FirstPaymentAndSubscription_First.png
+	content/images/API_CC_3DS2_PaymentFlows_MIT_FirstPaymentAndSubscription_First.svg
+	content/images/API_CC_3DS2_PaymentFlows_MIT_FirstPaymentAndSubscription_Subscription_TwoStep.png
+	content/images/API_CC_3DS2_PaymentFlows_MIT_FirstPaymentAndSubscription_Subscription_TwoStep.svg
+	content/images/API_CC_3DS2_PaymentFlows_MIT_TwoStep.png
+	content/images/API_CC_3DS2_PaymentFlows_MIT_TwoStep.svg
+	content/images/API_CC_3DS2_PaymentFlows_OneTimePaymentTransaction_OneStep.png
+	content/images/API_CC_3DS2_PaymentFlows_OneTimePaymentTransaction_OneStep.svg
+	content/images/API_CC_3DS2_PaymentFlows_OneTimePaymentTransaction_TwoStep.png
+	content/images/API_CC_3DS2_PaymentFlows_OneTimePaymentTransaction_TwoStep.svg
+	content/images/API_CC_3DS2_PaymentFlows_RecurringMIT_StoringCCAndSubscription_AuthAndVoid.png
+	content/images/API_CC_3DS2_PaymentFlows_RecurringMIT_StoringCCAndSubscription_AuthAndVoid.svg
+	content/images/API_CC_3DS2_PaymentFlows_RecurringMIT_StoringCCAndSubscription_TwoStep.png
+	content/images/API_CC_3DS2_PaymentFlows_RecurringMIT_StoringCCAndSubscription_TwoStep.svg
+	content/images/API_CC_3DS2_PaymentFlows_StoringCardCredentials_AuthAndVoid.png
+	content/images/API_CC_3DS2_PaymentFlows_StoringCardCredentials_AuthAndVoid.svg
+	content/images/API_CC_3DS2_PaymentFlows_StoringCardCredentials_AuthOnly.png
+	content/images/API_CC_3DS2_PaymentFlows_StoringCardCredentials_AuthOnly.svg
+	content/images/API_CC_3DS2_PaymentFlows_StoringCardCredentials_Subsequent.png
+	content/images/API_CC_3DS2_PaymentFlows_StoringCardCredentials_Subsequent.svg
+	content/images/FPX_workflow.png
+	content/images/FPX_workflow.svg
+	content/images/Klarnav2_workflow_adjustAuthorization.png
+	content/images/Klarnav2_workflow_adjustAuthorization.svg
+	content/images/Klarnav2_workflow_authorization.png
+	content/images/Klarnav2_workflow_authorization.svg
+	content/images/Klarnav2_workflow_captureAuthorization.png
+	content/images/Klarnav2_workflow_captureAuthorization.svg
+	content/images/Klarnav2_workflow_refundAuthorization.png
+	content/images/Klarnav2_workflow_refundAuthorization.svg
+	content/images/Klarnav2_workflow_voidAuthorization.png
+	content/images/Klarnav2_workflow_voidAuthorization.svg
+	content/images/PP_HPP_Workflow.png
+	content/images/PP_HPP_Workflow.svg
+	content/images/eNETS_workflow.png
+	content/images/eNETS_workflow.svg
+	content/js/browser-fixes.js
+	content/js/polyfill-append.notranspile.js
+	content/js/polyfill-entries.notranspile.js
+	content/js/polyfill-foreach.notranspile.js
+	content/js/polyfill-idlecallback.notranspile.js
+	content/js/polyfill-includes.notranspile.js
+	content/js/polyfill-intersection-observer.notranspile.js
+	content/js/polyfill-queryselector.notranspile.js
+	content/js/polyfill-startswith.notranspile.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
